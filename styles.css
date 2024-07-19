@@ -1,0 +1,251 @@
+/*
+black 000000
+white f4f1ea
+blue 1FA99A
+Grey D1D2D4
+*/
+
+:root {
+    --primary-color:#000000;
+    --secondary-color: #1F499A;
+    --grey: #D1D2D4;
+    --white: #f6f1ea;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+#navbar {
+    background-color: var(--primary-color);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0.5rem 0;
+}
+
+#navbar ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+main {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--grey);
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.class-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2{
+    color: var(--white);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #163a7a;
+}
+
+.game-container {
+    margin: 2rem 0;
+    padding: 1rem 1rem 5rem 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+.game-container h2 {
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.game-container .game{
+    width:  100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-container iframe {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+   
+    
+}
+
+#announcements {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.75rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+/* Additional modern touches */
+.content, .project-examples {
+    background-color: var(--grey);
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.game-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    grid-template-rows: max-content;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-gallery img {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.faq {
+    margin-top: 1rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 1rem 0;
+}
+
+.faq-item h3 {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.faq-item p {
+    margin-top: 0.5rem;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .class-cards {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
