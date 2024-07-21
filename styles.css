@@ -161,30 +161,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* Form styles */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-}
 
-form label {
-    margin-top: 1rem;
-    color: var(--primary-color);
-}
-
-form input, form textarea {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-}
-
-form button {
-    margin-top: 1rem;
-    align-self: flex-start;
-}
 
 /* Additional modern touches */
 .content, .project-examples {
@@ -220,6 +197,31 @@ form button {
     transform: scale(1.05);
 }
 
+.resource-links li{
+    width: 300px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    list-style-type: none;
+    margin: 10px 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1) ;
+    transition: all 0.3s ease-out;
+    
+}
+
+.resource-links li a{
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .75rem;
+}
+
+.resource-links li:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
 .faq {
     margin-top: 1rem;
 }
