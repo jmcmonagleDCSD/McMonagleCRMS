@@ -1,0 +1,64 @@
+body{
+    background-color:lightgrey;
+}
+.boxone{
+background-color: rgb(189, 208, 215);
+height: 350px;
+width: 300px;
+border-style: solid;
+border-width: 1px;
+float: left;
+}
+.boxtwo{
+background-color: rgb(189, 208, 215);
+height: 350px;
+width: 300px;
+border-style: solid;
+border-width: 1px;
+float: right;
+}
+.boxthree{
+    background-color: rgb(189, 208, 215);
+    height: 350px;
+    width: 300px;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    margin-left: 140px;
+    margin-bottom: 100px;
+}
+.Elephant{
+    clear: both;
+    text-align: center;
+}
+.elephants{
+    clear: both;
+    display: block;
+   margin: auto;
+    background-color: aliceblue;
+    height: 800px;
+    width: 700px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.emoji{
+    text-align: center;
+}
+.elephants1{
+    clear: both;
+    display: block;
+   text-align: center;
+    background-color: aliceblue;
+    height: 800px;
+    width: 700px;
+}

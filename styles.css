@@ -114,15 +114,20 @@ h1, h2 {
 }
 
 .btn:hover {
-    background-color: #163a7a;
+    background-color: rgb(22, 58, 122);
 }
 
 .game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin: 2rem 0;
-    padding: 1rem 1rem 5rem 1rem;
+    height: 200px;
     background-color: var(--secondary-color);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    transition: all .3 ease-in-out;
 }
 
 .game-container h2 {
@@ -130,20 +135,22 @@ h1, h2 {
     color: var(--white);
 }
 
-.game-container .game{
-    width:  100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.game-container a{
+    display: inline-block;
+    color: var(--white);
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
 }
 
-.game-container iframe {
-    width: 100%;
-    max-width: 800px;
-    aspect-ratio: 16 / 9;
-   
-    
+.game-container:hover{
+    transform:translateY(-15%);
+    background-color: rgba(22, 58, 122, .7);
 }
+
+.game-container
 
 #announcements {
     background-color: var(--secondary-color);
@@ -172,14 +179,6 @@ footer {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.game-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-    grid-template-rows: max-content;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
 .project-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -187,7 +186,7 @@ footer {
     margin-top: 1rem;
 }
 
-.project-gallery img {
+.project-gallery img, .project-gallery .game-container {
     width: 100%;
     border-radius: 4px;
     transition: transform 0.3s ease;
