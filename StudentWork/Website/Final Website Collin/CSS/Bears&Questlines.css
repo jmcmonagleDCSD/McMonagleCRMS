@@ -1,0 +1,145 @@
+body{
+    background-color: #EEC584;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+}
+
+h2{
+    color: white;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+p{
+    color: white;
+}
+
+.whatis{
+    background-color:rgb(233, 220, 39) ;
+    border-style:solid;
+    border-color: white;
+    overflow: hidden;
+}
+
+.whatis img{
+    padding-left: 200px;
+    width:auto;
+    height: 300px;
+}
+
+.imgcredit p{
+    width: 25%;
+    float: left;
+}
+
+.imgcredit{
+    padding-left: 200px;
+    width: 1840px;
+}
+
+
+
+.BB{
+    width: 500px;
+    height: auto;
+    border-style: dashed;
+    border-color: white;
+    float: left;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.BB h1{
+    border-style: dotted;
+}
+
+.MB{
+    width: 500px;
+    height: auto;
+    border-style: dashed;
+    border-color: white;
+    float: left;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.MB h1{
+    border-style: dotted;
+}
+
+.PB{
+    width: 500px;
+    height: auto;
+    border-style: dashed;
+    border-color: white;
+    float: left;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.PB h1{
+    border-style: dotted;
+}
+
+.SB{
+    width: 500px;
+    height: auto;
+    border-style: dashed;
+    border-color: white;
+    float: left;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.SB h1{
+    border-style: dotted;
+}
+
+.dropbtn{
+    background-color: aliceblue;
+    color: black;
+    padding:15px;
+    font-size: 15px;
+    cursor:pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position:absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: rgb(145, 140, 140);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: white;
+}

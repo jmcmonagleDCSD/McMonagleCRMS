@@ -1,0 +1,173 @@
+body{
+    background-color: #231F20;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    border-style: solid;   
+}
+
+h3{
+    color: white;
+    text-align: center;
+    border-style: solid;
+}
+
+li{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.RARE{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+}
+
+.RARE h3{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-color: white;
+}
+
+.EPIC{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+}
+
+.EPIC h3{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-color: white;
+}
+
+.LEG{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+}
+
+.LEG h3{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-color: white;
+}
+
+.MYTH{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+}
+
+.MYTH h3{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-color: white;
+}
+
+.EVENT{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+}
+
+.EVENT h3{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-color: white;
+}
+
+.GIFT{
+    border-style: solid;
+    border-color: white;
+    width: 500px;
+    height: auto;
+    float:right;
+    margin-right: 100px;
+}
+
+.GIFT h2{
+     color: white;
+     border-top-style: solid;
+     border-bottom-style: solid;
+     border-color: white;
+}
+
+.GIFT img{
+    width: 40px;
+    height: auto;
+}
+
+.dropbtn{
+    background-color: aliceblue;
+    color: black;
+    padding:15px;
+    font-size: 15px;
+    cursor:pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position:absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: rgb(145, 140, 140);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: white;
+}

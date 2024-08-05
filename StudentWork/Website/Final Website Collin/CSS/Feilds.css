@@ -1,0 +1,186 @@
+body{
+    background-color:#5AB1BB;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    border-style: solid;
+}
+
+h3{
+    color: white;
+    border-style: solid;
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
+
+
+p{
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+.S{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+}
+
+.S img{
+    width: 150px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.Q{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+}
+
+.Q img{
+    width: 150px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.W{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+}
+
+.W img{
+    width: 150px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.E{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+}
+
+.E img{
+    width: 150px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.R{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+}
+
+.R img{
+    width: 150px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.T{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+}
+
+.T img{
+    width: 150px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.Y{
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    border-radius: 6px;
+    float: left;
+    margin-right: 20px;
+}
+
+.Y img{
+    width: 150px;
+    height: auto;
+    margin-left: 25px;
+}
+
+.MTK{
+    border-style: solid;
+    border-color: white;
+    width: 500px;
+    border-radius: 6px;
+    float: left;
+    margin-left: 650px;
+    margin-top: 50px;
+}
+
+
+
+.dropbtn{
+    background-color: aliceblue;
+    color: black;
+    padding:15px;
+    font-size: 15px;
+    cursor:pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position:absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: rgb(145, 140, 140);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: white;
+}
