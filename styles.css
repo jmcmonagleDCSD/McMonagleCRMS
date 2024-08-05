@@ -150,7 +150,15 @@ h1, h2 {
     background-color: rgba(22, 58, 122, .7);
 }
 
-.game-container
+.faq span{
+    font-size: 2rem;
+}
+.faq .question{
+    font-size: 1.5rem;
+}
+.faq .answer{
+    font-size: 1rem;
+}
 
 #announcements {
     background-color: var(--secondary-color);
@@ -184,6 +192,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
+    align-items:  center;
 }
 
 .project-gallery img, .project-gallery .game-container {
