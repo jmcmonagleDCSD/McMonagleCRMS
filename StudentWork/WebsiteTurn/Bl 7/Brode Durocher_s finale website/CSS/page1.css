@@ -1,0 +1,31 @@
+body{
+    background-color: darkblue;
+}
+.links{
+    border-radius: 200px;
+    margin-left: 475px;
+    width: 300px;
+    text-align: center;
+    font-size: large;
+    background-color: aqua;
+    color: darkblue;
+}
+.one{
+    padding-left: 20px;
+    color: aqua;
+    background-color: blue;
+}
+.one h1{
+    text-align: center;
+}
+.one img{
+    border-color: rgb(0, 238, 255);
+    border-width: 10px;
+    border-style: outset;
+    border-radius: 150px;
+}
+.disclamer{
+    background-color: aqua;
+    text-align: center;
+    font-size: x-large;
+}

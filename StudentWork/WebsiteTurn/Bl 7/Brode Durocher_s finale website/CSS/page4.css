@@ -1,0 +1,36 @@
+body{
+    background-color: darkblue;
+}
+.one{
+    block-size: 625px;
+    padding-left: 20px;
+    text-decoration: dashed;
+    color: blue;
+    background-color: aqua;
+}
+.one h4{
+    font-size: large;
+}
+.one img{
+    position: absolute;
+    right: 75px;
+    top: 250px;
+    border-style: groove;
+    border-width: 7px;
+    border-radius: 200px;
+}
+.one h5{
+    position: absolute;
+    right: 80px;
+    top: 450px;
+    font-size: larger;
+}
+.links{
+    border-radius: 200px;
+    margin-left: 475px;
+    width: 300px;
+    text-align: center;
+    font-size: large;
+    background-color: aqua;
+    color: darkblue;
+}

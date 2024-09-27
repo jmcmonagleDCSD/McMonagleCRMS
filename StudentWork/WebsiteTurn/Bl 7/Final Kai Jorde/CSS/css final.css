@@ -1,0 +1,22 @@
+.heading{
+    background-color: lightblue;
+    height: 100px;
+    text-align: center;
+    border-radius: 400px;
+    border-style: dashed;
+    border-width: 10px;
+    border-top-color: blue;
+    border-bottom-color: green;
+    border-left-color: yellow;
+    border-right-color: orange;
+}         
+
+body{
+    background-color: lightseagreen;
+}
+img{
+   border-radius: 170px;
+   border-style: groove;
+   border-width: 20px;
+   border-color: rgb(255, 200, 0);
+}

@@ -1,0 +1,39 @@
+body{
+    background-color: blue;
+}
+.one{
+    padding-left: 20px;
+    overflow: hidden;
+    color: darkcyan;
+    background-color: darkblue;
+}
+.one p{
+    font-size: larger;
+}
+.one h1{
+    text-align: center;
+}
+.one h2{
+    font-size: xx-large;
+}
+.one img{
+    position: absolute;
+    right: 40px;
+    top: 170px;
+    border-width: 10px;
+    border-radius: 75px;
+    border-style: double;
+    border-color: blue;
+}
+.one h4{
+    position: absolute;
+    right: 75px;
+    top: 650px;
+}
+.links{
+    margin-left: 500px;
+    text-align: center;
+    background-color: rgb(0, 234, 255);
+    border-radius: 200px;
+    width: 250px;
+}

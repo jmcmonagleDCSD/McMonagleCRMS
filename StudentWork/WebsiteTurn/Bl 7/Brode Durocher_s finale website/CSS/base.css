@@ -1,0 +1,9 @@
+p::after {
+    content: " - DUCKS ARE THE BEST";
+}
+p::before{
+    content: " DUCKS ARE THE BEST -";
+}
+.one{
+    text-decoration: underline;
+}

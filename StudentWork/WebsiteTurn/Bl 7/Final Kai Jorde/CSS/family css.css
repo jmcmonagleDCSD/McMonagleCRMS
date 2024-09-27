@@ -1,0 +1,22 @@
+.heading h1{
+    background-color: rgb(1, 204, 255);
+    height: 70px;
+    border-radius: 400px;
+    text-align: center;
+    border-style: dotted;
+    border-width: 10px;
+    border-top-color: blue;
+    border-bottom-color: green;
+    border-left-color: red;
+    border-right-color: orange;
+}
+
+body{
+    background-color: lightyellow;
+}
+img{
+    border-radius: 170px;
+    border-style: groove;
+    border-width: 20px;
+    border-color: red;
+ }
