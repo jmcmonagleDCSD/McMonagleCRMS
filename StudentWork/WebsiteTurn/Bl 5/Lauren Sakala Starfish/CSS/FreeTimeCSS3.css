@@ -1,0 +1,35 @@
+body{
+    background-color:rgb(141, 123, 255);
+    color:antiquewhite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    text-decoration: underline;
+
+}
+.table{
+    text-align:center;
+}
+a{
+    color:antiquewhite;
+}
+th, td{
+    padding:15px;
+}
+.how{
+    border-width:5px;
+    border-color: antiquewhite;
+    border-style: double;
+    padding:10px;
+    text-align:center;
+    margin:20px;
+    background-color: rgb(164, 164, 164);
+}
+table, th, td {
+    border: 2px double antiquewhite;
+    text-align: center;
+    background-color:rgb(164, 164, 164);
+  }
+img{
+    border: 8px dotted antiquewhite;
+}

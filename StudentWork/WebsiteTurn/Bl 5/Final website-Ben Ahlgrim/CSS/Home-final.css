@@ -1,0 +1,82 @@
+body{
+    background-color: purple;
+}
+
+h1{
+    text-align: center;
+    color: orange;
+    height: 200px;
+    animation: 2s loading ease-in-out infinite;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    33%{
+        transform: rotateX(0deg) rotateY(0) rotateZ(0);
+    }
+    67%{
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(0);
+    }
+    100%{
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    }
+}
+
+h1:hover{
+    animation-play-state: paused;
+}
+
+p{
+    text-align: center;
+    font-size: large;
+    color: orange;
+    height: 50px;
+    width: 600px;
+    margin: auto;
+    transition-duration: .5s;
+}
+
+a{
+    color: orange;
+    font-size: larger;
+}
+
+div{
+    border-style: dashed;
+    border-width: 20px;
+    border-color: red;
+}
+
+hr{
+    height: 10px;
+    border-color: red;
+    background-color: red;
+}
+
+.spin{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 1, 255);
+    color: white;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 75px;
+    right:75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: -15px;
+    right: -15px;
+    border-width: 0px;
+    border-radius: 25px;
+
+}
+
+p:hover{
+    scale: 2;
+}
+

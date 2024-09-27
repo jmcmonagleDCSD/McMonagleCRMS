@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(163, 148, 248);
+color:antiquewhite;
+margin-left:30px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+  text-decoration: underline;
+  text-underline-position: below;
+}
+a {
+    color: white;
+  }
+  div{
+    float:left;
+    width:33%;
+  }
+br{
+    clear:both;
+}

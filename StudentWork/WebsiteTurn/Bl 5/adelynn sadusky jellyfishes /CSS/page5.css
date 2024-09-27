@@ -1,0 +1,60 @@
+
+.element{
+height: 200px;
+width: 200px;
+background-color: lightgray;
+
+font-family: cursive;
+font-weight: 700;
+font-size: 1.35rem;
+color: darkblue;
+
+animation-duration: 3s;
+animation-name: spin;
+animation-timing-function: ease;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+
+}
+
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+
+@keyframes spin{
+    0%{
+
+    }
+    50%{
+        scale: 2;
+        transfrom: rotate(0);
+        border-radius: 0;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+        scale: 2;
+    }
+}
+
+
+body{ 
+    background-color: rgb(16, 9, 80);
+}
+
+a {
+    color: white;
+  }
+
+
+  p{
+    padding-top: 30%;
+  }

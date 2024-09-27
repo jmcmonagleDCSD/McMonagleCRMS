@@ -1,0 +1,51 @@
+body {
+    background-color: cornflowerblue }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-family: cursive;
+  }
+  
+  a {
+    color: white;
+  }
+   
+  p {
+    font-family:fantasy;
+    font-size: 20px;
+  }
+
+  .img {
+    float: right;
+    margin-right: 20px;
+
+  }
+  
+  .box {
+    width: 400px;
+    height: 160px;
+    background-color: lightgray;
+    padding: 50px;
+    margin:20px
+
+    }
+    .box2 {
+      width: 400px;
+      height: 160px;
+      background-color: lightgray;
+      padding: 50px;
+      margin:20px
+  
+      }
+
+      
+  div{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border: 5px cornsilk;
+    margin: 0;
+  }
+   
+  

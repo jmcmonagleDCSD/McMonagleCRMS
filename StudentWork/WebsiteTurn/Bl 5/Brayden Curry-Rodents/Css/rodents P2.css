@@ -1,0 +1,52 @@
+body{
+    background-color: gray;
+}
+h1{
+    text-align: center;
+    background-color: pink;
+}
+
+h2{
+    background-color: pink;
+    width: 105px;
+}
+
+.Mmice{
+    background-color: pink;
+    width: 42px;
+    padding-left: 2px;
+}
+.Amice{
+    background-color: pink;
+    width: 55px;
+    padding-left: 3px;
+}
+.Pmice{
+    background-color: pink;
+    width: 500px;
+    padding-left: 5px;
+}
+.Fmice{
+    background-color: pink;
+    width: 82px;
+    padding-left: 2px;
+}
+.Lmice{
+    background-color: pink;
+    width: 270px;
+
+}
+.Rrats{
+    background-color: pink;
+    width:40px;
+    padding-left: 2px;
+}
+.Frats{
+    background-color: pink;
+    width: 82px;
+    padding-left: 2px;
+}
+.Lrats{
+    background-color: pink;
+    width: 350px;
+}

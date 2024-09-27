@@ -1,0 +1,63 @@
+p{
+    color: black;
+    text-align: center;
+    font-size: larger;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: azure;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+}
+.img{
+    text-align: center;
+    color: azure;
+}
+.sigma {width: 100px;
+    height: 25px;
+    background-color: lightgray;
+}
+.sigma:hover{width: 125px;
+height: 50px;
+transition: all 0.5s;
+background-color: aliceblue;
+}
+.creation{
+    background-color: black;
+    color: black;
+    rotate: -1deg;
+}
+.creation:hover{
+    width: 1100px;
+    height: 100px;
+    background-color:azure;
+    transition-duration: 1s;
+    transform: rotate(1deg);
+}
+.cars{
+    background-color: black;
+    color: black;
+    rotate: -1deg;
+}
+.cars:hover{
+    width: 1100px;
+    height: 167px;
+    background-color:azure;
+    transition-duration: 1s;
+    transform: rotate(1deg);
+}
+.how{
+    background-color: black;
+    color: black;
+    rotate: -1deg;
+}
+.how:hover{
+    width: 1100px;
+    height: 119px;
+    background-color:azure;
+    transition-duration: 1s;
+    transform: rotate(1deg);
+}

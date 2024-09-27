@@ -1,0 +1,43 @@
+body{
+  background-color: rgb(142, 79, 243);
+  color:antiquewhite;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.col1{
+  background-color: rgb(164, 164, 164);
+  width:30%;
+  float:left;
+  border-width: 5px;
+  border-style: double;
+  border-color:antiquewhite;
+  margin-left:30px;
+}
+.col2{
+  background-color: rgb(164, 164, 164);
+  width:60%;
+  float:left;
+  margin-bottom:20px;
+  margin-left: 20px;
+  border-width: 5px;
+  border-style: double;
+  border-color:antiquewhite;
+  p{
+    text-align:center;
+    padding:15px;
+  }
+  img{
+    width: 700px;
+    height:auto;
+    padding:15px;
+    align-items:center;
+    margin-left:5px;
+
+  }
+}
+h1{
+  text-align:center;
+  text-decoration:underline;
+}
+a{
+  color:antiquewhite;
+}

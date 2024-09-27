@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(37, 158, 134);
+    
+}
+h1{
+    text-align: center;
+    font-family: fantasy;
+}
+button{
+    background-color: rgb(255, 255, 255);
+}
+body{
+    border-width: 5px;
+    border-radius: 20px;
+    border-style: double;
+    border-width:  20px;
+    border-color: rgb(33, 97, 29);
+    font-family: fantasy;
+}
+div{
+    background-color: rgb(33, 97, 29);
+}
+ol{
+    text-align: center;
+    list-style-position: inside;
+}
+
+div{
+    background: rgb(33, 97, 29);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.92, 0.06, 0.45, 0.97) ease-in;
+    transition-delay: 500ms;
+    transition: 1s ease-in, 500ms transform ease-in-out 500ms;
+    text-align: center;
+    
+   
+} 
+div:hover{
+    background: transparent;
+    transform: rotate(360deg);
+}
+
+img{
+    width: 500px;
+    height: 350px;
+    background: white;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.92, 0.06, 0.45, 0.97) ease-in;
+    transition-delay: 1000ms;
+    transition: 1s ease-in, 1000ms transform ease-in-out 1000ms;
+    text-align: left;
+    transform: rotateX('1s');
+     background: transparent;
+    transform: translate(30px);
+
+    animation-duration: 3s;
+    animation-name: spin;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes spin{
+    0%{
+    
+
+    }
+    
+    50%{
+
+        scale: 2;
+        transform: rotate(0);
+        border-radius: 0;
+    }
+
+    100%{
+        transform: rotateY(360deg);
+        border-radius: 50%;
+       
+    }
+}

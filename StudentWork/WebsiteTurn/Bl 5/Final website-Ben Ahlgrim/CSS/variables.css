@@ -1,0 +1,161 @@
+body{
+    background-color: plum;
+}
+
+div{
+    height: 210px;
+    width: 175px;
+    background-color: blue;
+    color: rgb(255, 153, 0);
+    border-radius: 10px;
+}
+
+.joey{
+    position: absolute;
+    top: 175px;
+    left: 200px;
+}
+
+.jamo{
+    position: absolute;
+    top: 175px;
+    left: 390px;
+}
+
+.hits{
+    height: 300px;
+    border-radius: 10px;
+}
+
+.club_hits{
+    height: 60px;
+    width: 300px;
+}
+
+.club_direction{
+    position: relative;
+    top: -360px;
+    left:320px;
+    border-radius: 15px;
+    height: 225px;
+}
+
+.direction{
+    position: absolute;
+    bottom: 495px;
+    left: 330px;
+    height: 60px;
+    width: 300px;
+}
+
+.speed{
+    position: absolute;
+    bottom: 180px;
+    left: 330px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.carry{
+    position: absolute;
+    bottom: 110px;
+    right: 50px;
+    height: 60px;
+    width: 470px;
+}
+
+a{
+    background-color: pink;
+    border-radius: 25px;
+}
+
+.spin{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 1, 255);
+    color: white;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 75px;
+    right:75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: -15px;
+    right: -15px;
+
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin{
+    0%{
+
+    }
+    10%{
+        background-color: red;
+    }
+    30%{
+        background-color: yellow;
+    }
+    50%{ 
+       transform: rotate(0);
+       border-radius: 0;
+       background-color: green;
+    }
+    70%{
+        background-color: darkorchid;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
+
+.club_direction{
+    color: orange;
+    height: 200px;
+    animation: 5s loading ease-in-out infinite;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    33%{
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(0);
+    }
+    67%{
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(0);
+    }
+    100%{
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    }
+}
+
+.club_direction:hover{
+    animation-play-state: paused;
+}
+
+a{
+    text-align: center;
+    font-size: large;
+    margin: auto;
+    transition-duration: .5s;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+a:hover{
+scale: 2;
+}

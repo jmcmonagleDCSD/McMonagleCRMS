@@ -1,0 +1,45 @@
+
+body{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border-style: double;
+    border-color: white;
+    border-width: 20px;
+    color: white;
+    border: 6px solid rgb(255, 0, 0);
+    box-shadow: 0 0 8px rgb(255, 0, 0), 0 0 8px rgb(255, 0, 0) inset;
+}
+button{
+    background-color: white;
+}
+div{
+ 
+    background: rgb(0, 0, 0);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.92, 0.06, 0.45, 0.97) ease-in;
+    transition-delay: 500ms;
+    transition: 1s ease-in, 500ms transform ease-in-out 500ms;
+    border: 6px solid rgb(255, 0, 0);
+    box-shadow: 0 0 8px rgb(255, 0, 0), 0 0 8px rgba(255, 0, 0, 0.969) inset;
+   
+} 
+div:hover{
+    background: transparent;
+    transform: rotate(360deg);
+}
+img{
+    
+    background: white;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.92, 0.06, 0.45, 0.97) ease-in;
+    transition-delay: 1000ms;
+    transition: 1s ease-in, 1000ms transform ease-in-out 1000ms;
+    text-align: left;
+    
+    
+}
+img:hover{
+    background: transparent;
+    transform: translate(3000px);
+}
+

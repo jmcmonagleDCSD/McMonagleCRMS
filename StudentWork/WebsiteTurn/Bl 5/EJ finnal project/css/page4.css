@@ -1,0 +1,37 @@
+body{
+    background-color: antiquewhite;
+}
+body{
+    background-color:aqua;
+}
+h2{border-bottom-style: solid;
+border-top-style: dotted;
+border-right-style: solid;
+border-left-style: dotted;
+border-width: 8px;
+border-color: rgb(228, 57, 234);
+border-radius: 50px;
+}
+img{
+
+    border-bottom-style: solid;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-left-style: dotted;
+    border-width: 8px;
+    border-color: rgb(115, 21, 128);
+    border-radius: 50px;
+}
+h1{
+    border-bottom-style: solid;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-left-style: dotted;
+    border-width: 8px;
+    border-color: rgb(64, 29, 177);
+    border-radius: 50px;
+    text-align: center;
+}
+a{
+    text-align: center;
+}

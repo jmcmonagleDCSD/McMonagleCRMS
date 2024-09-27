@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(80, 130, 71);
+}
+h1{
+    text-align: center;
+    background-color: rgb(140, 210, 160);
+}
+.Sfacts{
+    background-color: rgb(140, 210, 160);
+    height: 400px;
+    width: 400px;
+}
+h3{
+    background-color: rgb(140, 210, 160);
+    width: 85px;
+}
+h2{
+    background-color: rgb(140, 210, 160);
+    width: 100px;
+}
+p{
+    background-color: rgb(140, 210, 160);
+    width: 400px;
+}

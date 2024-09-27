@@ -1,0 +1,31 @@
+Body{
+    background-color: rgb(207, 183, 150);
+}
+h1{
+    text-align: center;
+    background-color: rgb(250, 226, 195);
+}
+h2{
+    background-color: rgb(250, 226, 195);
+    width: 170px;
+    padding-left: 2px;
+}
+.Nabout{
+    background-color: rgb(250, 226, 195);
+    width: 52px;
+    padding-left: 2px;
+}
+.Naboutp{
+    background-color: rgb(250, 226, 195);
+    width: 500px;
+    padding-left: 2px;
+}
+.Nfact{
+    background-color: rgb(250, 226, 195);
+    width: 85px;
+    padding-left: 2px;
+}
+.Nlist{
+    background-color: rgb(250, 226, 195);
+    width: 350px;
+}
