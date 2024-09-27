@@ -1,0 +1,22 @@
+
+h4{
+    color: cadetblue;
+width: fit-content;
+}
+body{
+    background-color: black;
+}
+a{
+    color: azure;
+}
+p{
+    color: azure;
+}
+img{
+    border-style: double;
+border-color: azure;
+border-width: 25px;
+}
+button{
+    background-color: black;
+}

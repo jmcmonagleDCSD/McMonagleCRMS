@@ -1,0 +1,29 @@
+hr{
+    width: 650px;
+  
+}
+h1{
+font-size: 180px;
+background-color:silver;
+text-align: center;
+}
+img{
+size: 650px;
+border-radius: 275px;
+border-style: groove;
+border-width: 30px;
+border-color:  darkorange;
+float: right;
+}
+h3{
+    text-align: center;
+}
+
+p{
+text-align: right;
+background-color: darkorange
+
+}
+body{
+    background-color: gold;
+}

@@ -1,0 +1,36 @@
+p{
+font-size: 20px;
+background-color: gray;
+text-align: center;
+}
+hr{
+    width: 650px;
+    color: blue;
+}
+h1{
+font-size: 200px;
+background-color:silver;
+text-align: center;
+border-radius: 25px;
+}
+img{
+size: 650px;
+border-radius: 250px;
+border-style: groove;
+border-width: 25px;
+border-color: gold;
+}
+h3{
+    text-align: center;
+}
+.boxone{
+    background-color:gold;
+    height: 100px;
+}
+body{
+    background-color: gold;
+}
+h6{
+font-size: 30px;
+text-align: center;
+}

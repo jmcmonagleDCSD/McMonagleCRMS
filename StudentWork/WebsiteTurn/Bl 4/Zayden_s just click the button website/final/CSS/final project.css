@@ -1,0 +1,33 @@
+h1{
+    background-color: rgb(0, 221, 165);
+    color: darkcyan;
+    width: fit-content;
+}
+.two{
+    background-color: darkcyan;
+    width: fit-content;
+}
+.two h2{
+    color: rgb(0, 221, 165);
+}
+.one{
+    background-color: burlywood;
+    width: fit-content;
+}
+.one h2{
+    color: dodgerblue;
+}
+body{
+    background-color: black;
+}
+a{
+    color: azure;
+}
+img{
+    border-style: double;
+border-color: azure;
+border-width: 25px;
+}
+button{
+    background-color: black;
+}

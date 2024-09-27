@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+a{
+    color: azure;
+}
+h2{
+    color: azure;
+}
+p{
+    color: azure;
+    
+}
+img{
+    border-style: double;
+border-color: azure;
+border-width: 25px;
+}
+button{
+    background-color: black;
+}
