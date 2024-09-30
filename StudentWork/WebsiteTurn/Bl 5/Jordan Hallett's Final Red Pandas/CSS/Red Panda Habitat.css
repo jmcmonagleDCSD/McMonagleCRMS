@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+    
+}
+.Title{
+    color: blue;
+    text-align: center;
+}
+
+
+.RedPandaHabitat{
+    color: royalblue;
+    height: 500px;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 100px;
+    
+}
+.RedPandaHabitat h2{
+    color: royalblue;
+    text-align: center;
+
+}
+.RedPandaHabitat p{
+    
+    height: 300px;
+    margin: 50px;
+    background-color: black;
+    float: right;
+    font-size: 17px;
+    padding: 15px;
+}
+.MoreOnRedPandaHabitat{
+    height: 500px;
+    background-color: white;
+    margin-bottom: 100px;
+    
+
+}
+.MoreOnRedPandaHabitat h2{
+    text-align: center;
+    color: royalblue;
+    margin-bottom: 100px;
+
+}
+.MoreOnRedPandaHabitat p{
+    color: royalblue;
+    height: 300px;
+    background-color: black;
+    margin: 50px;
+    padding: 5px;
+    font-size: 18px;
+}
+.IMG{
+    background-color: white;
+    height: 400px;
+
+}
+.IMG img{
+    border-style: solid;
+    border-color: royalblue;
+    border-width: 3px;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+.IMG cite{
+    font-size: 12px;
+}
+.IMG p{
+    font-size: 10px;
+}

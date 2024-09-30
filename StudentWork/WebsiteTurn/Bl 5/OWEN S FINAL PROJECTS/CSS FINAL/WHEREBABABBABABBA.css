@@ -1,0 +1,18 @@
+html{
+    background-color: rgb(251, 255, 0);
+}
+h2{text-align: center;font-size: 36px;
+    font-family:Josefin Sans;
+    border-style: dashed;
+}
+button {
+    background-color: rgb(0, 160, 252);
+    }
+   
+    .two{
+        text-align: center;
+        background-color: rgb(191, 255, 0);
+        height: 1000px;
+        width:1750 px;
+        border-style: dashed;
+    }

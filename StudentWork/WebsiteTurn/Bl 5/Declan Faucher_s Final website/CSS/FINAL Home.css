@@ -1,0 +1,116 @@
+.TopHeading h1{
+    text-align: center;
+    color: rgb(232, 208, 76);
+}
+body{
+    background-color: rgb(41, 39, 39);
+}
+.dropbtn {
+    background-color: rgb(232, 208, 76);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;}
+  .dropdown {
+    position: relative;
+    display: inline-block;}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;}
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;} 
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;} 
+  .dropdown:hover .dropbtn {background-color: black;}
+
+  .AllaboutJBOX{
+    background-color: rgb(232, 208, 76);
+    width: 100%;
+    height: 381px;
+  
+  }
+
+.AllaboutJBOX img{
+float: left;
+margin-left: 20%;
+border-radius: 100px;
+border-style: double;
+border-width: 15px;
+border-color: blue;
+text-decoration: dotted;
+}
+.AllaboutJBOX h1{
+  margin-left: 25px;
+}
+.AllaboutJBOX p{
+  width:200px;
+  float:left;
+  margin-left: 300px;
+}
+.bottombox{
+background-color:  rgb(232, 208, 76);
+text-align: center;
+height: 615px;
+margin-top: 50px;
+border-radius: 50px;
+}
+.firstboxinbb{  
+  background-color: black;
+  height: 475px;
+  width: 12%;
+  margin-top: 15px;
+  margin-left: 400px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border-top-style: double;
+  border-top-width: 15px;
+  border-top-color: rgb(232, 208, 76);
+  border-bottom-style: double;
+  border-bottom-width: 15px;
+  border-bottom-color: rgb(232, 208, 76);
+  float: left;
+}
+
+.firstboxinbb p{
+  color: rgb(232, 208, 76);
+  margin-left: 65px;
+  width: 200px; 
+}
+.middleimginbb{
+  float:left; 
+  margin-left: 375px;
+  margin-top: 50px;
+  border-style: double;
+  border-width: 15px;
+}
+.lastboxinbb{  
+  background-color: black;
+  height: 500px;
+  width: 12%;
+  margin-top: 15px;
+  margin-right: 400px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border-top-style: double;
+  border-top-width: 15px;
+  border-top-color: rgb(232, 208, 76);
+  border-bottom-style: double;
+  border-bottom-width: 15px;
+  border-bottom-color: rgb(232, 208, 76);
+  float: right;
+
+}
+.lastboxinbb p{
+  color: rgb(232, 208, 76);
+  margin-left: 65px;
+  width: 200px;
+  font-size: small;
+
+}

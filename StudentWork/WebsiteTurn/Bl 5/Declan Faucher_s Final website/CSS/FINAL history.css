@@ -1,0 +1,130 @@
+
+.dropbtn {
+  background-color: rgb(232, 208, 76);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;}
+.dropdown {
+  position: relative;
+  display: inline-block;}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;} 
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;} 
+.dropdown:hover .dropbtn {background-color: black;}
+
+
+.TopHeading h1{
+    text-align: center;
+    color: rgb(232, 208, 76);
+}
+body{
+    background-color: rgb(41, 39, 39);
+}
+.Bigbox{
+  background-color :rgb(226, 226, 227);
+  height: 800px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 50px;
+  border-radius: 100px;
+  border-style: groove;
+  border-width: 15px;
+
+}
+.sizebox h2{
+  margin-left:200px;
+}
+.sizebox{
+  background-color: rgb(48, 134, 245);
+  height: 700px;
+  width: 25%;
+  float: left;
+  margin-left: 5%;
+  border-radius: 100px;
+  border-style: groove;
+  border-width: 15px;
+  border-color:rgb(46, 114, 201) ;
+}
+.sizebox ol{
+  font-size: x-large;
+  margin-left:25px;
+  font-family: monospace;
+}
+.sizebox p{
+  font-family: monospace;
+  margin-left:15px;
+}
+.sizebox img{
+  margin-top:1s5px;
+  margin-left: 65px;
+  border-radius: 100px;
+  border-style: groove;
+  border-width: 15px;
+  border-color: rgb(46, 114, 201) ;
+}
+
+.footballbox{
+  background-color: rgb(55, 180, 225);
+  float: left;
+  height: 700px;
+  width: 25%;
+  margin-left: 5%;
+  border-radius: 100px;
+  border-style: groove;
+  border-width: 15px;
+  border-color: rgb(122, 191, 200);
+}
+.footballbox p{
+  font-size: x-large;
+  margin-left: 15px;
+}
+.footballbox h1{
+  text-align: center;
+}
+.footballbox img{
+  margin-left: 75px;
+  border-radius: 100px;
+  border-style: groove;
+  border-width: 15px;
+  border-color: rgb(122, 191, 200);
+}
+.Chalengebox{
+  background-color: rgb(112, 180, 189);
+  height: 700px;
+  width: 25%;
+  float: right;
+
+  margin-right: 5%;
+  border-radius: 100px;
+  border-style: groove;
+  border-width: 15px;
+  border-color: rgb(8, 149, 149);
+}
+.Chalengebox img{
+  margin-top: 25px;
+  border-radius: 100px;
+  border-style: groove;
+  border-width: 15px;
+  border-color: rgb(8, 149, 149);
+  margin-left: 50px;
+}
+.Chalengebox p{
+  font-size: x-large;
+  text-align: center;
+}
+.Chalengebox h1{
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+.Title h1{
+    text-align: center;
+    color: aquamarine;
+}
+.ListofFood{
+    background-color: lightblue;
+    height: 400px;
+    margin-bottom: 100px;
+}
+body{
+    background-color: lightcyan;
+}
+.ListofFood h2{
+   color: aqua;
+   text-decoration: underline;
+   text-decoration-color: aqua;
+   text-align: right;
+   margin: 70px;
+}
+.ListofFood ul{
+    color: aquamarine;
+    float: right;
+    margin: 50px;
+    background-color: blue;
+    width: 175px;
+    height: 175px;
+
+}
+.ListofFood img{
+    border-style: solid;
+    border-color: black;
+    border-width: 15px;
+}
+.RedpandaDiet{
+    clear: both;
+    float: left;
+    width: 400px;
+    height: 600px;
+    background-color: aqua;
+
+}
+.MoreOnDiet{
+    
+    float: left;
+    width: 200px;
+    height: 600px;
+}
+.MoreOnDiet cite{
+    font-size: 10px;
+}

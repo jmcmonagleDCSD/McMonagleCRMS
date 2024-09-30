@@ -1,0 +1,91 @@
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.TitleOne h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: red;
+}
+
+    
+
+.BasicInfo2{
+    height: 400px;
+    background-color: black;
+    margin-bottom: 50px;
+    
+}
+.BasicInfo2 h2{
+    text-align: center;
+    color: red;
+}
+
+.BasicInfo2 p {
+    width: 300px;
+    height: 300px;
+    float: right;
+    background-color: brown;
+    color: red;
+    margin: 15px;
+    padding: 5px;
+    align-content: center ;
+    font-weight: 900;
+    font-style: italic;
+    
+   
+    
+   
+}
+.BasicInfo2 cite{
+    color: red;
+    font-size: 10px;
+}
+.BasicInfo2 img{
+    margin: 20px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 15px;
+    border-radius: 35px;
+}
+.RedPandaImage{
+    background-color: red;
+    height:450px;
+}
+.RedPandaImage img{
+    margin: 30px;
+    clear: both;
+   border-color: black;
+   border-style: double;
+}
+.redpandaImg{
+    float: right;
+    
+}
+.BasicInfo1{
+    height: 400px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+.BasicInfo1 h2{
+    color: red;
+    text-align: center;
+
+
+}
+.BasicInfo1 p{
+    color: red;
+    background-color: brown;
+    width: 500px;
+    height: 300px;
+    align-content: center;
+    margin: 15px;
+    font-weight: lighter;
+}
+    
+    
+    
+
