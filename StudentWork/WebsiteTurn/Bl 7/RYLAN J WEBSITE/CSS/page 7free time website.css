@@ -1,0 +1,13 @@
+body{
+    background-color: dimgray;
+}
+
+.one{
+    text-align: center;
+    color: black;
+}
+
+.two{
+    float: right;
+    margin-right: 250px;
+}

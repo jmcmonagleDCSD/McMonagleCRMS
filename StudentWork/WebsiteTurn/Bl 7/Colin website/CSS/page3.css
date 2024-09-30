@@ -1,0 +1,23 @@
+body{
+    background-color: wheat;
+}
+h1{
+    color:lightslategray;
+    text-align:center;
+    size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration:solid;
+}
+hr{
+    border-style:solid;
+    border-color: black;
+}
+p{
+    font-size: larger;
+}
+.sugarbeet p{
+    color:forestgreen;
+}
+.combinestuff{
+    color:saddlebrown
+}

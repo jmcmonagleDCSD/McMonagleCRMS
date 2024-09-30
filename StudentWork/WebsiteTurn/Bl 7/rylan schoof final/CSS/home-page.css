@@ -1,0 +1,25 @@
+body{
+    background-color: blue;
+}
+.one{
+    background-color: white;
+
+}
+.two{
+    background-color: white;
+}
+.three{
+    background-color: darkred;
+}
+.four{
+    background-color: darkred;
+}
+ul{
+    background-color: aqua;
+}
+.five{
+    background-color: aqua;
+}
+a{
+    color: red;
+}

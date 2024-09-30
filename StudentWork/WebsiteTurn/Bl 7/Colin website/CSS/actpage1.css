@@ -1,0 +1,25 @@
+body{
+    background-color: wheat;
+}
+.title h1, .title p{
+    color:lightslategray;
+    text-align:center;
+    size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+.links{ 
+    color:darkslategray;
+    font-size: larger;
+}
+.intro{
+    font-size: larger;
+    color: olive;
+}
+.title img{
+    float: right;
+}
+hr{
+    border-style:solid;
+    border-color: black;
+}

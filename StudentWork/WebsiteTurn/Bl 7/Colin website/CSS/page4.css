@@ -1,0 +1,23 @@
+body{
+    Background-color: wheat;
+}
+h1{
+    color:lightslategray;
+    text-align:center;
+    size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration:double;
+}
+hr{
+    border-style:solid;
+    border-color: black;
+}
+p{
+    font-size: larger;
+}
+.chickens{
+    color:olivedrab;
+}
+.combine{
+    color:darkolivegreen;
+}

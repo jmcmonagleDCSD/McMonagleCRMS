@@ -1,0 +1,38 @@
+body{
+    background-color: dimgray;
+}
+
+.one{
+    text-align: center;
+    color: black;
+}
+
+.two{
+    float: right;
+    
+ }
+
+ .three{
+    float: right;
+    margin-right: 10px;
+ }
+
+ .fore{
+    float: right;
+    
+ }
+
+ .five{
+   float: right;
+ }
+
+ .six{
+float: right;
+ }
+
+ .sevan{
+   float: right;
+ }
+ .eaght{
+   float: right;
+ }
