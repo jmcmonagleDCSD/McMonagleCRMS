@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+}
+
+.boxone{
+    background-color: green;
+    width: 500px;
+    height: 800px;
+    float:left
+}
+
+.boxtwo{
+    background-color: green;
+    width: 500px;
+    height: 800px;
+    float: right;
+}
+body{
+    background-color:beige;
+}
+
+.boxone li{
+    height: 20px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 200px;
+    box-shadow: 4px;
+    border-width: 20px;
+}
+
+.boxtwo li{
+    height: 20px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 200px;
+    box-shadow: 4px;
+    border-width: 20px;
+}

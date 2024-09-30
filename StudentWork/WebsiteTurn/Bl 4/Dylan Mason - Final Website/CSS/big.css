@@ -1,0 +1,41 @@
+
+.big h1{
+    text-align: center;
+    color: white;
+    border-bottom-style: solid;
+    border-radius: 30px;
+    width: 300px;
+    margin: auto;
+  } 
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .big img{
+    border-style: solid;
+    border-radius: 50px;
+    color: rgb(255, 255, 255); 
+    width: 1000px;
+  }
+  
+  .big p{
+    color: white;
+    border-style: solid;
+    height: 125px;
+    width: 1000px;
+    border-radius: 50px;
+    text-align: center;
+    margin: auto
+  }
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+  .column {
+    float: left;
+    width: 31%;
+    padding: 5px;
+  }
+  
+  .move{
+    margin-top: 40px;
+  }

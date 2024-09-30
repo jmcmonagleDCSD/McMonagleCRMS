@@ -1,0 +1,26 @@
+p{
+    text-align: center;
+}
+
+.title h1{
+    text-align: center;
+    color: white;
+    border-bottom-style: solid;
+    border-radius: 30px;
+    width: 700px;
+    margin: auto;
+   
+}
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.two{
+    text-align: center;
+    border-radius: 30px;
+    height: 50%;
+    margin-left: 50px;
+}
