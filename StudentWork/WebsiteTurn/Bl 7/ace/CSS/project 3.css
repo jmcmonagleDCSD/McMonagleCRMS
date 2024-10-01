@@ -1,0 +1,10 @@
+body{
+    background-color: blue;
+}
+.one{
+    font-family: unset; 
+    color: yellow;
+}
+a{
+    color: pink;
+}

@@ -1,0 +1,17 @@
+body{
+    background-color: dimgray;
+}
+
+.homepage{
+    text-align: center;
+}
+
+.homepage h1{
+    background-color: orange;
+}
+
+.links{
+    background-color: gray;
+    height: 50px;
+    text-decoration: solid;
+}

@@ -1,0 +1,30 @@
+body{
+    background-color: purple;
+}
+li{
+    color: silver;
+}
+p{
+    color: silver;
+}
+img{
+    float: right;
+    border-radius: 100px;
+}
+.one{
+    border: 500px;
+float: left;
+}
+a{
+    color: rgb(3, 177, 122);
+    font-family: sans-serif;
+}
+h1{
+    color: magenta;
+}
+h2{
+    color: mediumaquamarine;
+}
+h3{
+    color: violet;
+}

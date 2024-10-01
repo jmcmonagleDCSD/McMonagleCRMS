@@ -1,0 +1,51 @@
+body{
+    background-color:darkseagreen;
+}
+.RO{
+    border-style:solid;
+border-radius:25px;
+border-color: silver;
+text-align: center;
+background-color:pink;
+font-family: Georgia, 'Times New Roman', Times, serif;
+border-color:silver;
+
+}
+
+.SRO{
+    border-style: solid;
+    float: right;
+    border-color: silver;
+    border-radius: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: pink;
+
+}
+.ROD{
+    border-style: solid;
+    float: left;
+    border-color: silver;
+    border-radius: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: pink;
+
+    
+}
+
+
+.oweb{
+    background-color:silver;
+    border-style: solid;
+    border-radius: 25px;
+    border-color:black;
+    margin-left: 60%;
+margin-right: 0px;
+position: absolute;
+top:10%;
+left:30%;
+
+text-align: center;
+
+}

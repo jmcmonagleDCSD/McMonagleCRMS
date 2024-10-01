@@ -1,0 +1,36 @@
+body{
+    background-color: darkblue;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Tangerine;
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: Tangerine;
+    font-size: 60px;
+}
+.QC{
+color: white;
+}
+.imageone{
+    float: left;
+}
+.imagetwo{
+    float: right;
+}
+p{
+        clear: both;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: Tangerine;
+}
+.QCM{
+    img{
+    width: 50%;
+    }
+}

@@ -1,0 +1,48 @@
+body{
+    background-color: dimgray;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    background-color: orange;
+}
+
+.links{
+    background-color: gray;
+    height: 50px;
+    text-decoration: solid;
+}
+
+
+.one{
+    text-align: right;
+    background-color: gray;
+}
+
+.two{
+    text-align: left;
+    background-color: gray;
+}
+
+.three{
+    text-align: right;
+    background-color: gray;
+}
+
+.four{
+    text-align: left;
+    background-color: gray;
+}
+
+.five{
+    text-align: right;
+    background-color: gray;
+}
+
+.six{
+    text-align: left;
+    background-color: gray;
+}

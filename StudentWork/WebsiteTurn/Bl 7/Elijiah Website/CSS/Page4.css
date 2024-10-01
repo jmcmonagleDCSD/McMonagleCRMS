@@ -1,0 +1,34 @@
+body{
+    background-color: dimgray;
+}
+
+.links{
+    background-color: gray;
+    height: 50px;
+    text-decoration: solid;
+}
+
+.one{
+    float: left;
+}
+
+.two{
+    float:left;
+    
+}
+
+.three{
+    float: left;
+}
+
+.four{
+    float: left;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    background-color: orange;
+}

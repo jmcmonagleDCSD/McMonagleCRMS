@@ -1,0 +1,27 @@
+body{
+    background-color: dimgray;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+   color: white;
+   background-color: orange;
+}
+
+.heading h3{
+    text-decoration:solid;
+    text-decoration: underline;
+}
+
+.image{
+    background-color: grey;
+}
+
+.links{
+    background-color: gray;
+    height: 50px;
+    text-decoration: solid;
+}

@@ -1,0 +1,93 @@
+Body{
+    background-color:rgb(89, 89, 89);
+}
+.one p{
+    Float:right;
+    background-color: rgb(210, 210, 210);
+    width: 40%;
+    height:600px;
+}
+.one img{
+        float:left;
+        Width:60%;
+        height:600px;
+        margin-top: 16px;
+}
+.Home{
+    background-color: darkcyan;
+}
+.common{
+    background-color: darkgray;
+}
+.uncommon{
+    background-color: chartreuse;
+}
+.rare{
+    background-color: rgb(93, 93, 243);
+}
+.legendary{
+    background-color: darkviolet;
+}
+.mythical{
+    background-color: crimson;
+}
+.commonin p{
+    float:right;
+    background-color:seagreen;
+    width: 40%;
+    height:600px;
+}
+.commonin img{
+    float:left;
+    width:60%;
+    height:600px;
+    margin-top: 16px;
+}
+.uncomonin p{
+    background-color: darkkhaki;
+    float:right;
+    width:40%;
+    height:600px;
+}
+.uncomonin img{
+    float:left;
+    width:60%;
+    height:600px;
+    margin-top:16px;
+}
+.rarein p{
+    background-color: rgb(93, 181, 237);
+    float:right;
+    width:40%;
+    height: 600px;
+}
+.rarein img{
+    float:left;
+    height:600px;
+    width:60%;
+    margin-top:16px;
+}
+.lege p{
+float:right;
+background-color: mediumorchid;
+height:600px;
+width:40%;
+}
+.lege img{
+    float:right;
+    height:600px;
+    width:60%;
+    margin-top:16px;
+}
+.myth p{
+    background-color: brown;
+    height:600px;
+    width:40%;
+    float:right;
+}
+.myth img{
+    float:left;
+    height:600px;
+    width:60%;
+    margin-top:16px;
+}

@@ -1,0 +1,40 @@
+body{background-color: rgb(57, 124, 190);
+}
+h1{
+    border-style: double;
+    color: #ffffff;
+}
+.one{
+   width: 2000px;
+   height: 200px;
+   background-color: rgb(14, 100, 187);
+}
+
+.two{
+   width: 2000px;
+   height: 400px;
+   background-color: rgb(14, 100, 187);
+}
+
+.food{
+   width: 2000px;
+   height: 100px;
+   
+}
+
+.three{
+   width: 2000px;
+   height: 300px;
+   background-color: rgb(14, 100, 187);
+}
+
+img{
+    border-style:double;
+    color: #ffffff;
+    border-radius: 200px;
+}
+
+a{
+    border-style:groove;
+   color: #ffffff;
+}

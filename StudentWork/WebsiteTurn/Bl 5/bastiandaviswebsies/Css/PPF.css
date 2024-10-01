@@ -1,0 +1,55 @@
+body{
+    background-color: midnightblue;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Tangerine;
+    font-size: 30px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: Tangerine;
+    font-size: 60px;
+}
+.PPF{
+    color: white;
+    float: left;
+    width: 40%;
+    button{
+        border-style: hidden;
+        background-color: midnightblue;
+        color: lightcyan;
+        font-size: 30px;
+        font-family: Tangerine;
+         }
+}
+.image{
+    float: right;
+    img{
+        width: 500px;
+    }
+    p{
+        clear: both;
+        color: white;
+    }
+ }
+.list{
+    clear: both;
+    h2{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        font-family: Tangerine;
+    }
+    li{
+        color: white;
+        font-size: 30px;
+        font-family: Tangerine;
+    }
+}
+p{
+    font-size: 30px;
+    font-family: Tangerine;
+}

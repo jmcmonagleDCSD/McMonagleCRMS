@@ -1,0 +1,35 @@
+.mainhead .img   {
+    height: 200px; width: 400px; float: right;
+}
+
+.mainhead img{
+    width: 100%;
+}
+
+.mainhead p {
+    text-align: right; margin-top: 10px;
+}
+.mainhead {
+    background-color:rgb(148, 148, 52);height: 340px;;
+}
+body {
+    background-image: url(https://freerangestock.com/sample/134409/cardinal-bird.jpg); 
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+ .mainhead h1 {
+    text-align: center;
+ }
+.quickbrowse h2 {
+    text-align: left;
+}
+.quickbrowse a {
+    text-align: left;
+}
+.quickbrowse {
+    background-color: aqua; width: 45%;
+}
+ .headtwo {
+    background-color: greenyellow; 
+ }

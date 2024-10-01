@@ -1,0 +1,16 @@
+body{
+    background-color: red;
+}
+.one{
+    color: black;
+    font-family: sans-serif;
+}
+img{
+    border-radius: 500px;
+}
+.img{
+    float: right;
+}
+a{
+    color:navy;
+}

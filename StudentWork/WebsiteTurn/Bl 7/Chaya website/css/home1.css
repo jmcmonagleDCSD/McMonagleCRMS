@@ -1,0 +1,28 @@
+body{background-color: rgb(52, 79, 107);
+}
+h1{
+    border-style: double;
+    color: #000000;
+}
+.one{
+   width: 2000px;
+   height: 120px;
+   background-color: rgb(32, 60, 89);
+}
+
+.two{
+   width: 2000px;
+   height: 1500px;
+   background-color: rgb(32, 60, 89);
+}
+
+
+img{
+   border-style:double;
+   color: #000000;
+   border-radius: 200px;
+}
+a{
+    border-style:dotted;
+   color: #000000;
+}

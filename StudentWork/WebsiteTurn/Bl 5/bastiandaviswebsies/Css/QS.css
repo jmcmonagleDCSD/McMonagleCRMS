@@ -1,0 +1,33 @@
+body{
+    background-color: darkcyan;
+}
+h1{
+text-align: center;
+color: white;
+font-family: Tangerine;
+font-size: 60px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Tangerine;
+    font-size: 30px;
+}
+.QS{
+    p{
+        width: 60%;
+        float: right;
+        color: white;
+    }
+}
+.image{
+img{
+ width: 35%;       
+}
+p{
+    clear: both;
+    color: white;
+    font-size: 30px;
+    font-family: Tangerine;
+}
+}

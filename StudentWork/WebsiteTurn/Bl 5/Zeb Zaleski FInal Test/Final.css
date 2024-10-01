@@ -1,0 +1,115 @@
+.Chessopenheader{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:beige;
+    background-color:darkgreen;
+    border-style: solid;
+    border-radius: 75px;
+    margin:30px;
+}
+body{
+    background-color:bisque
+}
+.Sicilian {
+border-style: solid;
+border-color: black;
+border-radius: 25px;
+font-size:medium;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color:darkgreen;
+color: silver;
+border-width:10px;
+float: inline-start;
+}
+.KPS{
+    border-style:solid;
+    border-color: black;
+border-radius: 25px;
+font-size:medium;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color:darkgreen;
+color: silver;
+border-width:10px;
+float:inline-start;
+
+}
+.detail{
+    border-style: solid;
+    border-color:darkgreen;
+    border-radius: 25px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:silver;
+    text-align: center;
+    margin-right: 35%;
+    margin-left: 35%;
+    
+}
+.KingPawn{
+background-color: silver;
+border-style: solid;
+border-color:darkgreen;
+text-align:center;
+margin-left:0%;
+margin-right:70%;
+border-radius: 25px;
+}
+.oweb{
+    background-color:silver;
+    border-style: solid;
+    border-radius: 25px;
+    border-color:black;
+    margin-left: 60%;
+margin-right: 0px;
+position: absolute;
+top:10%;
+left:30%;
+
+text-align: center;
+
+}
+.CRE{
+    border-style: solid;
+    border-color:black;
+    background-color: darkgreen;
+    border-radius: 25px;
+float: right;
+  
+    margin-right: 10%;
+    margin-left:80%;
+    color: silver;
+}
+.WIG{
+float: left;
+border-style: solid;
+   border-radius: 25px;
+border-color: black;
+background-color: darkgreen;
+color: silver;
+border-width: 10px;
+float: initial;
+font-style: normal;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.QPH{
+border-radius: 25px;
+border-style: solid;
+border-color:black;
+color: gold;
+text-align: center;
+font-style: normal;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.DFW{
+    text-align: center;
+    border-style: solid;
+    border-radius: 25px;
+border-color: darkgreen;
+background-color: silver;
+font-family: Georgia, 'Times New Roman', Times, serif;
+float: right;
+
+}
