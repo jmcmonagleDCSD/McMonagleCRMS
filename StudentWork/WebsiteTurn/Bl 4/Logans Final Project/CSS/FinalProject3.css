@@ -1,0 +1,41 @@
+.boxonepagethree{
+    height: 25px;
+    background-color:wheat;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    border-bottom: 6px;
+    
+    
+}
+
+.boxonepagethree a{
+    color: black;
+    border-bottom: solid;
+    border-radius: 0px;
+    border-width: 7px;
+    border-color: black;
+    
+}
+
+body{
+    background-color: wheat;
+}
+
+h1{
+    text-align: center;
+    background-color:khaki;
+    height: 100px;
+}
+
+img{
+    float: right;
+    height: 200px;
+    width: 200px;
+}
+
+p{
+    float: right;
+}
+
+

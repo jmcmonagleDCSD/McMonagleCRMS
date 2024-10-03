@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+}
+
+body{
+    background-color: black;
+    
+}
+p{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+img{
+    border-radius: 100%;
+    margin: 20px;
+    border: dashed;
+    border-color: white;
+}
+h2{
+    color:red;
+    text-align: center;
+border: solid;
+border-color: white;
+border-radius: 20px;
+}
+
+    
+

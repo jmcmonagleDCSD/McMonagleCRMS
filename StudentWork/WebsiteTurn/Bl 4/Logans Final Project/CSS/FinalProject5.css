@@ -1,0 +1,33 @@
+.boxonepagefive{
+    height: 25px;
+    background-color:wheat;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    border-bottom: 6px;
+    
+    
+}
+
+.boxonepagefive a{
+    color: black;
+    border-bottom: solid;
+    border-radius: 0px;
+    border-width: 7px;
+    border-color: black;
+    
+}
+
+body{
+    background-color: wheat;
+}
+
+.boxone{
+    height: 200px;
+    background-color: bisque;
+}
+
+img{
+    width: 750px;
+    height: 600px;
+}

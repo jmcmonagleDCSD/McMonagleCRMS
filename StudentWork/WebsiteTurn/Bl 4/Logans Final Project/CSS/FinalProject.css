@@ -1,0 +1,70 @@
+.boxone{
+    height: 25px;
+    background-color:wheat;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    border-bottom: 6px;
+    
+    
+}
+
+.boxone a{
+    color: black;
+    border-bottom: solid;
+    border-radius: 0px;
+    border-width: 7px;
+    border-color: black;
+    
+}
+
+.boxtwo{
+    background-color: beige;
+    height: 400px;
+    
+    
+}
+
+.boxtwo img{
+    border-radius: 20px;
+}
+
+.boxtwo h1{
+    text-align: center;
+}
+.boxtwo img{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.boxthree{
+ height: 250px;
+ background-color: beige;
+ clear: both;
+}
+
+.boxinsidebox{
+    width: 200px;
+    height: 200px;
+    float: right;
+    background-color:rgb(190, 169, 141);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: wheat;
+}
+
+

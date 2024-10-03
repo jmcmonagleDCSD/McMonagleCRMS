@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+}
+h1{
+    color: red;
+    text-align: center;
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+}
+p{
+    color: white;
+text-align: center;
+font-size: 25px;
+}
+.first_box{
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+    float: left;
+   margin: 20px;
+}
+.first_box h2{
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+.first_box p{
+    font-size: 29px;
+}
+.second_box{
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+    float: right;
+    margin: 20px;
+}
+.second_box h2{
+    text-align: center;
+    color: red;
+}
+.second_box p{
+    font-size: 27px;
+}
+.third_box{
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+    float: left;
+    margin-top: 160px;
+    margin-left: 20px;
+}
+.third_box h2{
+    color: red;
+    text-align: center;
+}
+.third_box p{
+    font-size: 31px;
+}
+.fourth_box{
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+    float: right;
+    margin-top: 160px;
+    margin-right: 20px;
+}
+.fourth_box h2{
+    color: red;
+    text-align: center;
+}
+.fourth_box p{
+    font-size: 28px;
+}

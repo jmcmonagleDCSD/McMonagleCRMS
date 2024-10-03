@@ -1,0 +1,129 @@
+body{
+    background-color: darkgrey;
+}
+
+.firstpage{
+    background-color: gray;
+    width: 40%;
+    float: left;
+    height: 120vh;
+}
+
+
+
+.firstpage h1{
+    
+    color: snow;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+    text-align: center;
+}
+
+.firstpage p{
+    color: snow;
+    text-shadow: 2px 2px 4px #000000;text-shadow: 2px 2px 4px #000000;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 25%;
+    width: 50%;
+    background-color: lightgray;
+    box-shadow: 10px 10px 5px white;
+   
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+li{
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: beige;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px
+    rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+img{
+    margin-left: 30%;
+}
+
+.picboxone{
+    background-color: #665e5e;
+    float: left;
+    width: 30%;
+    height: 120vh;
+}
+
+.picboxone img{
+    margin: 10%;
+    margin-top: 25%;
+    box-shadow: 5px 5px 2px white;
+    
+}
+
+.picboxone p{
+    text-align: center;
+    color: white;
+    text-shadow:2px 2px 4px #000000;
+}
+
+.picboxtwo{
+    background-color: #665e5e;
+    float: left;
+   width: 30%;
+    height: 120vh;
+}
+
+.picboxtwo img{
+    margin: 10%;
+    margin-top: 25%;
+    box-shadow: 5px 5px 2px white;
+}
+
+.picboxtwo p{
+    text-align: center;
+    color: white;
+    text-shadow:2px 2px 4px #000000;
+}

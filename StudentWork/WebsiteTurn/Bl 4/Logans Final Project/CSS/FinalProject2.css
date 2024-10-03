@@ -1,0 +1,43 @@
+.boxonepagetwo{
+    height: 25px;
+    background-color:wheat;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    border-bottom: 6px;
+    
+    
+}
+
+.boxonepagetwo a{
+    color: black;
+    border-bottom: solid;
+    border-radius: 0px;
+    border-width: 7px;
+    border-color: black;
+    
+}
+
+.boxtwopagetwo{
+
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+body{
+    background-color: wheat;
+}
+
+img{
+    width: 500px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.boxtwopagetwo img{
+    float: right;
+    clear: both;
+    width: 220px;
+    height: 210px;
+}
+

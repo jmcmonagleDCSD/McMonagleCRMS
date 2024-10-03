@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(97, 141, 203);
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(92, 100, 135) 
+}
+
+li{
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: beige;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px
+    rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.Secondpage h1{
+
+    color: snow;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.para{
+    color: snow;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    box-shadow: 10px 10px 5px rgb(185, 209, 237);
+    background-color: rgb(92, 100, 135) ;
+    text-shadow:2px 2px 4px #000000;
+}
+
+.Secondpage{
+    background-color: #6a80ae;
+    height: 75vh;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.picboxone img{
+    margin-left: 35%;
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px #000000;
+
+}
+
+.picboxone p{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
