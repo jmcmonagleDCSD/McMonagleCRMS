@@ -1,0 +1,25 @@
+.game{
+    height: 110px;
+    width: 1200px;
+    background-color: green;
+}
+
+body{
+    background-color: grey;
+}
+
+.extinct{
+    background-color: green;
+    border-style: dotted;
+    border-width: 20px;
+    border-color: blue;
+    width: 1200px;
+    height: 500px;
+    text-align: center;
+}
+
+.picture{
+    height: 100px;
+    width: 400px;
+}
+

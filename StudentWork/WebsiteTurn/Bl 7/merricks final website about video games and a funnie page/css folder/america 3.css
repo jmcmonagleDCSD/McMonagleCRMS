@@ -1,0 +1,12 @@
+body{
+    background-color: grey;
+}
+
+.centered{
+    background-color: green;
+    border-color: purple;
+    border-style: dotted;
+    border-width: 15px;
+    height: 600px;
+    width: 1200px;
+}

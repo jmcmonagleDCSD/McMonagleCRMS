@@ -1,0 +1,27 @@
+body{
+    background-color: grey;
+}
+
+.collectible{
+    width: 1200px;
+    height: 170px;
+    border-style: dotted;
+    background-color: blue;
+    border-width: 10px;
+}
+
+.collectibles{
+    width: 1200px;
+    height: 300px;
+    border-style:dashed;
+    background-color: coral;
+    border-width: 20px;
+}
+
+.serial{
+    background-color: purple;
+    height: 400px;
+    width: 1200px;
+    border-style:double;
+    border-width: 50px;
+}

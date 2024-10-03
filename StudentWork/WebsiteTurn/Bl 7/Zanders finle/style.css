@@ -1,0 +1,12 @@
+body{
+    background-color:rgb(1, 134, 134);
+}
+p{
+    background-color: rgb(237, 215, 18);
+}
+img{
+    border-radius: 170px;
+border-color: rgb(255, 204, 0);
+border-style:groove;
+border-width: 20px;
+}

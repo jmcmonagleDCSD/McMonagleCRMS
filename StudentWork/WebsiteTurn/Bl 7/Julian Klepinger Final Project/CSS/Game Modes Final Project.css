@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+}
+.one h1{
+    font-size: 32px;
+    font-family: Roboto;
+    color: white;
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    font-family: Roboto;
+    color: white;
+}
+ul{
+    font-size: 16px;
+    font-family: Roboto;
+    color: white;
+}
+
+h1{
+    font-size: 32px;
+    font-family: Roboto;
+    color: white;
+}
+hr{
+    color: white;
+}
+a{
+    font-size: 16px;
+    font-family: Roboto;
+    color: white;
+    text-decoration: none;
+    margin-left: 175px;
+}
+.two h1{
+    font-size: 32px;
+    font-family: Roboto;
+    color: white;
+    text-align: center;
+}
+.two p{
+    font-size: 16px;
+    font-family: Roboto;
+    color: white;
+    text-align: center;
+}
+img{
+    float: right;
+    border-width: 5px;
+    border-style:solid ;
+    border-radius: 10px;
+    border-color: blue;
+}
+.three p{
+    font-size: 16px;
+    font-family: Roboto;
+    clear: both;
+    float: right ;
+    text-decoration: underline white;
+}

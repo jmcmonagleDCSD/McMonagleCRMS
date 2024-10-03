@@ -1,0 +1,47 @@
+.heading h1{
+    background-color: blue;
+    width: 800px;
+    height: 120px;
+    border-radius: 400px;
+    border-style: dotted;
+    border-top-color: purple;
+    border-bottom-color: green;
+    border-width: 10px;
+    text-align: center;
+}
+.wilding {
+    background-color: coral;
+    width: 800px;
+    height: 120px;
+    border-radius: 400px;
+    border-style: dotted;
+    border-top-color: green;
+    border-bottom-color: purple;
+    border-width: 10px;
+    text-align: center;
+}
+.ludwig{
+    background-color: green;
+    height: 500px;
+    width: 800px;
+    border-style: dotted;
+    border-top-color: purple;
+    border-bottom-color: green;
+    border-width: 10px;
+    text-align: center;
+}
+    
+
+.heading img{
+    height: 250px;
+    width: 350px;
+}
+
+.ludwig img{
+    height: 400px;
+    width: 450px;
+}
+
+ body{
+    background-color: grey;
+ }
