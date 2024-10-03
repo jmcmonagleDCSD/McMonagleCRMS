@@ -1,0 +1,16 @@
+body{
+    background-color: yellow;
+
+}
+p{
+     color: orange;
+     font-size: 20px;
+}
+img{
+    border-bottom-style: double;
+    border-top-style: double;
+    border-width: 20px;
+    border-color: orange;
+    border-left-style: dashed;
+    border-right-style: dashed;
+}

@@ -1,0 +1,22 @@
+body{
+    background-color: orange;
+}
+
+.boxone{
+    background-color: rgb(255, 238, 0);
+    height: 320px;
+    width: 320px;
+    float: right; }
+
+    .boxtwo{
+        background-color: rgb(241, 191, 98);
+        height: 250px;
+        width: 250px;
+      }
+      .boxthree{
+        background-color: green;
+        height: 200px;
+        width: 200px;
+       clear: both;
+       float: left;
+    }
