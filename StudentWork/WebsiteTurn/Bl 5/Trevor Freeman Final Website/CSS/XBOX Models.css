@@ -1,0 +1,175 @@
+h1 {
+    font-family: Manrope;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(196, 196, 196); 
+    background: green;
+    border-radius: 100px;
+}
+
+p {
+    font-family: Manrope;
+}
+
+h2 {
+    font-family: Manrope;
+}
+
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+.Intro {
+    padding-top: 50px;
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 150px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.Intro p{
+    text-align: center;
+}
+
+.Intro h2{
+    text-align: center;
+}
+
+.Model1 {
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 500px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.Model1 p{
+    text-align: center;
+}
+
+.Model1 h2{
+    text-align: center;
+}
+
+.Model1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Model2{
+    margin-bottom: 25px;
+    width: 2500px;
+    height: 500px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+    }
+
+.Model2 p{
+    text-align: center;
+}
+
+.Model2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Model2 h2{
+    text-align: center;
+}
+
+.Model3 {
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 500px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.Model3 h2{
+    text-align: center;
+}
+
+.Model3 p{
+    text-align: center;
+}
+
+#XboxOne{
+    margin-left: 750px;
+}
+
+.Model4 {
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 500px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.Model4 h2{
+    text-align: center;
+}
+
+.Model4 p{
+    text-align: center;
+}
+
+#XboxSeries {
+    margin-left: 950px;
+}
+

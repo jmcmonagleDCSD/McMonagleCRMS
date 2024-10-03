@@ -1,0 +1,52 @@
+body{
+    background-color: grey;
+}
+.boxonepagetwo{
+    background-color: white;
+    border: ridge 10px;
+}
+.boxonepagetwo a{
+    color: black;
+}
+.boxtwopagetwo{
+    height: 180px;
+    width: 98%;
+    background-color: white;
+    margin-top: 20px;
+    border: ridge 10px;
+}
+.boxtwopagetwo p{
+    float: left;
+}
+.boxthreepagetwo{
+    background-color: whitesmoke;
+    border: ridge 10px;
+    height: 350px;
+    width: 40%;
+    margin: 10px;
+    float: left;
+}
+.boxthreepagetwo img{
+    height: 350px;
+    width: 100%;
+}
+.boxfourpagetwo{
+    background-color: white;
+    border: ridge 10px;
+    float: right;
+    height: 780px;
+    width: 45%;
+    margin-right: 20px;
+    margin: 30px;
+}
+.boxfivepagetwo{
+    background-color: white;
+    border: ridge 10px;
+    height: 400px;
+    width: 41%;
+    float: left;
+}
+.boxfivepagetwo img{
+    width: 100%;
+    height: 235px;
+}

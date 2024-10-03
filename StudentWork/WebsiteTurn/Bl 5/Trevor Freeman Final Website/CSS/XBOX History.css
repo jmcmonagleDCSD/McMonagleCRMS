@@ -1,0 +1,173 @@
+h1 {
+    font-family: Manrope;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(196, 196, 196); 
+    background: green;
+    border-radius: 100px;
+}
+
+p {
+    font-family: Manrope;
+}
+
+h3 {
+    font-family: Manrope;
+}
+
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+.His1 {
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 250px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.His1 p{
+    text-align: center;
+}
+
+.His1 h3{
+    text-align: center;
+}
+
+.His2{
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 300px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+    }
+
+.His2 p{
+    text-align: center;
+}
+
+.His2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.His2 h3{
+    text-align: center;
+}
+
+.His3 {
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 250px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.His3 h3{
+    text-align: center;
+}
+
+.His4 {
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 300px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.His4 h3{
+    text-align: center;
+}
+
+.His5 {
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 250px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.His5 h3{
+    text-align: center;
+}
+
+.His6 {
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 250px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.His6 h2{
+    text-align: center;
+    padding-top: 100px;
+}

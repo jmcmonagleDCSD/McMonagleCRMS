@@ -1,0 +1,33 @@
+body{
+    background-color: cornflowerblue;
+}
+.box1{
+background-color: darkslategrey;
+margin-top: 20px;
+height: 500px;
+}
+.box1 h3{
+    margin-left: 45%;
+}
+.box1 img{
+    height: 300px;
+    margin-top: 10px;
+}
+.box1 p{
+    float: left;
+}
+.box1 .img1{
+    margin-left: 30%;
+}
+.box2{
+    background-color: darkslategray;
+    height: 500px;
+    margin-top: 10px;
+}
+.box2 img{
+    height: 500px;
+}
+.box2 p{
+    float: right;
+    width: 20%;
+}

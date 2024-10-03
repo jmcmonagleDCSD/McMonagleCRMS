@@ -1,0 +1,154 @@
+h1 {
+    font-family: Manrope;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(196, 196, 196); 
+    background: green;
+    border-radius: 100px;
+}
+
+p {
+    font-family: Manrope;
+}
+
+h3 {
+    font-family: Manrope;
+}
+
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+.Home1{
+    float: left;
+    width: 700px;
+    height: 515px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+    }
+
+.Home1 p{
+    text-align: center;
+}
+
+.Home1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Home1 h3{
+    text-align: center;
+}
+
+.Home2 {
+    clear: both;
+    float: right;
+    width: 700px;
+    height: 515px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+        0%   {background-color:red;}
+        25%  {background-color:rgb(21, 0, 255);}
+        50% {background-color:rgb(166, 0, 255);}
+        75% {background-color:rgb(246, 255, 0);}
+        100% {background-color:rgb(255, 0, 251);}
+    }
+
+.Home2 p{
+    text-align: center;
+}
+
+.Home2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Home2 h3{
+    text-align: center;
+}
+
+.Home3 {
+    float: left;
+    width: 700px;
+    height: 515px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+        0%   {background-color:red;}
+        25%  {background-color:rgb(21, 0, 255);}
+        50% {background-color:rgb(166, 0, 255);}
+        75% {background-color:rgb(246, 255, 0);}
+        100% {background-color:rgb(255, 0, 251);}
+    }
+
+.Home3 p{
+    text-align: center;
+}
+
+.Home3 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Home3 h3{
+    text-align: center;
+}
+
+.Home4 {
+    margin-bottom: 50px;
+    float: right;
+    width: 700px;
+    height: 515px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+    }
+
+.Home4 p{
+    text-align: center;
+}
+
+.Home4 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Home4 h3{
+    text-align: center;
+}
+
+.img3 {
+    float: right;
+    width: 900px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

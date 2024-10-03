@@ -1,0 +1,105 @@
+h1 {
+    font-family: Manrope;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(196, 196, 196); 
+    background: green;
+    border-radius: 100px;
+}
+
+p {
+    font-family: Manrope;
+}
+
+h3 {
+    font-family: Manrope;
+}
+
+body {
+    background-color: rgb(196, 196, 196);
+}
+
+.Access1{
+    padding-top: 50px;
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 2500px;
+    height: 150px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.Access1 p{
+    text-align: center;
+}
+
+.Access1 h3{
+    text-align: center;
+}
+
+.Access2{
+    float: left;
+    width: 1250px;
+    height: 2500px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.Access2 p{
+    text-align: center;
+}
+
+.Access2 h2{
+    text-align: center;
+}
+
+.Access3{
+    float: right;
+    width: 1250px;
+    height: 1700px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:rgb(21, 0, 255);}
+    50% {background-color:rgb(166, 0, 255);}
+    75% {background-color:rgb(246, 255, 0);}
+    100% {background-color:rgb(255, 0, 251);}
+}
+
+.Access3 p{
+    text-align: center;
+}
+
+.Access3 h2{
+    text-align: center;
+}
+
+.img1 {
+    float: right;
+    width: 1000px;
+    margin-top: 80px;
+    margin-right: 80px;
+}

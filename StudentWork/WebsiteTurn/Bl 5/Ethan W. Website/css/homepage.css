@@ -1,0 +1,140 @@
+body{
+    background-color: lightblue;
+    border: dashed plum;
+}
+a{
+    color: black;
+    float: right;
+}
+.boxone{
+    background-color: #b4b443;
+    height: 100%;
+    width: 100%;
+    float: right;
+}
+.boxtwo{
+    background-color: blue;
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    float: right;
+    border: solid grey 5px;
+}
+
+.boxtwo img{
+    float: right;
+    border: dotted black 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.boxtwo p{
+width: 25%;
+border: solid black;
+float: left;
+color: green;
+}
+.boxtwo h2{
+    float: left;
+    width: 10%;
+    background-color: #eded00;
+    margin-left: 10%;
+    color: rgb(0, 178, 118);
+}
+
+.boxtwo .middlep{
+    margin-left: 15%;
+    color: red;
+}
+.boxtwo a{
+    float: right;
+    margin-right: 10%;
+}
+.boxthree{
+    height: 500px;
+    width: 25%;
+    margin: 2%;
+    background-color: blue;
+    float: left;
+    border: solid grey 5px;
+}
+ .boxthree img{
+padding: 10px;
+outline: grey;
+border: ridge 10px;
+width: 90%;
+ }
+.boxthree h3{
+    float: right;
+    margin-right: 45%;
+}
+.boxthree ul{
+    float: left;
+}
+
+.boxthree a{
+    margin-right: 33%;
+    color: black;
+}
+.boxfour{
+    background-color: blue;
+    height: 500px;
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+    margin-top: 23px;
+    border: solid grey 5px;
+}
+.boxfour h3{
+    margin-left: 90px;
+}
+.boxfour p{
+    margin-left: 15%;
+    border: inset 10px;
+    margin-right: 10px;
+}
+.boxfour .yo{
+float: left;
+}
+.boxfour img{
+    width: 270px;
+    height: 200px;
+}
+.boxfive{
+    height: 500px;
+width: 25%;
+background-color: blue;
+float: right;
+margin-top: 2%;
+margin-right: 5%;
+border: solid grey 5px;
+}
+.boxfive h4{
+margin-left: 25%;
+
+}
+
+.boxfive ol{
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+.boxfive img{
+    border: solid grey 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
