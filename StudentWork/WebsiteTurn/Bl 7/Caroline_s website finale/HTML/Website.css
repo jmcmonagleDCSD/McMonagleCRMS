@@ -1,0 +1,12 @@
+.one{
+    background-color:skyblue; 
+    border-style:skyblue;
+    border-width: 20px;
+    height:95px;
+}
+.two{
+    background-color: rgb(249, 215, 250);
+    border-style:rgb(246, 215, 250);
+    border: width 20px;
+    height:1100px;
+}
