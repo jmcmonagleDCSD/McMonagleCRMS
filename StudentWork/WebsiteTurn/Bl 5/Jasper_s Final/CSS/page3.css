@@ -1,0 +1,30 @@
+body{
+    border-style: double;
+    background-color: navy;
+    border-width: 20px;
+    border-color: red ;
+}
+a:link {
+    color: red;
+    background-color: solid;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: red;
+    background-color: solid;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: solid;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: red;
+    background-color: solid;
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,29 @@
+body{
+    background-color: aqua;
+    border: 15px solid;
+    border-color: red;
+}   
+a:link {
+    color: red;
+    background-color: solid;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: red;
+    background-color: solid;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: solid;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: red;
+    background-color: solid;
+    text-decoration: underline;
+  }
+  
