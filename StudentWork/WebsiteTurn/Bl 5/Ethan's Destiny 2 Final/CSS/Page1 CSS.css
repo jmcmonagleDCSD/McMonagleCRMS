@@ -1,0 +1,196 @@
+
+html{background-image: url(../Images/night-sky-galaxy-space-astronomy-preview.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 160vh;
+}
+h1 {text-align: center; color: lightslategray;}
+p{color: lightslategray;}
+a{text-decoration: rgb(0, 0, 255);}
+h3{text-align: center; color: lightslategray;
+font-family: Rubik Storm;
+font-size: x-large;
+}
+h1{font-family: Rubik Glitch;
+font-size: xx-large;}
+h5{text-align: center; color: lightslategray;
+font-size: larger;}
+/* mouse over link */
+a:hover {
+    color: rgb(0, 128, 255);
+    transition: color 0.5s;
+  }
+
+p {font-size: large;}
+
+button:hover{
+scale: 1.08;
+
+}
+
+h1 {
+border-top-style: solid; border-top-width: 8px;
+border-bottom-style: solid; border-bottom-width: 8px;
+margin-bottom: 20px;
+} 
+button{width: 150px; height: 50px;
+  transition: all 0.5s;
+
+}
+.buttons {margin-left: 65px;
+margin-right: 65px;
+background-color: lightslategray;
+transition-timing-function: ease-in-out;
+}
+
+
+  img {display: block;
+margin-left: auto;
+margin-right: auto;
+width: 25%;
+
+}
+
+.h2 h2 {display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
+.image {
+  width: 60%;
+  scale: 1 1;
+  animation: rotate 5s infinite;
+  animation-timing-function: linear;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes rotate {
+
+  0% {rotate: y 0deg;}
+
+  50% {rotate: y 180deg;}
+
+  100% {rotate: y 360deg;}
+}
+
+.links {
+background-color: lightslategray;
+height: 50px;
+}
+
+.enemytypes {float: left;
+border-right-style: solid;
+border-right-width: 5px;
+border-left-style: solid;
+border-left-width: 5px;
+border-color: lightslategray;
+border-bottom-style: solid;
+border-bottom-width: 5px;
+border-top-style: solid;
+border-top-width: 5px;
+max-width: 366px;}
+
+.Species {float: left;
+  margin-left: 10px;
+  margin-right: 0px;
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-color: lightslategray;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-top-style: solid;
+  border-top-width: 5px;
+  max-width: 366px;}
+
+.Champions {float: right;
+    margin-left: 5px;
+    border-color: lightslategray;
+    max-width: 366px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-top-style: solid; 
+    border-top-width: 5px;
+  }
+
+.light {
+float: left;
+width: 583px;
+border-right-width: 3px;
+border-right-color: lightslategray;
+border-right-style: solid;
+border-bottom-style: solid;
+border-bottom-color: lightslategray;
+border-top-style: solid; 
+border-top-width: 5px;
+border-color: lightslategray;
+}
+
+.dark {
+float: right;
+width: 583px;
+border-bottom-color: lightslategray;
+border-bottom-style: solid;
+border-top-style: solid; 
+border-top-width: 5px;
+border-color: lightslategray;
+}
+
+.Titan {border-bottom-width: 5px;
+border-bottom-color: lightslategray;
+border-bottom-style: dashed;
+}
+
+.Hunter {border-bottom-width: 5px;
+border-bottom-color: lightslategray;
+border-bottom-style: dashed;
+}
+
+.Warlock {border-bottom-width: 5px;
+border-bottom-color: lightslategray;
+border-bottom-style: dashed;
+}
+
+.Overveiwparagraph {
+border-bottom-width: 5px;
+border-bottom-style: dashed;
+border-bottom-color: lightslategray;
+}
+
+.Armor_Buffs {float: left;
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-color: lightslategray;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-top-style: solid;
+  border-top-width: 5px;
+  max-width: 380px;}
+  
+  .Rarities {float: left;
+    margin-left: 10px;
+    margin-right: 0px;
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-color: lightslategray;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-top-style: solid;
+    border-top-width: 5px;
+    max-width: 379px;}
+  
+  .Styles {float: right;
+      margin-left: 5px;
+      border-color: lightslategray;
+      max-width: 380px;
+      border-bottom-width: 5px;
+      border-bottom-style: solid;
+      border-top-style: solid; 
+      border-top-width: 5px;
+    }
+
+    ul {color: lightslategray;
+    font-size: large;
+    list-style: inside;
+    }
