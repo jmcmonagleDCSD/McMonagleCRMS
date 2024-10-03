@@ -1,0 +1,60 @@
+h1{text-align: center;
+text-decoration: underline;
+color: red;
+}
+
+p{color:red}
+
+.yerank{border-style: solid;
+font-size: 17px;
+border-color: red;
+}
+
+body{background-color: gainsboro;}
+
+img{border-style: solid;
+border-color: lightcyan;
+border-width: 9px;
+float: left;
+}
+
+h2{color: red;}
+
+.infoye{background-color: aliceblue;}
+
+.trackye{background-color: aliceblue;
+li{font-size: 20px;
+color: red;
+}
+clear: both;
+width: 550px;
+}
+
+h4{color:red;
+text-decoration: underline;
+}
+
+.songsye{h2{text-align: center;}}
+
+.top5ye{color: red;
+li{font-size: 20px;}
+}
+
+.worstsongye{h2{text-align: center;}}
+
+.qy1{background-color: aliceblue;
+width: 550px;
+font-family: cursive;
+margin-left: 550px;
+}
+
+.qy2{background-color: aliceblue;
+    width: 550px;
+    font-family: cursive;
+    margin-left: 550px;}
+
+    .placeholder2{height: 700px;
+        background-color: cornflowerblue;
+        width:500px;}
+
+        .linksye{clear: both;}

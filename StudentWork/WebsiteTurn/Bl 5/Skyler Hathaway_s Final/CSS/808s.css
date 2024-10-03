@@ -1,0 +1,68 @@
+p{color: red;}
+
+h1{color: red;
+text-align: center;
+text-decoration: underline;
+}
+
+body{background-color: azure;}
+
+.heartrank{font-size: 17px;
+border-style: solid;
+border-color: red;
+}
+
+img{float: left;
+    border-style: solid;
+    border-width:9px ;
+    border-color: red;
+    }
+
+    h2{color: red;}
+
+    .heartinfo{background-color:lightskyblue;}
+
+    .Hearttracklist{background-color: lightskyblue;
+    clear: both;
+   width:550px;
+   li{color: red;
+font-size: 20px;
+}
+
+}
+
+.Heartsongs{
+    h2{text-align: center;}
+}
+
+h4{color: red;
+text-decoration: underline;
+}
+
+.hearttop5{
+    h2{text-align: center;}
+    li{color: red;
+    font-size: 20px;
+    }
+
+}
+
+.worstheart{
+    h2{text-align: center;}
+
+}
+
+.quotesheart{background-color: lightskyblue;
+width:500px;
+font-family: cursive;
+margin-left: 500px;
+}
+
+.qh2{background-color: lightskyblue;
+    width:500px;
+    font-family: cursive;
+    margin-left: 500px;}
+
+    .swedish{
+        p{clear:both;}
+}

@@ -1,0 +1,100 @@
+.Baseball-Bats{
+    text-decoration-style: dashed;
+    color: rgb(13, 0, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     
+  
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    background-color: #f7f6ff;
+    min-width: 160px;
+    box-shadow: 2px 10px 26px 7px rgba(0, 30, 255, 0.984);
+    padding: 12px 16px;
+    z-index: 1;
+    border-style: double;
+    border-color: rgb(8, 0, 255);
+    border-radius: 25px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .Bat-Company1{
+    text-decoration-line: overline underline;
+    text-decoration-style: dashed;
+    color: rgb(55, 0, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body{
+    border-style:outset;
+    border-color: rgb(51, 0, 255);
+    border-radius: 25px;
+    border-width: 25px;
+     width: 400px;
+     position: fixed;
+     left: 1000px;
+     text-align: center;
+     background-image: url(../images/Louisville-Slugger-field.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+   
+  
+  .imageone img{
+    border-radius: 100px;
+    border-style: groove;
+    border-color: rgb(55, 0, 255);
+    transition-duration: 500ms;
+    transition-property: all;
+    width: 200px;
+    height: 200px;
+  }
+  .imageone :hover{
+    transform: rotate(360deg);
+  }
+  .image img{
+    border-radius: 100px;
+    border-style: groove;
+    border-color: rgb(0, 26, 255);
+  }
+  .imagethree img{
+    border-radius: 60px;
+    width: 200px;
+    border-style: groove;
+    border-color: rgb(38, 0, 255);
+  }
+  .History{
+    text-decoration-style: dashed;
+    color: rgb(47, 0, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,;
+    border-width: 200px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    
+    
+  }
+  .History2{
+    text-decoration-style: dashed;
+    color: rgb(0, 25, 252);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    border-radius: 25px;
+    
+  }
+  
+  .Baseball-Bats1{
+    text-decoration-style: dashed;
+    color: rgb(0, 46, 252);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+     
+  
+  }

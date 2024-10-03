@@ -1,0 +1,78 @@
+body{background-color:brown}
+
+.TCD{color: yellow;
+text-align: center;
+border-bottom-style: solid;
+}
+
+.cover{
+    
+  img{  border-style: solid;
+border-width: 10px;
+border-color: yellow;}
+float: left;
+}
+
+
+.impinfo{background-color: darkred;
+color:yellow;
+width:655px;
+float: left;
+margin-right: 80px;
+border-bottom-style: solid;
+}
+
+.tracklist{background-color: darkred;
+color:yellow;
+clear:both;
+width:500px; 
+margin-left: 555px;
+font-size: 20px;
+}
+
+.Importantsongs{h2{color:yellow;
+text-align:center;
+}
+h4{color: yellow;
+text-decoration:underline;
+}
+p{color: yellow;
+font-size: 16px;
+}
+
+}
+
+.rank{color: yellow;
+font-size: 17px;
+border-style: solid;
+}
+
+.top5{color: yellow;
+h2{text-align: center;}
+li{font-size: 20px;}
+}
+
+.worst{color:yellow;
+h2{text-align: center;}
+h4{text-decoration:underline}
+}
+
+.Quotes{color: yellow;
+h2{text-align: center;}
+}
+
+.Q1{color: yellow;
+background-color:darkred;
+width: 500px;
+font-family: cursive;
+margin-left: 500px;
+}
+
+.Q2{color: yellow;
+  background-color:darkred;
+  width: 500px;
+  font-family: cursive;
+  margin-left: 500px;
+  }
+  
+  .preform{color: yellow;}

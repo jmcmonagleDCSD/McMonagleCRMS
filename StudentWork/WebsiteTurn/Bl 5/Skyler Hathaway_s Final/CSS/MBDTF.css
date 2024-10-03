@@ -1,0 +1,60 @@
+body{background-color: red;}
+
+h1{text-align: center;
+text-decoration: underline;
+}
+
+.mbrank{font-size: 17px;
+border-style: solid;
+border-color: green;
+}
+
+.infomb{background-color: green;}
+
+img{float: left;
+border-style: solid;
+border-color: green;
+border-width: 9px;
+}
+
+.mbtrack{
+background-color:green;
+clear: both;
+width: 550px;
+li{font-size: 20px;}
+}
+
+h4{text-decoration: underline;}
+
+.importantsongs{
+h2{text-align: center;}
+
+}
+
+.top5mb{
+h2{text-align: center;}
+li{font-size: 20px;}
+}
+
+.worstmb{
+h2{text-align: center;}
+
+}
+
+.mbquotes{background-color: green;
+width: 550px;
+font-family: cursive;
+margin-left: 550px;
+}
+
+.mbq{background-color: green;
+    width: 550px;
+    font-family: cursive;
+    margin-left: 550px;}
+
+.Imagemb{clear:both;
+p{clear: both;}
+}
+
+.links{clear: both;}
+

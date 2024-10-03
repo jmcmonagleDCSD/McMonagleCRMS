@@ -1,0 +1,115 @@
+.Baseball-Bats{
+  text-decoration-style: dashed;
+  color: rgb(0, 189, 252);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 2px 10px 26px 7px rgb(0, 213, 255);
+  padding: 12px 16px;
+  z-index: 1;
+  border-style: double;
+  border-color: rgb(5, 146, 146);
+  border-radius: 25px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.Bat-Company1{
+  text-decoration-line: overline underline;
+  text-decoration-style: dashed;
+  color: rgb(0, 189, 252);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  border-style:groove;
+  border-color: aqua;
+  border-radius: 25px;
+  border-width: 25px;
+   width: 400px;
+   position: fixed;
+   left: 1000px;
+   text-align: center;
+   background-image: url(../images/hitting-jpg.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+  }
+ 
+
+.imageone img{
+  border-radius: 100px;
+  border-style: groove;
+  border-color: aqua;
+  transition-duration: 500ms;
+  transition-property: all;
+}
+.imageone :hover{
+  transform: rotate(360deg);
+}
+.image img{
+  border-radius: 100px;
+  border-style: groove;
+  border-color: aqua;
+  transition-duration: 500ms;
+  transition-property: all;
+}
+.image :hover{
+  transform: rotate(360deg);
+}
+.imagethree img{
+  border-radius: 60px;
+  width: 200px;
+  border-style: groove;
+  border-color: aqua;
+  transition-duration: 500ms;
+  transition-property: all;
+}
+.imagethree :hover{
+  transform: rotate(360deg);
+}
+.History{
+  text-decoration-style: dashed;
+  color: rgb(0, 189, 252);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: aliceblue;
+  border-radius: 25px;
+  
+}
+.History2{
+  text-decoration-style: dashed;
+  color: rgb(0, 189, 252);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: aliceblue;
+  border-radius: 25px;
+  
+}
+
+.Baseball-Bats1{
+  text-decoration-style: dashed;
+  color: rgb(0, 189, 252);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+   
+
+}
+
+hr{
+  border-top: aqua;
+}
+
+.table1{
+ color: rgba(0, 200, 255, 0.873);
+ background-color: #f9f9f9;
+ border-radius: 25px;
+}

@@ -1,0 +1,48 @@
+.Baseball-Bats{
+  text-decoration-style: dashed;
+  color: rgb(0, 189, 252);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  background-color: blanchedalmond;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 2px 10px 26px 7px rgba(0, 225, 255, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-style: double;
+  border-color: rgb(5, 146, 146);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.Bat-Company1{
+  text-decoration-line: overline underline;
+  text-decoration-style: dashed;
+  color: rgb(0, 189, 252);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  border-style: double;
+  border-color: aqua;
+  border-radius: 25px;
+  border-width: 25px;
+   width: 400px;
+   position: fixed;
+   left: 1000px;
+  }
+  body{
+    text-align: center;
+  }
+.imageone{
+  border-radius: 100px;
+}
