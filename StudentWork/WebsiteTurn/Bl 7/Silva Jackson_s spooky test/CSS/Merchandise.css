@@ -1,0 +1,54 @@
+body{
+    background-color: blue;
+}
+
+h1{
+    border: 25px;
+    border-radius: 25px;
+    border-width: 25px;
+    border-style: ridge;
+    border-color: darkblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    border: 25px;
+    border-radius: 25px;
+    border-width: 25px;
+    border-style: ridge;
+    border-color: darkblue;
+    font-family: "Xanh Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lame{
+    border-radius: 0px;
+    border: 0px;
+    border-width: 0px;
+}
+
+ol{
+    border: 25px;
+    border-radius: 25px;
+    border-width: 25px;
+    border-style: ridge;
+    border-color: darkblue;
+    font-family: "Xanh Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+a{
+    border: 10px;
+    border-radius: 25px;
+    border-width: 10px;
+    border-style: inset;
+    border-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}

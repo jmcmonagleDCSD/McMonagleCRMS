@@ -1,0 +1,41 @@
+html{
+    background-color: black;
+}
+
+img{
+    width: 1000px;
+    height: 1000px;
+}
+
+h1{
+    color: red;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-radius: 0;
+    width: 100%;
+    font-family: inherit;
+}
+
+h2{
+    color: red;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    border-radius: 0;
+    width: 100%;
+    font-family: inherit;
+}
+
+.SCROLL{
+    position: fixed;
+    top: 120px;
+    left: 0px;
+    border-radius: 0;
+    width: 100%;
+    font-family: inherit;
+}
+
+a{
+    color: greenyellow;
+}

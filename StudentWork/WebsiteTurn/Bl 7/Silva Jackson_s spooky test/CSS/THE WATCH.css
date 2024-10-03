@@ -1,0 +1,51 @@
+html{
+    background-color: black;
+}
+
+h1{
+    color: red;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-radius: 0;
+    width: 100%;
+    font-family: inherit;
+}
+
+.huh{
+    color: red;
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    border-radius: 0;
+    width: 100%;
+    font-family: inherit;
+}
+
+hr{
+    position: fixed;
+    top: 150px;
+    left: 0px;
+    border-radius: 0;
+    width: 100%;
+    font-family: inherit;
+}
+
+img{
+    width: 1000px;
+    height: 1000px;
+}
+
+p{
+    color: red;
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    border-radius: 0;
+    width: 100%;
+    font-family: inherit;
+}
+
+h2{
+    color: red;
+}

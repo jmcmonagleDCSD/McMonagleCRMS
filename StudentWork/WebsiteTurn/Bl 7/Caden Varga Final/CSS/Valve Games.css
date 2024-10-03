@@ -1,0 +1,50 @@
+body {
+    background-image: url("../IMAGES/Valvebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: grey
+}
+
+h1 {
+    text-align: center;
+}
+.One {
+    Background-color: rgb(207, 204, 204);
+    border: solid;
+   width: 500px;
+   float:left;
+    
+}
+a {
+   color: yellow; 
+}
+.Two{
+    background-color: rgb(207, 204, 204);
+    border: solid;
+    width: 1500px;
+    height: 1099px;
+    float:left;
+    
+}
+h1{
+   
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+         }
+         
+         .Two a{
+            color: black;
+         }
+         .Three {
+            Background-color: rgb(207, 204, 204);
+    border: solid;
+   width: 500px;
+   float:left;
+         }
+    
+         
+      
+      
+      

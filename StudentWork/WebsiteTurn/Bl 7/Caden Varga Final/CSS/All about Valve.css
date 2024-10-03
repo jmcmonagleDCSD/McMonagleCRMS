@@ -1,0 +1,111 @@
+body{
+    background-image: url("../IMAGES/Valvebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: grey
+}
+.One{
+    background-color: skyblue;
+    width: 1500px;
+    height: 300px;
+    border: solid;
+    float:left;
+}
+.One img{
+    float: left;
+    width: 300px;
+    height: 200px;
+    border-radius: 20%;
+}
+.One p{
+    float: right;
+    height: 200px;
+    width: 500px;
+    margin: 1%;
+    
+}
+.One h5{
+    float: left;
+}
+.two{
+    background-color: skyblue;
+    float:right;
+    width: 1500px;
+    height: 300px;
+    border: solid;
+}
+.two h2{
+    text-align: right;
+}
+.two p{
+    float:left;
+    height: 50px;
+    width: 1000px;
+    margin: 1%;
+}
+h1{
+    text-align: center;
+}
+.two img {
+    float: right;
+    width: 350px;
+    height: 200px;
+    border-radius: 20%
+}
+hr {
+    clear: both;
+}
+.Zero h3{
+    text-align: center;
+}
+.two h5{
+    Text-align: right;
+}
+.Extra{
+    background-color: skyblue;
+    border: solid;
+    float: right;
+    width: 1000px;
+    height: 300px;
+}
+.Extra2{
+    background-color: skyblue;
+    border: solid;
+    float: left;
+    Width: 1000px;
+    height: 300px;
+}
+.Three{
+    background-color: skyblue;
+    border: solid;
+    Float: left;
+    Width: 1500px;
+    height: 300px;
+}
+.Four{
+    background-color: skyblue;
+    border: solid;
+    Float: right;
+    Width: 1000px;
+    height: 300px;
+}
+br {
+    clear: both;
+}
+a {
+    color: yellow; 
+ }
+ .Four a{
+    color: black;
+ }
+ h1 {
+    
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+      
+ }
+ h4{
+    text-align: right;
+ }

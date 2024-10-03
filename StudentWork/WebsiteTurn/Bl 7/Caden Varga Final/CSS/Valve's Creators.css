@@ -1,0 +1,52 @@
+h1 {
+    
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  text-align: center;
+  
+}
+body{
+    background-image: url("../IMAGES/Valvebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: grey
+}
+a{
+    color: yellow;
+}
+.One{
+    background-color: white;
+    border: solid;
+    float:left;
+}
+.One a{
+    color: black;
+}
+.One img{
+    float:left;
+}
+.Two{
+    Background-color: white;
+    border: solid;
+    Float:right;
+}
+.Two img{
+    float: right;
+    
+}
+.Two h5{
+    float:right;
+}
+.Final{
+    Background-color: white;
+    border: solid;
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.Other a{
+    margin: 48.5%;
+    color:red;
+}
