@@ -1,0 +1,57 @@
+.boxone{  height: 200px;
+    width: 300px;
+    background-color: rgb(120, 152, 151);
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(107, 171, 195);
+    padding: 10px;}
+    .boxone p{
+        font-family:'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 50px;
+    }
+    body{background-color: rgb(255, 198, 177);}
+    .boxtwo{
+          height: 200px;
+            width: 1000px;
+            background-color: rgb(120, 152, 151);
+    }
+    a:link {
+        color: rgb(19, 0, 128);
+        background-color:rgb(165, 193, 227);
+        text-decoration:dotted;
+      }
+      
+      a:visited {
+        color: rgb(222, 0, 0);
+        background-color: transparent;
+        text-decoration:dotted;
+      }
+      
+      a:hover {
+        color: rgb(26, 59, 125);
+        background-color: transparent;
+        text-decoration:dotted;
+      }
+      
+      a:active {
+        color: rgb(19, 21, 90);
+        background-color: transparent;
+        text-decoration:dotted;
+      }
+    .boxfour{height: 200px;
+      width: 1000px;
+      background-color: rgb(120, 152, 151);}
+      .boxfour.static {
+        position: static;
+        border: 3px solid #73AD21;
+      }
+      .boxfour.relative {
+        position: relative;
+        left: 30px;
+        border: 3px solid #73AD21;
+      }
+      .boxfour link{align-self: center;}
+      p{
+        font-style:bold ;
+      }

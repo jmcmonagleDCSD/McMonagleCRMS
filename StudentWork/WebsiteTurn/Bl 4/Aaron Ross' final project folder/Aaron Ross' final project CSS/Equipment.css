@@ -1,0 +1,85 @@
+
+    .boxone{  height: 200px;
+        width: 300px;
+        background-color: rgb(120, 152, 151);
+        margin: auto;
+        width: 50%;
+        border: 3px solid rgb(107, 171, 195);
+        padding: 10px;}
+        
+        .boxone{font-family:'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 50px;}
+        body {background-color: rgb(255, 198, 177);}
+        .boxtwo{
+            height: 1000px;
+              width: 500px;
+              background-color: rgb(120, 152, 151);
+              float: left;
+              margin: 50px;
+              width: 50%;
+    border: 3px solid rgb(107, 171, 195);
+    padding: 10px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 1px;
+        border: 1px solid #ddd;
+      }
+      
+      ul li{
+        padding: 105px 16px;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      ul li:last-child {
+        border-bottom: none
+      }
+img{
+ float:right;
+ margin-top: -90px;
+}
+.boxthree{
+  height: 400px;
+              width: 400px;
+              background-color: rgb(120, 152, 151);
+    border: 3px solid rgb(107, 171, 195);
+    padding: 10px;
+    float: right;
+    margin-top: 50px;
+}
+h2{
+  color: aliceblue;
+  margin-left: 40px;
+}
+.boxthree h1{
+margin-left: 110px;
+} a:link {
+  color: rgb(19, 0, 128);
+  background-color:rgb(165, 193, 227);
+  text-decoration:dotted;
+}
+
+a:visited {
+  color: rgb(222, 0, 0);
+  background-color: transparent;
+  text-decoration:dotted;
+}
+
+a:hover {
+  color: rgb(26, 59, 125);
+  background-color: transparent;
+  text-decoration:dotted;
+}
+
+a:active {
+  color: rgb(19, 21, 90);
+  background-color: transparent;
+  text-decoration:dotted;
+  font-size: larger;
+  font-size: 40px;
+}
+a {
+  font-size: 40px;
+  margin: 50px;
+}
