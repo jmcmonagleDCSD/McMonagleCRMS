@@ -1,0 +1,26 @@
+.lanceheading h1{
+    font-family: "Joti One", serif;
+    font-weight: 350;
+    font-style: normal;
+    text-align: center;
+    color: yellow;
+    font-size: 350%;
+}
+.LanceParagraph p{
+    width: 500px;
+    padding: 50px;
+    margin: 20px;
+    background-color: lightblue;
+    font-size: large;
+    float: left;
+    border-color: yellow;
+}
+.lancepic{
+    float: right;
+}
+body{
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpyWNYTgme9viFvSTFArmEfWxYM0I7pAg2iHeghTYdsunof6PmksfHLF3yN7GWBsG4aTnsrYJBYUvLn7hmbgYswOMGsEkNE-yq5cllXBdSuvd4KWCMTvp1VPf6toKTb6UiQZcCiMIe0Vs/s1600/mountaingrindpoolchrome.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+  

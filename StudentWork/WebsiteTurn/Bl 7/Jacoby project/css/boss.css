@@ -1,0 +1,228 @@
+.link{
+    background-color: blue;
+    height:50px
+}
+.link a{
+    color:white;
+    margin-left: 20%;
+    font-size: x-large;
+}
+body{
+    background-color: rgb(63, 182, 222);
+    font-family: Playwrite DE Grund;
+    
+}
+.top{
+    text-align: center;
+}
+.prelist{
+    width:40%;
+    float: left;
+    background-color: aqua;
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    height:400px;
+}
+.postlist{
+    width:40%;
+    float: right;
+    background-color: aqua;
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    height: 400px;
+}
+.wall{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.A{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.b{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.c{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.d{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.e{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.f{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.g{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.h{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.i{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.j{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.k{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.l{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.m{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.n{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.o{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.p{
+    height:400px;
+    width:100%;
+    background-color: rgb(0, 234, 234);
+    border-radius:20px ;
+    border-style: solid;
+    border-color: darkblue;
+    clear: both;
+    margin-top: 20px;
+    font-size: 20px;
+}
+img {
+    float: left;
+}
+h2{
+    text-align: center;
+}

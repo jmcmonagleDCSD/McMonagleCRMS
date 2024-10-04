@@ -1,0 +1,25 @@
+body {
+background-color: skyblue;
+}
+.Home{
+    text-shadow: black;
+}
+    
+
+.Home {
+background-color: blue;
+height: 500px;
+}
+.Home img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;  
+}
+.Home h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.Home p{
+    font-family: 'Times New Roman', Times, serif;
+}

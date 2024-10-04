@@ -1,0 +1,11 @@
+p{
+background-color: antiquewhite;
+text-decoration-color: blue;
+text-decoration: solid;
+font-variant: initial;
+border: 30px;
+border-radius: 30px;
+border-image: 50px;
+border-image-width: 30px
+
+}

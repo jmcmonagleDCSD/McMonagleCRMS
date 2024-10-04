@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(7, 7, 80);
+    font-family: 'Caveat', system-ui;
+    font-size: 25px;
+}
+
+h1{
+    color: orangered;
+    font-size: 50px;
+}
+
+h2{
+    color: orange;
+    font-size: 40px;
+}
+
+h6{
+    color: whitesmoke;
+}
+
+p{
+    color: red;
+    font-size: 30px;
+}
+
+img{
+    transform: skew(352deg);
+}
+
+.top{
+    color: whitesmoke;
+    background-color: orange;
+    padding: 20px;
+    float: right;
+    transform: skew(340deg);
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.top:hover{
+    background-color: green;
+    transform: rotate(15deg);
+}
+
+.linkone{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linkone:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.linktwo{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linktwo:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.linkthree{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linkthree:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.linkfour{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linkfour:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.linkfive{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linkfive:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.linksix{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linksix:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.linkseven{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linkseven:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.linkeight{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linkeight:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.linknine{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linknine:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.linkten{
+    color: whitesmoke;
+    background-color: orangered;
+    padding: 20px;
+    transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.linkten:hover{
+    background-color: green;
+    transform: rotate(20deg);
+}
+
+.box{
+    background-color: darkred;
+    width: 500px;
+    height: 140px;
+    top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: skew(340deg);
+}
+
+.boxv{
+    background-color: darkred;
+    width: 130px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    z-index: 1;
+}

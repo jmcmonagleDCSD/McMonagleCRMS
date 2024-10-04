@@ -1,0 +1,66 @@
+.link{
+    background-color: blue;
+    height:50px
+}
+.link a{
+    color:white;
+    margin-left: 20%;
+    font-size: x-large;
+}
+body {
+    background-color: rgb(63, 182, 222);
+    font-family: Playwrite DE Grund;
+}
+.top h1{
+    text-align: center;
+}
+.left{
+    width:30%;
+    height:400px;
+    float: left;
+    margin-left: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: darkblue;
+}
+.left p{
+    font-size: large;
+    color: darkblue;
+    font-weight: bold;
+}
+.left h2{
+    color: darkblue;
+    text-align: center;
+    text-decoration: underline;
+}
+.images img{
+    float:left;
+    margin-left: 50px;
+    border-radius: 200px;
+    border-style: solid;
+}
+.right{
+    width:30%;
+    height: 400px;
+    float: right;
+    margin-right: 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: darkblue;
+}
+.right p{
+    font-size: large;
+    color: darkblue;
+    font-weight: bold;
+}
+.right h2{
+    color: darkblue;
+    text-align: center;
+    text-decoration: underline;
+}
+p {
+    font-weight: bold;
+  }
+  

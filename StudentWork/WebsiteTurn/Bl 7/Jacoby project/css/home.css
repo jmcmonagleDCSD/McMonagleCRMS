@@ -1,0 +1,14 @@
+.link{
+    background-color: blue;
+    height:50px
+}
+.link a{
+    color:white;
+    margin-left: 20%;
+    font-size: x-large;
+}
+body{
+    background-image: url(../imiges/title.jpeg);
+    background-size: 100%;
+    font-family: Playwrite DE Grund;
+}

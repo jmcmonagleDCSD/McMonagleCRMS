@@ -1,0 +1,25 @@
+.powelltitle h1{
+    text-align: center;
+    margin-top: 15px;
+    color: red;
+   
+        font-family: "Covered By Your Grace", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+        background-image: url(https://images.squarespace-cdn.com/content/v1/5f3970ab2e642e7c54cd1230/1632660435614-3GYMR4YVAMQGU5VSBS24/bonesbrigade.jpg);
+}
+.Skaterpages img{
+    height: 25%;
+    width: 25%;
+    
+}
+.Skaterpages p{
+    font-size: large;
+}
+
+

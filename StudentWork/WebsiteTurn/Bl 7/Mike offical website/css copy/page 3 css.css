@@ -1,0 +1,29 @@
+.tonyhawk h1{
+text-align: center;
+}
+
+.tonyhawk p{
+    
+        width: 450px;
+        border: 15px;
+        padding: 50px;
+        margin: 20px;
+        background-color: red;
+        font-size: larger;
+        float: left;
+        border-color: red;
+      
+}
+
+.tonyhawkimg img{
+   width: 25%;
+    height: 25%;
+    float: right;
+
+}
+
+body{
+    background-image: url(https://i.pinimg.com/564x/75/89/77/758977ea60591f217e68d1da7a7fb5be.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

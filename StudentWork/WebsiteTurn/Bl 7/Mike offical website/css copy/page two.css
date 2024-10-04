@@ -1,0 +1,46 @@
+.TommyGuerrero{
+text-align: center;
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 5px;
+    border-style: solid;
+    border-color: black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: large;
+  
+}
+.tommyguerrerobox{
+    height: 450px;
+    padding: 10px;
+    border: 5px solid black;
+    margin-top: 10px;
+}
+.tommyguerrerobox img{
+  height: 425px;
+  float: right;
+}
+
+  .tommyguerrerotextbox{
+    height: 350px;
+    padding: 10px;
+    border: 5px solid black;
+    margin-top: 10px;
+    width: 600px;
+    font-size: larger;
+      font-family: "Nothing You Could Do", cursive;
+      font-weight: 400;
+      font-style: normal;
+      color: red;
+      font-size: 120%;
+    
+  }
+
+body{
+    background-image: url("https://www.bhmpics.com/downloads/powell-peralta-Wallpapers/1.3512356.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

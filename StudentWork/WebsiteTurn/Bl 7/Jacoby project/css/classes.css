@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(63, 182, 222);
+    font-family: Playwrite DE Grund;
+}
+.link{
+    background-color: blue;
+    height:50px
+}
+.link a{
+    color:white;
+    margin-left: 20%;
+    font-size: x-large;
+}
+.top h1{
+    text-align: center;
+    font-size: 50px;
+}
+.top h3{
+    text-align: center;
+}
+.ranger{
+    width: 24%;
+    background-color: green;
+    float: left;
+    margin-left: 10px;
+    height: 800px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: darkgreen;
+}
+.magic{
+    width: 24%;
+    background-color: blue;
+    float: left;
+    margin-left: 10px;
+    height: 800px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: darkblue;
+}
+.melee{
+    width: 24%;
+    background-color: red;
+    float: left;
+    margin-left: 10px;
+    height: 800px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: darkred;
+}
+.summoner{
+    width: 24%;
+    background-color: yellow;
+    float: left;
+    margin-left: 10px;
+    height: 800px;    
+    border-radius: 20px;
+    border-style: solid;
+    border-color: darkgoldenrod;
+}
+.ranger h2{
+    text-align: center;
+}
+.melee h2{
+    text-align: center;
+}
+.magic h2{
+    text-align: center;
+}
+.summoner h2{
+    text-align: center;
+}
+.ranger p{
+    font-size: x-large;
+}
+.melee p{
+    font-size: x-large;
+}
+.magic p{
+    font-size: x-large;
+}
+.summoner p{
+    font-size: x-large;
+}
+.ranger img{
+    width:100%;
+    height:50%
+}
+.melee img{
+    width:100%;
+    height:50%
+}
+.magic img{
+    width:100%;
+    height:50%;
+}
+.summoner img{
+    width: 100%;
+    height:50%;
+}
