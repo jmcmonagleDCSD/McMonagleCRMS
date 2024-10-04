@@ -1,0 +1,20 @@
+body{
+    background-color:burlywood;
+} 
+h1{
+    border-style:solid; 
+    border-width: 8px; 
+    border-radius: 25px;
+} 
+li{
+    border-style:solid; 
+    border-width: 2px; 
+    border-radius: 25px;
+} 
+img{
+    border-style:solid; 
+    border-width: 2px; 
+    border-radius: 25px; 
+    width: 500px; 
+    
+}

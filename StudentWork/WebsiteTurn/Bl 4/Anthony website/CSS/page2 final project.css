@@ -1,0 +1,12 @@
+body{
+background-color: red;
+}   
+
+h1{
+    text-align: center;
+}
+
+.heading{
+    border-style: double;
+    border-color: black;
+}

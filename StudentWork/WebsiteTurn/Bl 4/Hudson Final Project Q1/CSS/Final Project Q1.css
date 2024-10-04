@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+
+.First-heading{
+    text-align: Center;
+    color:red;
+    Border-Radius: 1000px;
+    border:double 50px;
+}
+
+.Vessel{
+                height:1500px;
+                width:2500px;
+                background-color: rgb(175, 175, 175);
+}
+
+.Vessel h1{
+    text-align: center;
+    color: rgba(44, 35, 126, 0.542);
+    border-radius: 100;
+    border-bottom: ridge;
+}
+
+.Vessel h2{
+    color: rgba(44, 35, 126, 0.542);
+    margin-right: 50%;
+}
+
+.Vessel img{
+    float:left;
+}
+
+h3{
+    color: rgba(44, 35, 126, 0.542);
+}
+
+p{
+    color: rgba(44, 35, 126, 0.542);
+}

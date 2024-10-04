@@ -1,0 +1,38 @@
+body{
+    Background-color: rgb(0, 236, 236);
+}
+
+h1{
+    border-style: dashed;
+    border-color: rgb(255, 219, 225);
+    border-radius: 100px;
+    color: rgb(255, 219, 225);
+    Text-align: Center;
+    border-width: 30px;
+}
+
+img{
+    Border-style:double;
+    border-color:  rgb(255, 219, 225);
+    border-width:60px;
+    margin: auto;
+    display: block;
+}
+
+h3{
+    color: rgb(255, 219, 225);
+    text-align: center;
+}
+
+h4{
+    color: rgb(255, 219, 225);
+    text-align: center;
+}
+
+p{
+    color:  rgb(255, 219, 225);
+}
+
+del{
+    color: rgb(255, 219, 225);
+}

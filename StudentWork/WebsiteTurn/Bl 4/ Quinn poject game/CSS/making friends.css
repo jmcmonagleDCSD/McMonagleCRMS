@@ -1,0 +1,17 @@
+body{
+    background-color:burlywood;
+}  
+h4{
+    border-style:solid; 
+    border-width: 2px; 
+    border-radius: 25px;
+} 
+img{
+    width: 500px;
+} 
+.box{
+    font-size: 50px;
+} 
+h2{
+    font-size: 25px;
+}

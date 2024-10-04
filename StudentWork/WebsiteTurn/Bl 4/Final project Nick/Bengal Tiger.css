@@ -1,0 +1,79 @@
+body{
+    background-color: lightblue;
+}
+.h1{
+text-align: center;
+color: black;
+
+}
+.boxone{
+    height: 1100px;
+    width: 900px;
+    background-color: lightyellow;
+    clear: both;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+margin-left: 7%;
+}
+.boxone h1{
+    color: black;
+    text-align: center;
+    
+  
+}
+.boxone img{
+    
+    width: 40%;
+   border-style: ridge;
+  margin-left: 5%;
+  
+}
+.boxone p{
+    float: right;
+    color: black;
+    width: 40%;
+    margin-right: 10%;
+   
+}
+.z{
+    color: black;
+    text-align: center;
+}
+.boxone h2{
+    color: black;
+    text-align: left;
+    margin-left: 20%;
+}
+.boxone h4{
+   
+    color: black;
+    width: 40%;
+   margin-left: 7%;
+  
+}
+.boxone #Tiger{
+    height: 200px;
+    width: 400px;
+    border-style: ridge;
+   float: right;
+   margin-right: 7%;
+   
+}
+
+.boxone #food{
+float: right;
+margin-right: 5%;
+}
+.boxone #Pizza{
+    width: 350px;
+height: 250px;
+    border-style: ridge;
+   float: left;
+   
+   margin-bottom: 40%;
+   margin-left: 8%;
+   
+    
+}
+

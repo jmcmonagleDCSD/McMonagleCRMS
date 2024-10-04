@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    color: green;
+   border-radius: 2000px;
+   border-style:solid;
+}
+
+body{
+    Background-color: rgba(255, 255, 0, 0.775);
+}
+
+#Imageone{
+    Float: left;
+}
+
+#Imagetwo{
+    clear: both;
+    Float:right;
+}
+
+#SentenceDiviantArt{
+    float:right;
+}
+
+h4{
+    color:Green;
+}
+
+h2{
+    Color:Green;
+}
+
+h3{
+    Color:Green;
+}
+
+p{
+    float: right;
+    Color: Green;
+}

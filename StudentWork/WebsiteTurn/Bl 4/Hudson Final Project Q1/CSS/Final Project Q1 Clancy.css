@@ -1,0 +1,41 @@
+Body{
+    background-color: rgb(215, 0, 0)
+}
+
+h1{
+    color:gold;
+    border-width: 20px;
+    border-style: double;
+    color: gold;
+    text-align: center;
+}
+
+del{
+    color:gold;
+}
+
+p{
+    color: gold;
+}
+
+h3{
+    color:gold;
+    text-align: right;
+}
+
+h4{
+    color: Gold;
+    text-align: right;
+}
+
+h2{
+    color:gold;
+    border-width: 20px;
+    border-style: double;
+    color: gold;
+    text-align: right;
+}
+
+img{
+    float: left;
+}

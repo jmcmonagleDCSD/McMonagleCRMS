@@ -1,0 +1,136 @@
+body{
+    background-color: aquamarine;
+}
+
+.links a{
+    margin: 5px;
+    border-top-style:solid ;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: black;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   padding: 5px;
+   color: black;
+}
+
+.food{
+    text-align: center;
+}
+
+.food h1{
+    font-size: 90px;
+}
+
+.containerone{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containertwo{
+    display: flex;
+    justify-content: center;
+}
+
+.Green_Sea_Turtle{
+    background-color: rgb(18, 109, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 175px;
+    height: 175px;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+.Loggerhead_Sea_Turtle{
+    background-color: rgb(18, 109, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 175px;
+    height: 175px;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+.Hawksbill_Sea_Turtle{
+    background-color: rgb(18, 109, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 175px;
+    height: 175px;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+.Leatherback_Sea_Turtle{
+    background-color: rgb(18, 109, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 175px;
+    height: 175px;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+.Kemp’s_Ridley_Sea_Turtle{
+    background-color: rgb(18, 109, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 175px;
+    height: 175px;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+.Olive_Ridley_Sea_Turtle{
+    background-color: rgb(18, 109, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 175px;
+    height: 175px;
+    float: left;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+.Flatback_Sea_Turtle{
+    background-color: rgb(18, 109, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 175px;
+    height: 175px;
+    float: right;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+.containerthree{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containerfour{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 185px;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+.containerthree p{
+    width: 175px;
+}
+
+.sea_urchins{
+    width: 185px;
+    margin-right: 20px;
+}
+
+.sea_cucumbers{
+    width: 185px;
+    margin-left: 20px;
+}
+

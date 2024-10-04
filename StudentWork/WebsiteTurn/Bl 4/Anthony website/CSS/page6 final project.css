@@ -1,0 +1,11 @@
+body{
+    background-color: silver;
+}
+
+h1{
+    text-align: center;
+}
+
+.heading{
+    border-style: double;
+}

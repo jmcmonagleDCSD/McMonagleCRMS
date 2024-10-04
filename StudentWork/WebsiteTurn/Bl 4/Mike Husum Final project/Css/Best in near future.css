@@ -1,0 +1,39 @@
+.boxone{
+ background-color: firebrick;
+ height: 75px;
+ width: 1300px;
+ text-align: center;
+}
+.boxtwo{
+    background-color: gold;
+    height: 700px;
+    width: 700px;
+    float:right;
+}
+
+.boxtwo p{ 
+text-align: center;
+    color: maroon;
+}
+
+.boxtwo h2{
+    color: maroon;
+    text-align: center;
+}
+
+.p{
+    float: left;
+}
+
+.boxthree{
+    background-color: papayawhip;
+    height: 850px;
+    width: 550px;
+    float: left;
+    text-align: center;
+}
+
+.img{
+    float: right;
+}
+

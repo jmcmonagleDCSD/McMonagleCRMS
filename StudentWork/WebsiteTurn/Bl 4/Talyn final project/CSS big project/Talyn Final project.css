@@ -1,0 +1,187 @@
+
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-color: lightblue;
+}
+.boxone{
+    height: 1160px;
+    background-color: black;
+    width: 550px;
+    margin: 50px;
+    float: left;
+}
+
+.boxtwo{
+    background-color: red;
+ 
+    margin-left: 750px;
+    width: 450px;
+    height: 250px;
+  float: right;
+   
+
+    
+}
+
+.boxone img#one{
+    text-align: center;
+    width: 450px;
+  margin-left: 45px;
+}
+
+.boxtwo img{
+    float: right;
+    margin-right: 25px;
+    
+width: 300px;
+}
+
+.boxtwo p{
+    text-align: center;
+}
+
+.boxone img{
+    border-radius: 25px;
+    width: 3px;
+    border-style: solid;
+    color: white;
+    width: 225px;
+   
+   
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+
+.boxone img#three{
+    float: right;
+    margin-right: 25px;
+    width: 250px;
+}
+
+.boxone img#four{
+margin-left: 25px;
+}
+
+.boxthree{
+    background-color:rgb(208, 73, 73);
+    width: 350px;
+    height: 280px;
+    float: right;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 50px;
+margin-bottom: -25px;
+}
+
+.boxthree img{
+    margin-left: 40px;
+    margin-right: 275px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    width: 250px;
+}
+
+.boxone p{
+    text-align: center;
+}
+
+.boxone one{
+    width: 350px;
+margin-left: 90px;
+}
+
+.boxseven{
+    float: right;
+}
+
+.boxeight{
+    background-color:purple;
+    width: 350px;
+    height: 270px;
+    float: right;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+margin-bottom: -25px;
+}
+
+.boxeight img{
+    margin-left: 40px;
+    margin-right: 275px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    width: 250px;
+}
+
+
+.boxnine{
+    background-color:red;
+    width: 350px;
+    height: 250px;
+    float: right;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 50px;
+margin-bottom: -25px;
+}
+
+.boxnine img{
+    margin-left: 40px;
+    margin-right: 275px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    width: 250px;
+}
+
+.boxfour{
+    background-color:red;
+    width: 350px;
+    height: 280px;
+    float: right;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 50px;
+margin-bottom: -25px;
+
+}
+
+.boxfour img{  margin-left: 40px;
+    margin-right: 275px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    width: 250px;}
+  
+  
+
+.boxthree p{
+    font-size: 17px;
+}
+
+.boxfour p{
+    font-size: 17px;
+}
+
+.boxnine p{
+    font-size: 17px;
+}
+
+.boxeight p{
+    font-size: 17px;
+}

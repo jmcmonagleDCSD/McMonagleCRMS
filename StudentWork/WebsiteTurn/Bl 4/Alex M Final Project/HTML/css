@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(19, 90, 255);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  border-bottom-style: solid;
+  border-top-style: double;
+  border-left-style: double;
+  border-right-style: double;
+  border-color: rgb(19, 90, 254);
+
+  border-width: 8px
+  border-radius: 10px;
+}

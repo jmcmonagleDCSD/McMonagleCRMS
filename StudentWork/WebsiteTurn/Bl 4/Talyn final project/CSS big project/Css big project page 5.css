@@ -1,0 +1,64 @@
+h1{
+    text-align: center;
+    color:black;
+}
+  body{
+    background-color:rgb(171, 94, 171);
+  }
+
+  .boxone{
+    background-color: black;
+    float: left;
+    margin: 50px;
+    height: 1250px;
+    width: 1050px;
+  }
+
+  .boxone h1{
+color: white;
+  }
+
+  img{
+    float: right;
+   margin-right: 275px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style:groove;
+
+    width: 500px;
+  }
+
+  p{
+    color: white;
+    clear: both;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  Ul{
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    float: left;
+    
+  }
+
+  #one{
+    float: right;
+    margin-right: 25px;
+    width: 275px;
+    margin-top: 50px;
+  }
+
+
+
+  .boxone p#two{
+    float: right;
+    margin-top: -42px;
+  }
+
+  .boxone h1#three{
+    float: left;
+    width: 50%;
+  }

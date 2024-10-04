@@ -1,0 +1,144 @@
+h1{
+    text-align: center;
+
+}
+
+body{
+    background-color: lightblue;
+}
+
+.boxone{
+    background-color: black;
+    width: 550px;
+    height: 1230px;
+    float: left;
+
+
+margin-left: 50px;
+margin-top: 50px;
+margin-right: 50px;
+margin-bottom: 50px;
+
+}
+
+.boxone h1{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.boxone img{
+    float: left;
+   margin-left: 25px;
+    border-radius: 10px;
+    border-width: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    
+}
+.boxone p{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+
+p{
+    clear: both;
+    color: white;
+    
+}
+
+.boxtwo{
+    background-color: red;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 275px;
+    width: 400px;
+}
+
+.boxtwo img{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 0px;
+    
+}
+
+.boxtwo p{
+    text-align: center;
+}
+
+.boxthree{
+    background-color: rgba(216, 20, 20, 0.723);
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 275px;
+    width: 400px;
+}
+
+.boxthree img{
+    margin-right: 40px;
+    margin-left: 60px;
+    margin-top: 0px;
+    
+}
+
+.boxthree p{
+    text-align: center;
+}
+
+.boxfour{
+    background-color:darkorange;
+    float: left;
+    margin-left: 70px;
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 275px;
+    width: 400px;
+}
+
+.boxfour img{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 0px;
+    
+}
+
+.boxfour p{
+    text-align: center;
+}
+
+.boxfive{
+    background-color: purple;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 275px;
+    width: 400px;
+}
+
+.boxfive img{
+    margin-right: 40px;
+    margin-left: 60px;
+    margin-top: 0px;
+    
+}
+
+.boxfive p{
+    text-align: center;
+}
+
+.boxone #one{
+    margin-left: 40px;
+    width: 450px;
+}

@@ -1,0 +1,14 @@
+body{
+    background-color: blue;
+    height: 10000;
+}
+
+.h1{
+    text-align: center;
+
+}
+
+.heading{
+    border-style: double;
+    border-color: black;
+}

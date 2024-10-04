@@ -1,0 +1,46 @@
+body{
+    background-color: red;
+}
+
+.boxone{
+    background-color: black;
+    float: left;
+    margin: 50px;
+    height: 1230px;
+    width: 1050px;
+
+}
+
+h1{
+    text-align: center;
+}
+  .boxone h1{
+    color: white;
+  }
+
+  img{
+    float: left;
+    margin-left: 280px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    width: 500px;
+  }
+
+  p{
+    color: white;
+    text-align: center;
+    clear: both;
+    font-size: 20px;
+  }
+
+  .boxone li{
+    color: white;
+    font-size: 20px;
+  }
+
+  h2{
+    text-align: center;
+    color: white;
+  }

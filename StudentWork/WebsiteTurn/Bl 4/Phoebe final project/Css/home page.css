@@ -1,0 +1,97 @@
+body{
+    background-color: aquamarine;
+}
+
+.main_section{
+    text-align: center;
+}
+
+.links a{
+    margin: 5px;
+    border-top-style:solid ;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: black;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   padding: 5px;
+   color: black;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 90px;
+    
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photo_one img{
+    width: 300px;
+    border-style: dotted;
+    border-width: 15px;
+    margin: 10px;
+}
+
+.photo_two img{
+    width: 300px;
+    border-style: dotted;
+    border-width: 15px;
+    margin: 10px;
+}
+
+.photo_three img{
+    width: 300px;
+    border-style: dotted;
+    border-width: 15px;
+    margin: 10px;
+}
+
+.Threats p{
+    width: 550px;
+}
+
+.Threats{
+    background-color: rgb(18, 109, 255);
+    width: 600px;
+    height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+    border-style: dotted;
+    border-width: 15px;
+}
+
+.container_one{
+    display: flex;
+    justify-content: center;
+}
+
+.container_two{
+    display: flex;
+    justify-content: center;
+}
+
+.nesting p{
+    width: 550px;
+}
+
+.nesting{
+    background-color: rgb(18, 109, 255);
+    width: 600px;
+    height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+    border-style: dotted;
+    border-width: 15px;
+}

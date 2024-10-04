@@ -1,0 +1,30 @@
+.boxone{
+background-color: firebrick;height: 75px;
+width: 1300px;
+text-align: center;
+}
+
+.boxtwo{
+background-color: darkcyan;
+height: 500px;
+width: 1300;
+}
+.boxtwoh1{
+    text-align: right;
+}
+.boxtwo img{
+    float: right;
+}
+
+.one p{
+    float: right;
+}
+.boxthree{
+    background-color: pink;
+    height: 500px;
+    width: 2500px;
+}
+
+.diddy img{
+    float: left;
+}

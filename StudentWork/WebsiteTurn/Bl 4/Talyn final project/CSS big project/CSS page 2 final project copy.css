@@ -1,0 +1,14 @@
+body{
+    background-color: red;
+}
+
+.boxone{
+    background-color: black;
+    float: left;
+    margin: 50px;
+
+}
+
+h1{
+    text-align: center;
+}

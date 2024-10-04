@@ -1,0 +1,39 @@
+.h1{
+    text-align: center;
+    color: black;
+    float: none;
+  
+}
+img{
+height: 500px;
+width: 500px;
+border-style: ridge;
+border-color: black;
+border-width: 20px;
+float: left;
+
+}
+.p{
+  float: right;
+  width: 20%;
+margin-right: 10%;
+}
+.boxone{
+height: 200px;
+background-color: lightyellow;
+clear: both;
+border-style: solid;
+border-color: yellow;
+border-width: 5px;
+
+}
+.boxtwo{
+  height: 200px;
+background-color: lightyellow;
+clear: both;
+border-style: solid;
+border-color: yellow;
+border-width: 5px;
+margin-top: 7%;
+
+}

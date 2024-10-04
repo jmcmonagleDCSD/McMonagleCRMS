@@ -1,0 +1,73 @@
+body{
+    background-color: orange;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.boxone{
+    background-color: black;
+    float: left;
+    margin: 50px;
+    height: 1230px;
+    width: 1050px;
+
+}
+
+.boxone h1{
+    color: white;
+}
+
+.boxone #one{
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+
+    width: 500px;
+    
+}
+
+p{
+    
+    text-align: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+.boxone #two{
+    float: right;
+   margin-right: 10px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+
+    width: 500px;
+    
+}
+
+.boxone #three{
+    float: left;
+
+    margin-left: 40px;
+    width: 400px;
+}
+
+.boxone #four{
+    font-size: 20px;
+    margin: 15px;
+}
+
+h2{
+    color: white;
+    text-align:left;
+}
