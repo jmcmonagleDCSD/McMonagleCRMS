@@ -1,0 +1,43 @@
+.boxone{ 
+    background-color:lightslategray ;
+    height: 70px;
+    width: 1260px;
+    text-align: center;
+    color:aliceblue;
+}
+.boxtwo{
+    background-color: rgb(88, 98, 107);
+    height: 768px;
+    width: 1260px;
+    font-size: 25px;
+}
+body{
+    background-color: darkgray;
+   
+}
+
+
+ol{
+    color:whitesmoke;
+    font-size: 21px;
+}
+
+.img{
+    float:left;
+    margin: 10px;
+}
+
+p{
+    color:aliceblue
+}
+.boxtwo br{
+    clear: both;
+}
+div{
+   font-family: sevillana; 
+}
+
+.buttons {background-color: whitesmoke;
+color:darkslategrey;
+
+}

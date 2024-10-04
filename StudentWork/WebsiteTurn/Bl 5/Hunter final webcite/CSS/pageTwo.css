@@ -1,0 +1,64 @@
+body{
+    background-image: url(../IMAGES/ship.webp);
+}
+h1{
+        text-align: center;
+}
+
+.four{
+        text-align: center;
+ }
+
+.one{
+    border-width: 10px;
+    border-radius: 20px;
+    height:700px;
+    width:200px;
+    border-style: inset;
+    position: absolute;
+    top: 150px;
+    left: 660px;
+    font-style: italic;
+}
+
+
+
+
+
+
+.two{
+        border-width: 10px;
+        border-radius: 20px;
+       width: 200px;
+        height: 700px;
+        border-style: inset;
+        float: right;
+        text-align: center;
+        position: absolute;
+        top: 150px;
+        left: 1125px;
+        font-style: italic;
+     }
+    
+
+
+
+
+.cheese{
+        border-radius: 150px;
+        width: 200px;
+        height: 200px;
+        border-width: 1px;
+        position: absolute;
+        top: 250px;
+        left: 900px;
+        position: fixed;
+        transition-duration: 1000ms;
+        transition-property: all;
+     } 
+
+     .cheese :hover{
+     rotate: 360deg;
+     }
+ 
+     

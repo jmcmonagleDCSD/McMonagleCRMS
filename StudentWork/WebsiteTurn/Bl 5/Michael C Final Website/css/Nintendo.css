@@ -1,0 +1,89 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(165, 22, 22);
+    color: white;
+}
+
+hr{
+    color: white;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+a{
+    background-color: rgb(255, 148, 148);
+    color: rgb(255, 73, 67);
+    border-style:groove;
+    border-color: rgb(89, 17, 17);
+    border-width: 10px;
+    margin-left: 20%;
+}
+
+
+.boxone{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 15px;
+    border-style:outset;
+    border-color: rgb(134, 31, 31);
+    clear:both;
+    background-color: red;
+    color:white;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.boxone p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.boxone h3{
+    text-align: center;
+}
+
+.boxtwo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 15px;
+    border-style:outset;
+    border-color: rgb(227, 87, 87);
+    color:white;
+    background-color: rgb(255, 0, 85);
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+
+.boxtwo p{
+    margin-left: 10px;
+}
+
+.boxtwo h3{
+    text-align: center;
+}
+
+.boxthree{
+    background-color: rgb(212, 0, 0);
+    border: 15px;
+    border-style:outset;
+    border-color: rgb(228, 53, 18);
+}
+
+.boxthree img{
+    margin-left: 500px;
+    background-color: rgb(160, 43, 43);
+    border: 15px;
+    border-style:outset;
+    border-color: rgb(228, 53, 18);
+}
+
+
+.boxthree p{
+    margin-left: 500px;
+}
+
+.boxthree h2{
+    text-align: center;
+}

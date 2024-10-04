@@ -1,0 +1,30 @@
+body{
+    background-color: yellow;
+}
+.boxone{
+    background-color: orangered;
+    height: 450px;
+    width: 300px;
+    float: left;
+}
+.boxone img{
+    height: 200pxpx;
+    width: 200px;
+    margin-left: 50px;
+}
+.boxtwo{
+    background-color: lightgrey;
+    height: 450px;
+    width: 520px;
+    float: left;
+    margin-left: 20px;
+}
+.boxtwo img{
+    margin-left: 100px;
+}
+.boxthree{
+    background-color:lightgreen;
+    height: 450px;
+    width: 100%;
+    margin-top: 500px;
+}

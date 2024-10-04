@@ -1,0 +1,17 @@
+body{
+    background-color: lightgrey;
+}
+.boxone{
+    background-color: red;
+    height: 250px;
+    width: 100%;
+}
+.boxone img{
+    float: right;
+    height: 250px;
+    width: 300px;
+}
+img{
+    height: 500px;
+}
+

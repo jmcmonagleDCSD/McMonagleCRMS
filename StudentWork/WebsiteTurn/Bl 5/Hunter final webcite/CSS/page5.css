@@ -1,0 +1,48 @@
+body{
+  background-image: url(../IMAGES/sea-of-thieves-2.jpg);
+    background-repeat:  no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
+
+.one{
+    text-align: center;
+}
+
+.two{
+    position: absolute;
+    right: 440px;
+    top: 600px;
+    font-style: italic;
+    width: 900px;
+    height: 200px;
+    border-style: inset;
+    color: rgb(0, 48, 137);
+    border-radius:50px;
+    text-align: center;
+ }
+
+
+
+
+
+
+ .thr{
+    border-radius: 50px;
+    width: 400px;
+    height: 300px;
+    border-width: 1px;
+    position: absolute;
+    top: 100px;
+    left: 375px;
+    transition-duration: 1000ms;
+    transition-property: all;
+ }
+
+ .thr :hover{
+    scale: 1.1;
+ }

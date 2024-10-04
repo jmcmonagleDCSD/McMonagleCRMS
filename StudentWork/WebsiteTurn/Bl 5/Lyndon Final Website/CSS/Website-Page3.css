@@ -1,0 +1,21 @@
+body{
+    background-color: blanchedalmond;
+}
+.boxone{
+    height: 370px;
+    width: 260px;
+    background-color: hotpink;
+    float: left;
+}
+img{
+    height: 300px;
+    height: 300px;
+    float: right;
+}
+.boxtwo{
+    background-color: aquamarine;
+    height: 200px;
+    width: 90%;
+    margin-top: 50px;
+    float: left;
+}

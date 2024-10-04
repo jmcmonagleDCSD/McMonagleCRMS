@@ -1,0 +1,137 @@
+body{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: navy;
+
+
+
+}
+h1{
+
+   text-align:center;
+   color: whitesmoke; 
+    background-color: rgb(120, 120, 251);
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.boxone{
+    background-color: cornflowerblue;
+    font-size: large;
+    clear: both;
+    margin-right: 35%;
+    margin-bottom: 50%;
+    height: 300px;
+    margin-left: 35%;
+ 
+}
+.boxone p{ 
+    color: whitesmoke; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.boxthree p{
+    color: whitesmoke; 
+    clear: both;
+    text-align: center;
+}
+
+.boxthree img{
+    margin-top: -1200px;
+    margin-left: 540px;
+}
+
+.boxtwo{
+    color: rgb(0, 174, 255);
+    border-style:groove;
+    border-color: rgb(31, 39, 255);
+    border-width: 30px;
+    background-color: blue;
+    font-size: larger;
+}
+
+.boxtwo p{
+    color: whitesmoke; 
+    background-color: blue;
+    margin-left: 50%;
+    font-size: larger;
+}
+
+.boxtwo h2{
+    color: whitesmoke; 
+    margin-left: 50%;
+    font-size: x-large;
+}
+
+.boxtwo img{
+    clear: both;
+    float:left;
+    margin-top: 10px;
+    margin-left:100px;}
+
+.boxfour{
+    color: rgb(31, 202, 25);
+    border-style:groove;
+    border-color: rgb(29, 73, 37);
+    border-width: 30px;
+    background-color: green;
+    font-size: larger;
+}
+
+.boxfour p{
+    color: whitesmoke;
+    margin-right: 50%;
+    font-size: x-large;
+
+}
+
+.boxfour h2{
+    color: whitesmoke;
+    font-size: x-large;
+    margin-left: 50%;
+}
+
+.boxfour img{
+    clear: both;
+    float: right;
+    margin-top: -225px;
+    margin-right: 100px;
+}
+
+.boxfive{
+    color: rgb(255, 73, 67);
+    border-style:groove;
+    border-color: rgb(89, 17, 17);
+    border-width: 30px;
+    background-color: red;
+    font-size: larger;
+    margin-bottom: 1500px;
+}
+
+.boxfive p{
+    color: whitesmoke;
+    margin-left: 50%;
+    font-size: x-large;
+    margin-bottom: 200px;
+}
+
+.boxfive h2{
+    color: whitesmoke;
+    margin-left: 50%;
+    font-size: x-large;
+}
+
+.boxfive img{
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+ 
+a{
+    color: rgb(255, 230, 0);
+    border-style:groove;
+    border-color: rgb(188, 79, 255);
+    border-width: 10px;
+    margin-left: 20%;
+}
