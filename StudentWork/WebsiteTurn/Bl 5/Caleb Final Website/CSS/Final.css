@@ -1,0 +1,201 @@
+
+body {
+    background-color: black;
+    color: white;
+    border: 6px solid orange;
+    box-shadow: 0 0 8px orange, 0 0 8px orange;
+    font-family: sans-serif;
+}
+
+.link {
+    color: white;
+    border-width: 5px;
+    border: 6px solid orange;
+    box-shadow: 0 0 8px orange, 0 0 8px orange;
+   
+}
+.button {
+    color: white;
+    border-width: 5px;
+    box-shadow: 0 0 8px rgb(70, 11, 207), 0 0 8px orange;
+}
+
+
+button {
+    text-align: center; 
+    border-color: white;
+    width: 100px; 
+    height: 100px; 
+    border-radius: 2000px; 
+    Animation-duration:  1.5s;
+    Animation-name: spin;
+    animation-timing-function: linear;
+    Animation-iteration-count: infinite;
+    Animation-direction: alternate;
+    Animation-fill-mode: forwards;
+    Animation-play-state: running;
+    border-width: 5px;
+    border: 6px solid orange;
+    box-shadow: 0 0 8px orange, 0 0 8px orange;
+}
+
+hr {
+    border: 6px solid orange;
+    box-shadow: 0 0 8px orange, 0 0 8px orange;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 2000px;
+    text-shadow: 100px;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    
+}
+
+
+
+
+button:hover {
+    Animation-play-state: paused;
+}
+
+
+@keyframes spin{
+
+    0%{
+        Transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    }
+    5%{
+        Transform: rotateX(18deg) rotateY(18deg) rotateZ(18deg)
+        
+    }
+    10%{
+        Transform: rotateX(36deg) rotateY(36deg) rotateZ(36deg)
+    }
+    15%{
+        Transform: rotateX(54deg) rotateY(54deg) rotateZ(54deg)
+    }
+    20%{
+        Transform: rotateX(72deg) rotateY(72deg) rotateZ(72deg)
+    }
+    25%{
+        Transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg)
+    }
+    30%{
+        Transform: rotateX(108deg) rotateY(108deg) rotateZ(108deg)
+    }
+    35%{
+        Transform: rotateX(126deg) rotateY(126deg) rotateZ(126deg)
+    }
+    40%{
+        Transform: rotateX(144deg) rotateY(144deg) rotateZ(144deg)
+    }
+    45%{
+        Transform: rotateX(162deg) rotateY(162deg) rotateZ(162deg)
+    }
+    50%{
+        Transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg)
+    }
+    55%{
+        Transform: rotateX(198deg) rotateY(198deg) rotateZ(198deg)
+    }
+    60%{
+        Transform: rotateX(216deg) rotateY(216deg) rotateZ(216deg)
+    }
+    65%{
+        Transform: rotateX(234deg) rotateY(234deg) rotateZ(234deg)
+    }
+    70%{
+        Transform: rotateX(252deg) rotateY(252deg) rotateZ(252deg)
+    }
+    75%{
+        Transform: rotateX(270deg) rotateY(270deg) rotateZ(270deg)
+    }
+    80%{
+        Transform: rotateX(288deg) rotateY(288deg) rotateZ(288deg)
+    }
+    85%{
+        Transform: rotateX(306deg) rotateY(306deg) rotateZ(306deg)
+    }
+    90%{
+        Transform: rotateX(324deg) rotateY(324deg) rotateZ(324deg)
+    }
+    95%{
+        Transform: rotateX(342deg) rotateY(342deg) rotateZ(342deg)
+    }
+    100%{
+        Transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)
+    }
+    5%{
+        background-color: blue;
+    }
+    10%{
+        background-color: orange;
+    }
+    15%{
+        background-color: red;
+    }
+    20%{
+        background-color: purple;
+    }
+    25%{
+        background-color: pink;
+    }
+    30%{
+        background-color: lime;
+    }
+    35%{
+        background-color: green;
+    }
+    40%{
+        background-color: cyan;
+    }
+    45%{
+        background-color: olivedrab;
+    }
+    50%{
+        background-color: magenta;
+    }
+    55%{
+        background-color: darkturquoise;
+    }
+    60%{
+        background-color: darkmagenta;
+    }
+    65%{
+        background-color: yellow;
+    }
+    70%{
+        background-color: brown;
+    }
+    75%{
+        background-color: gainsboro;
+    }
+    80%{
+        background-color: chocolate;
+    }
+    85%{
+        background-color: brown;
+    }
+    90%{
+        background-color: blueviolet;
+    }
+    95%{
+        background-color: orangered;
+    }
+    100%{
+        background-color: wheat;
+    }
+    50%{
+        scale: 1.5;
+        animation-duration: 3s;
+    }
+ 
+}

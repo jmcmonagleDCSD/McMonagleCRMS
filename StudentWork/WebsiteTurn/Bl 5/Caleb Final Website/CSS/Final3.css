@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    color: white;
+  
+    border: 6px solid greenyellow;
+    box-shadow: 0 0 8px greenyellow, 0 0 8px greenyellow inset;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+a {
+    color: white;
+    border: 6px solid greenyellow;
+    box-shadow: 0 0 8px greenyellow, 0 0 8px greenyellow inset;
+    border-width: 5px;
+}
+
+img {
+    border-radius: 20px;
+    Transition-duration: 1s;
+    Transition-timing-function: cubic-bezier(.77,0,.18,2.25);
+    Transition-property: background, transform;
+    border-width: 20px;
+    border: 6px solid greenyellow;
+    box-shadow: 0 0 8px greenyellow, 0 0 8px greenyellow inset;
+    text-align: center;
+}
+
+hr{
+    border: 6px solid greenyellow;
+    box-shadow: 0 0 8px greenyellow, 0 0 8px greenyellow inset;
+}
+
+
+img:hover{
+    Transform: rotate(20deg);
+}
+
+
+table {
+    text-align: center;
+    border: 6px solid greenyellow;
+    box-shadow: 0 0 8px greenyellow, 0 0 8px greenyellow inset;
+}
+
+
+h1 {
+    border-width: 10px;
+    border-style: ridge;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 300px;
+    border: 6px solid greenyellow;
+    box-shadow: 0 0 8px greenyellow, 0 0 8px greenyellow inset;
+   
+}
+
+.Hitters {
+    float: right;
+}
+
+
+
+
+h1 {
+    Animation-duration:  1.5s;
+    Animation-name: Tip;
+    animation-timing-function: linear;
+    Animation-iteration-count: infinite;
+    Animation-direction: alternate;
+    Animation-fill-mode: forwards;
+    Animation-play-state: running;
+    border-width: 5px;
+}
+
+
+h1:hover {
+    Animation-play-state: running;
+}
+
+
+@keyframes Tip{
+
+
+    0%{
+        Transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+
+    }
+
+    50%{
+        Transform: rotateX(30deg) rotateY(30deg) rotateZ(0deg)
+
+    }
+
+    100%{
+        Transform: rotateX(60deg) rotateY(60deg) rotateZ(0deg)
+
+    }
+}

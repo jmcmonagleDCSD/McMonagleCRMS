@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    color: white;
+    border-width: 20px;
+    border: 6px solid cyan;
+    box-shadow: 0 0 8px cyan, 0 0 8px cyan inset;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    border-width: 5px;
+    border: 6px solid cyan;
+    box-shadow: 0 0 8px cyan, 0 0 8px cyan inset;
+}
+
+p {
+    border-width: 20px;
+    border: 6px solid cyan;
+    box-shadow: 0 0 8px cyan, 0 0 8px cyan inset;
+    text-align: center;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border-width: 20px;
+    border: 6px solid cyan;
+    box-shadow: 0 0 8px cyan, 0 0 8px cyan inset;
+}
+
+img {
+    border-width: 20px;
+    border: 6px solid cyan;
+    box-shadow: 0 0 8px cyan, 0 0 8px cyan inset;
+    border-radius: 20px;
+    Transition-duration: 1s;
+    Transition-timing-function: cubic-bezier(.77,0,.18,2.25);
+    Transition-property: background, transform;
+}
+
+img:hover{
+    Transform: rotate(20deg);
+}
