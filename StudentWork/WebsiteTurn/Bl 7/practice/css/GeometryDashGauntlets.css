@@ -1,0 +1,115 @@
+body{
+    background-color:rgb(54, 165, 209);
+}
+
+.Fire{
+    background-color: rgba(0, 139, 139, 0.558);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Ice{
+    background-color: rgba(0, 139, 139, 0.541);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Poison{
+    background-color: rgba(0, 139, 139, 0.546);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Shadow{
+    background-color: rgba(0, 139, 139, 0.552);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Lava{
+    background-color: rgba(0, 139, 139, 0.535);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Bonus{
+    background-color: rgba(0, 139, 139, 0.527);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Chaos{
+    background-color: rgba(0, 139, 139, 0.518);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Demon{
+    background-color: rgba(0, 139, 139, 0.548);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Time{
+    background-color: rgba(0, 139, 139, 0.514);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Crystal{
+    background-color: rgba(0, 139, 139, 0.525);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Magic{
+    background-color: rgba(0, 139, 139, 0.554);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Spike{
+    background-color: rgba(0, 139, 139, 0.537);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Monster{
+    background-color: rgba(0, 139, 139, 0.518);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Doom{
+    background-color: rgba(0, 139, 139, 0.506);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+.Death{
+    background-color: rgba(0, 139, 139, 0.522);
+    border-style: dotted;
+    border-color: cadetblue;
+    border-width: 10px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(14, 79, 79);
+    font-family: fantasy;
+}
+

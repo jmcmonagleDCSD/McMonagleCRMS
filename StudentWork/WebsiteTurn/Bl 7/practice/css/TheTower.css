@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(48, 100, 102);
+}
+
+.one{
+    background-color: rgba(160, 186, 233, 0.519);
+    border-color: darkcyan;
+    border-style: dotted;
+    border-width: 10px;
+}
+
+.two{
+    background-color: rgba(116, 163, 230, 0.525);
+    border-color: darkcyan;
+    border-style: dotted;
+    
+}
+
+.three{
+    border-color: darkcyan;
+    border-style: dotted;
+}
+
+.four{
+    border-color: darkcyan;
+    border-style: dotted;
+}
+
+h1{
+    text-align: center;
+    color: rgb(34, 54, 34);
+    font-family: fantasy;
+}

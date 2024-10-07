@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(222, 125, 222);
+}
+
+.one{
+    background-color: rgba(255, 192, 203, 0.537);
+    border-style: dotted;
+    border-color: bisque;
+    border-width: 10px;
+}
+
+.two{
+    background-color: rgba(129, 205, 232, 0.553);
+    border-style: dotted;
+    border-color: cornflowerblue;
+    border-width: 10px;
+}
+
+.three{
+    background-color: rgba(170, 113, 170, 0.592);
+    border-style: dotted;
+    border-color: purple;
+    border-width: 10px;
+}
+
+.four{
+    border-style: dotted;
+    border-color: bisque;
+    border-width: 10px;
+}
+
+.five{
+    border-style: dotted;
+    border-color: cornflowerblue;
+    border-width: 10px;
+}
+
+.six{
+    border-style: dotted;
+    border-color: purple;
+    border-width: 10px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(72, 25, 72);
+    font-family: fantasy;
+}

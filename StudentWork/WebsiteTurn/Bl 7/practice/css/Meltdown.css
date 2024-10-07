@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(222, 85, 85);
+}
+
+.one{
+    background-color: rgba(242, 171, 171, 0.498);
+    border-style: dotted;
+    background-color: burlywood;
+    border-width: 10px;
+}
+
+.two{
+    background-color: rgba(240, 167, 122, 0.568);
+    border-style: dotted;
+    background-color: burlywood;
+    border-width: 10px;
+}
+
+.three{
+    border-style: dotted;
+    background-color: burlywood;
+    border-width: 10px;
+}
+
+.four{
+    border-style: dotted;
+    background-color: burlywood;
+    border-width: 10px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(78, 62, 40);
+    font-family: fantasy;
+}

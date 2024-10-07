@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(202, 255, 121);
+}
+
+.one{
+    background-color: rgba(158, 189, 111, 0.548)
+}
+
+.two{
+    background-color: rgba(164, 176, 147, 0.533);
+}
+
+.three{
+    border-style: dotted;
+    border-color: chartreuse;
+    border-width: 10px;
+}
+
+.four{
+    border-style: dotted;
+    border-color: chartreuse;
+    border-width: 10px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(64, 89, 38);
+    font-family: fantasy;
+}
