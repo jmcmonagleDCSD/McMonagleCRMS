@@ -1,0 +1,29 @@
+body{
+    background-color:pink;
+}
+
+.home h1{
+    background-color: rgb(0, 204, 255);
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+.home h3{
+    background-color: rgb(0, 204, 255);
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px; 
+    font-size: medium;
+    border-style: solid;
+    border-color: black;
+    text-align: left;
+}
+
+.home img{
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+}

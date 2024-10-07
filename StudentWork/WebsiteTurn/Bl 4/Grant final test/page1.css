@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(224, 183, 2);
+}
+
+.icon p{
+   background-color: white;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: medium;
+   border: 5px;
+   border-style: solid;
+   border-color: black
+}
+
+.icon h1{
+    background-color: white;
+    border:5px;  
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.icon img{
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+}

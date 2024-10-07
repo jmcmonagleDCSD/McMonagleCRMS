@@ -1,0 +1,25 @@
+body{
+   background-color: rgb(0, 183, 255);
+}
+
+.hype p{
+   background-image: linear-gradient(rgb(0, 13, 157), rgb(65, 191, 250));
+   font-family: 'Times New Roman', Times, serif;
+   color: rgb(255, 255, 255);
+   font-size: medium;
+   border: 5px;
+   border-color: rgb(255, 255, 255);
+   border-style: solid;
+   text-align: left;
+}
+
+.hype h1{
+   background-image: linear-gradient(rgb(0, 13, 157), rgb(65, 191, 250));
+   font-family: 'Times New Roman', Times, serif;
+   color:white ;
+   border: 5px;
+   border-style: solid;
+   border-color: rgb(255, 255, 255);
+   text-align: center;
+}
+

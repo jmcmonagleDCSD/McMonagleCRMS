@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(195, 16, 111);
+}
+
+.Voodoo p{
+    background-color: rgb(255, 112, 229);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    text-align: right;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    text-decoration: underline;
+}
+
+.Voodoo h1{
+    background-color: rgb(255, 58, 193);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+.Voodoo img{
+    border-width: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
