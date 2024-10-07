@@ -1,0 +1,170 @@
+body{
+    background-color: navy
+    ;
+}
+
+
+
+h1{
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+h3{
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    border-bottom-style: solid;
+}
+
+.International {
+    width: 570px;
+    float: left;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+
+}
+.PCL{
+    width: 570px; 
+    float: right;
+ margin-left: 20px;
+ border-style: solid;
+ border-radius: 10px;
+ background-color: dodgerblue;
+ color: white;
+ margin-bottom: 20px;
+ text-align: center;
+}
+
+.AA{
+    clear: both;
+    margin-top: 70px;
+}
+
+.EastLeague{
+    width: 570px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    border-style: solid;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Southleague{
+    width: 570px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    border-style: solid;
+    float: right;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.Texan{
+    clear: both;
+    background-color: dodgerblue;
+    color: white;
+    width: 570px;
+    margin-left: 305px;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+}
+
+.MidLeague {
+    background-color: dodgerblue;
+    color: white;
+    width: 570px;
+    border-radius: 10px;
+    border-style: solid;
+float: left;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.NorthLeague {
+    background-color: dodgerblue;
+    color: white;
+    width: 570px;
+    border-radius: 10px;
+    border-style: solid;
+    float: right;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.SouthAltleague{
+    background-color: dodgerblue;
+    color: white;
+    width: 570px;
+    border-radius: 10px;
+    border-style: solid;
+    clear: both;
+    margin-left: 305px;
+    text-align: center;
+}
+
+.Cali{
+    background-color: dodgerblue;
+    color: white;
+    width: 570px;
+    border-radius: 10px;
+    border-style: solid;
+    float: left;
+    text-align: center;
+}
+
+.Carolina{
+    background-color: dodgerblue;
+    color: white;
+    width: 570px;
+    border-radius: 10px;
+    border-style: solid;
+    float: right;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Flo-rida{
+    background-color: dodgerblue;
+    color: white;
+    width: 570px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 305px;
+    clear: both;
+    text-align: center;
+}
+
+.links{
+    border-style: solid;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+ 

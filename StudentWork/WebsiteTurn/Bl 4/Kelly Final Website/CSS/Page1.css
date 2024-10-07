@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-color: blue;
+}
+
+.MLB { 
+    background-color: red;
+    color: white;
+}
+
+h2{
+    border-bottom-style: solid;
+    color: white;
+    text-align: center;
+}
+.American_league{
+    background-color: red;
+    width: 570px;
+    float: left;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+
+}
+.national_league{
+    background-color: red;
+    width: 570px;
+    float: right;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;
+}
+
+.Minors{
+    background-color: red;
+    clear: both;
+   width: 570px;
+   margin-left: 300px;
+   border-radius: 10px;
+    border-style: solid;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+
+
