@@ -238,6 +238,10 @@ footer {
     transform: scale(1.05);
 }
 
+.project-gallery .gif{
+    display: flex;
+    border-radius: 100px;
+}
 .resource-links li{
     width: 300px;
     height: 50px;
