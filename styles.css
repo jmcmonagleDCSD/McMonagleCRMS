@@ -19,6 +19,8 @@ Grey D1D2D4
 }
 
 body {
+    min-width: 375px;
+ 
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--white);
@@ -27,6 +29,7 @@ body {
 
 #navbar {
     background-color: var(--primary-color);
+    width: 100%;
     color: var(--white);
     position: sticky;
     top: 0;
@@ -45,7 +48,7 @@ body {
     color: var(--white);
     text-decoration: none;
     padding: 0.75rem 1rem;
-    display: block;
+    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
@@ -286,13 +289,33 @@ footer {
     padding-left: 25px;
     border-left: 3px solid var(--primary-color);
 }
+
 @media (max-width: 768px) {
     .class-cards {
         flex-direction: column;
     }
-    
+
+    .project-gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .game-container{
+       
+        width: 100%;
+
+    }
     .card {
         width: 100%;
         margin-bottom: 1rem;
     }
+}
+@media (max-width: 640px) {
+   #navbar ul{
+        flex-direction: column;
+        height: 75px;
+        overflow: hidden;
+   }
+   #navbar:hover ul{
+        height: auto;
+   }
 }
