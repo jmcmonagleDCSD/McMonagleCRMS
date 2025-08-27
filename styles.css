@@ -308,15 +308,43 @@ footer {
     }
 }
 @media (max-width: 640px) {
+    #navbar{
+        display: flex;
+        justify-content: center;
+        
+    }
    #navbar ul{
+        flex-basis: 80%;
         flex-direction: column;
         height: 75px;
         overflow: hidden;
    }
-   #navbar:hover ul{
+   #navbar .icon:active + ul{
         height: auto;
    }
+   #navbar .icon:hover .line{
+    transform: rotateX("40");
+    background-color: red;
+   }
+   #navbar .icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center ;
+        margin-top: 20px;
+        background-color: #D1D2D4;
+        height: 30px;
+        width: 30px;
+   }
+   #navbar .line{
+        width: 80%;
+        height: 5px;
+        border-radius: 15%;
+        background-color: var(--secondary-color);
+   }
+
 }
+
 @media (hover:none){
     #navbar:active ul{
         height: auto;
