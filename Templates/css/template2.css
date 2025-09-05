@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    background-color: orange;
+    height: 950px;
+    padding: 50px;
+}
+
+.header, .main{
+    width: 20%;
+    height: 950px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.main{
+    width: 75%;
+}
+
+.link{
+    width: 100px;
+    height: 50px;
+    background-color: aqua;
+    margin:0px 10px;
+}
+
+.card{
+    height: 120px;
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.footer{
+    height: 100px;
+    background-color:green; 
+}
+
