@@ -1,0 +1,55 @@
+body{
+    background-color: cadetblue;
+}
+.heading{
+    text-align: center;
+    background-color: antiquewhite;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.heading h1{
+    padding: 70px;
+    color: rgb(152, 92, 236);
+    font-family: cursive;  
+}
+.container{
+    background-color: aquamarine;
+    width: 30%;
+    height: 500px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.one{
+    margin-left: 50px;
+}
+.two p {
+    border: rgb(63, 5, 96) 7px dotted;
+}
+
+.infobox{
+    clear: both;
+    background-color: chocolate;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.infobox img{
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+}
+.infobox h2, .infobox p{
+    float: right;
+    margin-bottom: 0px;
+    width: 70%;
+    margin-right: 70px;
+    height: 100px;
+}
+.centered{
+    background-color: purple;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    font-size: 150px;
+}
