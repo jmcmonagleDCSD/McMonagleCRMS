@@ -1,0 +1,14 @@
+body{
+    background-color:dodgerblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+h1{
+    border-style:solid ;
+    border-color: black;
+}
+a{
+    color: white;
+    border: 10px;
+}
+

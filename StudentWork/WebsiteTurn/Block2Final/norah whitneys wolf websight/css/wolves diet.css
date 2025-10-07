@@ -1,0 +1,16 @@
+img{
+    width: 300px;
+}
+body{
+    text-align: center;
+    background-color: antiquewhite;
+}
+li{
+    text-align: left;
+}
+h3{
+    background-color: darkgray;
+}
+h1{
+    background-color: chocolate;
+}
