@@ -1,0 +1,52 @@
+.a{
+    background-color: aqua;
+    text-align: center;
+}
+.b{
+    text-align: center;
+    border-style:ridge;
+}
+.c{
+    text-align: center
+}
+.pass{
+    background-image: url(../images/images.jpeg);
+    border-style: dashed;
+    text-align: center;
+    
+}
+.tr{
+    text-align: center;
+    border-style: dashed;
+    background-color: aqua;
+}
+.rtp{
+     background-image: url(../images/images.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.gg{
+    text-align: center;
+    background-image: url(../images/images.jpeg);
+    border-style: dashed;
+}
+.hjk{
+    background-image: url(../images/download.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tjtj{
+    background-image: url(../images/images\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pii{
+    background-image: url(../images/a-blurry-image-of-a-blue-and-white-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+    

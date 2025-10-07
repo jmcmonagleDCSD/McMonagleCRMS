@@ -1,0 +1,12 @@
+body{background-color: burlywood;}
+
+h1{border-style: outset;
+border-radius: 10px;}
+
+.third{background-color: cadetblue;}
+.first{text-align: center;}
+.second{
+    text-align: center;
+}
+
+a{font-weight: bold;}

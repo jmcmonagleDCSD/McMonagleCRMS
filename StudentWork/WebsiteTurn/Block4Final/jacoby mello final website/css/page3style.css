@@ -1,0 +1,130 @@
+body{
+    background-color: beige;
+}
+
+.link-bar{
+    width: 100vh;
+    height: 150px;
+    position: sticky;
+    background-color: bisque;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    justify-content: center;
+   align-content: center;
+   align-items: center;
+   align-content: space-evenly;
+   gap: 20px;
+   border: solid black 2px;
+   border-radius: 50px;
+}
+.link-box{
+    width: 100px;
+    height: 50px;
+    background-color: burlywood;
+    border: solid 2.5px black;
+    border-radius: 25px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
+    
+    transform: transform 0.3s,;
+}
+.link-box:hover{
+    transform: translateY(-10px);
+    background-color: blanchedalmond;
+    color: aliceblue;
+}
+
+a{
+    color: black;
+}
+
+.header-contaner{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.header-main{
+    font-size: 50px;
+}
+
+.info1{
+    background-color: burlywood;
+    width: 275px;
+    border: solid 2px black;
+    border-radius: 50px;
+    position: absolute;
+    left: 2px;
+}
+
+.info-header1{
+    font-size: 175%;
+    
+}
+
+.info-text1{
+    font-size: 25px;
+}
+
+.info-img1{
+    border: solid black 2px;
+    position: absolute;
+    left: 20px;
+    top: 500px;
+}
+
+.info2{
+    background-color: burlywood;
+    width: 275px;
+    border: solid 2px black;
+    border-radius: 50px;
+    position: absolute;
+    left: 500px;
+    top: 550px;
+}
+
+.info-header2{
+    font-size: 175%;
+    
+}
+
+.info-text2{
+    font-size: 25px;
+}
+
+.info-img2{
+    border: solid black 2px;
+    position: absolute;
+    left: 540px;
+
+}
+
+.info3{
+    background-color: burlywood;
+    width: 275px;
+    border: solid 2px black;
+    border-radius: 50px;
+    position: absolute;
+    right: 2px;
+}
+
+.info-header3{
+    font-size: 175%;
+    
+}
+
+.info-text3{
+    font-size: 25px;
+}
+
+.info-img3{
+    border: solid black 2px;
+    position: absolute;
+    right: 40px;
+    top: 670px;
+}

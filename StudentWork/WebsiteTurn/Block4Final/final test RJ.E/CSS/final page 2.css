@@ -1,0 +1,15 @@
+img{
+    height: 300px;
+    width: 250px;
+}
+body{background-color: burlywood;}
+
+h1{border-style: outset;
+border-radius: 10px;}
+.second{background-color: cadetblue;}
+
+a{font-weight: bold;}
+
+.first{text-align:center ;}
+.third{text-align: center;}
+.fourth{text-align: center;}

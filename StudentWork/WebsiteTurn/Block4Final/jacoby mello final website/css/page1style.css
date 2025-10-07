@@ -1,0 +1,127 @@
+
+
+.link-bar{
+    width: 100vh;
+    height: 150px;
+    position: sticky;
+    background-color: darkcyan;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    justify-content: center;
+   align-content: center;
+   align-items: center;
+   align-content: space-evenly;
+   gap: 20px;
+   border: solid 5px black;
+   border-radius: 50px;
+}
+.link-box{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    border: solid 2.5px black;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
+    
+    transform: transform 0.3s,;
+}
+.link-box:hover{
+    transform: translateY(-10px);
+    background-color: lightblue;
+    color: aliceblue;
+}
+
+body{
+    background-image: url(../images/background.jpeg);
+    background-position: right bottom, left top;
+    background-repeat: repeat;
+}
+
+.header-main{
+    font-size: 50px;
+    display: flex;
+}
+
+.header-contaner{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.header-img{
+    position: absolute;
+    left: 100px;
+    border-radius: 90px;
+    border: solid black 5px;
+}
+
+.header-img2{
+    position: absolute;
+    right: 100px;
+    border-radius: 90px;
+    border: solid black 5px;
+}
+
+.info1{
+    background-color: blue;
+    width: 275px;
+    border: solid 2px darkblue;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.info-header1{
+    font-size: 175%;
+    
+}
+
+.info-text1{
+    font-size: 25px;
+}
+
+a{
+    color: black;
+}
+
+.info2{
+    background-color: blue;
+    width: 200px;
+    border: solid 2px darkblue;
+    border-radius: 50px;
+    right: 20px;
+    display: flex;
+    position: absolute;
+}
+
+.info-header2{
+    font-size: 175%;
+    
+}
+
+.info-text2{
+    font-size: 25px;
+}
+
+.center-img{
+    position: absolute;
+    top:300px;
+    left: 400px;
+    right: 500px;
+}
+
+@keyframes center-img-ani{
+    from{
+        transform: scale(100%);
+    }
+    to{
+        transform: scale(110%);
+    }
+}
+.center-img-ani{
+    animation: center-img-ani 2s ease-in-out infinite;
+}

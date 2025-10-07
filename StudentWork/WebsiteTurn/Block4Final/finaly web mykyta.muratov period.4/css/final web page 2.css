@@ -1,0 +1,24 @@
+a{
+
+    border-style: solid;
+    border-color: black;
+    
+}
+h1{
+border-style: solid;
+font-family: cursive;
+border-radius: 25%;
+text-decoration: dashed;
+border-color: blue;
+}
+h2{
+border-style: solid;
+color: cadetblue;
+border-color: black;
+}
+.ukraine h1{
+border-style: dotted;
+color: yellow;      
+border-color: yellow;
+
+}
