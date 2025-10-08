@@ -1,0 +1,47 @@
+h1{
+    border-style: groove;
+    border-radius: 40px;
+    text-align: center;
+    height: 110px;
+    font-size: 90px;
+    border-color: rgb(133, 207, 207);
+    background-color: rgb(173, 235, 237);
+}
+body{
+    background-color: rgba(142, 177, 222, 0.327);
+}
+h2{
+    border-style: groove;
+    border-radius: 15px;
+    height: 75px;
+    font-size: 55px;
+    border-color: rgb(133, 207, 207);
+    background-color: rgb(173, 235, 237);
+    width: 500px;
+}
+p{
+    border-style: groove;
+    border-radius: 15px;
+    height: 400px;
+    font-size: 55px;
+    border-color: rgb(133, 207, 207);
+    background-color: rgb(173, 235, 237);
+    width: 500px;
+    float: left;
+}
+div{
+    border-style: groove;
+    border-radius: 15px;
+    height: 75px;
+    font-size: 55px;
+    border-color: rgb(133, 207, 207);
+    background-color: rgb(173, 235, 237);
+    width: 500px;
+    float: right;
+    height: 325px;
+    
+}
+img{
+    float: right;
+    margin-right: 450px;
+}

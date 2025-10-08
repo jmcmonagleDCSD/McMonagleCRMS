@@ -1,0 +1,15 @@
+p{
+    background-color: rgba(95, 183, 238, 0.839);
+    width: 28%;
+    height: 200px;
+    font-family: fantasy;
+    font-size: 60px;
+    border-style: solid;
+    border-radius: 20%;
+    text-align: center;
+    color: black; 
+    padding-top: 50px;
+    margin-left: 700px;
+    margin-top: 15px;
+    
+}

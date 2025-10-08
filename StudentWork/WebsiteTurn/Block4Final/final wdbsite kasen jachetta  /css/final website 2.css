@@ -1,0 +1,17 @@
+p{
+background-color: aqua;
+border-style: ridge;
+}
+a{
+background-color: cyan;
+border-style: outset;
+text-decoration: underline;
+}
+h1{
+background-color: blue;
+color: black;
+border-style: outset;
+border-right: 10;
+border-left: 10;
+border-radius: 10;
+}

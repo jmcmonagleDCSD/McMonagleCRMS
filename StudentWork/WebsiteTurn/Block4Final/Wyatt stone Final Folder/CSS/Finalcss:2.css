@@ -1,0 +1,19 @@
+body{
+    background-color: crimson;
+}
+h1{
+    background-color: dodgerblue;
+    height: 100px;
+    text-align: center;
+    color: white;
+
+}
+h2{
+    background-color: dodgerblue;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+p{
+    color: white;
+}

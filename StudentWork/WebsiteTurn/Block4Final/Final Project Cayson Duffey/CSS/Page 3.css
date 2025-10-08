@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+a{
+    color: white;
+    font-size: 40px;
+    font-family: "MedievalSharp", cursive;
+}
+h1{
+    font-family: "MedievalSharp", cursive;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+p{
+    font-family: "MedievalSharp", cursive;
+    color: white;
+    font-size: 30px;
+    border-style: double;
+    border-color: white;
+    border-width: 40%;
+}

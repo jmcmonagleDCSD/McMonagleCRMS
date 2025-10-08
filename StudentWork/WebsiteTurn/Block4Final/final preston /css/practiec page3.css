@@ -1,0 +1,40 @@
+p{
+ background-color:rgb(255, 255, 255);
+
+
+
+}
+body{
+background-color: cornflowerblue;
+font-size: 110px;
+
+}
+h1{
+    color: azure;
+    font-family: "Bitcount Grid Double";
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-weight: 900;
+}
+h2{
+    border-style: dotted;
+    border-width: 15px;
+    border-color: azure;
+    border-radius: 30px;
+}
+h3{
+    border-top-style:outset ;
+    border-bottom-style: outset;
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-bottom-width: 40px;
+    border-top-width: 30;
+    border-left-width: 30;
+    border-right-width: 30;
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+}

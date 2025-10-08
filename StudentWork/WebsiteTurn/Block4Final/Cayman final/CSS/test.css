@@ -1,0 +1,41 @@
+h1{
+background-color: aqua;
+height: 100px;
+text-align: center;
+border-style: double;
+margin: 50px;
+    
+}
+h2{
+
+    background-color: darkgreen;
+    height: 200px;
+    width: 200px;
+}
+
+h3{
+
+background-color: darkgreen;
+height: 200px;
+width: 200px;
+border: 200px;
+
+}
+
+
+
+body{
+
+background-color:red;
+
+
+}
+
+h4{
+background-color: coral;
+height: 300px;
+
+
+
+
+}

@@ -1,0 +1,149 @@
+body{
+    background-color: bisque;
+}
+a{
+    font-size: x-large;
+    color: cadetblue;
+    text-decoration: double;
+    font-family: fantasy;
+}
+h1{
+    border-style: groove;
+    border-width: 15px;
+    border-color: burlywood;
+    text-align: center;
+}
+.first{
+    background-color: darkcyan;
+    color: bisque;
+    width:fit-content;
+    height: fit-content;
+    padding: 25px;
+    font-size: larger;
+}
+.qb{
+    padding-top: 50px;
+    text-align: center;
+}
+.home{
+    background-color: darkcyan;
+    border-style: groove;
+    border-width: 15px;
+    padding-left: 50px;
+    font-size: x-large;
+}
+.page-one{
+    background-color: darkcyan;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-size: x-large;
+}
+h3{
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 40px;
+}
+.Recoreds{
+    text-align: center;
+    color: rgb(150, 122, 85);
+    font-size: 70px;
+}
+li{
+    font-weight: 900;
+    font-size: 40px;
+    padding-left: 60px;
+    color: rgb(138, 117, 34);
+}
+.tital{
+font-size: xx-large;
+font-weight: 900;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.all-tital{
+    float: right;
+    border-width: 10px;
+    font-size: large;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.kc-stadium{
+    width: 1200px;
+    height: 400px;
+    padding-left: 25px;
+    padding-top: 30px;
+}
+.back{
+    float: left;
+    color: rgb(7, 149, 149);
+    font-size: xx-large;
+    margin-left: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-style: groove;
+    border-color: rgb(211, 165, 96);
+    border-width: 15px;
+    background-color: rgb(207, 184, 156);
+    text-align: center;
+    font-family: fantasy;
+}
+.next{
+    float: right;
+    color: rgb(7, 149, 149);
+    font-size: xx-large;
+    margin-right: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-style: groove;
+    border-color: rgb(211, 165, 96);
+    border-width: 15px;
+    background-color: rgb(207, 184, 156);
+    text-align: center;
+    font-family: fantasy;
+}
+h2{
+    font-size: 50px;
+    margin-left: 50px;
+}
+.players{
+    font-size: 22px;
+    color: black;
+    text-align: center;
+}
+.page3{
+    background-color: darkcyan;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    width: fit-content;
+}
+.footballplayers{
+    float: left;
+    
+    padding-right: 30px;
+}
+.teams{
+    font-size: 30px;
+    font-family: fantasy;
+}
+.name{
+    text-decoration: underline;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+.picone{
+    width: 1225px;
+    height: 600px;
+}
+.hrone{
+    width: 400px;
+}

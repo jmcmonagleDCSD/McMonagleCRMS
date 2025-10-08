@@ -1,0 +1,42 @@
+div{
+    width: 50%;
+    height: 50%;
+}
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-family: "MedievalSharp", cursive;
+    font-size: 50px;
+    color: white;
+}
+
+h2{
+    text-align: left;
+    font-family: "MedievalSharp", cursive;
+    font-size: 30px;
+    color: white;
+    border-style: double;
+    border-width: 40%;
+    border-color: white;
+}
+ol{
+    font-family: "MedievalSharp", cursive;
+    font-size: 20px;
+    color: white;
+    border-style: double;
+    border-color: white;
+    border-width: 40%;
+}
+a{
+    font-family: "MedievalSharp", cursive;
+    font-size: 40px;
+    color: white;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-family: "MedievalSharp", cursive;
+}

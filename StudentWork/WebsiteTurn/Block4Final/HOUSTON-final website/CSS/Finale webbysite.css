@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(97, 77, 53);
+    
+}
+h1{
+    font: bold;
+    border-radius: 40px;
+    border-style:double;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(210, 165, 106);
+    border-color:rgb(38, 27, 1);
+    background-color: rgb(48, 35, 3);
+}
+.POP{
+    font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: dotted;
+  border-radius: 35px;
+  text-align:center;
+  margin-left: 1150px;
+  text-decoration: none;
+  color: rgb(43, 71, 212);
+}
+.HIPHOP{
+        font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: double;
+  border-radius: 35px;
+  text-align:center;
+  margin-left: 1050px;
+  text-decoration: none;
+  color: chocolate;
+}
+.ROCK{
+        font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: dotted;
+  border-radius: 35px;
+  text-align:center;
+  margin-left: 1150px;
+  text-decoration: none;
+  color: darkviolet;
+}
+.COUNTRY{
+    font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: double;
+  border-radius: 35px;
+  text-align:center;
+  margin-left: 1050px;
+  text-decoration: none;
+  color: red;
+}
+div{
+  border-style: solid;
+  float: right;
+  height:5000px;
+  border-color:rgb(38, 27, 1);
+    background-color: rgb(48, 35, 3);
+    width: 20px;
+    border-radius: 40px;
+}
+p{
+  border-style: solid;
+  float: left;
+  height:5000px;
+  border-color:rgb(38, 27, 1);
+    background-color: rgb(48, 35, 3);
+    width: 20px;
+    border-radius: 40px;
+}

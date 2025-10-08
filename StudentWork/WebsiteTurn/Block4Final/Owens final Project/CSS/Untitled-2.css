@@ -1,0 +1,55 @@
+p{
+    background-color: bisque;
+    font-family:"Story script";
+    text-align: center;
+    border-style: none;
+    border-radius: 0%;
+    border-color: bisque;
+    height: 200px;
+    color: blueviolet;
+    font-size: 30px;
+    
+    
+
+}
+body{
+    background-color: darkcyan;
+    font: size 25px;;
+    
+}
+h1{
+    background-color: aquamarine;
+    float: left;
+    height: 470px;
+    width: 350px;
+     margin-left: 20px;
+}
+h2{
+    background-color: aquamarine;
+    float: left;
+    width: 350px;
+    height: 470px;
+    margin-left: 20px;
+    
+}
+h3{
+    background-color: aquamarine;
+    float: left;
+    width: 350px;
+    height: 470px;
+    margin-left: 20px;
+}
+div{
+    background-color: darkorange;
+    font-family:"Story script";
+    text-align: center;
+    border-style: none;
+    border-radius: 0%;
+    border-color: darkorange;
+    height: 300px;
+    color: black;
+    font-size: 30px;
+    clear: both;
+    text-align: left;
+    font-size: 20px;
+}
