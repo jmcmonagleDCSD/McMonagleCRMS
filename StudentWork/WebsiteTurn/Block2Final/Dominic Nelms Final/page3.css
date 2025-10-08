@@ -1,0 +1,12 @@
+h1{
+    background-color: gold;
+    color: blue;
+    font-size: 100px;
+    font-family: cursive;
+    text-align: center;
+}
+ol{
+    background-color: gray;
+    color: firebrick;
+    font-size: 30px;
+}

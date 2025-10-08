@@ -1,0 +1,33 @@
+body{
+    background-color: skyblue;
+    color: white;
+}
+p{
+    font-size: 20px;
+    
+}
+img{
+    border-radius: 10px;
+}
+h1{
+    background-color: skyblue;
+    text-align: center;
+}
+
+ul{
+    width: 500px;
+    border-style:double;
+    border-color: black;
+    
+    
+}
+.heading{
+   border-style: ridge;
+
+}
+ol{
+    border-style: solid;
+}
+hr{
+    size: 20px;
+}

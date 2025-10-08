@@ -1,0 +1,26 @@
+h1{
+background-color: aquamarine;
+border-radius: 50px;
+text-align: center;
+}
+p{
+background-color: aqua;
+border-radius: 50px;
+font-size: 19px;
+font-weight: bold;
+ margin: 10px;
+ padding: 10px;  
+ border-style: solid;
+height: 10px;
+width: 600px;
+font-style:unset;
+color:blue;
+text-decoration: dashed;
+border width: 50px;
+}
+img{
+border-radius: 50px;
+
+
+
+}

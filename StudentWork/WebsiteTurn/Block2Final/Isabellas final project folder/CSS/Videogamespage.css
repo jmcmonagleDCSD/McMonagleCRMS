@@ -1,0 +1,49 @@
+body{
+    background-color: white;
+}
+.div1{
+    background-color: lavender;
+
+}
+a{
+    font-size: 25px;
+    font-family: Rubik Iso;
+    text-decoration: none;
+    
+}
+h1{
+    font-size: 55px;
+    font-family: Kablammo;
+    text-align: center;
+}
+.div2{
+    background-color: lavender;
+}
+p{
+    font-size: 30px;
+    font-family: Rubik Puddles;
+    
+    
+}
+.div3{
+    height: 500px;
+    background-color: lavender;
+
+   
+}
+
+.div3 img{
+    float: right;
+}
+.div3 p{ 
+    clear: both;
+    float:right;
+}
+h2{
+    font-size: 35px;
+    font-family: Kablammo;
+}
+ul{
+    font-size: 25px;
+    font-family: Rubik Puddles;
+}

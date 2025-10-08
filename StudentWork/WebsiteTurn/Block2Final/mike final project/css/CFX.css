@@ -1,0 +1,10 @@
+body{
+    color: blue;
+}
+div{
+    color: red;
+}
+h1{
+    border: 10px;
+    border-style: double;
+}

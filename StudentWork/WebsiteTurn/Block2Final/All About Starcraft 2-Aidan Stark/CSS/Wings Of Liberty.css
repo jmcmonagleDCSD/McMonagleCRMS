@@ -1,0 +1,36 @@
+.MarSara{ 
+    background-color: dodgerblue;
+    border-style: solid;
+}
+h1{
+    text-align: center;
+}
+.Colonists{
+    background-color: grey;
+    border-style: solid;
+}
+.Tosh{
+    background-color: firebrick;
+    border-style: solid;
+}
+body{
+     background-color:lightcyan;
+}
+.ProtossQuest{
+    background-color: cyan;
+    border: solid;
+}
+.DominionDudes{
+    background-color: red;
+    border-style: solid;
+}
+.Char{
+    background-color: orangered;
+    border: solid;
+    border-style: solid;
+    padding: 20px;
+}
+.Research{
+    background-color: turquoise;
+    border-style: solid;
+}

@@ -1,0 +1,19 @@
+@keyframes slideInLeft {
+from{
+    transform: translate(-250px);
+}
+
+to{
+    transform: translateX(0);
+}
+}
+
+.slideInLeft{
+    animation: slideInLeft 5s ease-in;
+}
+
+body{background-color:yellow ;}
+p{color: crimson;
+font-family: sans-serif;
+border-style: dotted;}
+span{border-style: dotted;}

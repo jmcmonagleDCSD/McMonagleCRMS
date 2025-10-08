@@ -1,0 +1,47 @@
+h1{
+    height: 50px;
+    background-color: navy;
+    color: yellow;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+body{
+    color: blue;
+    background-color: blue;
+    padding: 7px;
+}
+div{
+    width: 400px;
+    background-color: navy;
+    color: yellow;
+    
+    padding: 10px;
+}
+ol{
+    color: navy;
+    background-color: white;
+    
+}
+ul{
+    color: aqua;
+}
+.box2{
+    background-color: blue;
+    float: left;
+}
+.box1{
+    background-color: navy;
+    float: left;
+}
+ul{
+    background-color: navy;
+}
+a{
+    color: yellow;
+}
+h2{
+    color: gold;
+    font-size: 30px;
+}
+    

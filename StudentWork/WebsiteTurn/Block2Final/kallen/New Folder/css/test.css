@@ -1,0 +1,46 @@
+P{
+
+
+background-color: aquamarine;
+
+}
+body{
+
+background-color: rgb(48, 172, 127);
+font-size: 19px;
+
+}
+
+h1{
+
+background-color: bisque;
+font-size: 25spx;
+font-family: "bitcount gritd double";
+text-align: center;
+height: 200px;
+text-align: center;
+}
+
+h2{
+   border-style:solid ;
+   border-width:32px ;
+   border-color:rgb(122, 122, 122) ;
+   border-radius:30px ;
+}
+h3{
+
+
+border-left-style:solid ;
+border-bottom-style:groove ;
+border-left-width:5px ;
+border-right-width:5px;
+}
+p{
+background-color: aqua;
+   width: 200px;
+   height: 200px;
+float: left;
+margin-left: auto;
+
+}
+
