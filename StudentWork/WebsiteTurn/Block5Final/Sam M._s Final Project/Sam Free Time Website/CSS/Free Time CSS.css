@@ -1,0 +1,63 @@
+body{
+    background-color: coral;
+}
+a{
+    border-style: double;
+}
+.Img-1{
+    float: right;
+}
+.Img-2{
+    float: right;
+}
+.Img-3{
+    float: right;
+}
+.Img-4{
+    float: right;
+}
+.Img-5{
+    float: right;
+}
+.Img-6{
+    float: right;
+}
+.Img-7{
+    float: right;
+}
+div h2{
+    color: darkslateblue;
+}
+div h1{
+    color: darkgreen;
+}
+button{
+    color: darkslateblue;
+}
+.Cen-1{
+    text-align: center;
+}
+.Par-1{
+    color: chartreuse;
+}
+.Par-2{
+    color: gold;
+}
+.Par-3{
+    color: darkred;
+}
+.Par-4{
+    color: teal;
+}
+.Par-5{
+    color: aqua;
+}
+.Par-6{
+    color: indigo;
+}
+.Link-1{
+    background-color: aqua;
+}
+.H3-1{
+    float: right;
+}

@@ -1,0 +1,38 @@
+
+.p{background-color:dodgerblue;}
+.body{background-color: lawngreen;}
+
+h1{
+ color:aliceblue;
+text-align: center; 
+font-weight: 200;
+font-family: "Bitcount Grid Double";
+background-color: chocolate;
+}
+.altMLS{
+float:left ;
+font-family: "Bitcount Grid Double";
+text-align:left ;
+background-color: darkseagreen;
+
+
+
+}
+.altNFL{
+float: right;
+font-family: "Bitcount Grid Double";
+text-align: right;
+background-color:blanchedalmond;
+
+}
+.altMLB{
+float: inline-start;
+font-family: "Bitcount Grid Double";
+text-align: start;
+background-color: honeydew;
+}
+.altNBA{
+float:inherit; 
+font-family: "Bitcount Grid Double";   
+
+}

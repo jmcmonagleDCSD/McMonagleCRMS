@@ -1,0 +1,50 @@
+.a{
+    font-size: 100px;
+    margin: 0px;
+    animation-name: dvd;
+    animation-duration: 30s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes dvd {
+    0%{
+        transform: translateX(0px)
+        translateY(0px);
+        
+    }
+
+    15%{
+        transform: translateX(1150px)
+        translateY(1160px);
+        
+    }
+
+    30%{
+        transform: translateX(-1150px)
+        translateY(0px);
+    }
+
+    45% {
+        transform: translateX(1150px)
+        translateY(0px);
+    }
+
+    60% {
+        transform: translateX(-1150px)
+        translateY(1160px);
+    }
+
+
+    75% {
+        transform: translateX(1150px) translateY(1160px);
+
+    }    
+
+    100% {
+        transform: translateX(0px) translateY(0px);
+    }
+
+    
+}

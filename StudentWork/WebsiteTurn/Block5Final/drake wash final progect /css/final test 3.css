@@ -1,0 +1,39 @@
+P{
+background-color: aqua;
+
+
+}
+a{
+background-color: red
+
+;
+
+
+}
+body{
+    background-color: cornflowerblue;
+}
+nav{
+position: sticky;
+top: 0;
+left: 0;
+right: 0;
+}
+.takwondo{
+    height: 400px;
+    width: 400px;
+    float: left;
+}
+.kikingt{
+border-style: dotted;    
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+border-color: blueviolet;
+border-width: 10px;
+}
+.texttree{
+text-align: center;
+
+}

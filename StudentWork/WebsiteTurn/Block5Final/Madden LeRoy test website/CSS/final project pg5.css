@@ -1,0 +1,102 @@
+body{
+    background-color: blue;
+}
+.paragraphone{
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    float: left;
+    font-size: 100px;
+}
+.paragraphtwo{
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    float: left;
+    font-size: 100px;
+}
+.paragraphthree{
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    float: left;
+    font-size: 100px;
+}
+.paragraphfour{
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    float: left;
+    font-size: 100px;
+}
+.paragraphfive{
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    float: right;
+    font-size: 100px;
+}
+.paragraphsix{
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    float: right;
+    font-size: 100px;
+}
+.paragraphseven{
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    float: right;
+    font-size: 100px;
+}
+.paragrapheight{
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    float: right;
+    font-size: 100px;
+}
+h1{
+    color: yellow;
+    text-align: center;
+}
+.divone{
+    text-align: center;
+}
+.linkone{
+    color: yellow;
+    float: left;
+}
+.linktwo{
+    color: yellow;
+    float: left;
+}
+.linkthree{
+    color: yellow;
+    float: left;
+}
+.linkfour{
+    color: yellow;
+    float: left;
+}
+ol{
+    color: yellow;
+    text-align: center;
+    list-style-position: inside;
+}
+ul{
+    color: yellow;
+    text-align: center;
+    list-style-position: inside;
+}
+h3{
+    color: yellow;
+    text-align: center;
+}
+.divtwo{
+    float: left;
+}
+.divthree{
+    float: right;
+}

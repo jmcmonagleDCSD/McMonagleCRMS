@@ -1,0 +1,64 @@
+body {
+            background-image: url(../imgs/background-4232859_1280.png);
+            background-size: cover;
+            background-repeat: no-repeat; 
+        
+        }
+
+
+
+.box{
+    width: 200px;
+    border: solid 2px black;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.container{
+        display: flex;
+        border: solid 15px black;
+        height: 110px;
+        justify-content: space-evenly;
+        align-items:center;
+        overflow: hidden ;
+        background-color: black;
+           
+        
+}
+
+.box2{
+ display: flex;
+ border: solid 15px black;
+ justify-content: center;
+ align-content: center;
+ flex-wrap: wrap;
+ background-color: azure;
+}
+
+.box3{
+    display: flex;
+    width: 250px;
+    border: solid 2px black;
+    height: 150px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.bigbox{
+        display: flex;
+        border: solid 15px black;
+        height: 1000px;
+        width: 500px;
+        justify-content: space-evenly;
+        align-items:center;
+        overflow: hidden ;
+        flex-wrap: wrap;
+        gap: 50px;
+        float: left;
+}

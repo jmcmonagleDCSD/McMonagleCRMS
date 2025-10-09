@@ -1,0 +1,29 @@
+.h{border: solid;
+border-color: darksalmon;
+background-color: darksalmon;}
+
+.cc{border: solid;
+border-color: blueviolet;
+background-color: blueviolet;}
+
+.cd{border: solid;
+border-color: goldenrod;
+background-color: goldenrod;}
+
+body{background-color: darkcyan;}
+
+.one{border: groove;
+background-color: gold;}
+
+.two{border: solid;
+border-color: black;
+background-color: aqua;
+height: 400px;
+width: 900px;
+margin-left: 500px;
+margin: 20px;}
+
+.three{border: solid;
+border-color: orange;
+background-color: salmon;
+}

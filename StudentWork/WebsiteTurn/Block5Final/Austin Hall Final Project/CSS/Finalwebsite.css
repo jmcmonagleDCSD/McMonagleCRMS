@@ -1,0 +1,45 @@
+h1{
+    background-color: lightskyblue;
+    width: 98%;
+    height: 100px;
+    text-align: center;
+    font-family: "Cinzel Decorative";
+    padding-top: 50px;
+    color: darkred;
+    border-style: outset;
+    border-width: 15px;
+    border-color: darkred;
+}
+a{
+    border-style: solid;
+    border-color: lightblue;
+    text-decoration: none;
+}
+img{
+    float: left;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+.learn{
+    float: left;
+    width: 40%;
+    height: 460px;
+    padding: 20px;
+    background-color: lightcoral;
+}
+.photoinfo{
+    color: gray;
+    clear: both;
+    padding-left: 50px;
+}
+h2{
+    font-family: "Cinzel Decorative";
+}
+.Avalanche{
+    background-color: lightskyblue;
+    width: 40%;
+    padding: 50px;
+    height: 230px;
+    float: left;
+    margin-left: 35px;
+}

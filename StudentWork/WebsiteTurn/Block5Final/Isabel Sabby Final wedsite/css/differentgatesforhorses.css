@@ -1,0 +1,13 @@
+body{
+    background-color: orange;
+}
+.one{
+    color:brown;
+    background-color: blanchedalmond;
+    text-align: center;
+    height: 90px;
+}
+.three{
+    background-color: white;
+    float: right;
+}

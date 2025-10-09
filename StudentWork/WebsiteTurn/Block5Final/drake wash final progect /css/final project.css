@@ -1,0 +1,50 @@
+p{
+background-color: aqua;
+}
+
+body{
+
+    background-color: rgb(237, 122, 6);
+
+}
+h1{
+border-top-left-radius: 100px;
+border-top-right-radius: 100px;   
+
+border-bottom-left-radius: 100px;
+border-bottom-right-radius: 100px;
+border-style: dotted;
+border-color: rgb(25, 6, 243);
+}
+.aaahhh{
+
+    float: left;
+}
+.thebox{
+    background-color: red;
+text-align: center;
+height: 400px;
+width: 340px;
+float: right;
+
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: red;
+}
+
+.imagehome{
+height: 450px;
+width: 900px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.homelike{
+background-color: red;
+
+}

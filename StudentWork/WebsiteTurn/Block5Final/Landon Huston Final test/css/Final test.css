@@ -1,0 +1,47 @@
+.cd{border: solid;
+border-color: red;
+background-color: red;
+color: green;}
+
+.cc{border: solid;
+border-color: blue;
+background-color: blue;
+color: yellow;}
+
+.ct{border: solid;
+border-color: orange;
+background-color: orange;
+color: black;}
+
+body{background-color: cadetblue;
+font-family: cursive;}
+
+.one{border: dotted;
+background-color: blueviolet;
+}
+
+.two{border: solid;
+border-color: orange;
+background-color: red;
+height: 400px
+; width: 900px;
+margin-left: 500px;
+margin: 20px;
+color: orange;}
+
+.three{border: solid;
+border-color: rgb(0, 86, 236);
+background-color: blue;
+height: 400px;
+width: 900px;
+margin-left: 500px;
+margin: 20px;
+color: cadetblue;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+<html>
+<head>
+        <link rel="stylesheet" href="../css-practice/page1.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="">hub</a></li>
+            <li><a href="./flex.html">flex</a></li>
+            <li><a href="./what i remember.html">what i remember from last year</a></li>
+            <li><a href="page2.html">free time fun</a></li>
+            <li><a href="./positions.html">positions</a></li>
+            <li><a href="animations.html">animations</a></li>
+            <li><a href="../html/1.html">back to final</a></li>
+        </ul>
+    </nav>
+    
+
+
+    <main>
+        <h2>about the hub</h2>
+        <p>hi welcome to the hub of my website here you can go to my websites like the what i remember from last year page or my free for all website that im doing for fun and i can use any resorces i want to make it goood </p> 
+        
+        <h2>about the creator</h2>
+        <p>hi im colton Lamoreaux and this is my website im working on for my computer sience class this is my 2nd year taking this class but also my last so i want to make it good by doing my best to make a good website and my goal is to just have fun </p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1>leave a coment let me know what you think of my website</h1>
+
+    
+        <div class="comment-section">
+  <h3>Leave a Comment</h3>
+  <form id="commentForm">
+    <label for="username">Name:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="commentText">Comment:</label>
+    <textarea id="commentText" name="commentText" rows="4" required></textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+
+  <div id="commentsDisplay">
+    <h4>Comments</h4>
+    <!-- Comments-->
+  </div>
+</div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const commentForm = document.getElementById('commentForm');
+  const commentsDisplay = document.getElementById('commentsDisplay');
+  let comments = []; 
+
+  
+  function renderComments() {
+    commentsDisplay.innerHTML = '<h4>Comments</h4>'; 
+    if (comments.length === 0) {
+      commentsDisplay.innerHTML += '<p>No comments yet. Be the first to comment!</p>';
+    } else {
+      comments.forEach(comment => {
+        const commentItem = document.createElement('div');
+        commentItem.classList.add('comment-item');
+        commentItem.innerHTML = `<strong>${comment.username}:</strong> ${comment.commentText}`;
+        commentsDisplay.appendChild(commentItem);
+      });
+    }
+  }
+
+  
+  commentForm.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+
+    const username = document.getElementById('username').value;
+    const commentText = document.getElementById('commentText').value;
+
+    if (username && commentText) {
+      comments.push({ username, commentText });
+      document.getElementById('username').value = ''; // Clear input fields
+      document.getElementById('commentText').value = '';
+      renderComments(); // Update the displayed comments
+    } else {
+      alert('Please fill in both name and comment fields.');
+    }
+  });
+
+  // Initial render of comments (if any exist)
+  renderComments();
+});
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+a{
+    font-family: "Dancing Script";
+    text-decoration: none;
+    font-size: 25px;
+    color:darkgoldenrod;
+    text-shadow: 1px 1px 2px black, 1px 1px black;
+}
+body{
+    background-color: rgb(211, 201, 95);
+}
+p{
+    font-family: "Playwrite IT Trad";
+}
+h1{
+    font-family: italianno;
+    font-size: 50px;
+}
+.tvs{
+    border-style: none;
+    background-color: rgb(160, 112, 24);
+    height: 450px;
+
+}
+.tubes{
+    border-style: ridge;
+    background-image: url(../images/Macoroni/macoroni\ tubes\ background.webp);
+    float: left;
+    width: 35%;
+    margin-left: 10px;
+    border-color: rgb(255, 204, 0);
+    
+}
+.shells{
+    border-style: ridge;
+    border-color: rgb(255, 204, 0);
+    background-image: url(../images/Macoroni/shell\ penne\ background.jpg);
+    float: right;
+    width: 35%;
+    margin-right: 10px;
+    
+}
+.macbg{
+    border-style: none;
+    background-color: rgb(255, 233, 174);
+    width: 50%;
+    margin-left: 5%;
+}
+.ttitle{
+    background-color: rgb(255, 233, 174);
+    width: 50px;
+}
+.shellbg{
+    border-style: none;
+    background-color: rgb(230, 201, 36);
+    width: 50%;
+    margin-left: 5%;
+}
+.stitle{
+    background-color: rgb(230, 201, 36);
+    width: 50px;
+}

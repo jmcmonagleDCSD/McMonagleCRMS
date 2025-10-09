@@ -1,0 +1,42 @@
+.h{background-color: gold;
+border: solid;
+border-color: gold;}
+
+.cc{background-color: aqua;
+border: solid;
+border-color: aqua;}
+
+.ct{background-color: salmon;
+border: solid;
+border-color: salmon;}
+
+body{background-color: darkslateblue;}
+
+.one{border: solid;
+border-color: crimson;
+background-color: black;
+color: crimson;}
+
+.two{border: solid;
+border-color: cornflowerblue;
+background-color: aqua;
+color: cornflowerblue;
+height: 400px;
+width: 900px;
+margin-left: 500px;
+margin: 20px;}
+
+.three{border: solid;
+border-color: green;
+background-color: darkgreen;
+color: green;}
+
+.four{border: solid;
+border-color: gold;
+background-color: yellow;
+color: gold;height: 200px;
+width: 450px;
+margin-left: 500px;
+margin: 20px;
+}
+

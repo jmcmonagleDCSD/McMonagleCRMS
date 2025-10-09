@@ -1,0 +1,29 @@
+body{
+    background-color: goldenrod;
+}
+h1{
+    color: green;
+    border-style: solid;
+    border-width: 15px;
+    border-color: blue;
+    border-radius: 30px;
+    font-style: italic;
+    font-family: cursive;
+}
+h2{
+    color: turquoise;
+    border-style: solid;
+    border-width: 10.25px;
+    border-color: rebeccapurple;
+    border-radius: 30px;
+    font-style: italic;
+    font-family: cursive;
+}
+p{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    color: yellow;
+    background-color: cornflowerblue;
+}

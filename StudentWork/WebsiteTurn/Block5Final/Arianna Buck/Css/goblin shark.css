@@ -1,0 +1,64 @@
+h1{
+     text-align: center;
+    background-color: lightyellow;
+    border-style: double;
+    border-radius: 100px;
+    border-width: 25px;
+    border-color: cornflowerblue;
+    padding: 10px;
+    width: 500px;
+    margin:auto;
+    font-family: "Chewy", system-ui;
+}
+a{
+     font-family: "Alumni Sans Pinstripe", sans-serif; 
+     font-size: 27px;
+}
+body{
+     background-color: rgb(244, 222, 255);
+}
+h2{
+     font-family: "Chewy", system-ui;
+     text-align: center;
+}
+p{
+     font-family: "Alumni Sans Pinstripe", sans-serif;
+     font-size: 27px;
+  
+}
+.black{
+     background-color: rgb(225, 186, 247);
+     border-style: double;
+     border-color: rgb(211, 136, 236);
+     border-width: 10px;
+     border-radius: 100px;
+     text-align: center;
+}
+ul{
+      font-family: "Alumni Sans Pinstripe", sans-serif;
+      font-size: 27px;
+}
+.silver{
+     background-color: rgb(225, 186, 247);
+     border-style: double;
+     border-color: rgb(211, 136, 236);
+     border-width: 10px;
+     border-radius: 100px;
+     text-align: center;
+}
+.gold{
+     background-color: rgb(225, 186, 247);
+     border-style: double;
+     border-color: rgb(211, 136, 236);
+     border-width: 10px;
+     border-radius: 100px;
+     text-align: center;
+}
+.copper{
+     background-color: rgb(225, 186, 247);
+     border-style: double;
+     border-color: rgb(211, 136, 236);
+     border-width: 10px;
+     border-radius: 100px;
+     text-align: center;
+}

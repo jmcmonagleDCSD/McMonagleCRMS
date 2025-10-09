@@ -1,0 +1,72 @@
+body{
+    background-color: goldenrod;
+}
+h1{
+    color: blue;
+    border-style: solid;
+    border-width: 15px;
+    border-color: purple;
+    border-radius: 30px;
+    font-style: italic;
+    font-family: cursive;
+}
+h2{
+    color: aqua;
+    border-style: solid;
+    border-width: 10.25px;
+    border-color: green;
+    border-radius: 30px;
+    font-style: italic;
+    font-family: cursive;
+}
+h3{
+    color: green;
+    border-style: solid;
+    border-width: 7.5px;
+    border-color: yellow;
+    border-radius: 30px;
+    font-style: italic;
+    font-family: cursive;
+}
+a{
+    color: yellow;
+    background-color: cornflowerblue;
+}
+p{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.one{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: blue;
+    margin-left: 100px;
+    margin-right: 600px;
+    padding: 5px;
+    float: left;
+}
+.two{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: blue;
+    padding: 5px;
+    float: left;
+}
+.three{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: blue;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 5px;
+    float: right;
+}

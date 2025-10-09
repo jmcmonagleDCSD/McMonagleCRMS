@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    height: 100px;
+    padding-top: 60px;
+    background-image: linear-gradient( lightcoral, lightskyblue);
+    border-style: outset;
+    border-width: 15px;
+}
+a{
+    border-style: solid;
+    border-color: lightsteelblue;
+    text-decoration: none;
+}
+.photoinfo{
+    color: gray;
+    font-size: 15px;
+    margin-top: 0px;
+}
+img{
+    margin-bottom: 0px;
+}
+.Stanley{
+    background-color: lightskyblue;
+    width: 70%;
+    margin-left: 15%;
+    padding: 15px;
+}
+h2{
+    text-align: center;
+    color: darkred;
+}

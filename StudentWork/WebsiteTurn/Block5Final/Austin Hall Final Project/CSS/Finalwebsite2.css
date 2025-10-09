@@ -1,0 +1,43 @@
+h1{
+    background-color: lightcoral;
+    width: 98%;
+    height: 91px;
+    text-align: center;
+    padding-top: 45px;
+    border-style: outset;
+    border-width: 15px;
+    border-color: lightskyblue;
+}
+a{
+    border-style: solid;
+    border-color: lightcyan;
+    text-decoration: none;
+}
+th{
+    background-color: lightblue;
+    width: 150px;
+    height: 30px;
+    position: relative;
+    font-family: "Cinzel Decorative";
+}
+table{
+    width: 1105px;
+    background-color: black;
+    margin-left: 70px;
+}
+.date{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+td{
+    
+    background-color: lightskyblue;
+    position: relative;
+    height: 114px;
+    color: darkred;
+}
+.photo{
+    color: grey;
+    font-size: 10px;
+}

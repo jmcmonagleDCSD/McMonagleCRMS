@@ -1,0 +1,43 @@
+a{
+    color: cornflowerblue;
+    text-align: center;
+}
+h1{
+    color: brown;
+    text-align: center;
+    background-color: rgb(214, 69, 69);
+    border: 5px;
+    border-style: solid;
+    border-radius: 100px;
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h2{
+    color: rgb(125, 32, 32);
+    text-align: center;
+}
+h3{
+    color: rgb(70, 18, 18);
+    text-align: center;
+}
+.link{
+    height: 945px;
+}
+body{
+    background-color: rgb(233, 153, 153);
+}
+p{
+    text-align: center;
+
+
+}
+.links{
+    text-align: center;}
+
+p{
+    font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

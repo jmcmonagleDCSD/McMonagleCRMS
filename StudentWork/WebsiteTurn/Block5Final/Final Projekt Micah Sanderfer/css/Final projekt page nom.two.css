@@ -1,0 +1,86 @@
+@font-face{
+    font-family:narutofont;
+    src:url(../Fonts/njnaruto.ttf)}
+    h1{
+    }
+    .titletwo{
+        font-family: narutofont;
+        border-style: double;
+        border-width: 100px;
+    }
+    a{
+        font-size: 55px;
+        text-decoration: none;
+        color: cadetblue;
+        margin-right: 33px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 1000px;
+        clear: both;
+        text-align: left;
+    }
+    h1{
+        text-align: center;
+        font-size: 100px;
+    }
+    body{
+        background-color:rgb(233, 157, 122);
+
+    }
+    p{
+
+    }
+    .pone{
+        clear:both;
+        float:left;
+        width: 400px;
+        font-size:larger;
+        background-color:cadetblue;
+        float:left;
+        color: aliceblue;
+        margin-bottom: 1500px;
+        margin-right: 100px;
+    }
+    h1{
+
+    }
+    .titleone{
+        font-family:monospace ;
+        font-size:67px;
+        margin-top: 67px;
+        margin-right: 2000px;
+        text-align: left;
+        background-color:cadetblue;
+        border-style:ridge;
+        border-color: cadetblue;
+        border-width:50px;
+       
+    }
+    img{
+        width: 500px;
+        align-items: center;
+    }
+    ul{
+        background-color: cadetblue;
+        border-style: dashed;
+        border-color:black;
+        border-width: 67px;
+        color: aliceblue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 100px;
+        margin-bottom: 1000px;
+    }
+    h1{
+
+    }
+    .titlethree{
+        margin-top: 1000px;
+        margin-right: 100px;
+    }
+    p{
+
+    }
+    .ptwo{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 10000px;
+    }

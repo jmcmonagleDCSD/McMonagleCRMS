@@ -1,0 +1,39 @@
+body{
+    background-image: linear-gradient(to bottom left, #A89B86, #f4a460);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+hr{
+    background-color: black;
+    height: 2px;
+    border-color: black;
+    border-style: double;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+p{
+    background-color: burlywood;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: blueviolet;
+}
+img{
+    margin: 80px;
+}
+.one{
+    float: left;
+    margin-left: 100px;
+    background: none;
+}
+.two{
+    float: left;
+    margin-left: 300px;
+    background: none;
+}

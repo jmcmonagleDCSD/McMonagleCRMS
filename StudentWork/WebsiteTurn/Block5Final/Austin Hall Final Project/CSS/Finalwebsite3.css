@@ -1,0 +1,48 @@
+h1{
+    background-color: lightskyblue;
+    text-align: center;
+    height: 91px;
+    padding-top: 45px;
+    font-family: "Cinzel Decorative";
+    color: darkred;
+    border-style: outset;
+    border-width: 15px;
+    border-color: darkred;
+    width: 98%;
+}
+a{
+    border-style: solid;
+    border-color: light;
+    text-decoration: none;
+}
+li{
+    font-family: "Cinzel Decorative";
+    font-size: 20px;
+    margin: 28px;
+}
+.Names{
+    width: 45%;
+    height: 500px;
+    background-color: lightcoral;
+    padding: 15px;
+    float: left;
+    margin-left: 20px;
+}
+.Stats{
+    float: left;
+}
+th{
+    width: 150px;
+    background-color: white;
+}
+td{
+    width: 150px;
+    background-color: lightskyblue;
+    height: 52px;
+}
+table{
+    background-color: lightcoral;
+}
+p{
+    clear: both;
+}

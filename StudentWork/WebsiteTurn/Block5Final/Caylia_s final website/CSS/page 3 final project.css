@@ -1,0 +1,35 @@
+body{
+    background-color: lightskyblue;
+    font-family: "Chewy", system-ui;
+}
+div{
+    background-color:rgb(255, 159, 220);
+}
+.fav{
+    background-color: rgb(255, 150, 150);
+}
+.lione{
+background-color: rgb(240, 202, 140);
+    margin: 20px;
+}
+.litwo{
+    background-color: khaki;
+    margin: 20px;
+}
+.lithree{
+    background-color: lightgreen;
+    margin: 20px;
+}
+.lifour{
+    background-color: rgb(161, 255, 216);
+    margin: 20px;
+}
+.lifive{
+        background-color: rgb(180, 232, 255);
+    margin: 20px;
+    
+}
+.lisix{
+    background-color: rgb(197, 146, 255);
+    margin: 20px;
+}

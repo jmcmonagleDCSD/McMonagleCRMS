@@ -1,0 +1,43 @@
+.green{
+    text-align: center;
+    background-color: lightyellow;
+    border-style: double;
+    border-radius: 100px;
+    border-width: 25px;
+    border-color: cornflowerblue;
+    padding: 10px;
+    width: 500px;
+    margin:auto;
+    font-family: "Chewy", system-ui;
+
+}
+body{
+    background-color: rgb(230, 255, 243);
+}
+.red{
+    float: left;
+    width: 50%;
+   padding: 10px;
+     font-family: "Alumni Sans Pinstripe", sans-serif;
+     font-size: 27px;
+        }
+
+.orange:after{
+    content: normal;
+    display: table;
+    clear: both;
+    
+   
+        }
+ .orange{
+background-color: darkseagreen;
+border-style: double;
+border-color: cornflowerblue;
+border-radius: 100px;
+border-width: 10px;
+        }
+.yellow{
+    padding: 10px;
+     font-family: "Alumni Sans Pinstripe", sans-serif;
+     font-size: 27px;
+}

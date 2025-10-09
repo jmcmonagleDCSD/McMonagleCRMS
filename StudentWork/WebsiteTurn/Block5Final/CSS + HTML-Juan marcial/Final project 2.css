@@ -1,0 +1,50 @@
+body{
+    background-color: darksalmon;
+    font-family: fantasy;
+}
+p{
+    background-color: burlywood;
+    font-family: fantasy;
+    font-size: 50px;
+    border-style: dotted;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 50px;
+    text-align: center;
+}
+h1{
+    background-color: burlywood;
+    font-family: fantasy;
+    border-style: dotted;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 50px;
+}
+h1{
+    background-color: burlywood;
+    width: 3000px;
+    height: 120px;
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+}
+p{
+    font-size: 50px;
+    border-style: dotted;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 50px;
+    text-align: center;
+    font-family: fantasy;
+}
+a{
+    background-color: burlywood;
+    width: 1000px;
+    height: 1000px;
+    font-size: 25px;
+    text-decoration: none;
+     border-width: 5px;  
+    border-color: salmon;
+    border-radius: 50px;
+    border-style: solid;
+}

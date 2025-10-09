@@ -1,0 +1,20 @@
+body{
+    background-color: lightskyblue; 
+     font-family: "Chewy", system-ui;
+}
+.silk{
+    background-color: rgb(255, 181, 195);
+    margin: 20px;
+}
+.sling{
+    background-color: rgb(240, 202, 140);
+    margin: 20px;
+}
+.hoop{
+    background-color: khaki;
+    margin: 20px;
+}
+.trapize{
+    background-color: lightgreen;
+    margin: 20px;
+}
