@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(16, 131, 16);
+}
+
+.box1{
+    border-style: groove;
+    text-align: center;
+}
