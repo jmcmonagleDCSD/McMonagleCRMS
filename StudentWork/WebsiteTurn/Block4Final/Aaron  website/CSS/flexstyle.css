@@ -1,0 +1,41 @@
+.box{
+    width: 150px;
+    height: 150px;
+    border: solid 2px black;
+    color: blue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.box1{
+    background: rebeccapurple;
+    color: white;
+
+    position: static;
+}
+.box2{
+    background: rebeccapurple;
+    color: white;
+    z-index: 1;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.box3{
+    background: rebeccapurple;
+    color: white;
+
+    position: absolute;
+}
+.box3{
+    background: rebeccapurple;
+    color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
