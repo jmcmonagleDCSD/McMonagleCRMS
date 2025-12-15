@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://de1hy2bxg3bqx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_65fnq"]
+load_path = "res://.godot/imported/New Piskel (3).png-937fa0c67c551742e470d4dd89e4dd43.ctex"
+
+[node name="my own thing" type="TextureRect"]
+offset_right = 346.0
+offset_bottom = 328.0
+texture = SubResource("CompressedTexture2D_65fnq")

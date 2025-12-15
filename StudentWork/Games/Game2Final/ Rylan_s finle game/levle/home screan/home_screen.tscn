@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1o1pov855xs3"]
+
+[ext_resource type="Script" path="res://levle/home screan/home_screen.gd" id="1_mdfmf"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_i4db7"]
+load_path = "res://.godot/imported/Pink.png-eab7fe0b2f2f7a05ef2e0ba533d21705.ctex"
+
+[node name="home screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 795.0
+offset_bottom = 288.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mdfmf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -795.0
+offset_top = -515.0
+offset_right = 4196.0
+offset_bottom = 1871.0
+texture = SubResource("CompressedTexture2D_i4db7")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 984.0
+offset_top = 206.0
+offset_right = 1529.0
+offset_bottom = 296.0
+theme_override_font_sizes/font_size = 65
+text = "Platformer game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 557.0
+offset_top = 900.0
+offset_right = 2036.0
+offset_bottom = 1308.0
+theme_override_font_sizes/font_size = 65
+text = "press space or up arrow or W to start the game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 758.0
+offset_top = 195.0
+offset_right = 1748.0
+offset_bottom = 764.0
+theme_override_font_sizes/font_size = 65
+text = "this is super hard
+
+good luck you will need it"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 568.0
+offset_top = 625.0
+offset_right = 1948.0
+offset_bottom = 1075.0
+theme_override_font_sizes/font_size = 65
+text = "Please put at full screen.
+
+Thank you"
+horizontal_alignment = 1
+vertical_alignment = 1

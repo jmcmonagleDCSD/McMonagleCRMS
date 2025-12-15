@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b24ehqpon86l5"]
+
+[node name="advice" type="Label"]
+offset_right = 638.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "You have made it to the invisible obby. 
+
+This is the hardest part of my game.
+
+Good luck"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://defrie3ra0qh5"]
+
+[ext_resource type="Texture2D" uid="uid://btbv81m61pfxc" path="res://New Piskel (3).png" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://b16fu6bcb2k0s" path="res://player.tscn" id="2_vonw3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vonw3"]
+size = Vector2(1704, 57.5)
+
+[node name="level" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1704.0
+offset_bottom = 359.0
+texture = ExtResource("1_u52ul")
+
+[node name="player" parent="TextureRect" instance=ExtResource("2_vonw3")]
+position = Vector2(53, 262.00003)
+scale = Vector2(6, 6)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(852, 331)
+shape = SubResource("RectangleShape2D_vonw3")

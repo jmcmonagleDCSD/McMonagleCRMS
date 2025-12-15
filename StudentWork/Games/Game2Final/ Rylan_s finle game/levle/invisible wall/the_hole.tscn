@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d0a33mbmdi1xr"]
+
+[node name="the hole" type="Label"]
+offset_right = 639.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "This is the first part.
+
+The pit
+
+Find a way out."
+horizontal_alignment = 1
+vertical_alignment = 1

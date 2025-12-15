@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=3 uid="uid://btmluxk6i6uok"]
+
+[ext_resource type="Texture2D" uid="uid://suwkoef011j1" path="res://Assets/Items/New Piskel (1).png" id="1_voade"]
+
+[sub_resource type="GDScript" id="GDScript_voade"]
+
+[sub_resource type="Animation" id="Animation_ctm0q"]
+resource_name = "Ability1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.80278033, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-1.5760323, -1.0297443, -0.66497046, 0.06283186, -1.0297443, -1.5760323]
+}
+
+[sub_resource type="Animation" id="Animation_qd61k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5760323]
+}
+
+[sub_resource type="Animation" id="Animation_3vn2e"]
+resource_name = "Swing"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.13333334, 0.33333334, 0.56666666, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-1.5760323, -2.3038347, -2.485349, -2.120575, -1.5742869]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ctm0q"]
+_data = {
+&"Ability1": SubResource("Animation_ctm0q"),
+&"RESET": SubResource("Animation_qd61k"),
+&"Swing": SubResource("Animation_3vn2e")
+}
+
+[node name="Node2D" type="Node2D"]
+script = SubResource("GDScript_voade")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(53.84001, 46)
+rotation = -1.5760323
+scale = Vector2(2.3174996, 2.2800004)
+texture = ExtResource("1_voade")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_ctm0q")
+}

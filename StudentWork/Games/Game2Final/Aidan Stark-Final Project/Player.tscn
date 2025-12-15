@@ -1,0 +1,154 @@
+[gd_scene load_steps=14 format=3 uid="uid://l0d14r4u2miq"]
+
+[ext_resource type="Script" uid="uid://bfjyng6beencs" path="res://player.gd" id="1_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://c5mekr3wb3ybq" path="res://Assets/Main Characters/Kael Thorne 2.png" id="1_xhfnw"]
+[ext_resource type="PackedScene" uid="uid://vl3f7ox1h654" path="res://PlayerHammer.tscn" id="3_kne1u"]
+[ext_resource type="Script" uid="uid://c7g4tl160jxii" path="res://node_2d.gd" id="4_e80uo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kpjcp"]
+radius = 21.0
+height = 110.0
+
+[sub_resource type="Animation" id="Animation_tdg3f"]
+resource_name = "Death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KaelThorne3:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.16666669, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [2, 14]
+}
+
+[sub_resource type="Animation" id="Animation_dtqjt"]
+resource_name = "Idle_back"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KaelThorne3:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.39999998, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [15, 16, 17]
+}
+
+[sub_resource type="Animation" id="Animation_kpjcp"]
+resource_name = "Idle_forward"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KaelThorne3:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.39999998, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_cxr5p"]
+resource_name = "Jump"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KaelThorne3:frame")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.96666664),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [12, 2]
+}
+
+[sub_resource type="Animation" id="Animation_kne1u"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KaelThorne3:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_e80uo"]
+resource_name = "Walk_back"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KaelThorne3:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6, 0.8, 0.96666664),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [7, 8, 9, 10, 15]
+}
+
+[sub_resource type="Animation" id="Animation_xhfnw"]
+resource_name = "Walk_forward"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("KaelThorne3:frame")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6, 0.8, 0.96666664),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [3, 4, 5, 6, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e80uo"]
+_data = {
+&"Death": SubResource("Animation_tdg3f"),
+&"Idle_back": SubResource("Animation_dtqjt"),
+&"Idle_forward": SubResource("Animation_kpjcp"),
+&"Jump": SubResource("Animation_cxr5p"),
+&"RESET": SubResource("Animation_kne1u"),
+&"Walk_back": SubResource("Animation_e80uo"),
+&"Walk_forward": SubResource("Animation_xhfnw")
+}
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_kpjcp")
+
+[node name="KaelThorne3" type="Sprite2D" parent="."]
+position = Vector2(99, 79)
+texture = ExtResource("1_xhfnw")
+hframes = 4
+vframes = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(97, 88)
+shape = SubResource("CapsuleShape2D_kpjcp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_e80uo")
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(142, 87)
+
+[node name="Hamma" parent="." instance=ExtResource("3_kne1u")]
+position = Vector2(81.99999, 54.999996)
+rotation = 0.00057295104
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("4_e80uo")

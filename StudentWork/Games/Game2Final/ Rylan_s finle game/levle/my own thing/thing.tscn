@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm2iv5846ovoo"]
+
+[ext_resource type="Texture2D" uid="uid://brmqmnxkwy0p4" path="res://assets/New Piskel (3).png" id="1_ti5gw"]
+
+[node name="thing" type="TextureRect"]
+offset_right = 639.0
+offset_bottom = 653.0
+texture = ExtResource("1_ti5gw")

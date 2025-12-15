@@ -1,0 +1,242 @@
+[gd_scene load_steps=33 format=3 uid="uid://bgyc626043e30"]
+
+[ext_resource type="Script" path="res://levle/player/player.gd" id="1_iqbf0"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yftey"]
+load_path = "res://.godot/imported/Fall (32x32).png-5175633137cfab12dbe4234760793375.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kb34x"]
+load_path = "res://.godot/imported/Idle (32x32).png-8078aadc43e1a7e596ab707ecc7111fa.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_diaih"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4xit"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1snb"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7csgw"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8lxx"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83hrm"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irq6f"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2tjp"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mpxs"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fnoa"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jb3w6"]
+atlas = SubResource("CompressedTexture2D_kb34x")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gdd1a"]
+load_path = "res://.godot/imported/Jump (32x32).png-6553661eb305ed4ca6a027bd2c626547.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_k7etw"]
+load_path = "res://.godot/imported/Run (32x32).png-537891b0fa867e757fe464a2a0905d4b.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vldw2"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ce8q4"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uu70k"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ub2p0"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fhkn"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo3u1"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5j76m"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e2tck"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmi72"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahbid"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q4vke"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8v481"]
+atlas = SubResource("CompressedTexture2D_k7etw")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ste0b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_yftey")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_diaih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4xit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1snb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7csgw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8lxx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83hrm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_irq6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2tjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mpxs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fnoa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jb3w6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_gdd1a")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vldw2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ce8q4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uu70k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ub2p0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fhkn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vo3u1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5j76m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e2tck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bmi72")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahbid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4vke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8v481")
+}],
+"loop": true,
+"name": &"run",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8mjn"]
+size = Vector2(89, 119)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lglc3"]
+size = Vector2(20, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4w8gg"]
+size = Vector2(20, 43)
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_iqbf0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 1.90735e-06)
+scale = Vector2(5.23926, 4.96484)
+sprite_frames = SubResource("SpriteFrames_ste0b")
+animation = &"run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.5, 5.5)
+shape = SubResource("RectangleShape2D_u8mjn")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 15.0
+rotation_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-47, -10)
+shape = SubResource("RectangleShape2D_lglc3")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(48, -12.5)
+shape = SubResource("RectangleShape2D_4w8gg")

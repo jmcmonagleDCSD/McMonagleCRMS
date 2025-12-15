@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh8yha0nl1nhk"]
+
+[ext_resource type="Script" uid="uid://btoytdlsb2hkw" path="res://main levle/score.gd" id="1_34mpl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_34mpl"]
+
+[node name="Label" type="Label"]
+offset_left = 282.0
+offset_top = 3.0
+offset_right = 330.0
+offset_bottom = 26.0
+text = "Score:"
+label_settings = SubResource("LabelSettings_34mpl")
+script = ExtResource("1_34mpl")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

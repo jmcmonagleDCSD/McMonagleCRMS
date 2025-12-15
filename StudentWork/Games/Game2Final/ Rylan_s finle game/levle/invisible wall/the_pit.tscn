@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bbaapx4t2t27j"]
+
+[node name="The pit" type="Label"]
+offset_right = 638.0
+offset_bottom = 358.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Welcom to,
+
+The Pit
+
+Find your way out"
+horizontal_alignment = 1
+vertical_alignment = 1
