@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://41sn8ientq2h"]
+
+[ext_resource type="Texture2D" uid="uid://biaovabw8npmx" path="res://assets/Terrain/Monster4.png" id="1_5eilh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhkmy"]
+atlas = ExtResource("1_5eilh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qokk"]
+atlas = ExtResource("1_5eilh")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04mnw"]
+atlas = ExtResource("1_5eilh")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_og5p8"]
+atlas = ExtResource("1_5eilh")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j37iy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhkmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qokk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_04mnw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_og5p8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cgtuc"]
+radius = 6.4886227
+
+[node name="Monster 4" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(10, 10)
+sprite_frames = SubResource("SpriteFrames_j37iy")
+autoplay = "default"
+frame_progress = 0.84323454
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(27.000002, 63)
+scale = Vector2(15, 15)
+shape = SubResource("CircleShape2D_cgtuc")

@@ -1,0 +1,3653 @@
+[gd_scene load_steps=10 format=4 uid="uid://67nu4cb3lnc5"]
+
+[ext_resource type="Texture2D" uid="uid://b8o8knvw107kw" path="res://assets/Terrain/Terrain (16x16).png" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://dy741ldt4e80c" path="res://game_modes/wave.tscn" id="2_vonw3"]
+[ext_resource type="Script" uid="uid://3n5ejgfn8vm7" path="res://tile_map_layer.gd" id="3_0b4ue"]
+[ext_resource type="Script" uid="uid://3suiglyrfitd" path="res://background.gd" id="3_1ainy"]
+[ext_resource type="Texture2D" uid="uid://xm5pulisfslw" path="res://assets/Background/Brown.png" id="4_f2txt"]
+[ext_resource type="PackedScene" uid="uid://cbxd026deknvn" path="res://hazards/spike.tscn" id="6_n6hdu"]
+[ext_resource type="PackedScene" uid="uid://c4dxi1kv37xe5" path="res://hazards/saw.tscn" id="7_km5ld"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vonw3"]
+texture = ExtResource("1_u52ul")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:4/0 = 0
+13:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:4/0 = 0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:4/0 = 0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+12:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:5/0 = 0
+13:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:5/0 = 0
+14:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:5/0 = 0
+15:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+13:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:6/0 = 0
+14:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:6/0 = 0
+15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_oi3di"]
+physics_layer_0/collision_layer = 4
+sources/0 = SubResource("TileSetAtlasSource_vonw3")
+
+[node name="level" type="Node2D"]
+
+[node name="background" type="TextureRect" parent="."]
+offset_left = 10.0
+offset_top = -4.0
+offset_right = 4560.0
+offset_bottom = 362.0
+texture = ExtResource("4_f2txt")
+stretch_mode = 1
+script = ExtResource("3_1ainy")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD//wAAAAAMAAQAAAAAAAAAAAANAAQAAAABAAAAAAANAAQAAAACAAAAAAANAAQAAAADAAAAAAANAAQAAAAEAAAAAAANAAQAAAAFAAAAAAANAAQAAAAGAAAAAAANAAQAAAAHAAAAAAANAAQAAAAIAAAAAAANAAQAAAAJAAAAAAANAAQAAAAKAAAAAAANAAQAAAALAAAAAAANAAQAAAAMAAAAAAANAAQAAAANAAAAAAANAAQAAAAOAAAAAAANAAQAAAAPAAAAAAANAAQAAAAQAAAAAAANAAQAAAARAAAAAAANAAQAAAASAAAAAAANAAQAAAATAAAAAAANAAQAAAAUAAAAAAANAAQAAAAVAAAAAAANAAQAAAAWAAAAAAANAAQAAAAXAAAAAAANAAQAAAAYAAAAAAANAAQAAAAZAAAAAAANAAQAAAAaAAAAAAANAAQAAAAbAAAAAAANAAQAAAAcAAAAAAANAAQAAAAdAAAAAAANAAQAAAAeAAAAAAANAAQAAAAfAAAAAAANAAQAAAAgAAAAAAANAAQAAAAhAAAAAAANAAQAAAAiAAAAAAANAAQAAAAjAAAAAAANAAQAAAAkAAAAAAANAAQAAAAlAAAAAAANAAQAAAAmAAAAAAANAAQAAAAnAAAAAAANAAQAAAAoAAAAAAANAAQAAAD//xYAAAAMAAQAAAAAABYAAAANAAQAAAABABYAAAANAAQAAAACABYAAAANAAQAAAADABYAAAANAAQAAAAEABYAAAANAAQAAAAFABYAAAANAAQAAAAGABYAAAANAAQAAAAHABYAAAANAAQAAAAIABYAAAANAAQAAAAJABYAAAANAAQAAAAKABYAAAANAAQAAAALABYAAAANAAQAAAAMABYAAAANAAQAAAANABYAAAANAAQAAAAOABYAAAANAAQAAAAPABYAAAANAAQAAAAQABYAAAANAAQAAAARABYAAAANAAQAAAASABYAAAANAAQAAAATABYAAAANAAQAAAAUABYAAAANAAQAAAAVABYAAAANAAQAAAAWABYAAAANAAQAAAAXABYAAAANAAQAAAAYABYAAAANAAQAAAAZABYAAAANAAQAAAAaABYAAAANAAQAAAAbABYAAAANAAQAAAAcABYAAAANAAQAAAAdABYAAAANAAQAAAAeABYAAAANAAQAAAAfABYAAAANAAQAAAAgABYAAAANAAQAAAAhABYAAAANAAQAAAAiABYAAAANAAQAAAAjABYAAAANAAQAAAAkABYAAAANAAQAAAAlABYAAAANAAQAAAAmABYAAAANAAQAAAAnABYAAAANAAQAAAAoABYAAAANAAQAAAApABYAAAANAAQAAAAqABYAAAANAAQAAAArABYAAAANAAQAAAAsABYAAAANAAQAAAAtABYAAAANAAQAAAAuABYAAAANAAQAAAAvABYAAAANAAQAAAAwABYAAAANAAQAAAAxABYAAAANAAQAAAAyABYAAAANAAQAAAAzABYAAAANAAQAAAA0ABYAAAANAAQAAAA1ABYAAAANAAQAAAA2ABYAAAANAAQAAAA3ABYAAAANAAQAAAA4ABYAAAANAAQAAAA5ABYAAAANAAQAAAA6ABYAAAANAAQAAAA7ABYAAAANAAQAAAA8ABYAAAANAAQAAAA9ABYAAAANAAQAAAA+ABYAAAANAAQAAAA/ABYAAAANAAQAAABAABYAAAANAAQAAABBABYAAAANAAQAAABCABYAAAANAAQAAABDABYAAAANAAQAAABEABYAAAANAAQAAABFABYAAAANAAQAAABGABYAAAANAAQAAABHABYAAAANAAQAAABIABYAAAANAAQAAABJABYAAAANAAQAAABKABYAAAANAAQAAABLABYAAAANAAQAAABMABYAAAANAAQAAABNABYAAAANAAQAAABOABYAAAANAAQAAABPABYAAAANAAQAAABQABYAAAANAAQAAABRABYAAAANAAQAAABSABYAAAANAAQAAABTABYAAAANAAQAAABUABYAAAANAAQAAABVABYAAAANAAQAAABWABYAAAANAAQAAABXABYAAAANAAQAAABYABYAAAANAAQAAABZABYAAAANAAQAAABaABYAAAANAAQAAABbABYAAAANAAQAAABcABYAAAANAAQAAABdABYAAAANAAQAAABeABYAAAANAAQAAABfABYAAAANAAQAAABgABYAAAANAAQAAABhABYAAAANAAQAAABiABYAAAANAAQAAABjABYAAAANAAQAAABkABYAAAANAAQAAABlABYAAAANAAQAAABmABYAAAANAAQAAABnABYAAAANAAQAAABoABYAAAANAAQAAABpABYAAAANAAQAAABqABYAAAANAAQAAABrABYAAAANAAQAAABsABYAAAANAAQAAABtABYAAAANAAQAAABuABYAAAANAAQAAABvABYAAAANAAQAAABwABYAAAANAAQAAABxABYAAAANAAQAAAByABYAAAANAAQAAABzABYAAAANAAQAAAB0ABYAAAANAAQAAAB1ABYAAAANAAQAAAB2ABYAAAANAAQAAAB3ABYAAAANAAQAAAB4ABYAAAANAAQAAAB5ABYAAAANAAQAAAB6ABYAAAANAAQAAAB7ABYAAAANAAQAAAB8ABYAAAANAAQAAAB9ABYAAAANAAQAAAB+ABYAAAANAAQAAAB/ABYAAAANAAQAAACAABYAAAANAAQAAACBABYAAAANAAQAAACCABYAAAANAAQAAACDABYAAAANAAQAAACEABYAAAANAAQAAACFABYAAAANAAQAAACGABYAAAANAAQAAACHABYAAAANAAQAAACIABYAAAANAAQAAACJABYAAAANAAQAAACKABYAAAANAAQAAACLABYAAAANAAQAAACMABYAAAANAAQAAACNABYAAAANAAQAAACOABYAAAANAAQAAACPABYAAAANAAQAAACQABYAAAANAAQAAACRABYAAAANAAQAAACSABYAAAANAAQAAACTABYAAAANAAQAAACUABYAAAANAAQAAACVABYAAAANAAQAAACWABYAAAANAAQAAACXABYAAAANAAQAAACYABYAAAANAAQAAACZABYAAAANAAQAAACaABYAAAANAAQAAACbABYAAAANAAQAAACcABYAAAANAAQAAACdABYAAAANAAQAAACeABYAAAANAAQAAACfABYAAAANAAQAAACgABYAAAANAAQAAAChABYAAAANAAQAAACiABYAAAANAAQAAACjABYAAAANAAQAAACkABYAAAANAAQAAAClABYAAAANAAQAAACmABYAAAANAAQAAACnABYAAAANAAQAAACoABYAAAANAAQAAACpABYAAAANAAQAAACqABYAAAANAAQAAACrABYAAAANAAQAAACsABYAAAANAAQAAACtABYAAAANAAQAAACuABYAAAANAAQAAACvABYAAAANAAQAAACwABYAAAANAAQAAACxABYAAAANAAQAAACyABYAAAANAAQAAACzABYAAAANAAQAAAC0ABYAAAANAAQAAAC1ABYAAAANAAQAAAC2ABYAAAANAAQAAAC3ABYAAAANAAQAAAC4ABYAAAANAAQAAAC5ABYAAAANAAQAAAC6ABYAAAANAAQAAAC7ABYAAAANAAQAAAC8ABYAAAANAAQAAAC9ABYAAAANAAQAAAC+ABYAAAANAAQAAAC/ABYAAAANAAQAAADAABYAAAANAAQAAADBABYAAAANAAQAAADCABYAAAANAAQAAADDABYAAAANAAQAAADEABYAAAANAAQAAADFABYAAAANAAQAAADGABYAAAANAAQAAADHABYAAAANAAQAAADIABYAAAANAAQAAADJABYAAAANAAQAAADKABYAAAANAAQAAADLABYAAAANAAQAAADMABYAAAANAAQAAADNABYAAAANAAQAAADOABYAAAANAAQAAADPABYAAAANAAQAAADQABYAAAANAAQAAADRABYAAAANAAQAAADSABYAAAANAAQAAADTABYAAAANAAQAAADUABYAAAANAAQAAADVABYAAAANAAQAAADWABYAAAANAAQAAADXABYAAAANAAQAAADYABYAAAANAAQAAADZABYAAAANAAQAAADaABYAAAANAAQAAADbABYAAAANAAQAAADcABYAAAANAAQAAADdABYAAAANAAQAAADeABYAAAANAAQAAADfABYAAAANAAQAAADgABYAAAANAAQAAADhABYAAAANAAQAAADiABYAAAANAAQAAADjABYAAAANAAQAAADkABYAAAANAAQAAADlABYAAAANAAQAAADmABYAAAANAAQAAADnABYAAAANAAQAAADoABYAAAANAAQAAADpABYAAAANAAQAAADqABYAAAANAAQAAADrABYAAAANAAQAAADsABYAAAANAAQAAADtABYAAAANAAQAAADuABYAAAANAAQAAADvABYAAAANAAQAAADwABYAAAANAAQAAADxABYAAAANAAQAAADyABYAAAANAAQAAADzABYAAAANAAQAAAD0ABYAAAANAAQAAAD1ABYAAAANAAQAAAD2ABYAAAANAAQAAAD3ABYAAAANAAQAAAD4ABYAAAANAAQAAAD5ABYAAAANAAQAAAD6ABYAAAANAAQAAAD7ABYAAAANAAQAAAD8ABYAAAANAAQAAAD9ABYAAAANAAQAAAD+ABYAAAANAAQAAAD/ABYAAAANAAQAAAAAARYAAAANAAQAAAABARYAAAANAAQAAAACARYAAAANAAQAAAADARYAAAANAAQAAAAEARYAAAANAAQAAAAFARYAAAANAAQAAAAGARYAAAANAAQAAAAHARYAAAANAAQAAAAIARYAAAANAAQAAAAJARYAAAANAAQAAAAKARYAAAANAAQAAAALARYAAAANAAQAAAAMARYAAAANAAQAAAANARYAAAANAAQAAAAOARYAAAANAAQAAAAPARYAAAANAAQAAAAQARYAAAANAAQAAAARARYAAAANAAQAAAASARYAAAANAAQAAAATARYAAAANAAQAAAAUARYAAAANAAQAAAAVARYAAAANAAQAAAAWARYAAAANAAQAAAAXARYAAAANAAQAAAAYARYAAAANAAQAAAAZARYAAAANAAQAAAAaARYAAAANAAQAAAAbARYAAAANAAQAAAApAAAAAAANAAQAAAAqAAAAAAANAAQAAAArAAAAAAANAAQAAAAsAAAAAAANAAQAAAAtAAAAAAANAAQAAAAuAAAAAAANAAQAAAAvAAAAAAANAAQAAAAwAAAAAAANAAQAAAAxAAAAAAANAAQAAAAyAAAAAAANAAQAAAAzAAAAAAANAAQAAAA0AAAAAAANAAQAAAA1AAAAAAANAAQAAAA2AAAAAAANAAQAAAA3AAAAAAANAAQAAAA4AAAAAAANAAQAAAA5AAAAAAANAAQAAAA6AAAAAAANAAQAAAA7AAAAAAANAAQAAAA8AAAAAAANAAQAAAA9AAAAAAANAAQAAAA+AAAAAAANAAQAAAA/AAAAAAANAAQAAABAAAAAAAANAAQAAABBAAAAAAANAAQAAABCAAAAAAANAAQAAABDAAAAAAANAAQAAABEAAAAAAANAAQAAABFAAAAAAANAAQAAABGAAAAAAANAAQAAABHAAAAAAANAAQAAABIAAAAAAANAAQAAABJAAAAAAANAAQAAABKAAAAAAANAAQAAABLAAAAAAANAAQAAABMAAAAAAANAAQAAABNAAAAAAANAAQAAABOAAAAAAANAAQAAABPAAAAAAANAAQAAABQAAAAAAANAAQAAABRAAAAAAANAAQAAABSAAAAAAANAAQAAABTAAAAAAANAAQAAABUAAAAAAANAAQAAABVAAAAAAANAAQAAABWAAAAAAANAAQAAABXAAAAAAANAAQAAABYAAAAAAANAAQAAABZAAAAAAANAAQAAABaAAAAAAANAAQAAABbAAAAAAANAAQAAABcAAAAAAANAAQAAABdAAAAAAANAAQAAABeAAAAAAANAAQAAABfAAAAAAANAAQAAABgAAAAAAANAAQAAABhAAAAAAANAAQAAABiAAAAAAANAAQAAABjAAAAAAANAAQAAABkAAAAAAANAAQAAABlAAAAAAANAAQAAABmAAAAAAANAAQAAABnAAAAAAANAAQAAABoAAAAAAANAAQAAABpAAAAAAANAAQAAABqAAAAAAANAAQAAABrAAAAAAANAAQAAABsAAAAAAANAAQAAABtAAAAAAANAAQAAABuAAAAAAANAAQAAABvAAAAAAANAAQAAABwAAAAAAANAAQAAABxAAAAAAANAAQAAAByAAAAAAANAAQAAABzAAAAAAANAAQAAAB0AAAAAAANAAQAAAB1AAAAAAANAAQAAAB2AAAAAAANAAQAAAB3AAAAAAANAAQAAAB4AAAAAAANAAQAAAB5AAAAAAANAAQAAAB6AAAAAAANAAQAAAB7AAAAAAANAAQAAAB8AAAAAAANAAQAAAB9AAAAAAANAAQAAAB+AAAAAAANAAQAAAB/AAAAAAANAAQAAACAAAAAAAANAAQAAACBAAAAAAANAAQAAACCAAAAAAANAAQAAACDAAAAAAANAAQAAACEAAAAAAANAAQAAACFAAAAAAANAAQAAACGAAAAAAANAAQAAACHAAAAAAANAAQAAACIAAAAAAANAAQAAACJAAAAAAANAAQAAACKAAAAAAANAAQAAACLAAAAAAANAAQAAACMAAAAAAANAAQAAACNAAAAAAANAAQAAACOAAAAAAANAAQAAACPAAAAAAANAAQAAACQAAAAAAANAAQAAACRAAAAAAANAAQAAACSAAAAAAANAAQAAACTAAAAAAANAAQAAACUAAAAAAANAAQAAACVAAAAAAANAAQAAACWAAAAAAANAAQAAACXAAAAAAANAAQAAACYAAAAAAANAAQAAACZAAAAAAANAAQAAACaAAAAAAANAAQAAACbAAAAAAANAAQAAACcAAAAAAANAAQAAACdAAAAAAANAAQAAACeAAAAAAANAAQAAACfAAAAAAANAAQAAACgAAAAAAANAAQAAAChAAAAAAANAAQAAACiAAAAAAANAAQAAACjAAAAAAANAAQAAACkAAAAAAANAAQAAAClAAAAAAANAAQAAACmAAAAAAANAAQAAACnAAAAAAANAAQAAACoAAAAAAANAAQAAACpAAAAAAANAAQAAACqAAAAAAANAAQAAACrAAAAAAANAAQAAACsAAAAAAANAAQAAACtAAAAAAANAAQAAACuAAAAAAANAAQAAACvAAAAAAANAAQAAACwAAAAAAANAAQAAACxAAAAAAANAAQAAACyAAAAAAANAAQAAACzAAAAAAANAAQAAAC0AAAAAAANAAQAAAC1AAAAAAANAAQAAAC2AAAAAAANAAQAAAC3AAAAAAANAAQAAAC4AAAAAAANAAQAAAC5AAAAAAANAAQAAAC6AAAAAAANAAQAAAC7AAAAAAANAAQAAAC8AAAAAAANAAQAAAC9AAAAAAANAAQAAAC+AAAAAAANAAQAAAC/AAAAAAANAAQAAADAAAAAAAANAAQAAADBAAAAAAANAAQAAADCAAAAAAANAAQAAADDAAAAAAANAAQAAADEAAAAAAANAAQAAADFAAAAAAANAAQAAADGAAAAAAANAAQAAADHAAAAAAANAAQAAADIAAAAAAANAAQAAADJAAAAAAANAAQAAADKAAAAAAANAAQAAADLAAAAAAANAAQAAADMAAAAAAANAAQAAADNAAAAAAANAAQAAADOAAAAAAANAAQAAADPAAAAAAANAAQAAADQAAAAAAANAAQAAADRAAAAAAANAAQAAADSAAAAAAANAAQAAADTAAAAAAANAAQAAADUAAAAAAANAAQAAADVAAAAAAANAAQAAADWAAAAAAANAAQAAADXAAAAAAANAAQAAADYAAAAAAANAAQAAADZAAAAAAANAAQAAADaAAAAAAANAAQAAADbAAAAAAANAAQAAADcAAAAAAANAAQAAADdAAAAAAANAAQAAADeAAAAAAANAAQAAADfAAAAAAANAAQAAADgAAAAAAANAAQAAADhAAAAAAANAAQAAADiAAAAAAANAAQAAADjAAAAAAANAAQAAADkAAAAAAANAAQAAADlAAAAAAANAAQAAADmAAAAAAANAAQAAADnAAAAAAANAAQAAADoAAAAAAANAAQAAADpAAAAAAANAAQAAADqAAAAAAANAAQAAADrAAAAAAANAAQAAADsAAAAAAANAAQAAADtAAAAAAANAAQAAADuAAAAAAANAAQAAADvAAAAAAANAAQAAADwAAAAAAANAAQAAADxAAAAAAANAAQAAADyAAAAAAANAAQAAADzAAAAAAANAAQAAAD0AAAAAAANAAQAAAD1AAAAAAANAAQAAAD2AAAAAAANAAQAAAD3AAAAAAANAAQAAAD4AAAAAAANAAQAAAD5AAAAAAANAAQAAAD6AAAAAAANAAQAAAD7AAAAAAANAAQAAAD8AAAAAAANAAQAAAD9AAAAAAANAAQAAAD+AAAAAAANAAQAAAD/AAAAAAANAAQAAAAAAQAAAAANAAQAAAABAQAAAAANAAQAAAACAQAAAAANAAQAAAADAQAAAAANAAQAAAAEAQAAAAANAAQAAAAFAQAAAAANAAQAAAAGAQAAAAANAAQAAAAHAQAAAAANAAQAAAAIAQAAAAANAAQAAAAJAQAAAAANAAQAAAAKAQAAAAANAAQAAAALAQAAAAANAAQAAAAMAQAAAAANAAQAAAANAQAAAAANAAQAAAAOAQAAAAANAAQAAAAPAQAAAAANAAQAAAAQAQAAAAANAAQAAAARAQAAAAANAAQAAAASAQAAAAANAAQAAAATAQAAAAANAAQAAAAUAQAAAAANAAQAAAAVAQAAAAANAAQAAAAWAQAAAAANAAQAAAAXAQAAAAANAAQAAAAYAQAAAAANAAQAAAAZAQAAAAANAAQAAAAaAQAAAAANAAQAAAAbAQAAAAANAAQAAAAcAQAAAAANAAQAAAAtABUAAAAPAAUAAAAtABQAAAAPAAUAAAAtABMAAAAPAAUAAAAtABIAAAAPAAUAAAAtABEAAAAPAAQAAAAtAA0AAAAPAAYAAAAtAAsAAAAPAAUAAAAtAAwAAAAPAAUAAAAtAAkAAAAPAAUAAAAtAAoAAAAPAAUAAAAtAAgAAAAPAAUAAAAtAAcAAAAPAAUAAAAtAAYAAAAPAAUAAAAtAAUAAAAPAAUAAAAtAAQAAAAPAAUAAAAtAAMAAAAPAAUAAAAtAAIAAAAPAAUAAAAtAAEAAAAPAAUAAABaAAgAAAANAAUAAABaAAkAAAANAAYAAABbAAgAAAAOAAUAAABbAAkAAAAOAAYAAABdABIAAAANAAUAAABdABMAAAANAAYAAABeABIAAAAOAAUAAABeABMAAAAOAAYAAABkAAUAAAANAAUAAABkAAYAAAANAAYAAABlAAUAAAAOAAUAAABlAAYAAAAOAAYAAABTAAUAAAANAAUAAABTAAYAAAANAAYAAABUAAUAAAAOAAUAAABUAAYAAAAOAAYAAABfAA0AAAANAAUAAABfAA4AAAANAAYAAABgAA0AAAAOAAUAAABgAA4AAAAOAAYAAABoAAoAAAANAAUAAABoAAsAAAANAAYAAABpAAoAAAAOAAUAAABpAAsAAAAOAAYAAABvAAwAAAANAAUAAABvAA0AAAANAAYAAABwAAwAAAAOAAUAAABwAA0AAAAOAAYAAABzAAYAAAANAAUAAABzAAcAAAANAAYAAAB0AAYAAAAOAAUAAAB0AAcAAAAOAAYAAABsAAUAAAANAAUAAABsAAYAAAANAAYAAABtAAUAAAAOAAUAAABtAAYAAAAOAAYAAABTAAsAAAANAAUAAABTAAwAAAANAAYAAABUAAsAAAAOAAUAAABUAAwAAAAOAAYAAABWABEAAAANAAUAAABWABIAAAANAAYAAABXABEAAAAOAAUAAABXABIAAAAOAAYAAABmABIAAAANAAUAAABmABMAAAANAAYAAABnABIAAAAOAAUAAABnABMAAAAOAAYAAABtABEAAAANAAUAAABtABIAAAANAAYAAABuABEAAAAOAAUAAABuABIAAAAOAAYAAAB8ABUAAAAPAAUAAAB8ABQAAAAPAAQAAAB9ABQAAAAPAAUAAAB+ABMAAAAPAAUAAAB/ABIAAAAPAAUAAACAABEAAAAPAAUAAACBABAAAAAPAAUAAAB9ABMAAAAPAAQAAAB+ABIAAAAPAAQAAAB/ABEAAAAPAAQAAACAABAAAAAPAAQAAACBAA8AAAAPAAQAAACNABUAAAAPAAUAAACMABQAAAAPAAUAAACLABMAAAAPAAUAAACKABIAAAAPAAUAAACJABEAAAAPAAUAAACIABAAAAAPAAUAAACNABQAAAAPAAQAAACMABMAAAAPAAQAAACLABIAAAAPAAQAAACKABEAAAAPAAQAAACJABAAAAAPAAQAAACIAA8AAAAPAAQAAACCAA8AAAAPAAUAAACDAA4AAAAPAAUAAACHAA8AAAAPAAUAAACGAA4AAAAPAAUAAACEAA0AAAAPAAUAAACFAA0AAAAPAAUAAACCAA4AAAAPAAQAAACDAA0AAAAPAAQAAACEAAwAAAAPAAQAAACFAAwAAAAPAAQAAACGAA0AAAAPAAQAAACHAA4AAAAPAAQAAAB9ABUAAAAPAAUAAAB+ABQAAAAPAAUAAAB+ABUAAAAPAAUAAAB/ABMAAAAPAAUAAAB/ABQAAAAPAAUAAAB/ABUAAAAPAAUAAACAABIAAAAPAAUAAACAABMAAAAPAAUAAACAABQAAAAPAAUAAACAABUAAAAPAAUAAACBABEAAAAPAAUAAACBABIAAAAPAAUAAACBABMAAAAPAAUAAACBABQAAAAPAAUAAACBABUAAAAPAAUAAACCABAAAAAPAAUAAACCABEAAAAPAAUAAACCABIAAAAPAAUAAACCABMAAAAPAAUAAACCABQAAAAPAAUAAACCABUAAAAPAAUAAACDAA8AAAAPAAUAAACDABAAAAAPAAUAAACDABEAAAAPAAUAAACDABIAAAAPAAUAAACDABMAAAAPAAUAAACDABQAAAAPAAUAAACDABUAAAAPAAUAAACEAA4AAAAPAAUAAACEAA8AAAAPAAUAAACEABAAAAAPAAUAAACEABEAAAAPAAUAAACEABIAAAAPAAUAAACEABMAAAAPAAUAAACEABQAAAAPAAUAAACEABUAAAAPAAUAAACFAA4AAAAPAAUAAACFAA8AAAAPAAUAAACFABAAAAAPAAUAAACFABEAAAAPAAUAAACFABIAAAAPAAUAAACFABMAAAAPAAUAAACFABQAAAAPAAUAAACFABUAAAAPAAUAAACGAA8AAAAPAAUAAACGABAAAAAPAAUAAACGABEAAAAPAAUAAACGABIAAAAPAAUAAACGABMAAAAPAAUAAACGABQAAAAPAAUAAACGABUAAAAPAAUAAACHABAAAAAPAAUAAACHABEAAAAPAAUAAACHABIAAAAPAAUAAACHABMAAAAPAAUAAACHABQAAAAPAAUAAACHABUAAAAPAAUAAACIABEAAAAPAAUAAACIABIAAAAPAAUAAACIABMAAAAPAAUAAACIABQAAAAPAAUAAACIABUAAAAPAAUAAACJABIAAAAPAAUAAACJABMAAAAPAAUAAACJABQAAAAPAAUAAACJABUAAAAPAAUAAACKABMAAAAPAAUAAACKABQAAAAPAAUAAACKABUAAAAPAAUAAACLABQAAAAPAAUAAACLABUAAAAPAAUAAACMABUAAAAPAAUAAAAcARYAAAANAAQAAAAdARYAAAANAAQAAAAeARYAAAANAAQAAAAfARYAAAANAAQAAAAgARYAAAANAAQAAAAhARYAAAANAAQAAAAiARYAAAANAAQAAAAjARYAAAANAAQAAAAkARYAAAANAAQAAAAlARYAAAANAAQAAAAmARYAAAANAAQAAAAnARYAAAANAAQAAAAoARYAAAANAAQAAAApARYAAAANAAQAAAAqARYAAAANAAQAAAArARYAAAANAAQAAAAsARYAAAANAAQAAAAtARYAAAANAAQAAAAuARYAAAANAAQAAAAvARYAAAANAAQAAAAwARYAAAANAAQAAAAxARYAAAANAAQAAAAyARYAAAAOAAYAAAAyARUAAAAPAAUAAAAyARQAAAAPAAUAAAAyARMAAAAPAAUAAAAyARIAAAAPAAUAAAAyAREAAAAPAAUAAAAyARAAAAAPAAUAAAAyAQ8AAAAPAAUAAAAyAQ4AAAAPAAUAAAAyAQ0AAAAPAAUAAAAyAQwAAAAPAAUAAAAyAQsAAAAPAAUAAAAyAQoAAAAPAAUAAAAyAQkAAAAPAAUAAAAyAQgAAAAPAAUAAAAyAQcAAAAPAAUAAAAyAQYAAAAPAAUAAAAyAQUAAAAPAAUAAAAyAQQAAAAPAAUAAAAyAQMAAAAPAAUAAAAyAQIAAAAPAAUAAAAyAQEAAAAPAAUAAAAyAQAAAAAOAAUAAAAxAQAAAAANAAQAAAAwAQAAAAANAAQAAAAvAQAAAAANAAQAAAAuAQAAAAANAAQAAAAtAQAAAAANAAQAAAAsAQAAAAANAAQAAAArAQAAAAANAAQAAAAqAQAAAAANAAQAAAApAQAAAAANAAQAAAAoAQAAAAANAAQAAAAnAQAAAAANAAQAAAAmAQAAAAANAAQAAAAlAQAAAAANAAQAAAAkAQAAAAANAAQAAAAjAQAAAAANAAQAAAAiAQAAAAANAAQAAAAhAQAAAAANAAQAAAAgAQAAAAANAAQAAAAfAQAAAAANAAQAAAAeAQAAAAANAAQAAAAdAQAAAAANAAQAAAA=")
+tile_set = SubResource("TileSet_oi3di")
+script = ExtResource("3_0b4ue")
+
+[node name="ceiling_floor" type="Node2D" parent="TileMapLayer"]
+
+[node name="spike15" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(190, 346)
+
+[node name="spike16" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(208, 346)
+
+[node name="spike17" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(226, 346)
+
+[node name="spike18" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(244, 346)
+
+[node name="spike19" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(262, 346)
+
+[node name="spike20" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(280, 346)
+
+[node name="spike21" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(298, 346)
+
+[node name="spike22" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(316, 346)
+
+[node name="spike23" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(334, 346)
+
+[node name="spike24" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(352, 346)
+
+[node name="spike25" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(370, 346)
+
+[node name="spike26" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(388, 346)
+
+[node name="spike27" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(406, 346)
+
+[node name="spike28" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(424, 346)
+
+[node name="spike29" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(442, 346)
+
+[node name="spike30" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(460, 346)
+
+[node name="spike31" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(478, 346)
+
+[node name="spike32" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(496, 346)
+
+[node name="spike33" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(514, 346)
+
+[node name="spike34" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(532, 346)
+
+[node name="spike35" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(550, 346)
+
+[node name="spike36" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(568, 346)
+
+[node name="spike37" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(586, 346)
+
+[node name="spike38" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(604, 346)
+
+[node name="spike39" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(622, 346)
+
+[node name="spike40" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(640, 346)
+
+[node name="spike41" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(658, 346)
+
+[node name="spike42" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(676, 346)
+
+[node name="spike43" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(694, 346)
+
+[node name="spike44" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(712, 346)
+
+[node name="spike46" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(748, 346)
+
+[node name="spike47" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(766, 346)
+
+[node name="spike48" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(784, 346)
+
+[node name="spike49" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(802, 346)
+
+[node name="spike50" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(820, 346)
+
+[node name="spike51" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(838, 346)
+
+[node name="spike52" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(856, 346)
+
+[node name="spike53" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(874, 346)
+
+[node name="spike54" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(892, 346)
+
+[node name="spike55" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(910, 346)
+
+[node name="spike56" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(928, 346)
+
+[node name="spike57" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(946, 346)
+
+[node name="spike58" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(964, 346)
+
+[node name="spike59" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(982, 346)
+
+[node name="spike60" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1000, 346)
+
+[node name="spike61" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1018, 346)
+
+[node name="spike62" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1036, 346)
+
+[node name="spike63" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1054, 346)
+
+[node name="spike64" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1072, 346)
+
+[node name="spike65" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1090, 346)
+
+[node name="spike66" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1108, 346)
+
+[node name="spike67" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1126, 346)
+
+[node name="spike68" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1144, 346)
+
+[node name="spike69" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1162, 346)
+
+[node name="spike70" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1180, 346)
+
+[node name="spike71" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1198, 346)
+
+[node name="spike72" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1216, 346)
+
+[node name="spike73" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1234, 346)
+
+[node name="spike74" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1252, 346)
+
+[node name="spike75" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1270, 346)
+
+[node name="spike76" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1288, 346)
+
+[node name="spike77" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1306, 346)
+
+[node name="spike78" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1324, 346)
+
+[node name="spike79" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1342, 346)
+
+[node name="spike80" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1360, 346)
+
+[node name="spike81" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1378, 346)
+
+[node name="spike82" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1396, 346)
+
+[node name="spike83" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1414, 346)
+
+[node name="spike84" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1432, 346)
+
+[node name="spike85" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1450, 346)
+
+[node name="spike86" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1468, 346)
+
+[node name="spike87" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1486, 346)
+
+[node name="spike88" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1504, 346)
+
+[node name="spike89" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1522, 346)
+
+[node name="spike90" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1540, 346)
+
+[node name="spike91" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1558, 346)
+
+[node name="spike92" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1576, 346)
+
+[node name="spike93" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1594, 346)
+
+[node name="spike94" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1612, 346)
+
+[node name="spike95" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1630, 346)
+
+[node name="spike96" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1648, 346)
+
+[node name="spike97" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1666, 346)
+
+[node name="spike98" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1684, 346)
+
+[node name="spike99" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1702, 346)
+
+[node name="spike100" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1720, 346)
+
+[node name="spike101" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1738, 346)
+
+[node name="spike102" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1756, 346)
+
+[node name="spike103" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1774, 346)
+
+[node name="spike104" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1792, 346)
+
+[node name="spike105" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1810, 346)
+
+[node name="spike106" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1828, 346)
+
+[node name="spike107" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1846, 346)
+
+[node name="spike108" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1864, 346)
+
+[node name="spike109" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1882, 346)
+
+[node name="spike110" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1900, 346)
+
+[node name="spike111" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1918, 346)
+
+[node name="spike112" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1936, 346)
+
+[node name="spike113" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1954, 346)
+
+[node name="spike114" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1972, 346)
+
+[node name="spike131" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2278, 346)
+
+[node name="spike132" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2296, 346)
+
+[node name="spike133" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2314, 346)
+
+[node name="spike134" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2332, 346)
+
+[node name="spike135" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2350, 346)
+
+[node name="spike136" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2368, 346)
+
+[node name="spike137" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2386, 346)
+
+[node name="spike138" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2404, 346)
+
+[node name="spike139" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2422, 346)
+
+[node name="spike140" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2440, 346)
+
+[node name="spike141" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2458, 346)
+
+[node name="spike142" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2476, 346)
+
+[node name="spike143" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2494, 346)
+
+[node name="spike144" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2512, 346)
+
+[node name="spike145" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2530, 346)
+
+[node name="spike146" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2548, 346)
+
+[node name="spike147" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2566, 346)
+
+[node name="spike148" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2584, 346)
+
+[node name="spike149" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2602, 346)
+
+[node name="spike150" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2620, 346)
+
+[node name="spike151" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2638, 346)
+
+[node name="spike152" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2656, 346)
+
+[node name="spike153" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2674, 346)
+
+[node name="spike154" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2692, 346)
+
+[node name="spike155" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2710, 346)
+
+[node name="spike156" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2728, 346)
+
+[node name="spike157" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2746, 346)
+
+[node name="spike158" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2764, 346)
+
+[node name="spike159" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2782, 346)
+
+[node name="spike160" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2800, 346)
+
+[node name="spike161" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2818, 346)
+
+[node name="spike162" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2836, 346)
+
+[node name="spike163" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2854, 346)
+
+[node name="spike164" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2872, 346)
+
+[node name="spike165" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2890, 346)
+
+[node name="spike166" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2908, 346)
+
+[node name="spike167" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2926, 346)
+
+[node name="spike168" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2944, 346)
+
+[node name="spike169" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2962, 346)
+
+[node name="spike170" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2980, 346)
+
+[node name="spike171" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2998, 346)
+
+[node name="spike172" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3016, 346)
+
+[node name="spike173" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3034, 346)
+
+[node name="spike174" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3052, 346)
+
+[node name="spike175" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3070, 346)
+
+[node name="spike176" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3088, 346)
+
+[node name="spike177" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3106, 346)
+
+[node name="spike178" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3124, 346)
+
+[node name="spike179" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3142, 346)
+
+[node name="spike180" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3160, 346)
+
+[node name="spike181" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3178, 346)
+
+[node name="spike182" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3196, 346)
+
+[node name="spike183" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3214, 346)
+
+[node name="spike184" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3232, 346)
+
+[node name="spike185" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3250, 346)
+
+[node name="spike186" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3268, 346)
+
+[node name="spike187" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3286, 346)
+
+[node name="spike188" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3304, 346)
+
+[node name="spike189" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3322, 346)
+
+[node name="spike190" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3340, 346)
+
+[node name="spike191" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3358, 346)
+
+[node name="spike192" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3376, 346)
+
+[node name="spike193" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3394, 346)
+
+[node name="spike194" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3412, 346)
+
+[node name="spike195" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3430, 346)
+
+[node name="spike196" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3448, 346)
+
+[node name="spike197" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3466, 346)
+
+[node name="spike198" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3484, 346)
+
+[node name="spike199" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3502, 346)
+
+[node name="spike200" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3520, 346)
+
+[node name="spike201" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3538, 346)
+
+[node name="spike202" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3556, 346)
+
+[node name="spike203" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3574, 346)
+
+[node name="spike204" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3592, 346)
+
+[node name="spike205" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3610, 346)
+
+[node name="spike206" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3628, 346)
+
+[node name="spike207" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3646, 346)
+
+[node name="spike208" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3664, 346)
+
+[node name="spike209" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3682, 346)
+
+[node name="spike210" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3700, 346)
+
+[node name="spike211" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3718, 346)
+
+[node name="spike212" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3736, 346)
+
+[node name="spike213" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3754, 346)
+
+[node name="spike214" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3772, 346)
+
+[node name="spike215" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3790, 346)
+
+[node name="spike216" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3808, 346)
+
+[node name="spike217" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3826, 346)
+
+[node name="spike218" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3844, 346)
+
+[node name="spike219" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3862, 346)
+
+[node name="spike220" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3880, 346)
+
+[node name="spike221" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3898, 346)
+
+[node name="spike222" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3916, 346)
+
+[node name="spike223" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3934, 346)
+
+[node name="spike224" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3952, 346)
+
+[node name="spike225" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3970, 346)
+
+[node name="spike226" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3988, 346)
+
+[node name="spike227" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4006, 346)
+
+[node name="spike228" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4024, 346)
+
+[node name="spike229" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4042, 346)
+
+[node name="spike230" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4060, 346)
+
+[node name="spike231" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4078, 346)
+
+[node name="spike232" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4096, 346)
+
+[node name="spike233" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4114, 346)
+
+[node name="spike234" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4132, 346)
+
+[node name="spike235" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4150, 346)
+
+[node name="spike236" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4168, 346)
+
+[node name="spike237" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4186, 346)
+
+[node name="spike238" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4204, 346)
+
+[node name="spike239" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4222, 346)
+
+[node name="spike240" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4240, 346)
+
+[node name="spike241" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4258, 346)
+
+[node name="spike242" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4276, 346)
+
+[node name="spike243" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4294, 346)
+
+[node name="spike244" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4312, 346)
+
+[node name="spike245" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4330, 346)
+
+[node name="spike246" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4348, 346)
+
+[node name="spike247" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4366, 346)
+
+[node name="spike248" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4384, 346)
+
+[node name="spike249" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4402, 346)
+
+[node name="spike250" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4420, 346)
+
+[node name="spike251" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4438, 346)
+
+[node name="spike252" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4456, 346)
+
+[node name="spike253" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4474, 346)
+
+[node name="spike254" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4492, 346)
+
+[node name="spike255" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4510, 346)
+
+[node name="spike256" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4528, 346)
+
+[node name="spike257" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4546, 346)
+
+[node name="spike298" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4564, 346)
+
+[node name="spike511" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4582, 346)
+
+[node name="spike512" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4600, 346)
+
+[node name="spike513" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4618, 346)
+
+[node name="spike514" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4636, 346)
+
+[node name="spike515" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4654, 346)
+
+[node name="spike516" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4672, 346)
+
+[node name="spike517" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4690, 346)
+
+[node name="spike518" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4708, 346)
+
+[node name="spike519" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4726, 346)
+
+[node name="spike520" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4744, 346)
+
+[node name="spike521" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4762, 346)
+
+[node name="spike522" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4780, 346)
+
+[node name="spike523" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4798, 346)
+
+[node name="spike524" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4816, 346)
+
+[node name="spike525" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4834, 346)
+
+[node name="spike526" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4852, 346)
+
+[node name="spike527" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4870, 346)
+
+[node name="spike528" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4888, 346)
+
+[node name="spike548" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 326)
+rotation = -1.5707964
+
+[node name="spike549" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 308)
+rotation = -1.5707964
+
+[node name="spike550" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 290)
+rotation = -1.5707964
+
+[node name="spike551" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 272)
+rotation = -1.5707964
+
+[node name="spike552" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 254)
+rotation = -1.5707964
+
+[node name="spike553" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 236)
+rotation = -1.5707964
+
+[node name="spike554" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 217)
+rotation = -1.5707964
+
+[node name="spike555" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 199)
+rotation = -1.5707964
+
+[node name="spike556" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 181)
+rotation = -1.5707964
+
+[node name="spike557" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 163)
+rotation = -1.5707964
+
+[node name="spike558" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 145)
+rotation = -1.5707964
+
+[node name="spike559" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 127)
+rotation = -1.5707964
+
+[node name="spike560" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 109)
+rotation = -1.5707964
+
+[node name="spike561" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 91)
+rotation = -1.5707964
+
+[node name="spike562" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 73)
+rotation = -1.5707964
+
+[node name="spike563" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 54)
+rotation = -1.5707964
+
+[node name="spike564" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4889, 36)
+rotation = -1.5707964
+
+[node name="spike529" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4564, 22)
+rotation = 3.1415927
+
+[node name="spike530" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4582, 22)
+rotation = 3.1415927
+
+[node name="spike531" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4600, 22)
+rotation = 3.1415927
+
+[node name="spike532" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4618, 22)
+rotation = 3.1415927
+
+[node name="spike533" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4636, 22)
+rotation = 3.1415927
+
+[node name="spike534" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4654, 22)
+rotation = 3.1415927
+
+[node name="spike535" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4672, 22)
+rotation = 3.1415927
+
+[node name="spike536" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4690, 22)
+rotation = 3.1415927
+
+[node name="spike537" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4708, 22)
+rotation = 3.1415927
+
+[node name="spike538" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4726, 22)
+rotation = 3.1415927
+
+[node name="spike539" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4744, 22)
+rotation = 3.1415927
+
+[node name="spike540" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4762, 22)
+rotation = 3.1415927
+
+[node name="spike541" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4780, 22)
+rotation = 3.1415927
+
+[node name="spike542" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4798, 22)
+rotation = 3.1415927
+
+[node name="spike543" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4816, 22)
+rotation = 3.1415927
+
+[node name="spike544" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4834, 22)
+rotation = 3.1415927
+
+[node name="spike545" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4852, 22)
+rotation = 3.1415927
+
+[node name="spike546" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4870, 22)
+rotation = 3.1415927
+
+[node name="spike547" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4888, 22)
+rotation = 3.1415927
+
+[node name="spike258" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(9, 22)
+rotation = 3.1415927
+
+[node name="spike259" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(27, 22)
+rotation = 3.1415927
+
+[node name="spike260" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(45, 22)
+rotation = 3.1415927
+
+[node name="spike261" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(63, 22)
+rotation = 3.1415927
+
+[node name="spike262" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(81, 22)
+rotation = 3.1415927
+
+[node name="spike263" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(99, 22)
+rotation = 3.1415927
+
+[node name="spike264" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(117, 22)
+rotation = 3.1415927
+
+[node name="spike265" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(135, 22)
+rotation = 3.1415927
+
+[node name="spike266" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(153, 22)
+rotation = 3.1415927
+
+[node name="spike267" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(171, 22)
+rotation = 3.1415927
+
+[node name="spike268" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(189, 22)
+rotation = 3.1415927
+
+[node name="spike269" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(207, 22)
+rotation = 3.1415927
+
+[node name="spike270" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(225, 22)
+rotation = 3.1415927
+
+[node name="spike271" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(243, 22)
+rotation = 3.1415927
+
+[node name="spike272" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(261, 22)
+rotation = 3.1415927
+
+[node name="spike273" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(279, 22)
+rotation = 3.1415927
+
+[node name="spike274" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(297, 22)
+rotation = 3.1415927
+
+[node name="spike275" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(315, 22)
+rotation = 3.1415927
+
+[node name="spike276" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(333, 22)
+rotation = 3.1415927
+
+[node name="spike277" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(351, 22)
+rotation = 3.1415927
+
+[node name="spike278" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(369, 22)
+rotation = 3.1415927
+
+[node name="spike279" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(387, 22)
+rotation = 3.1415927
+
+[node name="spike280" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(405, 22)
+rotation = 3.1415927
+
+[node name="spike281" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(423, 22)
+rotation = 3.1415927
+
+[node name="spike282" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(441, 22)
+rotation = 3.1415927
+
+[node name="spike283" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(459, 22)
+rotation = 3.1415927
+
+[node name="spike284" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(477, 22)
+rotation = 3.1415927
+
+[node name="spike285" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(495, 22)
+rotation = 3.1415927
+
+[node name="spike286" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(513, 22)
+rotation = 3.1415927
+
+[node name="spike287" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(531, 22)
+rotation = 3.1415927
+
+[node name="spike288" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(549, 22)
+rotation = 3.1415927
+
+[node name="spike289" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(567, 22)
+rotation = 3.1415927
+
+[node name="spike290" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(585, 22)
+rotation = 3.1415927
+
+[node name="spike291" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(603, 22)
+rotation = 3.1415927
+
+[node name="spike292" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(621, 22)
+rotation = 3.1415927
+
+[node name="spike293" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(639, 22)
+rotation = 3.1415927
+
+[node name="spike294" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(657, 22)
+rotation = 3.1415927
+
+[node name="spike295" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(675, 22)
+rotation = 3.1415927
+
+[node name="spike296" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(693, 22)
+rotation = 3.1415927
+
+[node name="spike297" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(711, 22)
+rotation = 3.1415927
+
+[node name="spike299" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(747, 22)
+rotation = 3.1415927
+
+[node name="spike300" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(765, 22)
+rotation = 3.1415927
+
+[node name="spike301" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(783, 22)
+rotation = 3.1415927
+
+[node name="spike302" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(801, 22)
+rotation = 3.1415927
+
+[node name="spike303" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(819, 22)
+rotation = 3.1415927
+
+[node name="spike304" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(837, 22)
+rotation = 3.1415927
+
+[node name="spike305" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(855, 22)
+rotation = 3.1415927
+
+[node name="spike306" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(873, 22)
+rotation = 3.1415927
+
+[node name="spike307" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(891, 22)
+rotation = 3.1415927
+
+[node name="spike308" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(909, 22)
+rotation = 3.1415927
+
+[node name="spike309" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(927, 22)
+rotation = 3.1415927
+
+[node name="spike310" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(945, 22)
+rotation = 3.1415927
+
+[node name="spike311" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(963, 22)
+rotation = 3.1415927
+
+[node name="spike312" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(981, 22)
+rotation = 3.1415927
+
+[node name="spike313" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(999, 22)
+rotation = 3.1415927
+
+[node name="spike314" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1017, 22)
+rotation = 3.1415927
+
+[node name="spike315" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1035, 22)
+rotation = 3.1415927
+
+[node name="spike316" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1053, 22)
+rotation = 3.1415927
+
+[node name="spike317" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1071, 22)
+rotation = 3.1415927
+
+[node name="spike318" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1089, 22)
+rotation = 3.1415927
+
+[node name="spike319" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1107, 22)
+rotation = 3.1415927
+
+[node name="spike320" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1125, 22)
+rotation = 3.1415927
+
+[node name="spike321" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1143, 22)
+rotation = 3.1415927
+
+[node name="spike322" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1161, 22)
+rotation = 3.1415927
+
+[node name="spike323" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1179, 22)
+rotation = 3.1415927
+
+[node name="spike324" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1197, 22)
+rotation = 3.1415927
+
+[node name="spike325" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1215, 22)
+rotation = 3.1415927
+
+[node name="spike326" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1233, 22)
+rotation = 3.1415927
+
+[node name="spike327" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1251, 22)
+rotation = 3.1415927
+
+[node name="spike328" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1269, 22)
+rotation = 3.1415927
+
+[node name="spike329" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1287, 22)
+rotation = 3.1415927
+
+[node name="spike330" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1305, 22)
+rotation = 3.1415927
+
+[node name="spike331" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1323, 22)
+rotation = 3.1415927
+
+[node name="spike332" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1341, 22)
+rotation = 3.1415927
+
+[node name="spike333" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1359, 22)
+rotation = 3.1415927
+
+[node name="spike334" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1377, 22)
+rotation = 3.1415927
+
+[node name="spike335" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1395, 22)
+rotation = 3.1415927
+
+[node name="spike336" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1413, 22)
+rotation = 3.1415927
+
+[node name="spike337" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1431, 22)
+rotation = 3.1415927
+
+[node name="spike338" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1449, 22)
+rotation = 3.1415927
+
+[node name="spike339" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1467, 22)
+rotation = 3.1415927
+
+[node name="spike340" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1485, 22)
+rotation = 3.1415927
+
+[node name="spike341" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1503, 22)
+rotation = 3.1415927
+
+[node name="spike342" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1521, 22)
+rotation = 3.1415927
+
+[node name="spike343" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1539, 22)
+rotation = 3.1415927
+
+[node name="spike344" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1557, 22)
+rotation = 3.1415927
+
+[node name="spike345" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1575, 22)
+rotation = 3.1415927
+
+[node name="spike346" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1593, 22)
+rotation = 3.1415927
+
+[node name="spike347" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1611, 22)
+rotation = 3.1415927
+
+[node name="spike348" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1629, 22)
+rotation = 3.1415927
+
+[node name="spike349" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1647, 22)
+rotation = 3.1415927
+
+[node name="spike350" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1665, 22)
+rotation = 3.1415927
+
+[node name="spike351" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1683, 22)
+rotation = 3.1415927
+
+[node name="spike352" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1701, 22)
+rotation = 3.1415927
+
+[node name="spike353" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1719, 22)
+rotation = 3.1415927
+
+[node name="spike354" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1737, 22)
+rotation = 3.1415927
+
+[node name="spike355" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1755, 22)
+rotation = 3.1415927
+
+[node name="spike356" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1773, 22)
+rotation = 3.1415927
+
+[node name="spike357" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1791, 22)
+rotation = 3.1415927
+
+[node name="spike358" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1809, 22)
+rotation = 3.1415927
+
+[node name="spike359" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1827, 22)
+rotation = 3.1415927
+
+[node name="spike360" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1845, 22)
+rotation = 3.1415927
+
+[node name="spike361" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1863, 22)
+rotation = 3.1415927
+
+[node name="spike362" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1881, 22)
+rotation = 3.1415927
+
+[node name="spike363" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1899, 22)
+rotation = 3.1415927
+
+[node name="spike364" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1917, 22)
+rotation = 3.1415927
+
+[node name="spike365" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1935, 22)
+rotation = 3.1415927
+
+[node name="spike366" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1953, 22)
+rotation = 3.1415927
+
+[node name="spike367" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1971, 22)
+rotation = 3.1415927
+
+[node name="spike368" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(1989, 22)
+rotation = 3.1415927
+
+[node name="spike369" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2007, 22)
+rotation = 3.1415927
+
+[node name="spike370" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2025, 22)
+rotation = 3.1415927
+
+[node name="spike371" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2043, 22)
+rotation = 3.1415927
+
+[node name="spike372" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2061, 22)
+rotation = 3.1415927
+
+[node name="spike373" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2079, 22)
+rotation = 3.1415927
+
+[node name="spike374" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2097, 22)
+rotation = 3.1415927
+
+[node name="spike375" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2115, 22)
+rotation = 3.1415927
+
+[node name="spike376" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2133, 22)
+rotation = 3.1415927
+
+[node name="spike377" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2151, 22)
+rotation = 3.1415927
+
+[node name="spike378" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2169, 22)
+rotation = 3.1415927
+
+[node name="spike379" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2187, 22)
+rotation = 3.1415927
+
+[node name="spike380" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2205, 22)
+rotation = 3.1415927
+
+[node name="spike381" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2223, 22)
+rotation = 3.1415927
+
+[node name="spike382" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2241, 22)
+rotation = 3.1415927
+
+[node name="spike383" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2259, 22)
+rotation = 3.1415927
+
+[node name="spike384" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2277, 22)
+rotation = 3.1415927
+
+[node name="spike385" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2295, 22)
+rotation = 3.1415927
+
+[node name="spike386" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2313, 22)
+rotation = 3.1415927
+
+[node name="spike387" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2331, 22)
+rotation = 3.1415927
+
+[node name="spike388" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2349, 22)
+rotation = 3.1415927
+
+[node name="spike389" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2367, 22)
+rotation = 3.1415927
+
+[node name="spike390" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2385, 22)
+rotation = 3.1415927
+
+[node name="spike391" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2403, 22)
+rotation = 3.1415927
+
+[node name="spike392" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2421, 22)
+rotation = 3.1415927
+
+[node name="spike393" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2439, 22)
+rotation = 3.1415927
+
+[node name="spike394" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2457, 22)
+rotation = 3.1415927
+
+[node name="spike395" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2475, 22)
+rotation = 3.1415927
+
+[node name="spike396" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2493, 22)
+rotation = 3.1415927
+
+[node name="spike397" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2511, 22)
+rotation = 3.1415927
+
+[node name="spike398" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2529, 22)
+rotation = 3.1415927
+
+[node name="spike399" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2547, 22)
+rotation = 3.1415927
+
+[node name="spike400" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2565, 22)
+rotation = 3.1415927
+
+[node name="spike401" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2583, 22)
+rotation = 3.1415927
+
+[node name="spike402" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2601, 22)
+rotation = 3.1415927
+
+[node name="spike403" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2619, 22)
+rotation = 3.1415927
+
+[node name="spike404" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2637, 22)
+rotation = 3.1415927
+
+[node name="spike405" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2655, 22)
+rotation = 3.1415927
+
+[node name="spike406" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2673, 22)
+rotation = 3.1415927
+
+[node name="spike407" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2691, 22)
+rotation = 3.1415927
+
+[node name="spike408" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2709, 22)
+rotation = 3.1415927
+
+[node name="spike409" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2727, 22)
+rotation = 3.1415927
+
+[node name="spike410" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2745, 22)
+rotation = 3.1415927
+
+[node name="spike411" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2763, 22)
+rotation = 3.1415927
+
+[node name="spike412" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2781, 22)
+rotation = 3.1415927
+
+[node name="spike413" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2799, 22)
+rotation = 3.1415927
+
+[node name="spike414" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2817, 22)
+rotation = 3.1415927
+
+[node name="spike415" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2835, 22)
+rotation = 3.1415927
+
+[node name="spike416" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2853, 22)
+rotation = 3.1415927
+
+[node name="spike417" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2871, 22)
+rotation = 3.1415927
+
+[node name="spike418" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2889, 22)
+rotation = 3.1415927
+
+[node name="spike419" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2907, 22)
+rotation = 3.1415927
+
+[node name="spike420" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2925, 22)
+rotation = 3.1415927
+
+[node name="spike421" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2943, 22)
+rotation = 3.1415927
+
+[node name="spike422" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2961, 22)
+rotation = 3.1415927
+
+[node name="spike423" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2979, 22)
+rotation = 3.1415927
+
+[node name="spike424" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(2997, 22)
+rotation = 3.1415927
+
+[node name="spike425" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3015, 22)
+rotation = 3.1415927
+
+[node name="spike426" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3033, 22)
+rotation = 3.1415927
+
+[node name="spike427" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3051, 22)
+rotation = 3.1415927
+
+[node name="spike428" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3069, 22)
+rotation = 3.1415927
+
+[node name="spike429" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3087, 22)
+rotation = 3.1415927
+
+[node name="spike430" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3105, 22)
+rotation = 3.1415927
+
+[node name="spike431" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3123, 22)
+rotation = 3.1415927
+
+[node name="spike432" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3141, 22)
+rotation = 3.1415927
+
+[node name="spike433" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3159, 22)
+rotation = 3.1415927
+
+[node name="spike434" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3177, 22)
+rotation = 3.1415927
+
+[node name="spike435" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3195, 22)
+rotation = 3.1415927
+
+[node name="spike436" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3213, 22)
+rotation = 3.1415927
+
+[node name="spike437" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3231, 22)
+rotation = 3.1415927
+
+[node name="spike438" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3249, 22)
+rotation = 3.1415927
+
+[node name="spike439" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3267, 22)
+rotation = 3.1415927
+
+[node name="spike440" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3285, 22)
+rotation = 3.1415927
+
+[node name="spike441" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3303, 22)
+rotation = 3.1415927
+
+[node name="spike442" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3321, 22)
+rotation = 3.1415927
+
+[node name="spike443" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3339, 22)
+rotation = 3.1415927
+
+[node name="spike444" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3357, 22)
+rotation = 3.1415927
+
+[node name="spike445" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3375, 22)
+rotation = 3.1415927
+
+[node name="spike446" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3393, 22)
+rotation = 3.1415927
+
+[node name="spike447" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3411, 22)
+rotation = 3.1415927
+
+[node name="spike448" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3429, 22)
+rotation = 3.1415927
+
+[node name="spike449" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3447, 22)
+rotation = 3.1415927
+
+[node name="spike450" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3465, 22)
+rotation = 3.1415927
+
+[node name="spike451" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3483, 22)
+rotation = 3.1415927
+
+[node name="spike452" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3501, 22)
+rotation = 3.1415927
+
+[node name="spike453" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3519, 22)
+rotation = 3.1415927
+
+[node name="spike454" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3537, 22)
+rotation = 3.1415927
+
+[node name="spike455" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3555, 22)
+rotation = 3.1415927
+
+[node name="spike456" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3573, 22)
+rotation = 3.1415927
+
+[node name="spike457" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3591, 22)
+rotation = 3.1415927
+
+[node name="spike458" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3609, 22)
+rotation = 3.1415927
+
+[node name="spike459" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3627, 22)
+rotation = 3.1415927
+
+[node name="spike460" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3645, 22)
+rotation = 3.1415927
+
+[node name="spike461" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3663, 22)
+rotation = 3.1415927
+
+[node name="spike462" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3681, 22)
+rotation = 3.1415927
+
+[node name="spike463" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3699, 22)
+rotation = 3.1415927
+
+[node name="spike464" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3717, 22)
+rotation = 3.1415927
+
+[node name="spike465" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3735, 22)
+rotation = 3.1415927
+
+[node name="spike466" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3753, 22)
+rotation = 3.1415927
+
+[node name="spike467" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3771, 22)
+rotation = 3.1415927
+
+[node name="spike468" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3789, 22)
+rotation = 3.1415927
+
+[node name="spike469" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3807, 22)
+rotation = 3.1415927
+
+[node name="spike470" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3825, 22)
+rotation = 3.1415927
+
+[node name="spike471" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3843, 22)
+rotation = 3.1415927
+
+[node name="spike472" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3861, 22)
+rotation = 3.1415927
+
+[node name="spike473" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3879, 22)
+rotation = 3.1415927
+
+[node name="spike474" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3897, 22)
+rotation = 3.1415927
+
+[node name="spike475" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3915, 22)
+rotation = 3.1415927
+
+[node name="spike476" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3933, 22)
+rotation = 3.1415927
+
+[node name="spike477" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3951, 22)
+rotation = 3.1415927
+
+[node name="spike478" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3969, 22)
+rotation = 3.1415927
+
+[node name="spike479" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(3987, 22)
+rotation = 3.1415927
+
+[node name="spike480" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4005, 22)
+rotation = 3.1415927
+
+[node name="spike481" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4023, 22)
+rotation = 3.1415927
+
+[node name="spike482" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4041, 22)
+rotation = 3.1415927
+
+[node name="spike483" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4059, 22)
+rotation = 3.1415927
+
+[node name="spike484" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4077, 22)
+rotation = 3.1415927
+
+[node name="spike485" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4095, 22)
+rotation = 3.1415927
+
+[node name="spike486" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4113, 22)
+rotation = 3.1415927
+
+[node name="spike487" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4131, 22)
+rotation = 3.1415927
+
+[node name="spike488" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4149, 22)
+rotation = 3.1415927
+
+[node name="spike489" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4167, 22)
+rotation = 3.1415927
+
+[node name="spike490" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4185, 22)
+rotation = 3.1415927
+
+[node name="spike491" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4203, 22)
+rotation = 3.1415927
+
+[node name="spike492" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4221, 22)
+rotation = 3.1415927
+
+[node name="spike493" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4239, 22)
+rotation = 3.1415927
+
+[node name="spike494" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4257, 22)
+rotation = 3.1415927
+
+[node name="spike495" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4275, 22)
+rotation = 3.1415927
+
+[node name="spike496" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4293, 22)
+rotation = 3.1415927
+
+[node name="spike497" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4311, 22)
+rotation = 3.1415927
+
+[node name="spike498" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4329, 22)
+rotation = 3.1415927
+
+[node name="spike499" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4347, 22)
+rotation = 3.1415927
+
+[node name="spike500" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4365, 22)
+rotation = 3.1415927
+
+[node name="spike501" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4383, 22)
+rotation = 3.1415927
+
+[node name="spike502" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4401, 22)
+rotation = 3.1415927
+
+[node name="spike503" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4419, 22)
+rotation = 3.1415927
+
+[node name="spike504" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4437, 22)
+rotation = 3.1415927
+
+[node name="spike505" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4455, 22)
+rotation = 3.1415927
+
+[node name="spike506" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4473, 22)
+rotation = 3.1415927
+
+[node name="spike507" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4491, 22)
+rotation = 3.1415927
+
+[node name="spike508" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4509, 22)
+rotation = 3.1415927
+
+[node name="spike509" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4527, 22)
+rotation = 3.1415927
+
+[node name="spike510" parent="TileMapLayer/ceiling_floor" instance=ExtResource("6_n6hdu")]
+position = Vector2(4545, 22)
+rotation = 3.1415927
+
+[node name="part 1" type="Node2D" parent="TileMapLayer"]
+
+[node name="spikes" type="Node2D" parent="TileMapLayer/part 1"]
+
+[node name="spike3" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(316.4, 234)
+
+[node name="spike4" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(315, 247)
+rotation = -3.1415925
+
+[node name="spike5" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(315.8, 314)
+
+[node name="spike41" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(729, 268)
+
+[node name="spike43" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1385, 266)
+
+[node name="spike44" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1400, 266)
+
+[node name="spike49" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1384, 310)
+rotation = 3.1415927
+
+[node name="spike50" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1399, 310)
+rotation = 3.1415927
+
+[node name="spike45" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1414, 282)
+rotation = 1.5707964
+
+[node name="spike46" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1414, 296)
+rotation = 1.5707964
+
+[node name="spike47" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1370, 280)
+rotation = 4.712389
+
+[node name="spike48" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1370, 294)
+rotation = 4.712389
+
+[node name="spike51" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1337, 170)
+
+[node name="spike52" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1352, 170)
+
+[node name="spike53" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1336, 214)
+rotation = 3.1415927
+
+[node name="spike54" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1351, 214)
+rotation = 3.1415927
+
+[node name="spike55" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1366, 186)
+rotation = 1.5707964
+
+[node name="spike56" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1366, 200)
+rotation = 1.5707964
+
+[node name="spike57" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1322, 184)
+rotation = 4.712389
+
+[node name="spike58" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1322, 198)
+rotation = 4.712389
+
+[node name="spike59" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1337, 74)
+
+[node name="spike60" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1352, 74)
+
+[node name="spike61" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1336, 118)
+rotation = 3.1415927
+
+[node name="spike62" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1351, 118)
+rotation = 3.1415927
+
+[node name="spike63" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1366, 90)
+rotation = 1.5707964
+
+[node name="spike64" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1366, 104)
+rotation = 1.5707964
+
+[node name="spike65" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1322, 88)
+rotation = 4.712389
+
+[node name="spike66" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1322, 102)
+rotation = 4.712389
+
+[node name="spike67" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1449, 122)
+
+[node name="spike68" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1464, 122)
+
+[node name="spike69" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1448, 166)
+rotation = 3.1415927
+
+[node name="spike70" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1463, 166)
+rotation = 3.1415927
+
+[node name="spike71" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1478, 138)
+rotation = 1.5707964
+
+[node name="spike72" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1478, 152)
+rotation = 1.5707964
+
+[node name="spike73" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1434, 136)
+rotation = 4.712389
+
+[node name="spike74" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1434, 150)
+rotation = 4.712389
+
+[node name="spike75" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1529, 202)
+
+[node name="spike76" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1544, 202)
+
+[node name="spike77" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1528, 246)
+rotation = 3.1415927
+
+[node name="spike78" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1543, 246)
+rotation = 3.1415927
+
+[node name="spike79" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1558, 218)
+rotation = 1.5707964
+
+[node name="spike80" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1558, 232)
+rotation = 1.5707964
+
+[node name="spike81" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1514, 216)
+rotation = 4.712389
+
+[node name="spike82" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1514, 230)
+rotation = 4.712389
+
+[node name="spike83" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1497, 282)
+
+[node name="spike84" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1512, 282)
+
+[node name="spike85" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1496, 326)
+rotation = 3.1415927
+
+[node name="spike86" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1511, 326)
+rotation = 3.1415927
+
+[node name="spike87" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1526, 298)
+rotation = 1.5707964
+
+[node name="spike88" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1526, 312)
+rotation = 1.5707964
+
+[node name="spike89" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1482, 296)
+rotation = 4.712389
+
+[node name="spike90" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1482, 310)
+rotation = 4.712389
+
+[node name="spike91" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1641, 282)
+
+[node name="spike92" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1656, 282)
+
+[node name="spike93" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1640, 326)
+rotation = 3.1415927
+
+[node name="spike94" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1655, 326)
+rotation = 3.1415927
+
+[node name="spike95" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1670, 298)
+rotation = 1.5707964
+
+[node name="spike96" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1670, 312)
+rotation = 1.5707964
+
+[node name="spike97" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1626, 296)
+rotation = 4.712389
+
+[node name="spike98" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1626, 310)
+rotation = 4.712389
+
+[node name="spike99" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1673, 154)
+
+[node name="spike100" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1688, 154)
+
+[node name="spike101" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1672, 198)
+rotation = 3.1415927
+
+[node name="spike102" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1687, 198)
+rotation = 3.1415927
+
+[node name="spike103" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1702, 170)
+rotation = 1.5707964
+
+[node name="spike104" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1702, 184)
+rotation = 1.5707964
+
+[node name="spike105" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1658, 168)
+rotation = 4.712389
+
+[node name="spike106" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1658, 182)
+rotation = 4.712389
+
+[node name="spike107" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1609, 74)
+
+[node name="spike108" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1624, 74)
+
+[node name="spike109" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1608, 118)
+rotation = 3.1415927
+
+[node name="spike110" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1623, 118)
+rotation = 3.1415927
+
+[node name="spike111" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1638, 90)
+rotation = 1.5707964
+
+[node name="spike112" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1638, 104)
+rotation = 1.5707964
+
+[node name="spike113" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1594, 88)
+rotation = 4.712389
+
+[node name="spike114" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1594, 102)
+rotation = 4.712389
+
+[node name="spike115" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1737, 74)
+
+[node name="spike116" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1752, 74)
+
+[node name="spike117" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1736, 118)
+rotation = 3.1415927
+
+[node name="spike118" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1751, 118)
+rotation = 3.1415927
+
+[node name="spike119" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1766, 90)
+rotation = 1.5707964
+
+[node name="spike120" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1766, 104)
+rotation = 1.5707964
+
+[node name="spike121" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1722, 88)
+rotation = 4.712389
+
+[node name="spike122" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1722, 102)
+rotation = 4.712389
+
+[node name="spike123" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1785, 186)
+
+[node name="spike124" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1800, 186)
+
+[node name="spike125" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1784, 230)
+rotation = 3.1415927
+
+[node name="spike126" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1799, 230)
+rotation = 3.1415927
+
+[node name="spike127" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1814, 202)
+rotation = 1.5707964
+
+[node name="spike128" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1814, 216)
+rotation = 1.5707964
+
+[node name="spike129" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1770, 200)
+rotation = 4.712389
+
+[node name="spike130" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1770, 214)
+rotation = 4.712389
+
+[node name="spike131" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1753, 266)
+
+[node name="spike132" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1768, 266)
+
+[node name="spike133" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1752, 310)
+rotation = 3.1415927
+
+[node name="spike134" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1767, 310)
+rotation = 3.1415927
+
+[node name="spike135" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1782, 282)
+rotation = 1.5707964
+
+[node name="spike136" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1782, 296)
+rotation = 1.5707964
+
+[node name="spike137" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1738, 280)
+rotation = 4.712389
+
+[node name="spike138" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1738, 294)
+rotation = 4.712389
+
+[node name="spike139" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1849, 90)
+
+[node name="spike140" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1864, 90)
+
+[node name="spike141" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1848, 134)
+rotation = 3.1415927
+
+[node name="spike142" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1863, 134)
+rotation = 3.1415927
+
+[node name="spike143" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1878, 106)
+rotation = 1.5707964
+
+[node name="spike144" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1878, 120)
+rotation = 1.5707964
+
+[node name="spike145" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1834, 104)
+rotation = 4.712389
+
+[node name="spike146" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(1834, 118)
+rotation = 4.712389
+
+[node name="spike42" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(727, 228)
+rotation = -3.1415925
+
+[node name="spike6" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(314.4, 327)
+rotation = -3.1415925
+
+[node name="spike7" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(334.8, 234)
+
+[node name="spike8" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(333.4, 247)
+rotation = -3.1415925
+
+[node name="spike11" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(316.4, 202)
+
+[node name="spike12" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(315, 215)
+rotation = -3.1415925
+
+[node name="spike13" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(334.8, 202)
+
+[node name="spike14" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(333.4, 215)
+rotation = -3.1415925
+
+[node name="spike19" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(280.4, 202)
+
+[node name="spike20" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(279, 215)
+rotation = -3.1415925
+
+[node name="spike21" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(297.8, 202)
+
+[node name="spike22" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(296.4, 215)
+rotation = -3.1415925
+
+[node name="spike23" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(244.4, 202)
+
+[node name="spike24" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(243, 215)
+rotation = -3.1415925
+
+[node name="spike27" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(226.4, 202)
+
+[node name="spike28" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(225, 215)
+rotation = -3.1415925
+
+[node name="spike29" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(208.4, 202)
+
+[node name="spike30" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(207, 215)
+rotation = -3.1415925
+
+[node name="spike31" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(190.4, 202)
+
+[node name="spike32" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(189, 215)
+rotation = -3.1415925
+
+[node name="spike33" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(172.4, 202)
+
+[node name="spike34" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(171, 215)
+rotation = -3.1415925
+
+[node name="spike35" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(154.4, 202)
+
+[node name="spike36" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(153, 215)
+rotation = -3.1415925
+
+[node name="spike37" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(137.4, 202)
+
+[node name="spike38" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(136, 215)
+rotation = -3.1415925
+
+[node name="spike39" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(120.399994, 202)
+
+[node name="spike40" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(119, 215)
+rotation = -3.1415925
+
+[node name="spike25" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(262.8, 202)
+
+[node name="spike26" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(261.4, 215)
+rotation = -3.1415925
+
+[node name="spike9" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(334.19998, 314)
+
+[node name="spike10" parent="TileMapLayer/part 1/spikes" instance=ExtResource("6_n6hdu")]
+position = Vector2(332.8, 327)
+rotation = -3.1415925
+
+[node name="saws" type="Node2D" parent="TileMapLayer/part 1"]
+
+[node name="Area2D" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(531, 253)
+
+[node name="Area2D10" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(861, 256)
+
+[node name="Area2D22" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(829, 305)
+
+[node name="Area2D23" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(801, 140)
+
+[node name="Area2D24" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(772, 85)
+
+[node name="Area2D11" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(931, 270)
+
+[node name="Area2D12" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(1002, 261)
+
+[node name="Area2D13" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(1057, 221)
+
+[node name="Area2D14" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(1119, 187)
+
+[node name="Area2D15" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(1190, 195)
+
+[node name="Area2D16" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(857, 159)
+
+[node name="Area2D17" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(927, 173)
+
+[node name="Area2D18" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(990, 157)
+
+[node name="Area2D19" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(1045, 117)
+
+[node name="Area2D20" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(1115, 90)
+
+[node name="Area2D21" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(1186, 98)
+
+[node name="Area2D2" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(688, 303)
+
+[node name="Area2D3" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(563, 311)
+
+[node name="Area2D4" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(627, 270)
+
+[node name="Area2D5" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(434, 179)
+
+[node name="Area2D6" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(414, 303)
+
+[node name="Area2D7" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(508, 147)
+
+[node name="Area2D8" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(579, 125)
+
+[node name="Area2D9" parent="TileMapLayer/part 1/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(649, 149)
+
+[node name="Timer" type="Timer" parent="TileMapLayer"]
+wait_time = 1.148
+
+[node name="part 2" type="Node2D" parent="TileMapLayer"]
+
+[node name="spike" type="Node2D" parent="TileMapLayer/part 2"]
+
+[node name="default" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(1993, 314)
+
+[node name="default2" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2009, 298)
+
+[node name="default3" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2025, 282)
+
+[node name="default4" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2041, 266)
+
+[node name="default5" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2057, 250)
+
+[node name="default6" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2073, 234)
+
+[node name="default7" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2089, 218)
+
+[node name="default8" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2105, 202)
+
+[node name="default9" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2121, 186)
+
+[node name="default10" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2137, 186)
+
+[node name="default11" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2152, 202)
+
+[node name="default12" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2168, 218)
+
+[node name="default13" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2184, 234)
+
+[node name="default14" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2201, 250)
+
+[node name="default15" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2217, 266)
+
+[node name="default16" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2232, 282)
+
+[node name="default17" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2248, 298)
+
+[node name="default18" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2264, 314)
+
+[node name="default19" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2159, 129)
+rotation = 3.1415927
+
+[node name="default28" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2160, 116)
+
+[node name="default29" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2175, 132)
+
+[node name="default30" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2191, 148)
+
+[node name="default31" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2207, 164)
+
+[node name="default32" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2224, 180)
+
+[node name="default33" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2240, 196)
+
+[node name="default34" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2255, 212)
+
+[node name="default35" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2271, 228)
+
+[node name="default36" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2286, 246)
+
+[node name="default20" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2174, 145)
+rotation = 3.1415927
+
+[node name="default21" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2190, 161)
+rotation = 3.1415927
+
+[node name="default22" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2206, 177)
+rotation = 3.1415927
+
+[node name="default23" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2223, 193)
+rotation = 3.1415927
+
+[node name="default24" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2239, 209)
+rotation = 3.1415927
+
+[node name="default25" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2254, 225)
+rotation = 3.1415927
+
+[node name="default26" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2270, 241)
+rotation = 3.1415927
+
+[node name="default27" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2285, 259)
+rotation = 3.1415927
+
+[node name="default37" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2310, 253)
+
+[node name="default38" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2309, 266)
+rotation = 3.1415927
+
+[node name="default39" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2335, 253)
+
+[node name="default40" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2334, 266)
+rotation = 3.1415927
+
+[node name="default41" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2359, 253)
+
+[node name="default42" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2358, 266)
+rotation = 3.1415927
+
+[node name="default45" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2406, 254)
+
+[node name="default46" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2405, 267)
+rotation = 3.1415927
+
+[node name="default47" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2431, 254)
+
+[node name="default48" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2430, 267)
+rotation = 3.1415927
+
+[node name="default49" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2455, 254)
+
+[node name="default50" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2454, 267)
+rotation = 3.1415927
+
+[node name="default51" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3006, 160)
+
+[node name="default52" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3005, 173)
+rotation = 3.1415927
+
+[node name="default63" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3007, 193)
+
+[node name="default64" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3006, 206)
+rotation = 3.1415927
+
+[node name="default65" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3007, 224)
+
+[node name="default66" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3006, 237)
+rotation = 3.1415927
+
+[node name="default67" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3007, 255)
+
+[node name="default68" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3006, 268)
+rotation = 3.1415927
+
+[node name="default69" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3008, 287)
+
+[node name="default70" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3007, 300)
+rotation = 3.1415927
+
+[node name="default71" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3009, 318)
+
+[node name="default72" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3008, 331)
+rotation = 3.1415927
+
+[node name="default73" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3157, 262)
+
+[node name="default74" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3156, 275)
+rotation = 3.1415927
+
+[node name="default75" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3158, 294)
+
+[node name="default76" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3157, 307)
+rotation = 3.1415927
+
+[node name="default77" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3150, 43)
+
+[node name="default78" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3149, 56)
+rotation = 3.1415927
+
+[node name="default79" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3151, 75)
+
+[node name="default80" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3150, 88)
+rotation = 3.1415927
+
+[node name="default81" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3152, 107)
+
+[node name="default82" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3151, 120)
+rotation = 3.1415927
+
+[node name="default83" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3153, 139)
+
+[node name="default84" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3152, 152)
+rotation = 3.1415927
+
+[node name="default85" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3154, 171)
+
+[node name="default87" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3158, 327)
+
+[node name="default86" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3153, 184)
+rotation = 3.1415927
+
+[node name="default88" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3681, 250)
+
+[node name="default89" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3680, 263)
+rotation = 3.1415927
+
+[node name="default216" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3681, 282)
+
+[node name="default217" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3680, 295)
+rotation = 3.1415927
+
+[node name="default218" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3681, 314)
+
+[node name="default219" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3680, 327)
+rotation = 3.1415927
+
+[node name="default90" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3699, 250)
+
+[node name="default91" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3698, 263)
+rotation = 3.1415927
+
+[node name="default92" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3717, 250)
+
+[node name="default93" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3716, 263)
+rotation = 3.1415927
+
+[node name="default94" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3735, 250)
+
+[node name="default95" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3734, 263)
+rotation = 3.1415927
+
+[node name="default96" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3753, 250)
+
+[node name="default97" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3752, 263)
+rotation = 3.1415927
+
+[node name="default98" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3771, 250)
+
+[node name="default99" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3770, 263)
+rotation = 3.1415927
+
+[node name="default100" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3789, 250)
+
+[node name="default101" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3788, 263)
+rotation = 3.1415927
+
+[node name="default102" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3807, 250)
+
+[node name="default103" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3806, 263)
+rotation = 3.1415927
+
+[node name="default104" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3826, 250)
+
+[node name="default105" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3825, 263)
+rotation = 3.1415927
+
+[node name="default106" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3844, 250)
+
+[node name="default107" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3843, 263)
+rotation = 3.1415927
+
+[node name="default108" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3862, 250)
+
+[node name="default109" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3861, 263)
+rotation = 3.1415927
+
+[node name="default110" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3880, 250)
+
+[node name="default111" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3879, 263)
+rotation = 3.1415927
+
+[node name="default112" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3898, 250)
+
+[node name="default113" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3897, 263)
+rotation = 3.1415927
+
+[node name="default114" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3916, 250)
+
+[node name="default115" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3915, 263)
+rotation = 3.1415927
+
+[node name="default116" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3934, 250)
+
+[node name="default117" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3933, 263)
+rotation = 3.1415927
+
+[node name="default118" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3953, 250)
+
+[node name="default119" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3952, 263)
+rotation = 3.1415927
+
+[node name="default120" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3971, 250)
+
+[node name="default121" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3970, 263)
+rotation = 3.1415927
+
+[node name="default122" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3989, 250)
+
+[node name="default123" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3988, 263)
+rotation = 3.1415927
+
+[node name="default204" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4007, 250)
+
+[node name="default205" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4006, 263)
+rotation = 3.1415927
+
+[node name="default124" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3735, 174)
+
+[node name="default125" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3734, 187)
+rotation = 3.1415927
+
+[node name="default206" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3735, 174)
+
+[node name="default207" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3734, 187)
+rotation = 3.1415927
+
+[node name="default208" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3734, 142)
+
+[node name="default209" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3733, 155)
+rotation = 3.1415927
+
+[node name="default210" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3733, 111)
+
+[node name="default211" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3732, 124)
+rotation = 3.1415927
+
+[node name="default212" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3732, 80)
+
+[node name="default213" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3731, 93)
+rotation = 3.1415927
+
+[node name="default214" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3731, 49)
+
+[node name="default215" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3730, 62)
+rotation = 3.1415927
+
+[node name="default126" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3753, 174)
+
+[node name="default127" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3752, 187)
+rotation = 3.1415927
+
+[node name="default128" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3771, 174)
+
+[node name="default129" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3770, 187)
+rotation = 3.1415927
+
+[node name="default130" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3789, 174)
+
+[node name="default131" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3788, 187)
+rotation = 3.1415927
+
+[node name="default132" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3807, 174)
+
+[node name="default133" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3806, 187)
+rotation = 3.1415927
+
+[node name="default134" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3825, 174)
+
+[node name="default135" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3824, 187)
+rotation = 3.1415927
+
+[node name="default136" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3843, 174)
+
+[node name="default137" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3842, 187)
+rotation = 3.1415927
+
+[node name="default138" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3861, 174)
+
+[node name="default139" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3860, 187)
+rotation = 3.1415927
+
+[node name="default140" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3879, 174)
+
+[node name="default141" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3878, 187)
+rotation = 3.1415927
+
+[node name="default142" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3897, 174)
+
+[node name="default143" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3896, 187)
+rotation = 3.1415927
+
+[node name="default144" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3915, 174)
+
+[node name="default145" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3914, 187)
+rotation = 3.1415927
+
+[node name="default146" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3933, 174)
+
+[node name="default147" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3932, 187)
+rotation = 3.1415927
+
+[node name="default148" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3951, 174)
+
+[node name="default149" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3950, 187)
+rotation = 3.1415927
+
+[node name="default150" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3969, 174)
+
+[node name="default151" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3968, 187)
+rotation = 3.1415927
+
+[node name="default152" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3987, 174)
+
+[node name="default153" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3986, 187)
+rotation = 3.1415927
+
+[node name="default154" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4005, 174)
+
+[node name="default155" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4004, 187)
+rotation = 3.1415927
+
+[node name="default156" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4023, 174)
+
+[node name="default157" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4022, 187)
+rotation = 3.1415927
+
+[node name="default158" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4041, 174)
+
+[node name="default159" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4040, 187)
+rotation = 3.1415927
+
+[node name="default160" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4060, 272)
+
+[node name="default161" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4059, 285)
+rotation = 3.1415927
+
+[node name="default200" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4042, 272)
+
+[node name="default201" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4041, 285)
+rotation = 3.1415927
+
+[node name="default202" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4024, 272)
+
+[node name="default203" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4023, 285)
+rotation = 3.1415927
+
+[node name="default162" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4079, 272)
+
+[node name="default163" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4078, 285)
+rotation = 3.1415927
+
+[node name="default164" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4097, 272)
+
+[node name="default165" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4096, 285)
+rotation = 3.1415927
+
+[node name="default166" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4115, 272)
+
+[node name="default167" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4114, 285)
+rotation = 3.1415927
+
+[node name="default168" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4133, 272)
+
+[node name="default169" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4132, 285)
+rotation = 3.1415927
+
+[node name="default170" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4151, 272)
+
+[node name="default171" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4150, 285)
+rotation = 3.1415927
+
+[node name="default172" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4169, 272)
+
+[node name="default173" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4168, 285)
+rotation = 3.1415927
+
+[node name="default174" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4187, 272)
+
+[node name="default175" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4186, 285)
+rotation = 3.1415927
+
+[node name="default176" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4205, 272)
+
+[node name="default177" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4204, 285)
+rotation = 3.1415927
+
+[node name="default178" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4223, 272)
+
+[node name="default179" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4222, 285)
+rotation = 3.1415927
+
+[node name="default180" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4057, 192)
+
+[node name="default181" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4056, 205)
+rotation = 3.1415927
+
+[node name="default182" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4075, 204)
+
+[node name="default183" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4074, 217)
+rotation = 3.1415927
+
+[node name="default184" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4093, 204)
+
+[node name="default185" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4092, 217)
+rotation = 3.1415927
+
+[node name="default186" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4111, 204)
+
+[node name="default187" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4110, 217)
+rotation = 3.1415927
+
+[node name="default188" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4129, 204)
+
+[node name="default189" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4128, 217)
+rotation = 3.1415927
+
+[node name="default190" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4147, 204)
+
+[node name="default191" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4146, 217)
+rotation = 3.1415927
+
+[node name="default192" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4165, 204)
+
+[node name="default193" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4164, 217)
+rotation = 3.1415927
+
+[node name="default194" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4183, 204)
+
+[node name="default195" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4182, 217)
+rotation = 3.1415927
+
+[node name="default196" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4201, 204)
+
+[node name="default197" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4200, 217)
+rotation = 3.1415927
+
+[node name="default198" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4219, 204)
+
+[node name="default199" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4218, 217)
+rotation = 3.1415927
+
+[node name="default220" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4241, 272)
+
+[node name="default221" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4240, 285)
+rotation = 3.1415927
+
+[node name="default222" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4237, 204)
+
+[node name="default223" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4236, 217)
+rotation = 3.1415927
+
+[node name="default224" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4260, 265)
+
+[node name="default225" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4259, 278)
+rotation = 3.1415927
+
+[node name="default226" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4261, 198)
+
+[node name="default227" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4260, 211)
+rotation = 3.1415927
+
+[node name="default228" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4284, 259)
+
+[node name="default229" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4283, 272)
+rotation = 3.1415927
+
+[node name="default230" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4285, 192)
+
+[node name="default231" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4284, 205)
+rotation = 3.1415927
+
+[node name="default232" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4308, 254)
+
+[node name="default233" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4307, 267)
+rotation = 3.1415927
+
+[node name="default234" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4309, 187)
+
+[node name="default235" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4308, 200)
+rotation = 3.1415927
+
+[node name="default236" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4332, 249)
+
+[node name="default237" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4331, 262)
+rotation = 3.1415927
+
+[node name="default238" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4333, 182)
+
+[node name="default239" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4332, 195)
+rotation = 3.1415927
+
+[node name="default240" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4359, 245)
+
+[node name="default241" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4358, 258)
+rotation = 3.1415927
+
+[node name="default242" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4360, 178)
+
+[node name="default243" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4359, 191)
+rotation = 3.1415927
+
+[node name="default244" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4386, 246)
+
+[node name="default245" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4385, 259)
+rotation = 3.1415927
+
+[node name="default246" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4387, 179)
+
+[node name="default247" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4386, 192)
+rotation = 3.1415927
+
+[node name="default248" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4415, 251)
+
+[node name="default249" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4414, 264)
+rotation = 3.1415927
+
+[node name="default250" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4416, 184)
+
+[node name="default251" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4415, 197)
+rotation = 3.1415927
+
+[node name="default252" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4442, 260)
+
+[node name="default253" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4441, 273)
+rotation = 3.1415927
+
+[node name="default254" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4443, 193)
+
+[node name="default255" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(4442, 206)
+rotation = 3.1415927
+
+[node name="default53" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3055, 120)
+
+[node name="default54" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3054, 133)
+rotation = 3.1415927
+
+[node name="default55" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3156, 230)
+
+[node name="default56" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3155, 243)
+rotation = 3.1415927
+
+[node name="default57" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3054, 88)
+
+[node name="default58" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3053, 101)
+rotation = 3.1415927
+
+[node name="default59" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3053, 56)
+
+[node name="default60" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(3052, 69)
+rotation = 3.1415927
+
+[node name="default43" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2381, 254)
+
+[node name="default44" parent="TileMapLayer/part 2/spike" instance=ExtResource("6_n6hdu")]
+position = Vector2(2380, 267)
+rotation = 3.1415927
+
+[node name="saws" type="Node2D" parent="TileMapLayer/part 2"]
+
+[node name="default" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2005, 429)
+
+[node name="default4" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2581, 308)
+
+[node name="default5" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2654, 240)
+
+[node name="default6" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2771, 310)
+
+[node name="default7" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2805, 261)
+
+[node name="default8" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2864, 225)
+
+[node name="default9" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2919, 196)
+
+[node name="default17" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(3325, 258)
+scale = Vector2(1.5, 1.5)
+
+[node name="default21" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(3461, 196)
+scale = Vector2(2, 2)
+
+[node name="default22" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(3571, 87)
+scale = Vector2(2, 2)
+
+[node name="default23" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(3546, 274)
+scale = Vector2(2, 2)
+
+[node name="default18" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(3282, 147)
+scale = Vector2(1.5, 1.5)
+
+[node name="default19" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(3341, 76)
+scale = Vector2(1.5, 1.5)
+
+[node name="default20" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(3245.0002, 293)
+scale = Vector2(1.5, 1.5)
+
+[node name="default14" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2875, 114)
+
+[node name="default15" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2821, 137)
+
+[node name="default16" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2763, 170)
+
+[node name="default10" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2706, 201)
+
+[node name="default11" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2685, 147)
+
+[node name="default12" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2641, 102)
+
+[node name="default13" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2587, 72)
+
+[node name="default2" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2146, 83)
+
+[node name="default3" parent="TileMapLayer/part 2/saws" instance=ExtResource("7_km5ld")]
+position = Vector2(2077, 63)
+
+[node name="Label" type="Label" parent="TileMapLayer"]
+offset_left = 4398.0
+offset_top = 187.0
+offset_right = 4622.0
+offset_bottom = 267.0
+theme_override_font_sizes/font_size = 32
+text = "GG!!!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="TileMapLayer"]
+offset_left = 4588.0
+offset_top = 212.0
+offset_right = 4812.0
+offset_bottom = 292.0
+theme_override_font_sizes/font_size = 24
+text = "now do it again"
+horizontal_alignment = 1
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_vonw3")]
+position = Vector2(67, 347)
+rotation = 0.57595867

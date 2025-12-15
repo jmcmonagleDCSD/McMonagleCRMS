@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmnm0nt0mcxq5"]
+
+[ext_resource type="Texture2D" uid="uid://c6ggf0ahv04qk" path="res://assets/Background/New Piskel (8).png" id="1_hdg34"]
+[ext_resource type="Script" uid="uid://ot063ff35xgr" path="res://enemey_two.gd" id="1_v0tgf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hdg34"]
+size = Vector2(30, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v0tgf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hdg34")
+}],
+"loop": true,
+"name": &"fliying",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" groups=["player"]]
+script = ExtResource("1_v0tgf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_hdg34")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
+sprite_frames = SubResource("SpriteFrames_v0tgf")
+animation = &"fliying"
+autoplay = "fliying"
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(62, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

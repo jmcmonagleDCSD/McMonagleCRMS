@@ -1,0 +1,265 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxf4yivnt0p1t"]
+
+[ext_resource type="Texture2D" uid="uid://baot37v6b6l8e" path="res://assets/Background/Yellow.png" id="1_e7rdd"]
+[ext_resource type="Script" uid="uid://bfpiinukk5h5l" path="res://shop.gd" id="1_fgaav"]
+[ext_resource type="PackedScene" uid="uid://ykrhtr4038ae" path="res://levels/box_button.tscn" id="2_blqjs"]
+[ext_resource type="PackedScene" uid="uid://bexaiwhlriqpr" path="res://node_2d.tscn" id="4_fgaav"]
+
+[node name="shop" type="Node2D"]
+position = Vector2(-1, 3)
+script = ExtResource("1_fgaav")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 640.0
+offset_bottom = 356.0
+texture = ExtResource("1_e7rdd")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="_1" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 11.0
+offset_top = 118.0
+offset_right = 142.0
+offset_bottom = 175.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_20" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 11.0
+offset_top = 207.0
+offset_right = 142.0
+offset_bottom = 264.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_1000" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 13.0
+offset_top = 291.0
+offset_right = 144.0
+offset_bottom = 348.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_10000" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 164.0
+offset_top = 117.0
+offset_right = 295.0
+offset_bottom = 174.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_1m" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 166.0
+offset_top = 205.0
+offset_right = 297.0
+offset_bottom = 262.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_250m" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 166.0
+offset_top = 291.0
+offset_right = 297.0
+offset_bottom = 348.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_1b" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 316.0
+offset_top = 115.0
+offset_right = 447.0
+offset_bottom = 172.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_175b" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 315.0
+offset_top = 203.0
+offset_right = 446.0
+offset_bottom = 260.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_10t" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 315.0
+offset_top = 291.0
+offset_right = 446.0
+offset_bottom = 348.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_1q" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 470.0
+offset_top = 115.0
+offset_right = 601.0
+offset_bottom = 172.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_200q" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 470.0
+offset_top = 201.0
+offset_right = 601.0
+offset_bottom = 258.0
+metadata/_edit_use_anchors_ = true
+
+[node name="_1Q" parent="." instance=ExtResource("2_blqjs")]
+offset_left = 470.0
+offset_top = 287.0
+offset_right = 601.0
+offset_bottom = 344.0
+metadata/_edit_use_anchors_ = true
+
+[node name="home" parent="." instance=ExtResource("4_fgaav")]
+position = Vector2(468, 13)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 63.0
+offset_top = 135.0
+offset_right = 103.0
+offset_bottom = 163.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "1"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 58.0
+offset_top = 227.0
+offset_right = 98.0
+offset_bottom = 255.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "20"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 55.0
+offset_top = 308.0
+offset_right = 101.0
+offset_bottom = 336.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "1000"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 203.0
+offset_top = 133.0
+offset_right = 261.0
+offset_bottom = 161.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "10000"
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 214.0
+offset_top = 222.0
+offset_right = 254.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "1M"
+
+[node name="Label6" type="Label" parent="."]
+offset_left = 205.0
+offset_top = 309.0
+offset_right = 258.0
+offset_bottom = 337.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "250M"
+
+[node name="Label7" type="Label" parent="."]
+offset_left = 364.0
+offset_top = 132.0
+offset_right = 404.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "1B"
+
+[node name="Label8" type="Label" parent="."]
+offset_left = 356.0
+offset_top = 220.0
+offset_right = 404.0
+offset_bottom = 248.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "175B"
+
+[node name="Label9" type="Label" parent="."]
+offset_left = 357.0
+offset_top = 309.0
+offset_right = 397.0
+offset_bottom = 337.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "10T"
+
+[node name="Label10" type="Label" parent="."]
+offset_left = 519.0
+offset_top = 130.0
+offset_right = 559.0
+offset_bottom = 158.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "1q"
+
+[node name="Label11" type="Label" parent="."]
+offset_left = 514.0
+offset_top = 219.0
+offset_right = 561.0
+offset_bottom = 247.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "200q"
+
+[node name="Label12" type="Label" parent="."]
+offset_left = 521.0
+offset_top = 305.0
+offset_right = 561.0
+offset_bottom = 333.0
+theme_override_colors/font_color = Color(0.96862745, 1, 0.44313726, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.39215687, 0.12941177, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 20
+text = "1Q"
+
+[connection signal="pressed" from="_1" to="." method="_on__1_pressed"]
+[connection signal="pressed" from="_20" to="." method="_on__20_pressed"]
+[connection signal="pressed" from="_1000" to="." method="_on__1000_pressed"]
+[connection signal="pressed" from="_10000" to="." method="_on__10000_pressed"]
+[connection signal="pressed" from="_1m" to="." method="_on__1m_pressed"]
+[connection signal="pressed" from="_250m" to="." method="_on__250m_pressed"]
+[connection signal="pressed" from="_1b" to="." method="_on__1b_pressed"]
+[connection signal="pressed" from="_175b" to="." method="_on__175b_pressed"]
+[connection signal="pressed" from="_10t" to="." method="_on__10t_pressed"]
+[connection signal="pressed" from="_1q" to="." method="_on__1q_pressed"]
+[connection signal="pressed" from="_200q" to="." method="_on__200q_pressed"]
+[connection signal="pressed" from="_1Q" to="_200q" method="_on__1Q_pressed"]

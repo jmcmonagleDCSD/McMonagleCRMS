@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjkx2hlync7d"]
+
+[ext_resource type="Script" uid="uid://0hxudfxblx41" path="res://home_page.gd" id="1_4eu37"]
+[ext_resource type="Texture2D" uid="uid://bfa62fokeh8vu" path="res://assets/Background/Green.png" id="1_sc02a"]
+[ext_resource type="Texture2D" uid="uid://biivg5cucjgd5" path="res://assets/Background/Yellow.png" id="2_jiwto"]
+[ext_resource type="PackedScene" uid="uid://56hylxq1xktl" path="res://level.tscn" id="2_ou0my"]
+[ext_resource type="Texture2D" uid="uid://bhk6cg8wjbqg2" path="res://assets/Background/Brown.png" id="3_4eu37"]
+
+[node name="Home Page" type="Node2D"]
+script = ExtResource("1_4eu37")
+next_level = ExtResource("2_ou0my")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1157.0
+offset_bottom = 651.0
+texture = ExtResource("1_sc02a")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_right = 418.0
+offset_bottom = 651.0
+texture = ExtResource("2_jiwto")
+stretch_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 690.0
+offset_right = 1153.0
+offset_bottom = 651.0
+texture = ExtResource("3_4eu37")
+stretch_mode = 1
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 500.0
+offset_top = 241.0
+offset_right = 588.0
+offset_bottom = 275.0
+text = "AstroMan"
+
+[node name="TextEdit2" type="TextEdit" parent="."]
+offset_left = 455.0
+offset_top = 319.0
+offset_right = 640.0
+offset_bottom = 387.0
+text = "Have fun.
+Push space to start."
+
+[node name="TextEdit3" type="TextEdit" parent="."]
+offset_left = 472.0
+offset_top = 276.0
+offset_right = 625.0
+offset_bottom = 318.0
+text = "By Samuel Murray"

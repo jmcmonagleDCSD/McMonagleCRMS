@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://lbw5q671hlur"]
+
+[ext_resource type="Texture2D" uid="uid://dhet1ulvr4pkm" path="res://assets/Terrain/Monster2.png" id="1_7a41y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7r57l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7a41y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6bb5y"]
+radius = 141.35417
+
+[node name="Monster2" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(10, 10)
+sprite_frames = SubResource("SpriteFrames_7r57l")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-17, 1)
+rotation = 1.5707964
+shape = SubResource("CircleShape2D_6bb5y")

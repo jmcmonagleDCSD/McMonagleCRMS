@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://diwmgcp3j5njw"]
+
+[ext_resource type="Texture2D" uid="uid://bwnwunav4mivn" path="res://assets/Terrain/Eggs.png" id="1_h7edc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vafj5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_h7edc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p6ej7"]
+height = 36.0
+
+[node name="Eggs" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_vafj5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 24)
+rotation = 1.5707964
+scale = Vector2(4, 4)
+shape = SubResource("CapsuleShape2D_p6ej7")

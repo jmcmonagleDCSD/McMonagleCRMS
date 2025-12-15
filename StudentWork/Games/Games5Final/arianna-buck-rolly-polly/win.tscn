@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://bs8e5dmj3nm8p"]
+
+[ext_resource type="Script" uid="uid://brfhfgg48fpod" path="res://win.gd" id="1_hgi8f"]
+[ext_resource type="Texture2D" uid="uid://l8kql75sqdkd" path="res://assets/Background/Yellow.png" id="1_wao2c"]
+
+[node name="Win" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_hgi8f")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -5.0
+offset_right = 644.0
+offset_bottom = 365.0
+texture = ExtResource("1_wao2c")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 106.0
+offset_right = 562.0
+offset_bottom = 242.0
+theme_override_colors/font_color = Color(0.8302302, 5.2751304e-05, 0.6320521, 1)
+theme_override_colors/font_shadow_color = Color(0.6872445, 0.28307635, 1, 0.7490196)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 29
+text = "                     You Win!
+
+Click space to go back to the menu"

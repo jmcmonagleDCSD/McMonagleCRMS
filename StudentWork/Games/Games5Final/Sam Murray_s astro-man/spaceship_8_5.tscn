@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://i5w33ufqf70v"]
+
+[ext_resource type="Texture2D" uid="uid://dm63eewglwgx2" path="res://assets/Terrain/New_Piskel.png" id="1_477yq"]
+[ext_resource type="Script" uid="uid://cgwqf3kxxs1a0" path="res://spaceship_8_5.gd" id="1_eq7ta"]
+[ext_resource type="PackedScene" uid="uid://b84rg86meh6mb" path="res://level_9.tscn" id="2_pc46u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eq7ta"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_477yq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pc46u"]
+radius = 17.0
+height = 80.0
+
+[node name="Spaceship 8_5" type="Area2D"]
+script = ExtResource("1_eq7ta")
+next_level = ExtResource("2_pc46u")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_eq7ta")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-12, 22)
+shape = SubResource("CapsuleShape2D_pc46u")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

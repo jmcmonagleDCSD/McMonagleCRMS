@@ -1,0 +1,256 @@
+[gd_scene load_steps=13 format=3 uid="uid://dhgml2rq1tyc4"]
+
+[ext_resource type="Texture2D" uid="uid://cjhacwic2yujs" path="res://asseats/background.png" id="1_7vrkn"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_8qtwp"]
+[ext_resource type="Texture2D" uid="uid://bwlhtps2oy8gr" path="res://player/kick_flip.png" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://cr32prs0rylu8" path="res://main_menu/New Piskel copy.png" id="3_glbon"]
+[ext_resource type="Texture2D" uid="uid://d2bmpmv51xl43" path="res://player/New Piskel.png" id="3_qe12f"]
+[ext_resource type="Texture2D" uid="uid://t4snf3j8tink" path="res://main_menu/New Piskel copy 3.png" id="4_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://b56tagxf40ylu" path="res://main_menu/New Piskel copy 2.png" id="6_8qtwp"]
+[ext_resource type="Texture2D" uid="uid://dle2bn1vuqsui" path="res://main_menu/New Piskel copy 4.png" id="7_dy7ct"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jix8l"]
+atlas = ExtResource("2_fu7sn")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0o4t1"]
+atlas = ExtResource("3_qe12f")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_glbon"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jix8l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0o4t1")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nlkkf"]
+font_size = 50
+font_color = Color(1, 0.2784314, 0, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8qtwp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(321.00003, 183)
+scale = Vector2(20.0625, 11.40625)
+texture = ExtResource("1_7vrkn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(171, 203.00002)
+scale = Vector2(3.9687498, 4.03125)
+sprite_frames = SubResource("SpriteFrames_glbon")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 203.0
+offset_top = 19.0
+offset_right = 393.0
+offset_bottom = 92.0
+text = "Grinder"
+label_settings = SubResource("LabelSettings_nlkkf")
+
+[node name="play_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 390.0
+offset_top = 156.0
+offset_right = 567.0
+offset_bottom = 188.0
+text = "play"
+
+[node name="how_to_play_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 203.0
+offset_right = 569.0
+offset_bottom = 235.0
+text = "how to play"
+
+[node name="how to play" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_left = -206.0
+offset_top = 412.0
+offset_right = -166.0
+offset_bottom = 452.0
+
+[node name="Sprite2D" type="Sprite2D" parent="how to play"]
+position = Vector2(527.00006, -229)
+scale = Vector2(20.062498, 11.375001)
+texture = ExtResource("3_glbon")
+
+[node name="Sprite2D2" type="Sprite2D" parent="how to play"]
+position = Vector2(281, -320.7558)
+scale = Vector2(1.5, 1.529)
+texture = ExtResource("4_nlkkf")
+hframes = 2
+vframes = 2
+
+[node name="Sprite2D6" type="Sprite2D" parent="how to play"]
+position = Vector2(446, -220.7558)
+scale = Vector2(1.5, 1.529)
+texture = ExtResource("4_nlkkf")
+hframes = 2
+vframes = 2
+frame = 3
+
+[node name="Sprite2D3" type="Sprite2D" parent="how to play"]
+position = Vector2(444, -324.7558)
+scale = Vector2(1.5, 1.529)
+texture = ExtResource("4_nlkkf")
+hframes = 2
+vframes = 2
+frame = 1
+
+[node name="Sprite2D8" type="Sprite2D" parent="how to play"]
+position = Vector2(354, -126)
+scale = Vector2(1.5, 1.529)
+texture = ExtResource("4_nlkkf")
+hframes = 2
+vframes = 2
+frame = 2
+
+[node name="Sprite2D5" type="Sprite2D" parent="how to play"]
+position = Vector2(280, -214.7558)
+scale = Vector2(1.5, 1.529)
+texture = ExtResource("4_nlkkf")
+hframes = 2
+vframes = 2
+frame = 1
+
+[node name="Sprite2D4" type="Sprite2D" parent="how to play"]
+position = Vector2(506, -322.7558)
+scale = Vector2(1.5, 1.529)
+texture = ExtResource("6_8qtwp")
+
+[node name="Sprite2D7" type="Sprite2D" parent="how to play"]
+position = Vector2(506.00003, -219.7558)
+scale = Vector2(1.5, 1.529)
+texture = ExtResource("6_8qtwp")
+
+[node name="Sprite2D9" type="Sprite2D" parent="how to play"]
+position = Vector2(501.00003, -127)
+scale = Vector2(1.5, 1.529)
+texture = ExtResource("6_8qtwp")
+
+[node name="Label2" type="Label" parent="how to play"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = -359.7558
+offset_right = 412.0
+offset_bottom = -286.7558
+theme_override_font_sizes/font_size = 10
+text = "and"
+label_settings = SubResource("LabelSettings_nlkkf")
+
+[node name="Label4" type="Label" parent="how to play"]
+layout_mode = 0
+offset_left = 316.0
+offset_top = -254.7558
+offset_right = 408.0
+offset_bottom = -181.7558
+theme_override_font_sizes/font_size = 10
+text = "and"
+label_settings = SubResource("LabelSettings_nlkkf")
+
+[node name="Label3" type="Label" parent="how to play"]
+layout_mode = 0
+offset_left = 606.0
+offset_top = -358.7558
+offset_right = 731.0
+offset_bottom = -285.7558
+theme_override_font_sizes/font_size = 10
+text = "jump"
+label_settings = SubResource("LabelSettings_nlkkf")
+
+[node name="Label6" type="Label" parent="how to play"]
+layout_mode = 0
+offset_left = 611.0
+offset_top = -176.0
+offset_right = 737.0
+offset_bottom = -103.0
+theme_override_font_sizes/font_size = 10
+text = "grind"
+label_settings = SubResource("LabelSettings_nlkkf")
+
+[node name="Label5" type="Label" parent="how to play"]
+layout_mode = 0
+offset_left = 603.0
+offset_top = -257.7558
+offset_right = 776.0
+offset_bottom = -184.7558
+theme_override_font_sizes/font_size = 10
+text = "kickflip"
+label_settings = SubResource("LabelSettings_nlkkf")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="how to play"]
+z_index = 10
+position = Vector2(567, -318.7558)
+scale = Vector2(1.6640608, 1.8515631)
+sprite_frames = SubResource("SpriteFrames_glbon")
+animation = &"new_animation"
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="how to play"]
+z_index = 10
+position = Vector2(565, -130)
+scale = Vector2(1.6640608, 1.8515631)
+sprite_frames = SubResource("SpriteFrames_glbon")
+animation = &"new_animation"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="how to play"]
+z_index = 10
+position = Vector2(564, -222.7558)
+scale = Vector2(1.6640608, 1.8515631)
+sprite_frames = SubResource("SpriteFrames_glbon")
+
+[node name="exit_button" type="Button" parent="how to play"]
+layout_mode = 0
+offset_left = 243.0
+offset_top = -371.7558
+offset_right = 283.0
+offset_bottom = -331.7558
+rotation = -0.81994075
+icon = ExtResource("7_dy7ct")
+flat = true
+
+[node name="Label" type="Label" parent="how to play"]
+layout_mode = 0
+offset_left = 321.0
+offset_top = -298.0
+offset_right = 413.0
+offset_bottom = -275.0
+theme_override_colors/font_color = Color(1, 0.2784314, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+text = "(same time)"
+
+[node name="Label7" type="Label" parent="how to play"]
+layout_mode = 0
+offset_left = 313.0
+offset_top = -196.0
+offset_right = 405.0
+offset_bottom = -173.0
+theme_override_colors/font_color = Color(1, 0.2784314, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+text = "(same time)"

@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://h67irmrd5fxk"]
+
+[ext_resource type="Script" uid="uid://ch3o002w1vfb7" path="res://trap/poison.gd" id="1_5afmv"]
+[ext_resource type="Texture2D" uid="uid://cm8ef2wv1bjuj" path="res://assets/Traps/New Piskel (1) copy 4.png" id="2_882il"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16d56"]
+atlas = ExtResource("2_882il")
+region = Rect2(0, 0, 40, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_chy1p"]
+atlas = ExtResource("2_882il")
+region = Rect2(40, 0, 40, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmdjj"]
+atlas = ExtResource("2_882il")
+region = Rect2(80, 0, 40, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6r65"]
+atlas = ExtResource("2_882il")
+region = Rect2(120, 0, 40, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2ljh0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16d56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_chy1p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmdjj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6r65")
+}],
+"loop": true,
+"name": &"sploosh",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nwlxf"]
+size = Vector2(49.5, 19.5)
+
+[node name="poison" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_5afmv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(17, -11.499999)
+scale = Vector2(1.25, 0.71875)
+sprite_frames = SubResource("SpriteFrames_2ljh0")
+animation = &"sploosh"
+autoplay = "sploosh"
+frame_progress = 0.50333315
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(17.25, -10.25)
+shape = SubResource("RectangleShape2D_nwlxf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

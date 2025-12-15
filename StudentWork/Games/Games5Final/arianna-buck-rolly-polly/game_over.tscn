@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://bf31yb288j200"]
+
+[ext_resource type="Texture2D" uid="uid://i20lh31ap8q5" path="res://assets/Background/Pink.png" id="1_y26ei"]
+[ext_resource type="Script" uid="uid://vjffoshfb38v" path="res://game_over.gd" id="1_yxx3c"]
+[ext_resource type="PackedScene" uid="uid://drhbah6uct1v5" path="res://enemy/enemy.tscn" id="3_ccer4"]
+
+[node name="game over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yxx3c")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 644.0
+offset_bottom = 360.0
+texture = ExtResource("1_y26ei")
+stretch_mode = 1
+
+[node name="gameover" type="Label" parent="."]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 72.0
+offset_right = 452.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0.9375293, 0.2537394, 0.24611333, 1)
+theme_override_colors/font_shadow_color = Color(0.003921569, 0.003921569, 0.003921569, 0.60784316)
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 6
+theme_override_font_sizes/font_size = 52
+text = "GAME OVER :("
+
+[node name="backtomenu" type="Label" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 187.0
+offset_right = 653.0
+offset_bottom = 270.0
+theme_override_colors/font_color = Color(0.9375293, 0.2537394, 0.24611333, 1)
+theme_override_colors/font_shadow_color = Color(0.003921569, 0.003921569, 0.003921569, 0.60784316)
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 6
+theme_override_font_sizes/font_size = 40
+text = "Click space to go back to menu"
+
+[node name="Enemy" parent="." instance=ExtResource("3_ccer4")]
+position = Vector2(-13, 341)

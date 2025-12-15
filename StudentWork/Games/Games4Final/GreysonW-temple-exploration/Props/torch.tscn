@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://tyteerrl0dre"]
+
+[ext_resource type="Texture2D" uid="uid://c7nb6n20yj2ln" path="res://Piskel Art/New Piskel (3).png" id="1_8n2ry"]
+[ext_resource type="Texture2D" uid="uid://dsqkotddla0co" path="res://2d_lights_and_shadows_neutral_point_light.webp" id="2_3kd47"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3kd47"]
+atlas = ExtResource("1_8n2ry")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfoqt"]
+atlas = ExtResource("1_8n2ry")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lxhg"]
+atlas = ExtResource("1_8n2ry")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4hh5"]
+atlas = ExtResource("1_8n2ry")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ntcc8"]
+atlas = ExtResource("1_8n2ry")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65o43"]
+atlas = ExtResource("1_8n2ry")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gioqg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3kd47")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfoqt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lxhg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4hh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ntcc8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65o43")
+}],
+"loop": true,
+"name": &"default",
+"speed": 13.0
+}]
+
+[node name="Torch" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_gioqg")
+autoplay = "default"
+frame_progress = 0.37250006
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(5.9604645e-08, 0)
+scale = Vector2(0.21203578, 0.2119749)
+color = Color(0.85490197, 0.46666667, 0, 1)
+energy = 1.78
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 1)
+texture = ExtResource("2_3kd47")
+texture_scale = 1.49

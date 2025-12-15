@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3 uid="uid://bphveurwpc8ec"]
+
+[ext_resource type="Texture2D" uid="uid://dkmyp8d735vw0" path="res://assets/Terrain/Monster5.png" id="1_o2vof"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gx7xs"]
+atlas = ExtResource("1_o2vof")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_as3pq"]
+atlas = ExtResource("1_o2vof")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4j7d3"]
+atlas = ExtResource("1_o2vof")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_la06l"]
+atlas = ExtResource("1_o2vof")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hg3rp"]
+atlas = ExtResource("1_o2vof")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mj7ku"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gx7xs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_as3pq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4j7d3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_la06l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hg3rp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o2vof"]
+radius = 133.00375
+
+[node name="Monster 5" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(9, 9)
+sprite_frames = SubResource("SpriteFrames_mj7ku")
+autoplay = "default"
+frame = 3
+frame_progress = 0.80769616
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(15, 7)
+shape = SubResource("CircleShape2D_o2vof")

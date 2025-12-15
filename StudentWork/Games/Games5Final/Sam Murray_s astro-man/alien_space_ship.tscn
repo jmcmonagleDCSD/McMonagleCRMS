@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmrumw3hlggfl"]
+
+[ext_resource type="Script" uid="uid://b66c068ybabtk" path="res://area_2d.gd" id="1_egc1t"]
+[ext_resource type="Texture2D" uid="uid://yab2l2sdt0ml" path="res://assets/Enemies/New Piskel (1).png" id="2_4r668"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4r668"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4r668")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4r668"]
+radius = 29.0
+height = 112.0
+
+[node name="AlienSpaceShip" type="CharacterBody2D"]
+script = ExtResource("1_egc1t")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_4r668")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_4r668")

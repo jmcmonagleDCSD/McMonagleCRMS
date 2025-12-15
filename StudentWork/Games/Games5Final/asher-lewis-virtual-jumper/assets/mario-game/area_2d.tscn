@@ -1,0 +1,89 @@
+[gd_scene load_steps=13 format=3 uid="uid://b034jstccsghf"]
+
+[ext_resource type="Script" uid="uid://dyfwsnpykr20v" path="res://Saw.gd" id="1_dl81w"]
+[ext_resource type="Texture2D" uid="uid://cpeh3h0obaslm" path="res://untitled folder/assets/Traps/Saw/On (38x38).png" id="1_gf172"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dl81w"]
+atlas = ExtResource("1_gf172")
+region = Rect2(266, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rgpn"]
+atlas = ExtResource("1_gf172")
+region = Rect2(228, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0nl8"]
+atlas = ExtResource("1_gf172")
+region = Rect2(190, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dtnr"]
+atlas = ExtResource("1_gf172")
+region = Rect2(152, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c33a7"]
+atlas = ExtResource("1_gf172")
+region = Rect2(114, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqxq1"]
+atlas = ExtResource("1_gf172")
+region = Rect2(76, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l08u0"]
+atlas = ExtResource("1_gf172")
+region = Rect2(38, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrb8d"]
+atlas = ExtResource("1_gf172")
+region = Rect2(0, 0, 38, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u0hmu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dl81w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rgpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0nl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dtnr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c33a7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqxq1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l08u0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrb8d")
+}],
+"loop": true,
+"name": &"Spin",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gc2bs"]
+size = Vector2(38.375, 32)
+
+[node name="Saw" type="Area2D"]
+script = ExtResource("1_dl81w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, -2)
+sprite_frames = SubResource("SpriteFrames_u0hmu")
+animation = &"Spin"
+autoplay = "Spin"
+frame_progress = 0.006906152
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7, -2)
+shape = SubResource("RectangleShape2D_gc2bs")
+
+[node name="AnimationPlayer" type="Camera2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

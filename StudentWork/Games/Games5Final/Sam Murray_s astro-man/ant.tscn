@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://yo6v8dwxvcv8"]
+
+[ext_resource type="Texture2D" uid="uid://bvbqbd76xysm5" path="res://assets/Terrain/Ant.png" id="1_oav7h"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oav7h"]
+height = 34.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5tacl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oav7h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Ant" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5707964
+scale = Vector2(4, 4)
+shape = SubResource("CapsuleShape2D_oav7h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, -10)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_5tacl")

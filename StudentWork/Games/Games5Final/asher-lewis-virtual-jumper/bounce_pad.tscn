@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://clea6ns5truuc"]
+
+[ext_resource type="Script" uid="uid://dwkc87fru2b08" path="res://bounce_pad.gd" id="1_6f368"]
+[ext_resource type="Texture2D" uid="uid://dokwtmqqwr5ob" path="res://assets/Traps/Trampoline/Jump (28x28).png" id="2_g83qr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v2uvn"]
+atlas = ExtResource("2_g83qr")
+region = Rect2(0, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjlam"]
+atlas = ExtResource("2_g83qr")
+region = Rect2(28, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5n3x"]
+atlas = ExtResource("2_g83qr")
+region = Rect2(56, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2657d"]
+atlas = ExtResource("2_g83qr")
+region = Rect2(84, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpbsp"]
+atlas = ExtResource("2_g83qr")
+region = Rect2(112, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41ah6"]
+atlas = ExtResource("2_g83qr")
+region = Rect2(140, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smnqc"]
+atlas = ExtResource("2_g83qr")
+region = Rect2(168, 0, 28, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0w2lj"]
+atlas = ExtResource("2_g83qr")
+region = Rect2(196, 0, 28, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8lxw4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v2uvn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gjlam")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5n3x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2657d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpbsp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41ah6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smnqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0w2lj")
+}],
+"loop": true,
+"name": &"Bounce",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6tsxm"]
+size = Vector2(28, 7)
+
+[node name="BouncePad" type="Area2D" groups=["player"]]
+script = ExtResource("1_6f368")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8lxw4")
+animation = &"Bounce"
+autoplay = "Bounce"
+frame_progress = 0.45820788
+speed_scale = 5.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7.5)
+shape = SubResource("RectangleShape2D_6tsxm")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

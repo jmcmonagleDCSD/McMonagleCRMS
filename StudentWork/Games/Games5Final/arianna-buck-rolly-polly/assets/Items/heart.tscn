@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmsm0bi7yd137"]
+
+[ext_resource type="Script" uid="uid://c8ak7n33p42yv" path="res://heart.gd" id="1_51a6p"]
+[ext_resource type="Texture2D" uid="uid://c0lnkwxwr815n" path="res://assets/Items/New Piskel (1) copy 7.png" id="2_gdquk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8y4nt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gdquk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cippq"]
+radius = 8.0
+height = 16.0
+
+[node name="heart" type="Area2D"]
+script = ExtResource("1_51a6p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8y4nt")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_cippq")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://78splqml5i7m"]
+
+[ext_resource type="Texture2D" uid="uid://bqwngmf5tw8fn" path="res://assets/Terrain/SpaceGrass.png" id="1_aqidl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w22nt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aqidl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aqidl"]
+radius = 6.0
+height = 38.0
+
+[node name="SpaceGrass" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w22nt")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_aqidl")

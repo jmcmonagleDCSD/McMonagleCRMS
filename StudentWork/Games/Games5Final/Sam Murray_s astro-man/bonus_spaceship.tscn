@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://4r000fa20hnh"]
+
+[ext_resource type="Script" uid="uid://cn5jqvsdibyxr" path="res://bonus_spaceship.gd" id="1_2itfl"]
+[ext_resource type="Texture2D" uid="uid://byddpsdldytpn" path="res://assets/Terrain/BonusShip.png" id="2_gr7n8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_heh8r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gr7n8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uxbd7"]
+size = Vector2(86, 128)
+
+[node name="Bonus Spaceship" type="Area2D"]
+script = ExtResource("1_2itfl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_heh8r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_uxbd7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

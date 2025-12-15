@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsni8lxb4vo67"]
+
+[ext_resource type="Texture2D" uid="uid://bd2ypcsiaa4md" path="res://New Piskel (1)-1.png (2).png" id="1_512qa"]
+[ext_resource type="Script" uid="uid://b83aiekwm5qqg" path="res://basketball.gd" id="1_impb6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_impb6"]
+radius = 39.115215
+
+[node name="basketball" type="CharacterBody2D"]
+script = ExtResource("1_impb6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="NewPiskel(1)1_png(2)" type="Sprite2D" parent="."]
+position = Vector2(329, 321)
+scale = Vector2(5.265625, 4.2812495)
+texture = ExtResource("1_512qa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(316, 249)
+shape = SubResource("CircleShape2D_impb6")
