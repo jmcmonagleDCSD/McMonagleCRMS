@@ -1,0 +1,83 @@
+[gd_scene load_steps=10 format=3 uid="uid://brav0xkfrj81s"]
+
+[ext_resource type="Texture2D" uid="uid://dwro78c17qoj6" path="res://assets 2/finalgameassets/pink.png" id="1_v308g"]
+[ext_resource type="Script" uid="uid://ce2khyxbqfbjk" path="res://pac-man/ghosts/pinkghost.gd" id="1_wflrh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wflrh"]
+atlas = ExtResource("1_v308g")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_diiin"]
+atlas = ExtResource("1_v308g")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_duok7"]
+atlas = ExtResource("1_v308g")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8qbb"]
+atlas = ExtResource("1_v308g")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vofak"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wflrh")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_diiin")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_duok7")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8qbb")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wflrh"]
+size = Vector2(28, 28)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wflrh"]
+radius = 14.0
+
+[node name="pinkghost" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 4
+script = ExtResource("1_wflrh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vofak")
+animation = &"up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_wflrh")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_wflrh")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

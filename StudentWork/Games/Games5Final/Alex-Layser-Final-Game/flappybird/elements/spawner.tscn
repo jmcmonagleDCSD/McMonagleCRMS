@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cilt34rf2v6py"]
+
+[ext_resource type="Script" uid="uid://bul6xdxeeyj2" path="res://flappybird/elements/spawner.gd" id="1_t5tsf"]
+[ext_resource type="PackedScene" uid="uid://mfc5b2y4ttve" path="res://flappybird/elements/pipes.tscn" id="2_c58n0"]
+
+[node name="spawner" type="Node2D"]
+script = ExtResource("1_t5tsf")
+scene = ExtResource("2_c58n0")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(722, 46)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(721, 293)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

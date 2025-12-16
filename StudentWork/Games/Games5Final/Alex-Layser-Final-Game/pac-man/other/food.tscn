@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm3adgaf8da5a"]
+
+[ext_resource type="Texture2D" uid="uid://r6eh2v7twl8t" path="res://assets 2/finalgameassets/orb.png" id="1_ce2cg"]
+
+[sub_resource type="GDScript" id="GDScript_ce2cg"]
+script/source = "extends Area2D
+var score = 0
+
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group(\"player\"):
+		score += 10
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_44160"]
+radius = 13.0
+
+[node name="food" type="Area2D" groups=["food"]]
+collision_layer = 8
+script = SubResource("GDScript_ce2cg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ce2cg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_44160")

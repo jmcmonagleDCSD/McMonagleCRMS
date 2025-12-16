@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://c8mahea8t7u4j"]
+
+[ext_resource type="Texture2D" uid="uid://dnwyg40nqcy75" path="res://assets 2/finalgameassets/pacmancharacter.png" id="1_kp71t"]
+[ext_resource type="Script" uid="uid://c0smrfs4eqtak" path="res://pac-man/player/pacmanplayer.gd" id="1_q3pd4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3pd4"]
+atlas = ExtResource("1_kp71t")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvif3"]
+atlas = ExtResource("1_kp71t")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2if4"]
+atlas = ExtResource("1_kp71t")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w1b37"]
+atlas = ExtResource("1_kp71t")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7fyvv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3pd4")
+}],
+"loop": true,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvif3")
+}],
+"loop": true,
+"name": &"open",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2if4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w1b37")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3pd4"]
+size = Vector2(30, 30)
+
+[node name="pacmanplayer" type="CharacterBody2D" groups=["pacmanp"]]
+collision_mask = 44
+script = ExtResource("1_q3pd4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7fyvv")
+animation = &"closed"
+frame_progress = 0.8600876
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_q3pd4")

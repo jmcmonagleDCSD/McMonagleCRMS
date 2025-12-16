@@ -1,0 +1,120 @@
+[gd_scene load_steps=15 format=3 uid="uid://du1qu48a46pj1"]
+
+[ext_resource type="Texture2D" uid="uid://ces8hsjlck2gy" path="res://assets/Menu/Levels/01.png" id="1_5finj"]
+[ext_resource type="Texture2D" uid="uid://dpouq5rnv10wm" path="res://assets/Menu/Levels/02.png" id="2_l4e54"]
+[ext_resource type="Texture2D" uid="uid://ktdomws6iss1" path="res://assets/Menu/Levels/03.png" id="3_rjpe0"]
+[ext_resource type="Texture2D" uid="uid://k12mgumdfjh7" path="res://assets/Menu/Levels/04.png" id="4_8hfrc"]
+[ext_resource type="Texture2D" uid="uid://ber1ed2fphbdr" path="res://assets/Menu/Levels/05.png" id="5_n15v5"]
+[ext_resource type="Texture2D" uid="uid://cqxa0ye36oh2t" path="res://assets/Menu/Levels/06.png" id="6_iwq8a"]
+[ext_resource type="Texture2D" uid="uid://db7ddmpcpnhux" path="res://assets/Menu/Levels/07.png" id="7_u2lca"]
+[ext_resource type="Texture2D" uid="uid://chsa4jrftu55t" path="res://assets/Menu/Levels/08.png" id="8_tefaa"]
+[ext_resource type="Texture2D" uid="uid://dfo8ilf6o4vim" path="res://assets/Menu/Levels/09.png" id="9_bydkx"]
+[ext_resource type="Texture2D" uid="uid://c63lo28mg3qn1" path="res://assets/Menu/Levels/10.png" id="10_c7iyc"]
+[ext_resource type="Texture2D" uid="uid://bv2nceemfw7tx" path="res://assets/Menu/Levels/11.png" id="11_x2yap"]
+[ext_resource type="Texture2D" uid="uid://qy8pdc4fw68a" path="res://assets/Menu/Levels/12.png" id="12_8x58s"]
+[ext_resource type="Texture2D" uid="uid://cukff2tvbdewh" path="res://assets/Menu/Levels/13.png" id="13_mv8n1"]
+[ext_resource type="Texture2D" uid="uid://c8uwvnamu5d6e" path="res://assets/Menu/Levels/14.png" id="14_gba8t"]
+
+[node name="levels_selector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="1" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_5finj")
+
+[node name="2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("2_l4e54")
+
+[node name="3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("3_rjpe0")
+
+[node name="4" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("4_8hfrc")
+
+[node name="5" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("5_n15v5")
+
+[node name="6" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("6_iwq8a")
+
+[node name="7" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("7_u2lca")
+
+[node name="8" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("8_tefaa")
+
+[node name="9" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("9_bydkx")
+
+[node name="10" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("10_c7iyc")
+
+[node name="11" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("11_x2yap")
+
+[node name="12" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 67.0
+offset_right = 150.0
+offset_bottom = 107.0
+texture_normal = ExtResource("12_8x58s")
+
+[node name="13" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 21.0
+offset_right = 195.0
+offset_bottom = 61.0
+texture_normal = ExtResource("13_mv8n1")
+
+[node name="14" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 379.0
+offset_top = 50.0
+offset_right = 419.0
+offset_bottom = 90.0
+texture_normal = ExtResource("14_gba8t")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0.23921569, 0.3882353, 0.63529414, 1)

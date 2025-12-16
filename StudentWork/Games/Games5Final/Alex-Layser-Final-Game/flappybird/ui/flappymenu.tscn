@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://pnmt6fthy4g1"]
+
+[ext_resource type="Script" uid="uid://858id77ci8tw" path="res://flappybird/ui/flappymenu.gd" id="1_0fy2r"]
+[ext_resource type="Texture2D" uid="uid://bt3k8v15wfbhc" path="res://assets 2/finalgameassets/backgroundsnake.png" id="1_rixf2"]
+[ext_resource type="LabelSettings" uid="uid://ygmf8txxyt3v" path="res://UI & Menus/textsettings.tres" id="2_0fy2r"]
+[ext_resource type="LabelSettings" uid="uid://buib4rgt05s31" path="res://UI & Menus/undertext.tres" id="3_kr3c0"]
+
+[node name="flappymenu" type="Node2D"]
+script = ExtResource("1_0fy2r")
+metadata/_edit_vertical_guides_ = [320.0]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -28.0
+offset_top = -21.0
+offset_right = 677.0
+offset_bottom = 389.0
+texture = ExtResource("1_rixf2")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 189.0
+offset_top = 4.0
+offset_right = 452.0
+offset_bottom = 66.0
+text = "Flappy Bird"
+label_settings = ExtResource("2_0fy2r")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 189.0
+offset_top = 79.0
+offset_right = 451.0
+offset_bottom = 120.0
+text = "Press E To Begin"
+label_settings = ExtResource("3_kr3c0")

@@ -1,0 +1,105 @@
+[gd_scene load_steps=17 format=3 uid="uid://cgvl5j8glyl0y"]
+
+[ext_resource type="Script" uid="uid://bygxr0dav2tg3" path="res://extras/arcademachines.gd" id="1_kw7u7"]
+[ext_resource type="Texture2D" uid="uid://jquc70v746yd" path="res://assets 2/finalgameassets/snake.png" id="1_xi2jg"]
+[ext_resource type="Texture2D" uid="uid://dapuqxcm2t4pp" path="res://assets 2/finalgameassets/pacman.png" id="2_kw7u7"]
+[ext_resource type="Texture2D" uid="uid://bg3u68nbjfbiy" path="res://assets 2/finalgameassets/minesweeper.png" id="3_3lr43"]
+[ext_resource type="Texture2D" uid="uid://b1px40twk4f6t" path="res://assets 2/finalgameassets/tetris.png" id="4_yra3w"]
+[ext_resource type="Texture2D" uid="uid://dnb8enes2latg" path="res://assets 2/finalgameassets/flappy.png" id="5_mda3y"]
+[ext_resource type="Texture2D" uid="uid://tgd6253jkpn0" path="res://assets 2/finalgameassets/caution.png" id="7_3lr43"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2x1nf"]
+texture = ExtResource("1_xi2jg")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.028981, -13.669263, 14.028981, -13.309546, 13.849122, 14.388699, -14.028981, 14.208839)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_twa5p"]
+texture = ExtResource("2_kw7u7")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.028981, -13.669263, 14.028981, -13.309546, 13.849122, 14.388699, -14.028981, 14.208839)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ksclj"]
+texture = ExtResource("3_3lr43")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.028981, -13.669263, 14.028981, -13.309546, 13.849122, 14.388699, -14.028981, 14.208839)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7ybsl"]
+texture = ExtResource("4_yra3w")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.028981, -13.669263, 14.028981, -13.309546, 13.849122, 14.388699, -14.028981, 14.208839)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_baecc"]
+texture = ExtResource("5_mda3y")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-14.028981, -13.669263, 14.028981, -13.309546, 13.849122, 14.388699, -14.028981, 14.208839)
+
+[sub_resource type="TileSet" id="TileSet_n4py4"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 2
+sources/0 = SubResource("TileSetAtlasSource_2x1nf")
+sources/1 = SubResource("TileSetAtlasSource_twa5p")
+sources/2 = SubResource("TileSetAtlasSource_ksclj")
+sources/3 = SubResource("TileSetAtlasSource_7ybsl")
+sources/4 = SubResource("TileSetAtlasSource_baecc")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yra3w"]
+texture = ExtResource("7_3lr43")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16.007427, -12.050534, 15.647711, -12.590111, 15.827566, 15.82757, -16.007427, 16.00743)
+
+[sub_resource type="TileSet" id="TileSet_mda3y"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 4
+sources/0 = SubResource("TileSetAtlasSource_yra3w")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xi2jg"]
+size = Vector2(68, 75)
+
+[node name="arcademachines" type="Node2D"]
+script = ExtResource("1_kw7u7")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_n4py4")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="."]
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray(0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_mda3y")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="pacman" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(32, 33.5)
+shape = SubResource("RectangleShape2D_xi2jg")
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="snake" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(159, 34)
+shape = SubResource("RectangleShape2D_xi2jg")
+
+[node name="Area2D3" type="Area2D" parent="."]
+
+[node name="minesweeper" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(287, 34)
+shape = SubResource("RectangleShape2D_xi2jg")
+
+[node name="Area2D4" type="Area2D" parent="."]
+
+[node name="tetris" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2(416, 36)
+shape = SubResource("RectangleShape2D_xi2jg")
+
+[node name="Area2D5" type="Area2D" parent="."]
+
+[node name="flappy" type="CollisionShape2D" parent="Area2D5"]
+position = Vector2(544, 35)
+shape = SubResource("RectangleShape2D_xi2jg")
