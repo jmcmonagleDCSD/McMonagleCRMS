@@ -1,0 +1,142 @@
+[gd_scene load_steps=19 format=3 uid="uid://j2tog2fnisj0"]
+
+[ext_resource type="Script" uid="uid://c7vg8hi4pbcxn" path="res://players/player.gd" id="1_60y4r"]
+[ext_resource type="Texture2D" uid="uid://vkubal2difw2" path="res://assets copy/Main Characters/Pink Man/Fall (32x32).png" id="1_wu7mp"]
+[ext_resource type="Texture2D" uid="uid://e8olfc7es046" path="res://assets copy/Main Characters/Pink Man/Jump (32x32).png" id="2_60y4r"]
+[ext_resource type="Texture2D" uid="uid://kxkydp8kj08g" path="res://assets copy/Main Characters/Pink Man/Run (32x32).png" id="3_g8xtg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k00sm"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1fvc"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5illy"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0yn0j"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogrlw"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jwom"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lpvu1"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0d8xx"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6vji"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mifsp"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbv1u"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1j52"]
+atlas = ExtResource("3_g8xtg")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vnc44"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wu7mp")
+}],
+"loop": true,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_60y4r")
+}],
+"loop": true,
+"name": &"jumping",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k00sm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1fvc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5illy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0yn0j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogrlw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1jwom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lpvu1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0d8xx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6vji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mifsp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vbv1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1j52")
+}],
+"loop": true,
+"name": &"running",
+"speed": 15.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7ousq"]
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+position = Vector2(-0.49, 12.335)
+scale = Vector2(3, 3)
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_60y4r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.4966668, -20.111668)
+sprite_frames = SubResource("SpriteFrames_vnc44")
+animation = &"jumping"
+autoplay = "running"
+frame_progress = 0.46934447
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Player"]]
+position = Vector2(0.16333199, -19.111666)
+shape = SubResource("CapsuleShape2D_7ousq")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(3.93, -31.83)
+zoom = Vector2(0.84, 0.84)
+position_smoothing_enabled = true
+position_smoothing_speed = 8.105
+rotation_smoothing_enabled = true
+rotation_smoothing_speed = 8.83

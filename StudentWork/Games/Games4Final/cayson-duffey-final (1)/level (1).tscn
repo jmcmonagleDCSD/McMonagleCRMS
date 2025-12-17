@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://rft4k7ob5ma7"]
+
+[ext_resource type="Texture2D" uid="uid://b1vlgnf3sll27" path="res://assets/Background/Blue.png" id="1_u52ul"]
+[ext_resource type="Texture2D" uid="uid://d0kwqmwk8awhj" path="res://assets/Background/Green.png" id="2_vonw3"]
+[ext_resource type="Script" uid="uid://cwoihexqgrent" path="res://score.gd" id="3_oi3di"]
+[ext_resource type="PackedScene" uid="uid://c5k8hufey3gf1" path="res://player.tscn" id="4_0b4ue"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oi3di"]
+size = Vector2(638.75, 76)
+
+[node name="level" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_right = 641.0
+offset_bottom = 360.0
+texture = ExtResource("1_u52ul")
+stretch_mode = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(319.625, 323)
+shape = SubResource("RectangleShape2D_oi3di")
+
+[node name="TextureRect" type="TextureRect" parent="StaticBody2D"]
+offset_left = -1.0
+offset_top = 285.0
+offset_right = 640.0
+offset_bottom = 361.0
+texture = ExtResource("2_vonw3")
+stretch_mode = 1
+
+[node name="Score" type="Label" parent="."]
+offset_left = 275.0
+offset_top = 5.0
+offset_right = 354.0
+offset_bottom = 28.0
+theme_override_colors/font_color = Color(0.44313726, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.90588236, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.82189286, 0.00013895347, 7.65279e-05, 1)
+text = "Score: 999"
+script = ExtResource("3_oi3di")
+
+[node name="Timer" type="Timer" parent="Score"]
+
+[node name="Player" parent="." instance=ExtResource("4_0b4ue")]
+position = Vector2(160, 147)
+
+[connection signal="timeout" from="Score/Timer" to="Score" method="_on_timer_timeout"]

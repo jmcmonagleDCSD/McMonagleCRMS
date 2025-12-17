@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc8pgcoqv8tiw"]
+
+[ext_resource type="Texture2D" uid="uid://bpryj47mtdsqv" path="res://assets/Background/Blue.png" id="1_v31sk"]
+[ext_resource type="Texture2D" uid="uid://s2ujikus3t1f" path="res://assets/Background/Yellow.png" id="2_qr7ta"]
+
+[node name="victory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 641.0
+offset_bottom = 360.0
+texture = ExtResource("1_v31sk")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 98.0
+offset_right = 488.0
+offset_bottom = 266.0
+texture = ExtResource("2_qr7ta")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 215.0
+offset_top = 159.0
+offset_right = -235.0
+offset_bottom = -156.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "victory"
+horizontal_alignment = 1

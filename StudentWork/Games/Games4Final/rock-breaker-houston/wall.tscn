@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbpyypdyc3g8x"]
+
+[ext_resource type="Texture2D" uid="uid://diir3hr642fsa" path="res://rock breaker/lvl 1 map.png" id="1_xxgf6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4f30"]
+size = Vector2(472, 42)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(348, 74)
+scale = Vector2(14.75, 1.3750001)
+texture = ExtResource("1_xxgf6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(348, 75)
+shape = SubResource("RectangleShape2D_y4f30")

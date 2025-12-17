@@ -1,0 +1,7 @@
+Timer
+Label
+AnimatedSprite2D
+CollisionShape2D
+CharacterBody2D
+TextureRect
+StaticBody2D

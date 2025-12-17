@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsigp3rh0g2f4"]
+
+[sub_resource type="GDScript" id="GDScript_y60y5"]
+script/source = "extends Node2D
+
+@export var enemy_scene: PackedScene 
+
+func _on_timer_timeout() -> void:
+	var y_pos = $Marker2D2.position.y
+	var x_pos = randi_range($Marker2D.position.x, $Marker2D2.position.x)
+	var new_pos = Vector2(x_pos, y_pos)
+	
+	var enemy =enemy_scene.instantiate()
+	add_child(enemy)
+	enemy.position =new_pos
+"
+
+[node name="pipe spawner" type="Node2D"]
+script = SubResource("GDScript_y60y5")
+
+[node name="Marker2D3" type="Marker2D" parent="."]
+position = Vector2(199, 1473)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(720, 308)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(647, 316)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

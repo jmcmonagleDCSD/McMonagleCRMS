@@ -1,0 +1,87 @@
+[gd_scene load_steps=5 format=3 uid="uid://cquj2vu7nnhf5"]
+
+[ext_resource type="Texture2D" uid="uid://bkjigbcvhs338" path="res://Monogram-YN-Logo-Design-by-Greenlines-Studios.jpg" id="1_5b7ti"]
+[ext_resource type="Script" uid="uid://doeesqi3a37n0" path="res://main_menu.gd" id="1_dvdtt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dvdtt"]
+texture = ExtResource("1_5b7ti")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7yr4w"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 12
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_right = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dvdtt")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_dvdtt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.75
+offset_top = -77.5
+offset_right = 155.75
+offset_bottom = 77.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_7yr4w")
+text = "start game"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_7yr4w")
+text = "Options "
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_7yr4w")
+text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.125
+anchor_right = 0.5
+anchor_bottom = 0.125
+offset_left = -141.0
+offset_top = -51.0
+offset_right = 125.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 26
+text = "                       
+            YN cliker"

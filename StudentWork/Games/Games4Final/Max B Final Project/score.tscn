@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://b22dei15anfae"]
+
+[ext_resource type="Script" uid="uid://xh5iecy1dmrm" path="res://score.gd" id="1_t1x8i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lhp1n"]
+font_color = Color(0, 0, 0, 1)
+outline_size = 5
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 0.49803922)
+
+[node name="Score" type="CanvasLayer"]
+script = ExtResource("1_t1x8i")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Score 0/6"
+label_settings = SubResource("LabelSettings_lhp1n")

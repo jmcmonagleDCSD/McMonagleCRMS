@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcgrg0lfnxmiu"]
+
+[ext_resource type="Texture2D" uid="uid://b82hcbb08pnp0" path="res://New Piskel (3).png" id="1_867ty"]
+
+[sub_resource type="GDScript" id="GDScript_vfv5t"]
+script/source = "extends Node2D
+
+var speed= 5
+var move = -3
+
+func _process(delta): 
+	position.x += move
+
+
+func _on_area_2d_body_entered(body) :
+	if body.is_in_group(\"player\"):
+		get_tree().change_scene_to_file(\"res://menu.tscn\")
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	queue_free()
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mvvu1"]
+radius = 23.086792
+
+[node name="enemy2" type="Node2D"]
+script = SubResource("GDScript_vfv5t")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_mvvu1")
+
+[node name="NewPiskel(3)" type="Sprite2D" parent="Area2D"]
+position = Vector2(6, 23)
+scale = Vector2(5.28125, 5)
+texture = ExtResource("1_867ty")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(29, 21)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="AnimatedSprite2D"]
+position = Vector2(-42, -36)
+rect = Rect2(-10, -10, 48, 44)

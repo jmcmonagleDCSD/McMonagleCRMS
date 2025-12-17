@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3 uid="uid://ddra88tplxv1t"]
+
+[ext_resource type="Texture2D" uid="uid://dss5u8vq1qoht" path="res://assets/Enemies/New Piskel (2).png" id="1_4jeuy"]
+[ext_resource type="Script" uid="uid://c5kf48y7ua3km" path="res://final__boss.gd" id="1_wwfym"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwfym"]
+atlas = ExtResource("1_4jeuy")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jw1d"]
+atlas = ExtResource("1_4jeuy")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yfeli"]
+atlas = ExtResource("1_4jeuy")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ui3dx"]
+atlas = ExtResource("1_4jeuy")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qj7ua"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwfym")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jw1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yfeli")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ui3dx")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kee8r"]
+size = Vector2(46, 97)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwfym"]
+size = Vector2(44, 96)
+
+[node name="final_ boss" type="CharacterBody2D"]
+collision_layer = 8
+collision_mask = 6
+script = ExtResource("1_wwfym")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["player"]]
+position = Vector2(83.49999, -69.5)
+scale = Vector2(6.2187495, 5.3437495)
+sprite_frames = SubResource("SpriteFrames_qj7ua")
+animation = &"attack"
+autoplay = "attack"
+frame_progress = 0.648982
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(81, -73)
+shape = SubResource("RectangleShape2D_kee8r")
+
+[node name="hitbox" type="Area2D" parent="."]
+position = Vector2(0, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(81, -75)
+shape = SubResource("RectangleShape2D_wwfym")
+
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]

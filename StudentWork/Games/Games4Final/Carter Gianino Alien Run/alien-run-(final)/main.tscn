@@ -1,0 +1,329 @@
+[gd_scene load_steps=14 format=4 uid="uid://dq51oox8h4xb4"]
+
+[ext_resource type="Texture2D" uid="uid://tgvbw2pvmk85" path="res://360_F_1359098623_CYEwJiATX7UF4C3b1zzMkMWbdKZgY9wQ.jpg" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://2uc1t71f7js3" path="res://assets copy/Terrain/Terrain (16x16).png" id="3_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://j2tog2fnisj0" path="res://players/player.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://tabksxwc80wj" path="res://enemy.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://rj1l1uk44yqi" path="res://obsticle_2.tscn" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cdgc4kk6ioadf" path="res://obsticle.tscn" id="7_5vw27"]
+[ext_resource type="PackedScene" uid="uid://cthus0qjf6ws" path="res://push.tscn" id="7_272bh"]
+[ext_resource type="PackedScene" uid="uid://dks3huljce011" path="res://box obsrticles.tscn" id="8_5vw27"]
+[ext_resource type="PackedScene" uid="uid://dgaiplurnt22j" path="res://node_2d.tscn" id="9_kek77"]
+[ext_resource type="PackedScene" uid="uid://cug1hv1472a3d" path="res://change.tscn" id="10_4c57u"]
+[ext_resource type="PackedScene" uid="uid://dn5a06fvsfhgo" path="res://box.tscn" id="11_efxa6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
+texture = ExtResource("3_1bvp3")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7mycd"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 6
+sources/0 = SubResource("TileSetAtlasSource_lquwl")
+
+[node name="main" type="Node2D"]
+position = Vector2(15, 3)
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_offset = Vector2(-181.485, 0)
+repeat_size = Vector2(653, 0.01)
+autoscroll = Vector2(-116.43, 0)
+repeat_times = 2
+
+[node name="TextureRect" type="TextureRect" parent="Parallax2D"]
+offset_left = 66.48501
+offset_top = -88.0
+offset_right = 726.485
+offset_bottom = 407.0
+texture = ExtResource("1_ig7tw")
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+scroll_offset = Vector2(7.17, 0)
+repeat_size = Vector2(176.42, 0)
+autoscroll = Vector2(-81.92, 0)
+repeat_times = 19
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Parallax2D2"]
+tile_map_data = PackedByteArray("AAAKABUAAAAHAAAAAAAKABYAAAAHAAEAAAAKABcAAAAHAAEAAAALABcAAAAHAAEAAAAMABcAAAAHAAEAAAANABcAAAAHAAEAAAAOABcAAAAHAAEAAAAPABcAAAAHAAEAAAAQABcAAAAHAAEAAAARABcAAAAHAAEAAAASABcAAAAHAAEAAAATABcAAAAHAAEAAAAUABcAAAAHAAEAAAAVABcAAAAHAAEAAAAWABcAAAAHAAEAAAAXABcAAAAHAAEAAAAYABcAAAAHAAEAAAAZABcAAAAHAAEAAAAaABcAAAAHAAEAAAAbABcAAAAHAAEAAAAcABcAAAAHAAEAAAAdABcAAAAHAAEAAAAeABcAAAAHAAEAAAAfABcAAAAHAAEAAAAgABcAAAAHAAEAAAAhABcAAAAHAAEAAAAiABcAAAAHAAEAAAAjABcAAAAHAAEAAAAkABcAAAAHAAEAAAAlABcAAAAHAAEAAAAmABcAAAAHAAEAAAAnABcAAAAHAAEAAAAoABcAAAAHAAEAAAApABcAAAAHAAEAAAAqABcAAAAHAAEAAAArABcAAAAHAAEAAAAsABcAAAAHAAEAAAAtABcAAAAHAAEAAAAuABcAAAAHAAEAAAAvABcAAAAHAAEAAAAwABcAAAAHAAEAAAAxABcAAAAHAAEAAAAyABcAAAAHAAEAAAAzABcAAAAHAAEAAAA0ABcAAAAHAAEAAAA1ABcAAAAHAAEAAAA2ABcAAAAHAAEAAAA3ABcAAAAHAAEAAAA4ABcAAAAHAAEAAAAOABUAAAAHAAAAAAALABUAAAAHAAAAAAALABYAAAAHAAEAAAAMABYAAAAHAAEAAAAMABUAAAAHAAAAAAANABUAAAAHAAAAAAANABYAAAAHAAEAAAAOABYAAAAHAAEAAAAPABYAAAAHAAEAAAAPABUAAAAHAAAAAAAQABUAAAAHAAAAAAAQABYAAAAHAAEAAAARABYAAAAHAAEAAAARABUAAAAHAAAAAAASABUAAAAHAAAAAAASABYAAAAHAAEAAAATABYAAAAHAAEAAAATABUAAAAHAAAAAAAUABUAAAAHAAAAAAAUABYAAAAHAAEAAAAVABYAAAAHAAEAAAAVABUAAAAHAAEAAAAWABUAAAAHAAEAAAAWABYAAAAHAAEAAAAXABYAAAAHAAEAAAAXABUAAAAHAAEAAAAYABUAAAAHAAEAAAAYABYAAAAHAAEAAAAZABYAAAAHAAEAAAAZABUAAAAHAAEAAAAaABUAAAAHAAEAAAAaABYAAAAHAAEAAAAbABYAAAAHAAEAAAAbABUAAAAHAAEAAAAcABUAAAAHAAEAAAAcABYAAAAHAAEAAAAdABYAAAAHAAEAAAAdABUAAAAHAAEAAAAeABUAAAAHAAEAAAAeABYAAAAHAAEAAAAfABYAAAAHAAEAAAAfABUAAAAHAAEAAAAgABUAAAAHAAEAAAAgABYAAAAHAAEAAAAhABYAAAAHAAEAAAAhABUAAAAHAAEAAAAiABUAAAAHAAEAAAAiABYAAAAHAAEAAAAjABYAAAAHAAEAAAAjABUAAAAHAAEAAAAkABUAAAAHAAEAAAAkABYAAAAHAAEAAAAlABYAAAAHAAEAAAAlABUAAAAHAAEAAAAmABUAAAAHAAEAAAAmABYAAAAHAAEAAAAnABYAAAAHAAEAAAAnABUAAAAHAAEAAAAoABUAAAAHAAEAAAAoABYAAAAHAAEAAAApABYAAAAHAAEAAAApABUAAAAHAAEAAAAqABUAAAAHAAEAAAAqABYAAAAHAAEAAAArABYAAAAHAAEAAAArABUAAAAHAAEAAAAsABUAAAAHAAEAAAAsABYAAAAHAAEAAAAtABYAAAAHAAEAAAAtABUAAAAHAAEAAAAuABUAAAAHAAEAAAAuABYAAAAHAAEAAAAvABYAAAAHAAEAAAAvABUAAAAHAAEAAAAwABUAAAAHAAEAAAAwABYAAAAHAAEAAAAxABYAAAAHAAEAAAAxABUAAAAHAAEAAAAyABUAAAAHAAEAAAAyABYAAAAHAAEAAAAzABYAAAAHAAEAAAAzABUAAAAHAAEAAAA0ABUAAAAHAAEAAAA0ABYAAAAHAAEAAAA1ABYAAAAHAAEAAAA1ABUAAAAHAAEAAAA2ABUAAAAHAAEAAAA2ABYAAAAHAAEAAAA3ABYAAAAHAAEAAAA3ABUAAAAHAAEAAAA4ABUAAAAHAAEAAAA4ABYAAAAHAAEAAAAJABUAAAAHAAAAAAAJABsAAAAHAAEAAAAKABsAAAAHAAEAAAALABsAAAAHAAEAAAAMABsAAAAHAAEAAAANABsAAAAHAAEAAAAOABsAAAAHAAEAAAAPABsAAAAHAAEAAAAQABsAAAAHAAEAAAARABsAAAAHAAEAAAASABsAAAAHAAEAAAATABsAAAAHAAEAAAAUABsAAAAHAAEAAAAVABsAAAAHAAEAAAAWABsAAAAHAAEAAAAXABsAAAAHAAEAAAAYABsAAAAHAAEAAAAZABsAAAAHAAEAAAAaABsAAAAHAAEAAAAbABsAAAAHAAEAAAAcABsAAAAHAAEAAAAdABsAAAAHAAEAAAAeABsAAAAHAAEAAAAfABsAAAAHAAEAAAAgABsAAAAHAAEAAAAhABsAAAAHAAEAAAAiABsAAAAHAAEAAAAxABoAAAAHAAEAAAAwABoAAAAHAAEAAAAvABoAAAAHAAEAAAAuABoAAAAHAAEAAAAtABoAAAAHAAEAAAAsABoAAAAHAAEAAAArABoAAAAHAAEAAAAqABoAAAAHAAEAAAApABoAAAAHAAEAAAAoABoAAAAHAAEAAAAnABoAAAAHAAEAAAAmABoAAAAHAAEAAAAlABoAAAAHAAEAAAAkABoAAAAHAAEAAAAjABoAAAAHAAEAAAAiABoAAAAHAAEAAAAhABoAAAAHAAEAAAAgABoAAAAHAAEAAAAfABoAAAAHAAEAAAAeABoAAAAHAAEAAAAdABoAAAAHAAEAAAAcABoAAAAHAAEAAAAbABoAAAAHAAEAAAAaABoAAAAHAAEAAAAZABoAAAAHAAEAAAAYABoAAAAHAAEAAAAXABoAAAAHAAEAAAAWABkAAAAHAAEAAAAVABkAAAAHAAEAAAAFABkAAAAHAAEAAAAGABkAAAAHAAEAAAAHABkAAAAHAAEAAAAIABkAAAAHAAEAAAAJABkAAAAHAAEAAAAKABkAAAAHAAEAAAALABkAAAAHAAEAAAAMABkAAAAHAAEAAAANABkAAAAHAAEAAAAOABkAAAAHAAEAAAAPABkAAAAHAAEAAAAQABkAAAAHAAEAAAARABkAAAAHAAEAAAASABkAAAAHAAEAAAATABkAAAAHAAEAAAAUABkAAAAHAAEAAAAXABkAAAAHAAEAAAAYABkAAAAHAAEAAAAZABkAAAAHAAEAAAAaABkAAAAHAAEAAAAbABkAAAAHAAEAAAAcABkAAAAHAAEAAAAdABkAAAAHAAEAAAAeABkAAAAHAAEAAAAfABkAAAAHAAEAAAAgABkAAAAHAAEAAAAgABgAAAAHAAEAAAAhABgAAAAHAAEAAAAiABgAAAAHAAEAAAAjABgAAAAHAAEAAAA1ABgAAAAHAAEAAAA0ABgAAAAHAAEAAAAzABgAAAAHAAEAAAAyABgAAAAHAAEAAAAxABgAAAAHAAEAAAAwABgAAAAHAAEAAAAvABgAAAAHAAEAAAAuABgAAAAHAAEAAAAtABgAAAAHAAEAAAAqABgAAAAHAAEAAAAfABgAAAAHAAEAAAAuABwAAAAHAAEAAAAvABwAAAAHAAEAAAAwABwAAAAHAAEAAAAxABwAAAAHAAEAAAAxABsAAAAHAAEAAAAyABsAAAAHAAEAAAAzABsAAAAHAAEAAAA0ABsAAAAHAAEAAAA1ABsAAAAHAAEAAAA2ABsAAAAHAAEAAAA3ABsAAAAHAAEAAAA4ABsAAAAHAAEAAAA5ABsAAAAHAAEAAAA6ABsAAAAHAAEAAAA3ABwAAAAHAAEAAAA2ABwAAAAHAAEAAAA1ABwAAAAHAAEAAAA0ABwAAAAHAAEAAAAzABwAAAAHAAEAAAAyABwAAAAHAAEAAAAxAB0AAAAHAAEAAAAwAB0AAAAHAAEAAAAvAB0AAAAHAAEAAAAtABwAAAAHAAEAAAAsABwAAAAHAAEAAAArABwAAAAHAAEAAAAqABwAAAAHAAEAAAApABwAAAAHAAEAAAAoABsAAAAHAAEAAAAGAB0AAAAHAAEAAAAHAB0AAAAHAAEAAAAIAB0AAAAHAAEAAAAJAB0AAAAHAAEAAAAKAB0AAAAHAAEAAAALAB0AAAAHAAEAAAAMAB0AAAAHAAEAAAANAB0AAAAHAAEAAAAOAB0AAAAHAAEAAAAPAB0AAAAHAAEAAAAQAB0AAAAHAAEAAAARAB0AAAAHAAEAAAASAB0AAAAHAAEAAAATAB0AAAAHAAEAAAAUAB0AAAAHAAEAAAAVAB0AAAAHAAEAAAAWAB0AAAAHAAEAAAAXAB0AAAAHAAEAAAAYAB0AAAAHAAEAAAAZAB0AAAAHAAEAAAAeAB4AAAAHAAEAAAAdAB4AAAAHAAEAAAAcAB4AAAAHAAEAAAAbAB4AAAAHAAEAAAAaAB4AAAAHAAEAAAAZAB4AAAAHAAEAAAAYAB4AAAAHAAEAAAAXAB4AAAAHAAEAAAAWAB4AAAAHAAEAAAAVAB4AAAAHAAEAAAAUAB4AAAAHAAEAAAATAB4AAAAHAAEAAAASAB4AAAAHAAEAAAARAB4AAAAHAAEAAAAQAB4AAAAHAAEAAAAPAB4AAAAHAAEAAAAOAB4AAAAHAAEAAAANAB4AAAAHAAEAAAAMAB4AAAAHAAEAAAALAB4AAAAHAAEAAAA=")
+tile_set = SubResource("TileSet_7mycd")
+
+[node name="player" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(304, 338)
+
+[node name="enemy" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(128, 337)
+
+[node name="obsticles" type="Node2D" parent="."]
+
+[node name="obsticle 1" parent="obsticles" instance=ExtResource("7_5vw27")]
+position = Vector2(639, 18)
+
+[node name="obsticle 3" parent="obsticles" instance=ExtResource("7_5vw27")]
+position = Vector2(5421, 24)
+
+[node name="obsticle 2" parent="obsticles" instance=ExtResource("6_7mycd")]
+position = Vector2(1628, -30)
+script = null
+
+[node name="obsticle 4" parent="obsticles" instance=ExtResource("6_7mycd")]
+position = Vector2(6301, -10)
+script = null
+
+[node name="other enemy" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(2592, 286)
+
+[node name="other enemy2" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(2168, 285)
+
+[node name="other enemy3" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(3852, 278)
+
+[node name="other enemy4" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(1411, 278)
+
+[node name="other enemy5" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(3638, 31)
+
+[node name="other enemy6" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(2190, 42)
+
+[node name="other enemy7" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(8946, 343)
+
+[node name="other enemy8" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(8784, 198)
+
+[node name="other enemy9" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(8447, 150.99976)
+rotation = 1.0471976
+
+[node name="other enemy10" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(7411.0005, 242.00024)
+rotation = 1.0471976
+
+[node name="other enemy11" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(6701.0005, 51.000244)
+rotation = 1.0471976
+
+[node name="other enemy12" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(6701.0005, 51.000244)
+rotation = -0.6015637
+
+[node name="other enemy13" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(6186.9995, 364.00003)
+rotation = -2.9721272
+
+[node name="other enemy14" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(5676.9995, 84.00003)
+rotation = -2.9721272
+
+[node name="other enemy15" parent="obsticles" instance=ExtResource("7_272bh")]
+position = Vector2(5676.9995, 84.00003)
+rotation = -2.9721272
+
+[node name="Node2D" parent="obsticles" instance=ExtResource("8_5vw27")]
+position = Vector2(2496, -13)
+
+[node name="Node2D3" parent="obsticles" instance=ExtResource("8_5vw27")]
+position = Vector2(7394, -3)
+
+[node name="Node2D2" parent="obsticles" instance=ExtResource("9_kek77")]
+position = Vector2(4017, 3)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("10_4c57u")]
+position = Vector2(1155, -17)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 9262.0
+offset_top = 193.0
+offset_right = 9731.0
+offset_bottom = 330.0
+theme_override_font_sizes/font_size = 100
+text = "YOU WIN!"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 3704.0
+offset_top = 51.0
+offset_right = 4315.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 100
+text = "Up here!"
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("11_efxa6")]
+position = Vector2(9759, 436)
+
+[node name="CharacterBody2D3" parent="." instance=ExtResource("11_efxa6")]
+position = Vector2(9755, 380.00003)
+rotation = 0.015910057
+
+[node name="CharacterBody2D4" parent="." instance=ExtResource("11_efxa6")]
+position = Vector2(9751, 313.00003)
+rotation = 0.09633883
+
+[node name="CharacterBody2D5" parent="." instance=ExtResource("11_efxa6")]
+position = Vector2(9755, 260.00003)
+rotation = 0.09633883
+
+[node name="CharacterBody2D6" parent="." instance=ExtResource("11_efxa6")]
+position = Vector2(9757, 199.99997)
+rotation = 0.09633883
+
+[node name="CharacterBody2D7" parent="." instance=ExtResource("11_efxa6")]
+position = Vector2(9764, 144.99997)
+rotation = 0.09633883
+
+[node name="CharacterBody2D8" parent="." instance=ExtResource("11_efxa6")]
+position = Vector2(9756, 486.99997)
+rotation = 0.09633883

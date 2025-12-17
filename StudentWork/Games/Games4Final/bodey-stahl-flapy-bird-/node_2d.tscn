@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=3 uid="uid://bg4bw7ubld0qu"]
+
+[ext_resource type="Texture2D" uid="uid://donpjekmysixm" path="res://assets/Background/Blue.png" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://wr7dgufktdo2" path="res://assets/Background/Green.png" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://draqctn71k6ky" path="res://character_body_2d.tscn" id="3_epypp"]
+[ext_resource type="PackedScene" uid="uid://dtnpgv2mbt3em" path="res://enemy.tscn" id="5_kdubu"]
+[ext_resource type="PackedScene" uid="uid://dsigp3rh0g2f4" path="res://pipe_spawner.tscn" id="5_q6r6c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
+size = Vector2(881, 96)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -22.0
+offset_top = -7.0
+offset_right = 1164.0
+offset_bottom = 673.0
+texture = ExtResource("1_0e48y")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = -31.0
+offset_top = -42.0
+offset_right = 1173.0
+offset_bottom = 46.0
+texture = ExtResource("2_epypp")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/TextureRect"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 361.0
+offset_right = 1207.0
+offset_bottom = 441.0
+texture = ExtResource("2_epypp")
+stretch_mode = 1
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_epypp")]
+position = Vector2(284, 223)
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
+position = Vector2(382, 360)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(365, -7)
+shape = SubResource("RectangleShape2D_epypp")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(1, 0)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(382, 360)
+shape = SubResource("RectangleShape2D_epypp")
+
+[node name="pipe spawner" parent="." instance=ExtResource("5_q6r6c")]
+position = Vector2(-11, -41)
+enemy_scene = ExtResource("5_kdubu")
+
+[node name="pipe spawner2" parent="." instance=ExtResource("5_q6r6c")]
+position = Vector2(-13, -169)
+enemy_scene = ExtResource("5_kdubu")

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnv1s6i6pdcsv"]
+
+[ext_resource type="Texture2D" uid="uid://4ux571e3cdvo" path="res://assets/Background/New Piskel (6).png" id="1_4jq1i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bcoka"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4jq1i")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uuxm7"]
+size = Vector2(36, 39)
+
+[node name="House1" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -17)
+scale = Vector2(1.7187501, 1.90625)
+sprite_frames = SubResource("SpriteFrames_bcoka")
+animation = &"Idle"
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, -18.5)
+shape = SubResource("RectangleShape2D_uuxm7")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://daw1nj31f04jb"]
+
+[ext_resource type="Script" uid="uid://od5jvlfyp1jw" path="res://node_2d.gd" id="1_217xj"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_217xj")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 643.0
+offset_bottom = 360.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 269.0
+offset_top = 148.0
+offset_right = 345.0
+offset_bottom = 171.0
+text = "YOU WIN!"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.043
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

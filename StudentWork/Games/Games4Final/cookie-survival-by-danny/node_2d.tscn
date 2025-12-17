@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://cthl56lsa1cvm"]
+
+[ext_resource type="Texture2D" uid="uid://bpryj47mtdsqv" path="res://assets/Background/Blue.png" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://bf5hkouxxh0xa" path="res://assets/Items/Green.png" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://nwtuivbuktgr" path="res://bus.tscn" id="3_epypp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(1735, 196)
+
+[node name="secret level" type="Area2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -587.0
+offset_top = -242.0
+offset_right = 1150.0
+offset_bottom = 297.0
+texture = ExtResource("1_0e48y")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -588.0
+offset_top = 298.0
+offset_right = 1149.0
+offset_bottom = 491.0
+texture = ExtResource("2_epypp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(281.5, 394)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 170.0
+offset_top = 49.0
+offset_right = 419.0
+offset_bottom = 137.0
+text = "Something giant this way comes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="bus" parent="." instance=ExtResource("3_epypp")]
+position = Vector2(1693, -61)

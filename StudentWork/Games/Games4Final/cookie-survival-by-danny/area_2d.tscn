@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://dkmfp5u1lym1a"]
+
+[ext_resource type="Texture2D" uid="uid://57xngfuv0hk" path="res://assets/Items/New Piskel (3).png" id="1_gf172"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dl81w"]
+atlas = ExtResource("1_gf172")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rgpn"]
+atlas = ExtResource("1_gf172")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0nl8"]
+atlas = ExtResource("1_gf172")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dtnr"]
+atlas = ExtResource("1_gf172")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c33a7"]
+atlas = ExtResource("1_gf172")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqxq1"]
+atlas = ExtResource("1_gf172")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l08u0"]
+atlas = ExtResource("1_gf172")
+region = Rect2(0, 192, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nrb8d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dl81w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rgpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0nl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dtnr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c33a7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqxq1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l08u0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u0hmu"]
+size = Vector2(13.5, 13.5)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_nrb8d")
+frame_progress = 0.38690752
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.75, -3.75)
+shape = SubResource("RectangleShape2D_u0hmu")

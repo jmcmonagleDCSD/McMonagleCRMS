@@ -1,0 +1,148 @@
+[gd_scene load_steps=21 format=3 uid="uid://bcjc0qyx8n6g2"]
+
+[ext_resource type="Texture2D" uid="uid://cx124xfeocxis" path="res://rock breaker/New Piskel (6).png" id="1_juq5h"]
+[ext_resource type="Script" uid="uid://dorg4p55rxa80" path="res://drill_upgrade.gd" id="2_qd86f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qd86f"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4qta"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw6ed"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bn8i"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2obgx"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6v5g"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hw6p1"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdo4k"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7appn"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ls6m1"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83kbj"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_786i0"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhlnr"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kki3j"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1e4t"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_di8d1"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k450d"]
+atlas = ExtResource("1_juq5h")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v2wv0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qd86f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g4qta")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vw6ed")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8bn8i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2obgx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v6v5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hw6p1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdo4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7appn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ls6m1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83kbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_786i0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhlnr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kki3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1e4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_di8d1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k450d")
+}],
+"loop": true,
+"name": &"hovered.over",
+"speed": 5.0
+}]
+
+[node name="Drill_Upgrade" type="AnimatedSprite2D"]
+position = Vector2(363, 227.5)
+scale = Vector2(5.125, 5.15625)
+sprite_frames = SubResource("SpriteFrames_v2wv0")
+animation = &"hovered.over"
+frame_progress = 0.12053112
+script = ExtResource("2_qd86f")
+
+[node name="Button" type="Button" parent="."]
+visible = false
+offset_left = -9.95122
+offset_top = -16.19394
+offset_right = 16.975607
+offset_bottom = 14.836363
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

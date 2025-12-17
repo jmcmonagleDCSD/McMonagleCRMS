@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmve23lm2hdv8"]
+
+[ext_resource type="Script" uid="uid://c116xss8ubevc" path="res://node_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://dkxflhwvwdysx" path="res://assets/Background/Gray.png" id="1_wtcfe"]
+
+[node name="main menu" type="Node2D"]
+script = ExtResource("1_0e48y")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_right = 641.0
+offset_bottom = 359.0
+texture = ExtResource("1_wtcfe")
+flip_h = true
+flip_v = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 195.0
+offset_top = 52.0
+offset_right = 534.0
+offset_bottom = 87.0
+theme_override_colors/font_shadow_color = Color(0.40355235, 0.5090826, 0.9692963, 1)
+theme_override_colors/font_outline_color = Color(0.38999513, 0.54369366, 0.7473294, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 25
+text = "Flappy Bird"
+uppercase = true
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 199.0
+offset_top = 181.0
+offset_right = 516.0
+offset_bottom = 204.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.51369333, 0.95250016, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 20
+text = "Press space to start,  jump &  avoid enemies"
+uppercase = true
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 199.0
+offset_top = 231.0
+offset_right = 516.0
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.51369333, 0.95250016, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 8
+theme_override_constants/shadow_outline_size = 20
+text = "Highscore: 000
+"
+uppercase = true

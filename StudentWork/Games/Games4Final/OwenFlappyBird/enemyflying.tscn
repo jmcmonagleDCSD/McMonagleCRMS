@@ -1,0 +1,83 @@
+[gd_scene load_steps=12 format=3 uid="uid://3rdy5jay8vee"]
+
+[ext_resource type="Script" uid="uid://cqdvr73fcul1u" path="res://enemyflying.gd" id="1_likw6"]
+[ext_resource type="Texture2D" uid="uid://d0t4leqn2gbyc" path="res://assets/Enemies/Bat/Flying (46x30).png" id="2_likw6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_46582"]
+atlas = ExtResource("2_likw6")
+region = Rect2(0, 0, 46, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxiuh"]
+atlas = ExtResource("2_likw6")
+region = Rect2(46, 0, 46, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c63is"]
+atlas = ExtResource("2_likw6")
+region = Rect2(92, 0, 46, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2crko"]
+atlas = ExtResource("2_likw6")
+region = Rect2(138, 0, 46, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxwt1"]
+atlas = ExtResource("2_likw6")
+region = Rect2(184, 0, 46, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfhlh"]
+atlas = ExtResource("2_likw6")
+region = Rect2(230, 0, 46, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sl0og"]
+atlas = ExtResource("2_likw6")
+region = Rect2(276, 0, 46, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d6scx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_46582")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lxiuh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c63is")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2crko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxwt1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfhlh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sl0og")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2a27l"]
+radius = 21.0
+height = 42.0
+
+[node name="Enemyflying" type="Node2D"]
+script = ExtResource("1_likw6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.1368684e-13, -40)
+scale = Vector2(1.5, 1.43)
+sprite_frames = SubResource("SpriteFrames_d6scx")
+autoplay = "default"
+frame_progress = 0.9770558
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -34)
+shape = SubResource("CapsuleShape2D_2a27l")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

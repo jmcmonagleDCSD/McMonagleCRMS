@@ -1,0 +1,89 @@
+[gd_scene load_steps=13 format=3 uid="uid://lfvwgulw12ln"]
+
+[ext_resource type="Texture2D" uid="uid://dgxx8gmbr35u5" path="res://New Piskel copy.png" id="1_rkjuc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pnes"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnmn6"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24sxr"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37imv"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6r76"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btytx"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwrl0"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1kfe"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdvtr"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6vu4"]
+atlas = ExtResource("1_rkjuc")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h1r0o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1pnes")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnmn6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24sxr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37imv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6r76")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btytx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwrl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1kfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdvtr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6vu4")
+}],
+"loop": true,
+"name": &"animation",
+"speed": 15.0
+}]
+
+[node name="menu animation" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_h1r0o")
+animation = &"animation"
+autoplay = "animation"

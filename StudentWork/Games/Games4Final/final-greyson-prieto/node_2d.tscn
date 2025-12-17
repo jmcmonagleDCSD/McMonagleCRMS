@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://7soesushrrrk"]
+
+[ext_resource type="Texture2D" uid="uid://boys15rlhba51" path="res://New Piskel (2).png" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://51tfw8pgd22w" path="res://Tube.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://b13db2dqtoqkv" path="res://new_piskel(1)(1)(1).tscn" id="3_epypp"]
+[ext_resource type="PackedScene" uid="uid://b2pojrvx7s1m3" path="res://character_body_2d.tscn" id="4_0hol4"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(436, -20)
+
+[node name="Node2D" parent="." instance=ExtResource("2_0e48y")]
+position = Vector2(30, -35)
+
+[node name="TextureRect" type="TextureRect" parent="Node2D"]
+offset_left = -1648.0
+offset_top = -1153.0
+offset_right = 3744.0
+offset_bottom = 1630.0
+texture = ExtResource("1_wtcfe")
+
+[node name="Tube5" parent="Node2D" instance=ExtResource("3_epypp")]
+position = Vector2(806, 218)
+
+[node name="Tube3" parent="Node2D" instance=ExtResource("2_0e48y")]
+position = Vector2(772, 7)
+
+[node name="Tube2" parent="Node2D" instance=ExtResource("3_epypp")]
+position = Vector2(447, 242)
+
+[node name="Tube" parent="Node2D" instance=ExtResource("3_epypp")]
+position = Vector2(17, 199)
+
+[node name="Tube4" parent="Node2D" instance=ExtResource("2_0e48y")]
+position = Vector2(423, 71)
+
+[node name="Node2D" parent="Node2D" instance=ExtResource("2_0e48y")]
+position = Vector2(3, 16)
+skew = -0.036651913
+
+[node name="Node2D2" parent="Node2D" instance=ExtResource("3_epypp")]
+position = Vector2(1108, 156)
+
+[node name="Node2D3" parent="Node2D" instance=ExtResource("2_0e48y")]
+position = Vector2(1076, -26)
+
+[node name="Node2D4" parent="Node2D" instance=ExtResource("2_0e48y")]
+position = Vector2(1412, -34)
+
+[node name="Node2D5" parent="Node2D" instance=ExtResource("3_epypp")]
+position = Vector2(1425, 195)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_0hol4")]
+position = Vector2(-433, 23)

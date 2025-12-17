@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://wiqpjq2gm6aq"]
+
+[ext_resource type="Texture2D" uid="uid://diir3hr642fsa" path="res://rock breaker/lvl 1 map.png" id="1_7ybih"]
+[ext_resource type="PackedScene" uid="uid://dc7mr8q53g6km" path="res://hits.tscn" id="2_o71iq"]
+[ext_resource type="PackedScene" uid="uid://c7oobnlbj343w" path="res://rock breaker/Rock.tscn" id="3_3cfro"]
+[ext_resource type="PackedScene" uid="uid://dqac73qsur8yc" path="res://hammer_and_chisel.tscn" id="5_vgo1g"]
+[ext_resource type="PackedScene" uid="uid://bcjc0qyx8n6g2" path="res://drill_upgrade.tscn" id="6_ay7ka"]
+[ext_resource type="PackedScene" uid="uid://cbpyypdyc3g8x" path="res://wall.tscn" id="7_o71iq"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wh5ot"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4veph"]
+
+[node name="rock level" type="Node2D" groups=["rock"]]
+
+[node name="taps" parent="." instance=ExtResource("2_o71iq")]
+material = SubResource("CanvasItemMaterial_wh5ot")
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 144.0
+offset_bottom = 56.0
+rotation = -0.013962634
+label_settings = SubResource("LabelSettings_4veph")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Drill_Upgrade" parent="." instance=ExtResource("6_ay7ka")]
+position = Vector2(584, 184)
+scale = Vector2(3.75, 3.9999998)
+
+[node name="Area2D" parent="." instance=ExtResource("7_o71iq")]
+position = Vector2(-208, 304.00003)
+scale = Vector2(1.5307446, 1.102924)
+
+[node name="Area2D2" parent="." instance=ExtResource("7_o71iq")]
+position = Vector2(592.00006, 640)
+rotation = -1.577379
+scale = Vector2(1.5307446, 1.102924)
+
+[node name="Area2D3" parent="." instance=ExtResource("7_o71iq")]
+position = Vector2(-208, -103.99997)
+scale = Vector2(1.5307446, 1.102924)
+
+[node name="Area2D4" parent="." instance=ExtResource("7_o71iq")]
+position = Vector2(-103.99999, 640)
+rotation = -1.5697135
+scale = Vector2(1.5307446, 1.102924)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 648.0
+offset_bottom = 360.0
+texture = ExtResource("1_7ybih")
+
+[node name="rock" parent="." instance=ExtResource("3_3cfro")]
+position = Vector2(304, 232.00002)
+scale = Vector2(5.228572, 4.8428574)
+
+[node name="hammer and chisel" parent="." instance=ExtResource("5_vgo1g")]
+position = Vector2(0, -32)

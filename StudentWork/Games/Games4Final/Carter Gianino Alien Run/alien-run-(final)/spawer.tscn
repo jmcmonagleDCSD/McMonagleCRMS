@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk6nijgipn6k7"]
+
+[ext_resource type="Script" uid="uid://dakkb8vqtvlo7" path="res://spawer.gd" id="1_wvv5b"]
+
+[node name="spawer" type="Node2D"]
+position = Vector2(-8, 13)
+script = ExtResource("1_wvv5b")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(268, 335)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(338, 340)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
