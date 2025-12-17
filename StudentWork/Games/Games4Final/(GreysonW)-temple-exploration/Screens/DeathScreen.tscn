@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://dyplmkwdhihle"]
+
+[ext_resource type="Texture2D" uid="uid://dsqkotddla0co" path="res://2d_lights_and_shadows_neutral_point_light.webp" id="1_7rjtg"]
+[ext_resource type="Script" uid="uid://buv6py74qkfbm" path="res://Screens/death_screen.gd" id="1_oxvhw"]
+[ext_resource type="PackedScene" uid="uid://tyteerrl0dre" path="res://Props/torch.tscn" id="2_oxvhw"]
+[ext_resource type="PackedScene" uid="uid://ccynnk4k3e16c" path="res://Levels/Beginning1.tscn" id="2_qa87b"]
+[ext_resource type="FontFile" uid="uid://d1ddtkfic571f" path="res://fonts/Coral_Pixels,Nabla,Sekuya/Coral_Pixels/CoralPixels-Regular.ttf" id="3_jerfk"]
+[ext_resource type="AudioStream" uid="uid://mmwq6f7ay7e7" path="res://audio/game-over-SBA-300420146.mp3" id="5_k78bl"]
+[ext_resource type="FontFile" uid="uid://foq5duprblhu" path="res://fonts/Jersey_10/Jersey10-Regular.ttf" id="6_dq3sm"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oxvhw")
+first_level = ExtResource("2_qa87b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 646.0
+offset_bottom = 364.0
+color = Color(0.28235295, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 253.0
+offset_top = 164.0
+offset_right = 377.0
+offset_bottom = 201.0
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_jerfk")
+theme_override_font_sizes/font_size = 27
+text = "You Died!"
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0, 0, 0, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(313, 184)
+color = Color(1, 0, 0.24705882, 1)
+texture = ExtResource("1_7rjtg")
+
+[node name="Torch" parent="." instance=ExtResource("2_oxvhw")]
+position = Vector2(312, 336)
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 265.0
+offset_top = 212.0
+offset_right = 399.0
+offset_bottom = 235.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_dq3sm")
+text = "Click To Respawn"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_k78bl")
+autoplay = true
