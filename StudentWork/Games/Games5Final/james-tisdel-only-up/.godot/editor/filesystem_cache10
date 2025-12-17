@@ -1,8 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765837381
+::res://::1766001468
 area_2d.gd::GDScript::2291320510944879067::1765824440::0::1::::<>Area2D<><>0<>0<><>::
 area_2d.tscn::PackedScene::6472056995303368470::1765824440::0::1::::<><><>0<>0<><>::uid://7v6yjo8tx3v0::::res://area_2d.gd<>uid://bftjxvjaeytvd::::res://assets/Traps/Saw/On (38x38).png
+export_presets.cfg::TextFile::-1::1765837427::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1790880795757653::1765824440::1765824440::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+index.apple-touch-icon.png::CompressedTexture2D::6827066570678760159::1765837427::1766001469::1::::<><><>0<>0<>3ff682f3019398280b7f4863b6aa9000<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D::2393647381448959739::1765837427::1766001469::1::::<><><>0<>0<>a55e68a421c67c7a2ade3e420b024a2c<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D::7922268323685374504::1765837427::1766001469::1::::<><><>0<>0<>5c9e6fc284dd041c556c811a30cc8c0f<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
 level.tscn::PackedScene::6785797458227732179::1765824440::0::1::::<><><>0<>0<><>::uid://dcycjf15px6fl::::res://assets/Background/Green.png<>uid://b1q5yx0hxjyms::::res://assets/Background/Brown.png<>uid://dl4go8ah746pg::::res://assets/Terrain/Terrain (16x16).png<>uid://bacu27de0w86t::::res://player/main_player.tscn<>uid://cyhd3ldqacu1c::::res://area_2d.tscn
 ::res://assets/::1765831283
 ::res://assets/Background/::1765831283

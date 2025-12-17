@@ -8,7 +8,7 @@
 script/source = "extends CharacterBody2D
 
 var gravity = 30
-var jump_height = -625
+var jump_height = -725
 
 var direction = 0
 var speed = 300

@@ -1,6 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765837463
+::res://::1766001299
+export_presets.cfg::TextFile::-1::1765837507::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::6260628964788233198::1765564518::1765564518::1::::<><><>0<>0<>c85c5d9cc1199cb82bfa4a2ba9fbd876<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+index.apple-touch-icon.png::CompressedTexture2D::2964633178878447032::1765837507::1766001300::1::::<><><>0<>0<>06ea69cfe5bf4b0755dcf7ec8f98f1d1<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D::4914009721101051827::1765837507::1766001300::1::::<><><>0<>0<>ca114b59876ec41c1520a74c17446ab0<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D::4480600014443184510::1765837507::1766001300::1::::<><><>0<>0<>d63a3b4056c79e5ec078cde90f71ff4e<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
 ::res://assets/::1765831282
 ::res://assets/Background/::1765831282
 Blue.png::CompressedTexture2D::2017339708716229525::1765564518::1765564518::1::::<><><>0<>0<>208df062f0078f87bb23ade2b2d56824<>res://.godot/imported/Blue.png-21f1dbf1aa429561ee9e4a3f007d25e7.ctex::

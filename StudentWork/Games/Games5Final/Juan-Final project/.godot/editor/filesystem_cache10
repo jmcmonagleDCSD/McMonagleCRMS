@@ -1,6 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1766000763
+::res://::1766001600
+export_presets.cfg::TextFile::-1::1766000781::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::7929292038136832342::1765910874::1765910874::1::::<><><>0<>0<>68be39e9d5d461b679103a287c1256d7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+index.apple-touch-icon.png::CompressedTexture2D::5748444790332300609::1766000780::1766001600::1::::<><><>0<>0<>12a989dd244133bc00dc4c7f288ffaac<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D::8772426235648629018::1766000780::1766001600::1::::<><><>0<>0<>023e00cae05477697265e9a77e663b14<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D::2876832369404765134::1766000780::1766001600::1::::<><><>0<>0<>ea7697fbf1e746e7fa19357855ef7956<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
 ::res://character/::1766000757
 New Piskel (4).png::CompressedTexture2D::5127829984729935593::1765910880::1765910880::1::::<><><>0<>0<>5bf9e97f835e49f5a76633ce5146b768<>res://.godot/imported/New Piskel (4).png-06dcfe473fe15f61b59a478279ba2b06.ctex::
 New Piskel (7) (1).png::CompressedTexture2D::7063921698688288562::1765910880::1765910878::1::::<><><>0<>0<>2e8c753dd7d4822de23a38152e0f6950<>res://.godot/imported/New Piskel (7) (1).png-3ef5df6bc926f5bf910325f1371a45e0.ctex::
