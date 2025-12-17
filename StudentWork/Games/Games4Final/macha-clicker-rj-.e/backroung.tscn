@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://b08aveu36d125"]
+
+[ext_resource type="Texture2D" uid="uid://84fb4be38c7p" path="res://assets/Background/Pink.png" id="1_g45x6"]
+[ext_resource type="Texture2D" uid="uid://bawyvfl6fplvi" path="res://assets/Background/Brown.png" id="2_0b6hl"]
+
+[node name="backrougn" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 646.0
+offset_bottom = 358.0
+texture = ExtResource("1_g45x6")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 2.0
+offset_right = 238.0
+offset_bottom = 358.0
+texture = ExtResource("2_0b6hl")
+stretch_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 430.0
+offset_right = 494.0
+offset_bottom = 360.0
+texture = ExtResource("2_0b6hl")
+stretch_mode = 1

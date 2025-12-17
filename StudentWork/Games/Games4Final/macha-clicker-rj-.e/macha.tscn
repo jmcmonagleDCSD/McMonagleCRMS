@@ -1,0 +1,151 @@
+[gd_scene load_steps=17 format=3 uid="uid://8v18oa15bg4s"]
+
+[ext_resource type="PackedScene" uid="uid://b08aveu36d125" path="res://backroung.tscn" id="1_dv54t"]
+[ext_resource type="Texture2D" uid="uid://dr2uh52ok2hd7" path="res://assets/New Piskel (1) (1).png" id="1_p7c1r"]
+[ext_resource type="Script" uid="uid://qny6d2i0fye1" path="res://macha.gd" id="1_tgexp"]
+[ext_resource type="Texture2D" uid="uid://c75qct0vsvrsc" path="res://assets/New Piskel (1) (1) (1).png" id="2_dv54t"]
+[ext_resource type="Texture2D" uid="uid://d4bh1ci4p45v8" path="res://New Piskel (2) (1).png" id="5_7anf1"]
+[ext_resource type="Texture2D" uid="uid://xx4mh6ufjm6l" path="res://New Piskel (2).png" id="6_frqfi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgexp"]
+atlas = ExtResource("1_p7c1r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5y0ik"]
+atlas = ExtResource("1_p7c1r")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7anf1"]
+atlas = ExtResource("1_p7c1r")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frqfi"]
+atlas = ExtResource("1_p7c1r")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5tl8"]
+atlas = ExtResource("1_p7c1r")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_61d0g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tgexp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5y0ik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7anf1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frqfi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5tl8")
+}],
+"loop": false,
+"name": &"clicked",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dv54t")
+}],
+"loop": true,
+"name": &"macha idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_61d0g"]
+atlas = ExtResource("6_frqfi")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhdj3"]
+atlas = ExtResource("6_frqfi")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6kr2"]
+atlas = ExtResource("6_frqfi")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tgexp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_7anf1")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_61d0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhdj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6kr2")
+}],
+"loop": true,
+"name": &"new_animation_1",
+"speed": 5.0
+}]
+
+[node name="macha" type="Node2D"]
+script = ExtResource("1_tgexp")
+
+[node name="backrougn" parent="." instance=ExtResource("1_dv54t")]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(88.00001, 120)
+scale = Vector2(5, 5.65)
+sprite_frames = SubResource("SpriteFrames_61d0g")
+animation = &"clicked"
+autoplay = "macha idle"
+frame = 4
+frame_progress = 1.0
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 37.0
+offset_top = 70.0
+offset_right = 142.0
+offset_bottom = 208.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 239.0
+offset_top = 1.0
+offset_right = 432.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 30
+text = "SIPS:0"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 494.0
+offset_top = -1.0
+offset_right = 644.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 26
+text = "Lips:"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(577.00006, 20)
+scale = Vector2(1.5, 1.53125)
+sprite_frames = SubResource("SpriteFrames_tgexp")
+animation = &"Idle"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 490.0
+offset_top = 1.0
+offset_right = 645.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 21
+text = "cost 10 SIPS"
+flat = true
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

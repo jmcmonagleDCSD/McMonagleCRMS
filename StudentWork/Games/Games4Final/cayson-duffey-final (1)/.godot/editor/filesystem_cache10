@@ -1,6 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765938625
+::res://::1765991456
+export_presets.cfg::TextFile::-1::1765938634::0::1::::<><><>0<>0<><>::
 icon (1).svg::CompressedTexture2D::2361386751089986521::1765904922::1765938610::1::::<><><>0<>0<>e47c65b6b29b31a5424d58e927c113b6<>res://.godot/imported/icon (1).svg-0b89e455eba1db707c5849589465189a.ctex::
+index.apple-touch-icon.png::CompressedTexture2D::1178809772797458648::1765938634::1765991457::1::::<><><>0<>0<>ad15efb704bf22de51572234ad0d6400<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D::9101026325045369898::1765938634::1765991457::1::::<><><>0<>0<>b5db42116289b684e16d1134108cd586<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D::117972173689881728::1765938634::1765991457::1::::<><><>0<>0<>bf3d0dd7258801bb9eaa447f0fa6c7a4<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
 level (1).tscn::PackedScene::1204738216808522256::1765904922::0::1::::<><><>0<>0<><>::uid://b1vlgnf3sll27::::res://assets/Background/Blue.png<>uid://d0kwqmwk8awhj::::res://assets/Background/Green.png<>uid://cwoihexqgrent::::res://score.gd<>uid://c5k8hufey3gf1::::res://player.tscn
 player (1)(1).gd::GDScript::7386782523680537390::1765904922::0::1::::<>CharacterBody2D<><>0<>0<><>::
 player (1).gd::GDScript::856485414627996235::1765904922::0::1::::<>CharacterBody2D<><>0<>0<><>::

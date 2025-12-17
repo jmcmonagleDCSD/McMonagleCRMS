@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8by5mvewqj81"]
+
+[ext_resource type="Script" uid="uid://c0q4vdnbfqd17" path="res://snow_boarder.gd" id="1_eolo1"]
+[ext_resource type="Texture2D" uid="uid://4wvkhtx3bjfk" path="res://New Piskel (5).png" id="2_xswec"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eolo1"]
+radius = 24.0
+height = 74.0
+
+[node name="snow boarder" type="CharacterBody2D"]
+script = ExtResource("1_eolo1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(677, 322)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CapsuleShape2D_eolo1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(676, 321)
+scale = Vector2(3.8095238, 4.9188333)
+texture = ExtResource("2_xswec")
+region_enabled = true
+region_rect = Rect2(0.344841, 9.240581, 21.942772, 18.345592)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(570, 321)
