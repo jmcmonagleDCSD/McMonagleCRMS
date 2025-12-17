@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://qhmtc401ajjn"]
+
+[ext_resource type="Script" uid="uid://sprrl43y51nn" path="res://player/ramp_1.gd" id="1_id6qc"]
+[ext_resource type="Texture2D" uid="uid://btxsgq8x1dmua" path="res://piskle/New Piskel (3).png" id="1_yk6ur"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_id6qc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yk6ur")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yk6ur"]
+radius = 5.0
+height = 22.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_id6qc"]
+radius = 4.0
+
+[node name="ramp1" type="Area2D"]
+collision_layer = 16
+collision_mask = 3
+script = ExtResource("1_id6qc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_id6qc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-19, -6)
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_yk6ur")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(1, 8)
+rotation = 1.5707964
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_id6qc")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 16
+collision_mask = 3
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-28, 16, -28, -30, -5, -1, 30, 14, 30, 16)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

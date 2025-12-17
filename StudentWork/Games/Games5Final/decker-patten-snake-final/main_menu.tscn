@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgb312n5f0eln"]
+
+[ext_resource type="Texture2D" uid="uid://daxh4bx2cx0tx" path="res://assets/Background/Pink.png" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://bc10ou1ornf00" path="res://main_menu.gd" id="1_7vrkn"]
+
+[node name="main_menu" type="Node2D"]
+script = ExtResource("1_7vrkn")
+
+[node name="background" type="Sprite2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="background"]
+offset_left = -30.0
+offset_top = -23.0
+offset_right = 697.0
+offset_bottom = 394.0
+texture = ExtResource("1_06t4h")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 221.0
+offset_top = 13.0
+offset_right = 358.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.23529412, 0.5019608, 0.15686275, 1)
+theme_override_font_sizes/font_size = 46
+text = "Snake"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 116.0
+offset_top = 133.0
+offset_right = 510.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(0.09803922, 0.59607846, 0.3882353, 1)
+theme_override_font_sizes/font_size = 29
+text = "Press up arrow or W to start"

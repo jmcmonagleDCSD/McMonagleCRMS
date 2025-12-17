@@ -1,0 +1,112 @@
+[gd_scene load_steps=17 format=3 uid="uid://btlits1dki0tc"]
+
+[ext_resource type="Script" uid="uid://b6oj1inj8ayu0" path="res://ships/galaga.gd" id="1_06fyv"]
+[ext_resource type="Texture2D" uid="uid://bpswsq0x81ie2" path="res://assets/ship.png" id="1_xj4la"]
+[ext_resource type="Script" uid="uid://psvhabftsn5t" path="res://ships/spawn.gd" id="3_si0j4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06fyv"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_si0j4"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5db64"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6ltm"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e5uan"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgo1u"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_660fl"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4lphv"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e207y"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_agj7t"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs3cr"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtuow"]
+atlas = ExtResource("1_xj4la")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tn08g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06fyv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_si0j4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5db64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6ltm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e5uan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgo1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_660fl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4lphv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e207y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_agj7t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hs3cr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mtuow")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_06fyv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, 5)
+sprite_frames = SubResource("SpriteFrames_tn08g")
+autoplay = "default"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 2, 0, 2, 1, 3, 1, 3, 2, 4, 2, 4, 3, 7, 3, 7, 5, 6, 5, 6, 6, 5, 6, 5, 7, 6, 7, 6, 8, 8, 8, 8, 9, 9, 9, 9, 11, 7, 11, 7, 10, 5, 10, 5, 12, 6, 12, 6, 13, 5, 13, 5, 14, 4, 14, 4, 12, -2, 12, -2, 14, -3, 14, -3, 13, -4, 13, -4, 12, -3, 12, -3, 10, -5, 10, -5, 11, -7, 11, -7, 9, -6, 9, -6, 8, -4, 8, -4, 7, -3, 7, -3, 6, -4, 6, -4, 5, -5, 5, -5, 3, -2, 3, -2, 2, -1, 2, -1, 1, 0, 1)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(-3, 2)
+script = ExtResource("3_si0j4")

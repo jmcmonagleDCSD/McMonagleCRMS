@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bifur8g1ai4ci"]
+
+[ext_resource type="Texture2D" uid="uid://dtnd1x8nnqogn" path="res://assets/Other/New Piskel (4).png" id="1_qbydv"]
+
+[node name="Hearts_background" type="TextureRect"]
+offset_left = -26.0
+offset_top = -18.0
+offset_right = 14.0
+offset_bottom = 22.0
+
+[node name="NewPiskel(4)" type="Sprite2D" parent="."]
+position = Vector2(22, 27)
+texture = ExtResource("1_qbydv")

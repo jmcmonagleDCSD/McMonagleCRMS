@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bwsefv4npr5fg"]
+
+[node name="CollisionShape2D" type="CollisionShape2D"]

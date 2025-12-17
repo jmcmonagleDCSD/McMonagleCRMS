@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://crdlort4845vn"]
+
+[ext_resource type="Script" uid="uid://cbmjyi0wogo7v" path="res://enemy_3.gd" id="1_hukrr"]
+[ext_resource type="Texture2D" uid="uid://cacvt0ftihyoo" path="res://assets/Enemies/FatBird/Idle (40x48).png" id="2_dxyk6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_no5mw"]
+atlas = ExtResource("2_dxyk6")
+region = Rect2(0, 0, 40, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v15ab"]
+atlas = ExtResource("2_dxyk6")
+region = Rect2(40, 0, 40, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60q65"]
+atlas = ExtResource("2_dxyk6")
+region = Rect2(80, 0, 40, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2kam"]
+atlas = ExtResource("2_dxyk6")
+region = Rect2(120, 0, 40, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1bkt"]
+atlas = ExtResource("2_dxyk6")
+region = Rect2(160, 0, 40, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tot4"]
+atlas = ExtResource("2_dxyk6")
+region = Rect2(200, 0, 40, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j66hg"]
+atlas = ExtResource("2_dxyk6")
+region = Rect2(240, 0, 40, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4c84r"]
+atlas = ExtResource("2_dxyk6")
+region = Rect2(280, 0, 40, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0okr3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_no5mw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v15ab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60q65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2kam")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1bkt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3tot4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j66hg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4c84r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tg1tv"]
+radius = 14.0
+height = 36.0
+
+[node name="Enemy3" type="Node2D" groups=["enemy3"]]
+script = ExtResource("1_hukrr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0okr3")
+
+[node name="Area2D" type="Area2D" parent="AnimatedSprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D"]
+shape = SubResource("CapsuleShape2D_tg1tv")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="AnimatedSprite2D/Area2D/CollisionShape2D"]
+position = Vector2(462, -1)
+
+[connection signal="body_entered" from="AnimatedSprite2D/Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyogayl8xvnxq"]
+
+[ext_resource type="Script" uid="uid://cnyc63etwxcmf" path="res://player/health.gd" id="1_tv85p"]
+[ext_resource type="LabelSettings" uid="uid://xifog8w665pi" path="res://piskle/health.tres" id="2_g1583"]
+
+[node name="Health" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tv85p")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Health" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Health:"
+label_settings = ExtResource("2_g1583")
+
+[node name="healthAmount" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "000"
+label_settings = ExtResource("2_g1583")

@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://cmd1a2r6apn18"]
+
+[ext_resource type="Texture2D" uid="uid://bcdnjixyc5fmi" path="res://assets/Main Characters/New Piskel (3).png" id="1_baghe"]
+[ext_resource type="Script" uid="uid://cm4hhplxwba6t" path="res://snake.gd" id="1_gxkgb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gxkgb"]
+size = Vector2(64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxkgb"]
+atlas = ExtResource("1_baghe")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2x2sd"]
+atlas = ExtResource("1_baghe")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olj5u"]
+atlas = ExtResource("1_baghe")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dw1s1"]
+atlas = ExtResource("1_baghe")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ej4wj"]
+atlas = ExtResource("1_baghe")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_olj5u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxkgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2x2sd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olj5u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dw1s1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ej4wj")
+}],
+"loop": true,
+"name": &"head",
+"speed": 4.0
+}]
+
+[node name="Snake" type="CharacterBody2D" groups=["snake"]]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_gxkgb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5258789e-05, 7.6293945e-06)
+shape = SubResource("RectangleShape2D_gxkgb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3.8146973e-06, 7.6293945e-06)
+sprite_frames = SubResource("SpriteFrames_olj5u")
+animation = &"head"
+autoplay = "head"
+frame_progress = 0.16416024
+
+[node name="BodySegments" type="Node2D" parent="."]

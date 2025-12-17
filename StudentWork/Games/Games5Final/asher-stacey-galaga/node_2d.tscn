@@ -1,0 +1,192 @@
+[gd_scene load_steps=21 format=3 uid="uid://cuk4rvs83wmkl"]
+
+[ext_resource type="Texture2D" uid="uid://dfu72k4gemj82" path="res://assets/assets/New Piskel copy.png" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://ojwohutasl4c" path="res://start.gd" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://b33mmucpr6fl" path="res://assets/assets/ship.png" id="2_epypp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
+atlas = ExtResource("1_0e48y")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
+atlas = ExtResource("1_0e48y")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
+atlas = ExtResource("1_0e48y")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d21ai"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hol4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6r6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdubu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
+atlas = ExtResource("2_epypp")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
+atlas = ExtResource("2_epypp")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
+atlas = ExtResource("2_epypp")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
+atlas = ExtResource("2_epypp")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0ka3"]
+atlas = ExtResource("2_epypp")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0h7mo"]
+atlas = ExtResource("2_epypp")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nr8wp"]
+atlas = ExtResource("2_epypp")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2bti"]
+atlas = ExtResource("2_epypp")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta5nu"]
+atlas = ExtResource("2_epypp")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flf07"]
+atlas = ExtResource("2_epypp")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k73cj"]
+atlas = ExtResource("2_epypp")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rjqkl"]
+atlas = ExtResource("2_epypp")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fs4d3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rj586")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4d7sh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0ka3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0h7mo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nr8wp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2bti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ta5nu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flf07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k73cj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rjqkl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_epypp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(171.99998, 177.5)
+scale = Vector2(5.3749995, 5.609375)
+sprite_frames = SubResource("SpriteFrames_d21ai")
+autoplay = "default"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(487.00003, 180.25)
+scale = Vector2(4.757813, 5.773438)
+sprite_frames = SubResource("SpriteFrames_d21ai")
+autoplay = "default"
+
+[node name="Label" type="Label" parent="."]
+offset_right = 641.0
+offset_bottom = 89.0
+theme_override_colors/font_shadow_color = Color(1.0107458e-06, 0.81152034, 0.3155875, 0.9843137)
+theme_override_colors/font_outline_color = Color(0.13682577, 0.13682574, 0.13682571, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_font_sizes/font_size = 31
+text = "Galaga, but theoretically better"
+horizontal_alignment = 1
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+position = Vector2(76, 286)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_fs4d3")
+autoplay = "default"
+frame_progress = 0.33515945
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 380.0
+offset_top = 136.0
+offset_right = 502.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(0.5898618, 0.13398424, 0.5558482, 1)
+theme_override_font_sizes/font_size = 21
+text = "how to play"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 193.0
+offset_top = 301.0
+offset_right = 476.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.5898618, 0.13398424, 0.5558482, 1)
+theme_override_font_sizes/font_size = 21
+text = "press up arrow or w to start"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 265.0
+offset_top = 165.0
+offset_right = 622.0
+offset_bottom = 292.0
+theme_override_colors/font_color = Color(0.706732, 0.53441674, 0.3707197, 1)
+theme_override_font_sizes/font_size = 16
+text = "a or left arrow to move left
+d or right arrow to move right
+w or up arrow to shoot
+c or 0Ins to put an item into the crafting menu
+press it again to put it back"

@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhmwmrs0n32d2"]
+
+[ext_resource type="Texture2D" uid="uid://bfl83qxun8dpa" path="res://assets/Enemies/Ghost/Gost Particles (48x16).png" id="1_1tiv8"]
+[ext_resource type="Script" uid="uid://w5hu1vc87rjh" path="res://player/Enemy/enemy(thunderbomb).gd" id="1_tsorc"]
+[ext_resource type="PackedScene" uid="uid://bu8jh1l4b674j" path="res://Spawner/spawner.tscn" id="2_7bwlx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7bwlx"]
+atlas = ExtResource("1_1tiv8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsorc"]
+atlas = ExtResource("1_1tiv8")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmrxl"]
+atlas = ExtResource("1_1tiv8")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ekpm"]
+atlas = ExtResource("1_1tiv8")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y76tv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7bwlx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsorc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rmrxl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ekpm")
+}],
+"loop": true,
+"name": &"Attack",
+"speed": 11.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mk7xg"]
+radius = 2.2725935
+height = 4.545187
+
+[node name="Enemy(thunderbomb)" type="Node2D"]
+script = ExtResource("1_tsorc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1286.9999, 542)
+scale = Vector2(11.718753, 8.437498)
+sprite_frames = SubResource("SpriteFrames_y76tv")
+animation = &"Attack"
+autoplay = "Attack"
+frame_progress = 0.7912069
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(-0.42105266, -0.4741874)
+rotation = 3.9043016
+skew = 0.6702064
+shape = SubResource("CapsuleShape2D_mk7xg")
+debug_color = Color(0.6663146, 0.5117268, 7.70092e-07, 0.41960785)
+
+[node name="Spawner" parent="." instance=ExtResource("2_7bwlx")]
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(1504, 539)
+rect = Rect2(-34, -16, 64, 29)

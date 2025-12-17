@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://3jw7cy5nrc01"]
+
+[ext_resource type="Script" uid="uid://bui4p5j41khnt" path="res://items/enemylaser.gd" id="1_ty5ma"]
+[ext_resource type="Texture2D" uid="uid://c5ms6ioyi1o24" path="res://assets/enemylaser.png" id="1_w1687"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ty5ma"]
+size = Vector2(3, 9)
+
+[node name="enemylaser" type="Area2D"]
+script = ExtResource("1_ty5ma")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, -16)
+scale = Vector2(3, 3)
+texture = ExtResource("1_w1687")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.5, 27.5)
+shape = SubResource("RectangleShape2D_ty5ma")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

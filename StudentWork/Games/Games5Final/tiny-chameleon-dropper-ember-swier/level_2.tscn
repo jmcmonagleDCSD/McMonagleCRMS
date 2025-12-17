@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://cljyavu4hvo70"]
+
+[ext_resource type="Texture2D" uid="uid://brmelunicrkmb" path="res://New Piskel (2).png" id="1_nmjpi"]
+[ext_resource type="Texture2D" uid="uid://crye8ebtkelua" path="res://assets/Background/Green.png" id="2_xdadj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1y8me"]
+size = Vector2(177.25, 6148.9375)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n7ypv"]
+size = Vector2(1414, 604)
+
+[node name="leveltwo" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 638.0
+offset_bottom = 6146.0
+texture = ExtResource("1_nmjpi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-91, 3074.4688)
+shape = SubResource("RectangleShape2D_1y8me")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(727, 3072)
+shape = SubResource("RectangleShape2D_1y8me")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -1966.0
+offset_top = -7.0
+offset_right = -180.0
+offset_bottom = 6196.0
+texture = ExtResource("2_xdadj")
+stretch_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 808.0
+offset_top = -11.0
+offset_right = 2594.0
+offset_bottom = 6347.0
+texture = ExtResource("2_xdadj")
+stretch_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+offset_left = -1911.0
+offset_top = 6137.0
+offset_right = 2539.0
+offset_bottom = 6830.0
+texture = ExtResource("2_xdadj")
+stretch_mode = 1
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(264, 6441)
+shape = SubResource("RectangleShape2D_n7ypv")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]

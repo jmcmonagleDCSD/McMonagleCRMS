@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce48h2pfl3e33"]
+
+[ext_resource type="Script" uid="uid://bdu7q7seks6pk" path="res://player/coincontrol.gd" id="1_c1n87"]
+[ext_resource type="LabelSettings" uid="uid://ot1ycape3o07" path="res://piskle/coin.tres" id="1_xh231"]
+
+[node name="Coincontrol" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c1n87")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="coins" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Pinapple:"
+label_settings = ExtResource("1_xh231")
+
+[node name="coinsnumber" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "0"
+label_settings = ExtResource("1_xh231")

@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://x002q457fdp3"]
+
+[ext_resource type="Texture2D" uid="uid://d3k21acogjxdd" path="res://hm9eY1WOZAD1sAg5dWMbpmnNG7k.png" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://cxqahhymsvqf0" path="res://360_F_89760942_RmpjUzGtDcERW1rlkNaifMr58NCVu7YB (1).jpg" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://bjqe5vv3exobs" path="res://jumper.tscn" id="3_epypp"]
+[ext_resource type="PackedScene" uid="uid://dosvcjomiqh3c" path="res://adidas.tscn" id="4_0hol4"]
+[ext_resource type="PackedScene" uid="uid://k8b6rqe85y5y" path="res://missle.tscn" id="5_kdubu"]
+[ext_resource type="PackedScene" uid="uid://54i0s1sf5upr" path="res://new_piskel(2).tscn" id="6_d21ai"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
+size = Vector2(1160, 129.5)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Hm9eY1wozad1sAg5dWMbpmnNg7k" type="Sprite2D" parent="."]
+position = Vector2(576, 330.00003)
+scale = Vector2(0.35999995, 0.3080169)
+texture = ExtResource("1_0e48y")
+
+[node name="360F89760942RmpjUzGtDcErw1RlkNaifMr58ncVu7yb(1)" type="Sprite2D" parent="."]
+position = Vector2(-196.54309, 550.499)
+scale = Vector2(-0.003673006, 1e-05)
+texture = ExtResource("2_epypp")
+
+[node name="360F89760942RmpjUzGtDcErw1RlkNaifMr58ncVu7yb(1)2" type="Sprite2D" parent="."]
+position = Vector2(575.5, 595)
+scale = Vector2(2.040493, 0.35555565)
+texture = ExtResource("2_epypp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(577, 595.75)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="NewPiskel(4)" parent="CollisionShape2D" instance=ExtResource("3_epypp")]
+position = Vector2(-610.5, -373.75006)
+scale = Vector2(5.2617183, 4.6406245)
+
+[node name="Node2D" parent="CollisionShape2D/NewPiskel(4)" instance=ExtResource("4_0hol4")]
+position = Vector2(-138.1678, -69.17172)
+scale = Vector2(0.07, 0.07)
+
+[node name="Node2D" parent="CollisionShape2D/NewPiskel(4)/Node2D" instance=ExtResource("4_0hol4")]
+position = Vector2(-833.5139, -637.22955)
+
+[node name="NewPiskel(5)" parent="." instance=ExtResource("5_kdubu")]
+position = Vector2(1098, 424)
+scale = Vector2(5.2968736, 6.6250005)
+
+[node name="NewPiskel(2)" parent="." instance=ExtResource("6_d21ai")]
+position = Vector2(1113, 532.00006)
+scale = Vector2(9.640627, 9.968751)

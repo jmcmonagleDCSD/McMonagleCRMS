@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3tk2pgdwv6i0"]
+
+[ext_resource type="Texture2D" uid="uid://cxw5iuuprdi2n" path="res://assets/Background/Pink.png" id="1_brlgi"]
+
+[sub_resource type="TileSet" id="TileSet_2ldps"]
+
+[node name="map" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 640.0
+offset_bottom = 362.0
+texture = ExtResource("1_brlgi")
+stretch_mode = 1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_2ldps")
