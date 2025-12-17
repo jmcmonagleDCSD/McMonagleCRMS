@@ -13,6 +13,7 @@ config_version=5
 config/name="Final Project Aaron Ross"
 run/main_scene="uid://dkdqvl0s6tlya"
 config/features=PackedStringArray("4.5", "Forward Plus")
+run/max_fps=75
 config/icon="res://icon.svg"
 
 [display]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://beocfuu8iwmwx"]
+
+[ext_resource type="Texture2D" uid="uid://dvopv2vdqf315" path="res://New Piskel (4).png" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://dymuk0yby1c5w" path="res://bird.tscn" id="2_0xm2m"]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(1.776768, -0.00025539874)
+metadata/_edit_vertical_guides_ = [-48.0]
+
+[node name="sky" type="Sprite2D" parent="."]
+position = Vector2(701.8361, -759596.56)
+scale = Vector2(22.543413, 22835.035)
+texture = ExtResource("1_h2yge")
+
+[node name="bird2" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(303.92264, -250588.56)
+rotation = -3.1411898
+scale = Vector2(0.927, 4271.889)
+skew = -0.0004029274

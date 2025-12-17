@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://dymuk0yby1c5w"]
+
+[ext_resource type="Texture2D" uid="uid://gssrudcbq6bd" path="res://New Piskel (2).png" id="1_g5k2s"]
+[ext_resource type="Script" uid="uid://6l56itq82ld" path="res://bird.gd" id="2_crnqq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crnqq"]
+atlas = ExtResource("1_g5k2s")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j88tq"]
+atlas = ExtResource("1_g5k2s")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cchwj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crnqq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j88tq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_crnqq"]
+size = Vector2(38, 23)
+
+[node name="Node2D" type="CharacterBody2D"]
+script = ExtResource("2_crnqq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(29.999996, 191)
+scale = Vector2(3.1614585, 2.140624)
+sprite_frames = SubResource("SpriteFrames_cchwj")
+autoplay = "default"
+frame_progress = 0.4986477
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -13.5)
+shape = SubResource("RectangleShape2D_crnqq")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -265.0
+offset_top = 31.0
+offset_right = 289.0
+offset_bottom = 54.0
+text = "watch the bird flap its wings because my game is broken and i cant fix it. because every time i try to rotate anything is turns invisible"
+metadata/_edit_use_anchors_ = true
