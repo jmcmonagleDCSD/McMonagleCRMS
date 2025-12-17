@@ -1,0 +1,22 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1766000763
+icon.svg::CompressedTexture2D::7929292038136832342::1765910874::1765910874::1::::<><><>0<>0<>68be39e9d5d461b679103a287c1256d7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://character/::1766000757
+New Piskel (4).png::CompressedTexture2D::5127829984729935593::1765910880::1765910880::1::::<><><>0<>0<>5bf9e97f835e49f5a76633ce5146b768<>res://.godot/imported/New Piskel (4).png-06dcfe473fe15f61b59a478279ba2b06.ctex::
+New Piskel (7) (1).png::CompressedTexture2D::7063921698688288562::1765910880::1765910878::1::::<><><>0<>0<>2e8c753dd7d4822de23a38152e0f6950<>res://.godot/imported/New Piskel (7) (1).png-3ef5df6bc926f5bf910325f1371a45e0.ctex::
+New Piskel (7) (2).png::CompressedTexture2D::2665911155920761972::1765910878::1765910880::1::::<><><>0<>0<>fcf7d600a7549da23d0ba1dda89b5ca9<>res://.godot/imported/New Piskel (7) (2).png-e10f113344f55782daaa5eaf69c7e5c0.ctex::
+New Piskel (7) (3).png::CompressedTexture2D::1805735243783683648::1765910880::1765910880::1::::<><><>0<>0<>a95bbf5b4fbeebf90eba6c7fcaf5201e<>res://.godot/imported/New Piskel (7) (3).png-57d0d45a806cb3b98fa0090d7777fd47.ctex::
+New Piskel (7).png::CompressedTexture2D::5498814140308784599::1765910880::1765910880::1::::<><><>0<>0<>d6f6f4481b1233fff8fc907d04f0bef1<>res://.godot/imported/New Piskel (7).png-3551167a0acec2740f7c25aac3421e91.ctex::
+player.gd::GDScript::2323497891036604990::1765910880::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::5421393026484773441::1765910880::0::1::::<><><>0<>0<><>::uid://c7v201vhxr0uo::::res://character/New Piskel (7) (1).png<>uid://bd8nfxllsjc4k::::res://character/New Piskel (7) (2).png<>uid://0yygwft8nfxg::::res://character/New Piskel (7) (3).png
+::res://Enemy/::1766000757
+New Piskel (5).png::CompressedTexture2D::3433006153849984517::1765910876::1765910876::1::::<><><>0<>0<>b4a0eb7debf67f6a4b98b2631f967cd4<>res://.godot/imported/New Piskel (5).png-60ccf332226afd2325c77407bf3a3e40.ctex::
+New Piskel (6).png::CompressedTexture2D::5460757546872677621::1765910876::1765910876::1::::<><><>0<>0<>5fab2eb58547cfd054c07c6f1cc564fb<>res://.godot/imported/New Piskel (6).png-b8e76b6bd49019e8a16f430d64184caa.ctex::
+spikes.gd::GDScript::6852834857504946084::1765910876::0::1::::<>Node2D<><>0<>0<><>::
+spikes.tscn::PackedScene::6797201271492522026::1765910876::0::1::::<><><>0<>0<><>::uid://c4vtgomgnapcu::::res://Enemy/spikes.gd<>uid://cj2h45dbxwigj::::res://Enemy/New Piskel (6).png
+::res://Landscape/::1766000757
+New Piskel (1).png::CompressedTexture2D::4948113858155175742::1765910876::1765910876::1::::<><><>0<>0<>e8231d8edb3de8a7a9b4641d05ed9189<>res://.godot/imported/New Piskel (1).png-0338a0ae00363904659ce42e4eb33870.ctex::
+New Piskel (2).png::CompressedTexture2D::4627318039643535128::1765910876::1765910876::1::::<><><>0<>0<>695c72c00d2a75151b247df9619cbea1<>res://.godot/imported/New Piskel (2).png-af4399927bb5856d53774600910171b9.ctex::
+New Piskel.png::CompressedTexture2D::3780408106128920178::1765910876::1765910876::1::::<><><>0<>0<>64a449887c813b5d1fefa73fd549cbc4<>res://.godot/imported/New Piskel.png-d04a130d16a1fbafa8efae8fdfa92c84.ctex::
+::res://Levels/::1766000757
+level.tscn::PackedScene::9216086390427249664::1765910876::0::1::::<><><>0<>0<><>::uid://bt4i1ff8qhli5::::res://Landscape/New Piskel.png<>uid://ccq5yho3vg7ne::::res://Landscape/New Piskel (1).png<>uid://b66ritmx5w3m7::::res://Landscape/New Piskel (2).png<>uid://cjifs0bjydmp2::::res://character/player.tscn

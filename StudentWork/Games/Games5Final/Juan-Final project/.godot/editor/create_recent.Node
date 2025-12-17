@@ -1,0 +1,11 @@
+CollisionShape2D
+TextureRect
+Node2D
+DirectionalLight2D
+Label      - Matches the "text" keyword.
+TextEdit
+Camera2D
+StaticBody2D
+TileMapLayer
+AnimatedSprite2D
+CharacterBody2D
