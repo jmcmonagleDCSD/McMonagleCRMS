@@ -1,6 +1,10 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1765940616
+::res://::1765984627
+export_presets.cfg::TextFile::-1::1765940657::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::3330998873174486484::1764601512::1764601514::1::::<><><>0<>0<>710c027700e891f54ece1ef573993db8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+index.apple-touch-icon.png::CompressedTexture2D::7679342874031472933::1765940656::1765984627::1::::<><><>0<>0<>9eafe71c3eecbc3898ad4de00def1aed<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D::1155878705817793910::1765940656::1765984627::1::::<><><>0<>0<>ede15d4ffa3479c40d6b4654618cab43<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D::596303444358629774::1765940656::1765984627::1::::<><><>0<>0<>a679b42350941be4a810b81f6a936c94<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
 ::res://assets/::1765940252
 area_2d.gd::GDScript::1011368932718027840::1765810354::0::1::::<>CharacterBody2D<><>0<>0<><>::
 area_2d.tscn::PackedScene::8177590190285971114::1765810416::0::1::::<><><>0<>0<><>::uid://on6dl607wr8k::::res://assets/area_2d.gd<>uid://ce5i8h2r6jn4l::::res://assets/Enemies/Bat/Flying (46x30).png

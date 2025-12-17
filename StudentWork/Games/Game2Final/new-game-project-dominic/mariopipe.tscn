@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=3 uid="uid://s4aj3eso3myg"]
+
+[ext_resource type="Texture2D" uid="uid://e2rtwa5ewhqt" path="res://assets/Mario/New Piskel (9).png" id="1_iuy3q"]
+[ext_resource type="Texture2D" uid="uid://ca4ed0thqa123" path="res://assets/Mario/New Piskel (8).png" id="1_kk0m6"]
+[ext_resource type="Texture2D" uid="uid://ccwamyoeaje3c" path="res://assets/Pipe/New Piskel-1.png.png" id="2_iuy3q"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q3xob"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_iuy3q")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_kk0m6")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a07w0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_iuy3q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mg6ya"]
+size = Vector2(79.5, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43qul"]
+size = Vector2(44, 23)
+
+[node name="Mariopipe" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(983.99994, 673)
+rotation = 6.2831855
+scale = Vector2(1.793862, 2.4762278)
+sprite_frames = SubResource("SpriteFrames_q3xob")
+animation = &"Idle"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(986, 432.62857)
+scale = Vector2(5.937499, 13.226786)
+sprite_frames = SubResource("SpriteFrames_a07w0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(984.75, 482)
+shape = SubResource("RectangleShape2D_mg6ya")
+
+[node name="Timer" type="Timer" parent="CollisionShape2D"]
+wait_time = 1.5
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(981, 705.5)
+shape = SubResource("RectangleShape2D_43qul")
+
+[node name="Timer" type="Timer" parent="CollisionShape2D2"]
+wait_time = 1.5

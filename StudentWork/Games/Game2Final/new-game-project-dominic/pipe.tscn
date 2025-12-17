@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpknet7defifu"]
+
+[ext_resource type="Texture2D" uid="uid://bqpmifk6srugx" path="res://assets/Pipe/New Piskel (10).png" id="1_bepn3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sj7mh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bepn3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_78010"]
+size = Vector2(85, 268.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_arayy"]
+size = Vector2(85, 183.5)
+
+[node name="pipe" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(336.25, 322)
+scale = Vector2(7.3571424, 18.457144)
+sprite_frames = SubResource("SpriteFrames_sj7mh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(331.5, 135.75)
+shape = SubResource("RectangleShape2D_78010")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(329.5, 555.25)
+shape = SubResource("RectangleShape2D_arayy")
