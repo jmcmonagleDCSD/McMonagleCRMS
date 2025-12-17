@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1o1tiwiiiun3"]
+
+[ext_resource type="Script" uid="uid://c4r1cjjr7kw1j" path="res://levelattempt37/pipe.gd" id="1_6pb3u"]
+[ext_resource type="Texture2D" uid="uid://bcl43uoo2th8f" path="res://assets/Background/Green.png" id="1_lrn3t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pb3u"]
+size = Vector2(46, 174)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oaj2x"]
+size = Vector2(43, 261)
+
+[node name="pipe" type="Area2D"]
+script = ExtResource("1_6pb3u")
+
+[node name="upperpipe" type="Sprite2D" parent="."]
+position = Vector2(-2, -87)
+scale = Vector2(0.71875, 2.75)
+texture = ExtResource("1_lrn3t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -87)
+shape = SubResource("RectangleShape2D_6pb3u")
+
+[node name="lowerpipe" type="Sprite2D" parent="."]
+position = Vector2(2.3841858e-07, -396.99997)
+scale = Vector2(0.671875, 4.09375)
+texture = ExtResource("1_lrn3t")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -396.5)
+shape = SubResource("RectangleShape2D_oaj2x")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

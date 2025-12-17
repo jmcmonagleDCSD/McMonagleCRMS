@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://qcijyp12odq4"]
+
+[ext_resource type="Texture2D" uid="uid://nafoal3qt1pg" path="res://assets/Enemies/Rocks/New Piskel (14).png" id="1_d4ndb"]
+[ext_resource type="Script" uid="uid://cdu5vuvks1fpt" path="res://spikes/area_2d.gd" id="1_x2oir"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2oir"]
+atlas = ExtResource("1_d4ndb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hac26"]
+atlas = ExtResource("1_d4ndb")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv6ji"]
+atlas = ExtResource("1_d4ndb")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxb33"]
+atlas = ExtResource("1_d4ndb")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_00lpr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x2oir")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hac26")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv6ji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wxb33")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aodb4"]
+radius = 3.0
+
+[node name="LASER" type="Area2D"]
+script = ExtResource("1_x2oir")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.5, -15.25)
+scale = Vector2(1.09375, 0.390625)
+sprite_frames = SubResource("SpriteFrames_00lpr")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.5754102
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -15)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_aodb4")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(176, -11)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

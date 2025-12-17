@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://5j4ntpr7iy20"]
+
+[ext_resource type="Script" uid="uid://7hxnariheovl" path="res://pipes.gd" id="1_og227"]
+[ext_resource type="Texture2D" uid="uid://dowi1wctjonkk" path="res://assets/Main Characters/New Piskel (3).png" id="2_og227"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r1kwc"]
+size = Vector2(81, 141.3125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_og227"]
+size = Vector2(82, 134.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4tgv"]
+size = Vector2(90, 150)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nq3k0"]
+size = Vector2(92, 137.5)
+
+[node name="pipes" type="CharacterBody2D"]
+script = ExtResource("1_og227")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 135.34375)
+shape = SubResource("RectangleShape2D_r1kwc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -141.375)
+shape = SubResource("RectangleShape2D_og227")
+
+[node name="NewPiskel(3)" type="Sprite2D" parent="."]
+position = Vector2(9.536743e-07, -1.0000038)
+scale = Vector2(10.761719, 12.8583975)
+texture = ExtResource("2_og227")
+
+[node name="hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(1, 135)
+shape = SubResource("RectangleShape2D_l4tgv")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(-1, -142.75)
+shape = SubResource("RectangleShape2D_nq3k0")
+
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]

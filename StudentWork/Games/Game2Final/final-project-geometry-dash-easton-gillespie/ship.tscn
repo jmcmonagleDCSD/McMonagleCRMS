@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://cv124rqil1gav"]
+
+[ext_resource type="Script" uid="uid://d1ngfnsqrgdks" path="res://ship.gd" id="1_4cq66"]
+[ext_resource type="Texture2D" uid="uid://0gcixl7plrsi" path="res://New Piskel (10).png" id="1_l3rv8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4icm7"]
+radius = 28.0
+height = 56.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4325"]
+atlas = ExtResource("1_l3rv8")
+region = Rect2(0, 120, 120, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4cq66"]
+atlas = ExtResource("1_l3rv8")
+region = Rect2(0, 0, 120, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l3rv8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4325")
+}],
+"loop": true,
+"name": &"boost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4cq66")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 5.0
+}]
+
+[node name="ship" type="CharacterBody2D"]
+script = ExtResource("1_4cq66")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(309, 165)
+shape = SubResource("CapsuleShape2D_4icm7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(312, 161)
+sprite_frames = SubResource("SpriteFrames_l3rv8")
+animation = &"fly"
+autoplay = "fly"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(408, 121)
+zoom = Vector2(2, 2)

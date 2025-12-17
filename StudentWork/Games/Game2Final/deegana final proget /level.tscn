@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://bffs0yqr2jdrx"]
+
+[ext_resource type="Texture2D" uid="uid://btmq672recd17" path="res://assets/Background/Blue.png" id="1_vonw3"]
+[ext_resource type="Texture2D" uid="uid://cubr043sxsq4v" path="res://assets/Background/Green.png" id="2_oi3di"]
+[ext_resource type="Script" uid="uid://d0d0vmkjbqmpq" path="res://label.gd" id="3_oi3di"]
+[ext_resource type="PackedScene" uid="uid://d30ebo7uakvax" path="res://character_body_2d.tscn" id="4_0b4ue"]
+[ext_resource type="PackedScene" uid="uid://cwmsvr6xip2kw" path="res://enemy_flying.tscn" id="5_f2txt"]
+[ext_resource type="PackedScene" uid="uid://by50wocd8msy7" path="res://spawner.tscn" id="6_1ainy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vonw3"]
+size = Vector2(627, 51)
+
+[node name="level" type="Node2D"]
+position = Vector2(1, 1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -7.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 3.0
+offset_right = 635.0
+offset_bottom = 296.0
+texture = ExtResource("1_vonw3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 296.0
+offset_right = 636.0
+offset_bottom = 356.0
+texture = ExtResource("2_oi3di")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(320, 324)
+shape = SubResource("RectangleShape2D_vonw3")
+debug_color = Color(0, 0.6, 0.050980393, 0.41960785)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 277.0
+offset_top = 35.0
+offset_right = 354.0
+offset_bottom = 58.0
+text = "score 999"
+script = ExtResource("3_oi3di")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_0b4ue")]
+position = Vector2(-11, -192)
+
+[node name="enemyFlying" parent="." instance=ExtResource("5_f2txt")]
+position = Vector2(193, -100)
+
+[node name="spawner" parent="." instance=ExtResource("6_1ainy")]
+position = Vector2(-275, -135)
+
+[node name="Timer2" type="Timer" parent="spawner"]
+wait_time = 0.395
+autostart = true

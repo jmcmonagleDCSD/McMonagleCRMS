@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dl4vh1jfj7iiq"]
+
+[ext_resource type="Script" uid="uid://cykn5imfejwb5" path="res://spike.gd" id="1_7k7bx"]
+[ext_resource type="Texture2D" uid="uid://cfff7lp663nf0" path="res://assets/Traps/Spikes/Idle.png" id="1_8ryga"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7k7bx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8ryga")
+}],
+"loop": true,
+"name": &"Idle Spike",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tggh8"]
+size = Vector2(22, 13)
+
+[node name="Spike" type="Area2D"]
+script = ExtResource("1_7k7bx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(16, -16)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_7k7bx")
+animation = &"Idle Spike"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(15, -6.5)
+shape = SubResource("RectangleShape2D_tggh8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

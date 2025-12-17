@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=3 uid="uid://cm32ys74wv20a"]
+
+[ext_resource type="Script" uid="uid://cjxt2yvlt1aw4" path="res://character_body_2d.gd" id="1_3yo64"]
+[ext_resource type="Texture2D" uid="uid://cykcsl44yuur5" path="res://assets/Enemies/BlueBird/Flying (32x32).png" id="2_b5j7d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cx6l2"]
+atlas = ExtResource("2_b5j7d")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6utc"]
+atlas = ExtResource("2_b5j7d")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eaepg"]
+atlas = ExtResource("2_b5j7d")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqggl"]
+atlas = ExtResource("2_b5j7d")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kj71v"]
+atlas = ExtResource("2_b5j7d")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xy4iw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cx6l2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6utc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eaepg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqggl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kj71v")
+}],
+"loop": false,
+"name": &"flap_2",
+"speed": 12.5
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r0dxc"]
+radius = 8.0
+height = 20.0
+
+[node name="player" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_3yo64")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.96019775, 0.9906572)
+sprite_frames = SubResource("SpriteFrames_xy4iw")
+animation = &"flap_2"
+frame = 4
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.5, -0.5)
+shape = SubResource("CapsuleShape2D_r0dxc")

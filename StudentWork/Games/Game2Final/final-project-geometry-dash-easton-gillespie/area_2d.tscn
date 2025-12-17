@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bd77bayvfto34"]
+
+[ext_resource type="Script" uid="uid://crqul00x0nbbl" path="res://spike.gd" id="1_dl81w"]
+[ext_resource type="Texture2D" uid="uid://ct2l842gcs38m" path="res://assets 2/New Piskel (2).png" id="1_gf172"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dl81w"]
+size = Vector2(8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5rgpn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gf172")
+}],
+"loop": true,
+"name": &"spike",
+"speed": 5.0
+}]
+
+[node name="spike" type="Area2D"]
+script = ExtResource("1_dl81w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(370, 93)
+shape = SubResource("RectangleShape2D_dl81w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(370.00003, 84)
+scale = Vector2(1.1999992, 2.9020824)
+sprite_frames = SubResource("SpriteFrames_5rgpn")
+animation = &"spike"
+autoplay = "spike"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

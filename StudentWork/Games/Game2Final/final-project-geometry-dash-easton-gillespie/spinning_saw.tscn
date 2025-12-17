@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://dupiwi073klgv"]
+
+[ext_resource type="Texture2D" uid="uid://dvqp8lftvj67r" path="res://assets 2/Traps/Saw/On (38x38).png" id="1_fq1oa"]
+[ext_resource type="Script" uid="uid://gw4f1e8b6mb8" path="res://spinning_saw.gd" id="1_nj0w0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ma62t"]
+radius = 24.020824
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nj0w0"]
+atlas = ExtResource("1_fq1oa")
+region = Rect2(0, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tp7ad"]
+atlas = ExtResource("1_fq1oa")
+region = Rect2(38, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vco55"]
+atlas = ExtResource("1_fq1oa")
+region = Rect2(76, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyoh3"]
+atlas = ExtResource("1_fq1oa")
+region = Rect2(152, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrk3p"]
+atlas = ExtResource("1_fq1oa")
+region = Rect2(114, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4fdr"]
+atlas = ExtResource("1_fq1oa")
+region = Rect2(190, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3l70x"]
+atlas = ExtResource("1_fq1oa")
+region = Rect2(228, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66hw4"]
+atlas = ExtResource("1_fq1oa")
+region = Rect2(266, 0, 38, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fq1oa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nj0w0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tp7ad")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vco55")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qyoh3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrk3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4fdr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3l70x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66hw4")
+}],
+"loop": true,
+"name": &"spin",
+"speed": 5.0
+}]
+
+[node name="spinning saw" type="Area2D"]
+script = ExtResource("1_nj0w0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(376, 190)
+shape = SubResource("CircleShape2D_ma62t")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(376.00003, 189.00002)
+scale = Vector2(1.4736842, 1.4210526)
+sprite_frames = SubResource("SpriteFrames_fq1oa")
+animation = &"spin"
+autoplay = "spin"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

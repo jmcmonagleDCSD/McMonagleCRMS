@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bs38gqr5p4i0u"]
+
+[ext_resource type="Texture2D" uid="uid://cw4ktvau0dbc6" path="res://Bullet.png" id="1_v7oki"]
+[ext_resource type="Script" uid="uid://dt1ldbw372nca" path="res://bullet.gd" id="1_v8qja"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8qja"]
+atlas = ExtResource("1_v7oki")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4vbm"]
+atlas = ExtResource("1_v7oki")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rtl8c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8qja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4vbm")
+}],
+"loop": true,
+"name": &"Fly",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v7oki"]
+size = Vector2(7, 5)
+
+[node name="Bullet" type="Node2D"]
+script = ExtResource("1_v8qja")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, 1.0000019)
+scale = Vector2(1.8125, 1.59375)
+sprite_frames = SubResource("SpriteFrames_rtl8c")
+animation = &"Fly"
+autoplay = "Fly"
+frame = 1
+frame_progress = 0.3986607
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.5, 0.5)
+shape = SubResource("RectangleShape2D_v7oki")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfxa8bbb0jngl"]
+
+[ext_resource type="Script" uid="uid://bh4nobridnoax" path="res://kill.gd" id="1_it5pd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mdyau"]
+size = Vector2(653, 20)
+
+[node name="kill" type="Area2D"]
+script = ExtResource("1_it5pd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(320, 12)
+shape = SubResource("RectangleShape2D_mdyau")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://04tevksllnns"]
+
+[ext_resource type="Texture2D" uid="uid://baay67ssq4rj8" path="res://background.png" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://bv5tnxbftkb8r" path="res://main_menu.gd" id="1_7vrkn"]
+
+[node name="main menu" type="Node2D"]
+script = ExtResource("1_7vrkn")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = -6.0
+offset_right = 639.0
+offset_bottom = 352.0
+texture = ExtResource("1_06t4h")
+
+[node name="Label" type="Button" parent="."]
+offset_left = 131.0
+offset_top = 187.0
+offset_right = 527.0
+offset_bottom = 230.0
+text = "Play level"
+
+[connection signal="pressed" from="Label" to="." method="_on_label_pressed"]

@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://d30ebo7uakvax"]
+
+[ext_resource type="Texture2D" uid="uid://b7ay0lxl6oj8k" path="res://New Piskel (1).png" id="1_f50pn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
+atlas = ExtResource("1_f50pn")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghijl"]
+atlas = ExtResource("1_f50pn")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_44cfe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ij6vw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghijl")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 1.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(1481, 2452)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-982, -2175)
+scale = Vector2(15.409146, 12.355464)
+sprite_frames = SubResource("SpriteFrames_44cfe")
+animation = &"new_animation"
+frame_progress = 0.059862
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

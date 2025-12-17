@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce4bxdjaad6r"]
+
+[ext_resource type="Script" uid="uid://bj16svvglscbk" path="res://score.gd" id="1_ggrp6"]
+
+[node name="Score" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ggrp6")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "0
+"
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

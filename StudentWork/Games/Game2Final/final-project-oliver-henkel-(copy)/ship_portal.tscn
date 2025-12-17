@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmoeyhlo0sibp"]
+
+[ext_resource type="Texture2D" uid="uid://dvee7q71hcpv3" path="res://Ship Portal.png" id="1_05m2p"]
+[ext_resource type="Script" uid="uid://dh02jxvear5x0" path="res://area_2d.gd" id="2_kosn0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3ng5i"]
+radius = 7.0
+height = 24.0
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("2_kosn0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, -12)
+shape = SubResource("CapsuleShape2D_3ng5i")
+
+[node name="Ship Portal" type="Sprite2D" parent="."]
+position = Vector2(11, -9)
+texture = ExtResource("1_05m2p")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

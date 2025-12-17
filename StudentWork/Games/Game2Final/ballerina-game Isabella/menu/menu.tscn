@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://fmo3p3mqarkf"]
+
+[ext_resource type="Script" uid="uid://cc74lwqlknfwb" path="res://menu/menu.gd" id="1_g18jx"]
+[ext_resource type="Texture2D" uid="uid://cubv2ahv7v4b2" path="res://assets/Background/New Piskel (5).png" id="1_j0t7f"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g18jx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 11.0
+offset_right = 1932.0
+offset_bottom = 1099.0
+texture = ExtResource("1_j0t7f")
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 62.0
+offset_right = 1701.0
+offset_bottom = 182.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Merry christmas and thank you for playing my game! "
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 174.0
+offset_right = 1926.0
+offset_bottom = 251.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Press \"W\" To begin! To play use W, A, S,D or the arrows!"

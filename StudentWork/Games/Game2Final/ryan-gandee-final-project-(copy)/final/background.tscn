@@ -1,0 +1,82 @@
+[gd_scene load_steps=15 format=3 uid="uid://c0f4c4dvvyyn3"]
+
+[ext_resource type="Texture2D" uid="uid://bi0qup46vkj85" path="res://New Piskel (8) (2) (2).png" id="1_qw2ur"]
+[ext_resource type="PackedScene" uid="uid://d5ih8w8cqjpe" path="res://player.tscn" id="2_aqk2r"]
+[ext_resource type="PackedScene" uid="uid://crw2kvfm0r8qr" path="res://death.tscn" id="3_7anx7"]
+[ext_resource type="PackedScene" uid="uid://dbndt44i88j08" path="res://meteor.tscn" id="4_hqqjf"]
+[ext_resource type="PackedScene" uid="uid://cbdphqd0tvlr2" path="res://spawner.tscn" id="5_e0p5b"]
+[ext_resource type="PackedScene" uid="uid://cyf4c88cr8cxo" path="res://spawner 2.tscn" id="6_1a78i"]
+[ext_resource type="PackedScene" uid="uid://chepophj1kxjd" path="res://spawner 3.tscn" id="7_ma5nv"]
+[ext_resource type="PackedScene" uid="uid://crc2v2c8vgndl" path="res://spawner 4.tscn" id="8_ievvr"]
+[ext_resource type="PackedScene" uid="uid://cf4f60qqfh2kl" path="res://Score.tscn" id="9_7x063"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
+atlas = ExtResource("1_qw2ur")
+region = Rect2(0, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
+atlas = ExtResource("1_qw2ur")
+region = Rect2(0, 360, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0ka3"]
+atlas = ExtResource("1_qw2ur")
+region = Rect2(0, 720, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0h7mo"]
+atlas = ExtResource("1_qw2ur")
+region = Rect2(0, 1080, 640, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nr8wp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0ka3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0h7mo")
+}],
+"loop": true,
+"name": &"background",
+"speed": 8.0
+}]
+
+[node name="background" type="AnimatedSprite2D"]
+position = Vector2(321, 179)
+sprite_frames = SubResource("SpriteFrames_nr8wp")
+animation = &"background"
+autoplay = "background"
+frame_progress = 0.40862516
+metadata/_edit_horizontal_guides_ = [-62929.0]
+
+[node name="Player" parent="." instance=ExtResource("2_aqk2r")]
+position = Vector2(-269, -32)
+
+[node name="Death" parent="." instance=ExtResource("3_7anx7")]
+position = Vector2(-321, -173)
+
+[node name="Node2D" parent="." instance=ExtResource("4_hqqjf")]
+position = Vector2(407, -9)
+
+[node name="Node2D2" parent="." instance=ExtResource("5_e0p5b")]
+position = Vector2(-295, -284)
+
+[node name="Node2D3" parent="." instance=ExtResource("6_1a78i")]
+position = Vector2(-288, -283)
+
+[node name="Node2D4" parent="." instance=ExtResource("7_ma5nv")]
+position = Vector2(-280, -133)
+
+[node name="Node2D5" parent="." instance=ExtResource("8_ievvr")]
+position = Vector2(-286, -156)
+
+[node name="Label" parent="." instance=ExtResource("9_7x063")]
+offset_left = -317.0
+offset_top = -178.0
+offset_right = 329.0
+offset_bottom = -101.0

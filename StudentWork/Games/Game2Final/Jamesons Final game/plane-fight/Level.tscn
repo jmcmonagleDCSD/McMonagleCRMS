@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://lpy8m3fk35kq"]
+
+[ext_resource type="Script" uid="uid://5uwdmngisjxk" path="res://level.gd" id="1_2nifc"]
+[ext_resource type="Texture2D" uid="uid://5yh4kmyjimok" path="res://Background.png" id="1_bexhn"]
+[ext_resource type="PackedScene" uid="uid://dt2dt6hg70y02" path="res://player.tscn" id="2_t7iv1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bexhn"]
+size = Vector2(633.5, 44)
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_2nifc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 641.0
+offset_bottom = 360.0
+texture = ExtResource("1_bexhn")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(320.25, 339)
+shape = SubResource("RectangleShape2D_bexhn")
+
+[node name="Player" parent="." instance=ExtResource("2_t7iv1")]
+position = Vector2(298, 173.00002)
+rotation = -0.013523785

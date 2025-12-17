@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://t0p3346qamlc"]
+
+[ext_resource type="Texture2D" uid="uid://llxd1o6r22d6" path="res://assets 2/Background/Purple.png" id="1_glv2v"]
+[ext_resource type="Script" uid="uid://dwixc6ih0tf0b" path="res://main.gd" id="2_uu6xs"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 642.0
+offset_bottom = 360.0
+texture = ExtResource("1_glv2v")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 76.0
+offset_right = 491.0
+offset_bottom = 151.0
+theme_override_colors/font_color = Color(0.48528445, 0.84048146, 0.9999998, 1)
+theme_override_font_sizes/font_size = 54
+text = "Flappy duck "
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 173.0
+offset_right = 493.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0.32601458, 0.61565584, 1, 1)
+text = "space, up arrow key to jump 
+D to move right and \"A\" to move left 
+Space to start!!!"
+script = ExtResource("2_uu6xs")
+
+[connection signal="child_entered_tree" from="Label2" to="Label2" method="_on_child_entered_tree"]

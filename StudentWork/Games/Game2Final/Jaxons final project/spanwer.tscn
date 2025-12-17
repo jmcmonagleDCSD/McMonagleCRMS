@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://qfw11sdhj6gh"]
+
+[ext_resource type="Script" uid="uid://cetw3tabrn26u" path="res://spanwer.gd" id="1_bxigu"]
+[ext_resource type="PackedScene" uid="uid://5j4ntpr7iy20" path="res://pipes.tscn" id="2_nyfw0"]
+
+[node name="spanwer" type="Node2D"]
+script = ExtResource("1_bxigu")
+pipes_scene = ExtResource("2_nyfw0")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(1062, 266)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(695, 95)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

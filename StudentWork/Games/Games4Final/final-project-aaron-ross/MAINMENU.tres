@@ -1,0 +1,31 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://dgq6woesc6whn"]
+
+[ext_resource type="Texture2D" uid="uid://5nwco4hah84s" path="res://drive-download-20251202T180348Z-1-001/Level/plains.png" id="1_18vp7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u52ul"]
+texture = ExtResource("1_18vp7")
+1:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:1/0 = 0
+3:0/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+3:2/0 = 0
+1:0/0 = 0
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+5:1/0 = 0
+5:0/0 = 0
+4:1/0 = 0
+4:0/0 = 0
+
+[resource]
+sources/1 = SubResource("TileSetAtlasSource_u52ul")

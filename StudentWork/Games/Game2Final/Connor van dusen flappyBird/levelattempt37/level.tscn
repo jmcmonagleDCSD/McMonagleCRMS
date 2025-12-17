@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxys845cgjpdc"]
+
+[ext_resource type="Texture2D" uid="uid://djgfvnivecxmg" path="res://assets/Background/Yellow.png" id="1_43bxd"]
+[ext_resource type="PackedScene" uid="uid://cm32ys74wv20a" path="res://levelattempt37/character_body_2d.tscn" id="2_o8nxd"]
+[ext_resource type="Texture2D" uid="uid://duwa5k40nx67y" path="res://assets/Background/Purple.png" id="3_yx45x"]
+[ext_resource type="Script" uid="uid://dddp70jv7mdq0" path="res://levelattempt37/label.gd" id="4_5gita"]
+[ext_resource type="PackedScene" uid="uid://c1o1tiwiiiun3" path="res://levelattempt37/pipe.tscn" id="5_5rtke"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5gita"]
+size = Vector2(634.5, 32.5)
+
+[node name="level" type="Node2D"]
+
+[node name="background" type="TextureRect" parent="."]
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 640.0
+offset_bottom = 365.0
+texture = ExtResource("1_43bxd")
+stretch_mode = 1
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_o8nxd")]
+position = Vector2(88.99999, 50)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 3.0
+offset_top = 327.0
+offset_right = 637.0
+offset_bottom = 391.0
+texture = ExtResource("3_yx45x")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/StaticBody2D"]
+position = Vector2(318.75, 18.75)
+shape = SubResource("RectangleShape2D_5gita")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 52.0
+offset_bottom = 31.0
+text = "score:
+999"
+script = ExtResource("4_5gita")
+
+[node name="Timer" type="Timer" parent="Label"]
+
+[node name="pipetimer" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="pipe" parent="." instance=ExtResource("5_5rtke")]
+position = Vector2(562, 406)

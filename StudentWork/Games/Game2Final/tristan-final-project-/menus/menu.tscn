@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw04dysy2ooyi"]
+
+[ext_resource type="Texture2D" uid="uid://bq6vcyqeiljcu" path="res://assets/Background/Blue.png" id="1_85u52"]
+[ext_resource type="Script" uid="uid://cqsl5gu3b01ti" path="res://menus/menu.gd" id="1_y8e4h"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 639.0
+offset_bottom = 357.0
+script = ExtResource("1_y8e4h")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 644.0
+offset_bottom = 360.0
+texture = ExtResource("1_85u52")
+stretch_mode = 1
+flip_h = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 38.0
+offset_right = 402.0
+offset_bottom = 115.0
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.6426316, 0.50243634, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 54
+text = "Flapper"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 243.0
+offset_right = 477.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.6426316, 0.50243634, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 54
+text = "wow so cool"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 158.0
+offset_right = 496.0
+offset_bottom = 235.0
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.6426316, 0.50243634, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 25
+text = "press space to start and flap
+press f to play in space"

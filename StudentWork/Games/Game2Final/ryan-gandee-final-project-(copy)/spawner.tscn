@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbdphqd0tvlr2"]
+
+[ext_resource type="Script" uid="uid://cxq4v0xxyabo3" path="res://node_2d.gd" id="1_yp5lu"]
+[ext_resource type="PackedScene" uid="uid://dbndt44i88j08" path="res://meteor.tscn" id="2_ttk4a"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yp5lu")
+enemy_scene = ExtResource("2_ttk4a")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(934, 145)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(777, 142)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.057
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

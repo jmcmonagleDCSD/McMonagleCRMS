@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://dro41bhgwwruf"]
+
+[ext_resource type="Script" uid="uid://bryii5862lg0f" path="res://plane.gd" id="1_dpar4"]
+[ext_resource type="Texture2D" uid="uid://c5cscqpn5uvbo" path="res://assets/Main Characters/flappy/New Piskel (13).png" id="1_s46f0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s46f0"]
+radius = 16.0
+height = 188.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dpar4"]
+atlas = ExtResource("1_s46f0")
+region = Rect2(0, 0, 360, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqs3l"]
+atlas = ExtResource("1_s46f0")
+region = Rect2(0, 260, 360, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xwvw"]
+atlas = ExtResource("1_s46f0")
+region = Rect2(0, 520, 360, 260)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_28khi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dpar4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqs3l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xwvw")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 9.0
+}]
+
+[node name="plane" type="CharacterBody2D" groups=["flaper"]]
+script = ExtResource("1_dpar4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_s46f0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.9999962, 10.999996)
+scale = Vector2(0.68333334, 0.5884615)
+sprite_frames = SubResource("SpriteFrames_28khi")
+animation = &"fly"
+autoplay = "fly"
+frame_progress = 0.2895977

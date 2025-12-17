@@ -1,0 +1,72 @@
+[gd_scene load_steps=12 format=3 uid="uid://ktx6te0ahmxg"]
+
+[ext_resource type="Texture2D" uid="uid://c1hospadnsmq3" path="res://assets/Background/New Piskel (11).png" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://c7iosnclleyh6" path="res://spikes/spike_1.tscn" id="3_oi3di"]
+[ext_resource type="PackedScene" uid="uid://bfxa8bbb0jngl" path="res://kill.tscn" id="4_0b4ue"]
+[ext_resource type="PackedScene" uid="uid://dro41bhgwwruf" path="res://plane.tscn" id="5_1ainy"]
+[ext_resource type="PackedScene" uid="uid://bj84laih8l6bd" path="res://spikes/spike_2.tscn" id="5_f2txt"]
+[ext_resource type="PackedScene" uid="uid://c5eg0is7v3q88" path="res://spawner.tscn" id="6_km5ld"]
+[ext_resource type="PackedScene" uid="uid://dlcnqfo1xnskg" path="res://small_spawner.tscn" id="7_i2t4f"]
+[ext_resource type="PackedScene" uid="uid://c80qyorkwrgug" path="res://small.tscn" id="8_8cye3"]
+[ext_resource type="PackedScene" uid="uid://bhtpexrkmlubj" path="res://spikes/laser_spawn.tscn" id="9_8cye3"]
+[ext_resource type="PackedScene" uid="uid://cqoo7avf6481e" path="res://laser.tscn" id="10_aicyk"]
+[ext_resource type="Script" uid="uid://by5uy3r7cpc2r" path="res://score.gd" id="11_2orkt"]
+
+[node name="level" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 644.0
+offset_bottom = 363.0
+texture = ExtResource("1_u52ul")
+
+[node name="kill_brick" type="Node2D" parent="."]
+
+[node name="kill" parent="kill_brick" instance=ExtResource("4_0b4ue")]
+
+[node name="kill2" parent="kill_brick" instance=ExtResource("4_0b4ue")]
+position = Vector2(4, 342)
+
+[node name="spikes" type="Node2D" parent="."]
+
+[node name="spike_1" parent="spikes" instance=ExtResource("3_oi3di")]
+position = Vector2(567, 277)
+
+[node name="spike_2" parent="spikes" instance=ExtResource("5_f2txt")]
+position = Vector2(528, 81)
+
+[node name="plane" parent="." instance=ExtResource("5_1ainy")]
+position = Vector2(132, 189)
+
+[node name="spawner" type="Node2D" parent="."]
+
+[node name="spawner" parent="spawner" instance=ExtResource("6_km5ld")]
+enemy_scene = ExtResource("3_oi3di")
+
+[node name="spawner2" parent="spawner" instance=ExtResource("6_km5ld")]
+position = Vector2(-8, -234)
+enemy_scene = ExtResource("5_f2txt")
+
+[node name="small_spawner" parent="spawner" instance=ExtResource("7_i2t4f")]
+enemy_scene = ExtResource("8_8cye3")
+
+[node name="small_spawner2" parent="spawner" instance=ExtResource("7_i2t4f")]
+position = Vector2(-9, -234)
+enemy_scene = ExtResource("5_f2txt")
+
+[node name="laser_spawn" parent="spawner" instance=ExtResource("9_8cye3")]
+enemy_scene = ExtResource("10_aicyk")
+
+[node name="ui" type="Node2D" parent="."]
+
+[node name="score" type="Label" parent="ui"]
+offset_left = 292.0
+offset_top = 9.0
+offset_right = 332.0
+offset_bottom = 32.0
+text = "score: 999"
+script = ExtResource("11_2orkt")
+
+[node name="Timer" type="Timer" parent="ui/score"]
+autostart = true
+
+[connection signal="timeout" from="ui/score/Timer" to="ui/score" method="_on_timer_timeout"]
