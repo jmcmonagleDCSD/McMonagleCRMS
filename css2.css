@@ -1,0 +1,39 @@
+body{
+    background-color: lightseagreen;
+}
+h1{
+    height: 100px;
+    background-color: blue;
+    margin-bottom: 10px;
+}
+.left_side{
+    height: 500px;
+    width: 30%;
+    background-color: aquamarine;
+    float:left;
+    margin-left: 50px;
+}
+.right_side{
+    height: 500px;
+    width: 60%;
+    float:left;
+    background-color: aquamarine;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+p{
+    height: 230px;
+    width:47%;
+    background-color: beige;
+    float: left;
+    margin: 10px; 
+}
+.center{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    clear: both;
+    margin: auto;
+    
+}
