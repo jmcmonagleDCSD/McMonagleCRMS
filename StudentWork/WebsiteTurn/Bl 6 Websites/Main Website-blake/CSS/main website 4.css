@@ -1,0 +1,26 @@
+body{
+    background-color: blue;
+}
+
+a{
+    color: white;
+}
+img{
+    width: 400px;
+    height: 250px;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+.truck{
+    width: 100%;
+    height: 600px;
+}

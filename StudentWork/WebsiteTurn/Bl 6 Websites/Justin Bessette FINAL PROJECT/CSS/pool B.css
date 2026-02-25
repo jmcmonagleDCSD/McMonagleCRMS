@@ -1,0 +1,48 @@
+h1{font-size: 60px; text-align: center;
+width: 200px; background-color: white;}
+
+.poolb{background-color:white ;}
+
+body{background-color: rgb(77, 77, 77);}
+
+.BRZ{background-color: greenyellow;}
+
+.gbr{background-color: darkblue;}
+
+.Italy{background-color: green;}
+
+.mex{background-color:white ; margin: auto;}
+
+.USA{background-color: red;}
+
+.BRAS{width: auto;}
+
+.great{width: auto;}
+
+.brit{width: 600px;}
+
+.it{width: auto;}
+
+.meci h2,.meci ul{float: left;}
+
+.inm{background-color: green;}
+
+.inm h2,.inm ul{float: left;}
+
+.in{float:left;}
+
+table{width: 1200px;}
+
+ th{font-size: 30px; color: green;}
+
+td{color: white;}
+
+.fpcm{background-color: red;}
+
+h2{font-size: 40px; color: white;}
+
+.usp, th{font-size: 30px;}
+
+.usf{background-color: blue;}
+
+a{color: red;}

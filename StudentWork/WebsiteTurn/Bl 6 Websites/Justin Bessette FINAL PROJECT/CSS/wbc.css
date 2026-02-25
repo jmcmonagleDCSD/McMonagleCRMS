@@ -1,0 +1,15 @@
+body{background-color: black;}
+h1{color: blue;
+font-size: 65px;
+border-style: double;
+
+}
+p{color:blue ;
+font-size: 20px;
+
+}
+h2{color: red;
+background-color: yellow;
+width: 600px;
+font-size: 50px;}
+a{color: red;}

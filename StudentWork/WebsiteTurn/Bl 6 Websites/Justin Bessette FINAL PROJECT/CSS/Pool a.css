@@ -1,0 +1,20 @@
+body{ background-color: red;}
+h1{font-size: 40px;
+border-style: ridge;
+border-bottom: 1000px;
+border-top: 1000px;
+}
+h2{font-size: 35px;}
+h3{font-size: 30px;}
+.can{background-color: white; 
+color: rgb(225, 6, 6);}
+ul{font-size: 20px;}
+h4{font-size: 25px;}
+.inc{font-size: 20px; }
+.pola{background-color:blue ;}
+.ratc{font-size: 23px;}
+.col{background-color: yellow;
+color: rgb(0, 0, 174);}
+.cub{background-color: rgb(0, 0, 179);}
+.cuba{ color: white;}
+a{color: white}

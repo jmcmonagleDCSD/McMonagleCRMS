@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+a{
+    color: white;
+}
+
+h1{
+    color: whitesmoke;
+}
+
+h2{
+    color: whitesmoke;
+}
+
+ol{
+    color: whitesmoke
+}
+h1{
+  color: white;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+}
+
+@keyframes myAnimation {
+  from {color: orange;}
+  to {color: white;}
+}

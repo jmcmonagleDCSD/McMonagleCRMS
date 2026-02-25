@@ -1,0 +1,16 @@
+body{background-color: black;}
+h2{color: red; font-size: 50px;}
+li{color: blue;}
+h1{color: white; font-size: 60px;}
+a{color: red;}
+.aus{background-color: blue;}
+.ct{background-color: white;}
+.jap{background-color: white;}
+th{color: red;}
+td{color: red;}
+table{border-style: double;
+    border-color: red;
+    width: 1250px;
+    font-size: 40px;}
+    .cz{background-color: white;}
+    .kor{background-color: white;}

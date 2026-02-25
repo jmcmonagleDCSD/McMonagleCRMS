@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+}
+.heading1{
+    color:white;
+    text-align: center;
+    font-size: 50px;  
+   
+    position: absolute;
+    left:41%;
+    top:5%;
+}
+
+hr{
+    border-style: solid;
+    border-color:white;
+   
+}
+.home{
+    display:flex;
+    justify-content: space-between;
+    
+   
+}
+.heading2{
+    color: white;
+    text-align: center;
+}
+.about{
+    width:40%;
+    float:left;
+    color:white;
+}
+.funfacts{
+    position:relative;
+    color:white;
+    width:40%;
+    float:right;
+}
+.heading3{
+    text-align: center;
+}
+.citations{
+    position:absolute;
+    bottom:0%;
+    color:gray;
+    width:100%;
+    text-align: center;
+}
+.links{
+    align-self: flex-end;
+    color: rgb(255, 255, 255);
+    font-size:20px;
+}

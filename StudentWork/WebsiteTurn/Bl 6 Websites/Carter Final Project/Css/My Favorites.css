@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+hr{
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+h2{
+    color:white;
+    text-align: center;
+}
+.citation{
+    text-align: center;
+    color:white;
+}
+ol{
+    color:white;
+    margin-left: auto;
+}
+.link{
+    text-align:center;
+    display:flex;
+    justify-content: space-evenly;  
+}
+a{
+    color:white;
+}

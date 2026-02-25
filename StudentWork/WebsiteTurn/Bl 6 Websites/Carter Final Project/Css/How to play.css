@@ -1,0 +1,92 @@
+.king p{
+    width:50%;
+    float:left;
+}
+.king img{
+    float:right;
+    margin-right: 25%;
+}
+h2{
+    clear:both;
+    width:100%;
+    padding-left:25%;
+    color:white;
+    background-color: black;
+    font-size:40px;
+    height: 60px;
+    padding-top:10px;
+}
+.rook p{
+    width:50%;
+    float:left;
+}
+.rook img{
+    float:right;
+    margin-right: 25%;
+}
+.knight p{
+    width:50%;
+    float:left;
+}
+.knight img{
+    float:right;
+    margin-right: 25%;
+}
+.bishop p{
+    width:50%;
+    float:left;
+}
+.bishop img{
+    float:right;
+    margin-right: 25%;
+}
+.queen p{
+    width:50%;
+    float:left;
+}
+.queen img{
+    float:right;
+    margin-right: 25%;
+}
+.pawn p{
+    width:50%;
+    float:left;
+}
+.pawn img{
+    float:right;
+    margin-right: 25%;
+}
+.castling p{
+    width:50%;
+    float:left;
+}
+.castling img{
+    float:right;
+    margin-right: 25%;
+}
+hr{
+    clear:both;
+    border-style:solid;
+    border-color:black;
+    
+}
+h1{
+    text-align: center;
+    color:white;
+    font-size:70px;
+    background-color: black;
+}
+.link{
+    text-align:center;
+    display:flex;
+    justify-content: space-evenly;  
+}
+ul{
+    border-style:dashed;
+    border-color:black;
+    display:inline-block;
+}
+a{
+    font-size:20px;
+    color: rgb(0, 0, 0);
+}

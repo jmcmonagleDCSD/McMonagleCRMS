@@ -1,0 +1,32 @@
+
+body{background-color: yellow;
+}
+
+.StartN{
+background-color: dodgerblue;
+    height: 500px;
+    width: 350px;
+    margin: 10px;
+    float: left;
+}
+
+.PlayoffHistory{
+background-color: white;
+    height: 500px;
+    width: 350px;
+    margin: 10px;
+    float: left;
+}
+
+.NRoster{
+background-color: dodgerblue;
+    height: 500px;
+    width: 350px;
+    margin: 10px;
+    float: left;
+}
+
+h2{text-align: center;
+font-family: "Smooch Sans", sans-serif;
+font-size: 50px;
+}
