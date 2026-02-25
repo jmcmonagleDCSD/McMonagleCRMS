@@ -1,0 +1,12 @@
+body{background-color: darkslategrey;} 
+
+p{color:lightseagreen;}
+
+li{background-color: green;} 
+a{color:red; height: 35px;} 
+
+h1{color: greenyellow;} 
+
+h2{color: greenyellow;} 
+
+hr{border: none; background-color: greenyellow; height: 04px;}

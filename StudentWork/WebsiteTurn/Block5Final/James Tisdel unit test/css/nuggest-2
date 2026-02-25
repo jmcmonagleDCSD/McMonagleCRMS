@@ -1,8 +1,0 @@
-.one{
-   background-color: yellow;
-   width: 1000px;
-   height: 100px;
-}
-body{
-    background-color: midnightblue;
-}

@@ -1,0 +1,158 @@
+body {background-color: rgb(255, 53, 69);}
+
+
+
+img {display: flex; 
+justify-self: center; 
+width: 30%; 
+margin-top: 50px; 
+transition: transform 0.15s ease-in 0s; 
+z-index: 2; } 
+
+
+
+img:hover { 
+transform: scale(150%);
+}
+
+
+
+p {background-color: darkgreen;
+border-style: solid;
+border-color: green;
+border-width: 3px;
+color: lightgray;
+margin-right: 5%;
+margin-left: 5%;
+text-align: center;
+align-self: center;
+}
+
+
+
+h1 {font-size: xx-large; 
+color: darkslategray;
+}
+
+
+
+a {color: rgb(255, 53, 69);
+font-family: sans-serif;
+font-size: larger;
+width: 20%;
+margin-left: 75px;
+margin-right: 75px;
+}
+
+
+
+li {
+background-color: darkgreen;
+border-style: solid;
+border-color: green;
+border-width: 3px;
+color: lightgray;
+margin-right: 30px;
+}
+
+
+
+ul {color: darkslategray;
+font-size: large;
+font-family: sans-serif;
+background-color: darkslategray;
+align-content: center;
+border-style: solid;
+border-color: #363d44;
+border-width: 7px;
+}
+
+
+
+h2 {color: darkslategray;
+}
+
+.link {display: flex;
+justify-content: space-evenly;
+border: 3px;
+border-style: outset;
+border-color: white;
+position: sticky;
+top: 0px;
+width: 100%;
+z-index: 1;
+height: 45px;
+align-items: center;
+background-color: darkslategray;
+}
+
+.Explanation {font-size: large;
+color: darkslategray;
+font-size: large;
+font-family: sans-serif;
+background-color: darkslategray;
+align-content: center;
+border-style: solid;
+border-color: #363d44;
+border-width: 7px;
+}
+
+.Silksong {
+transition: transform 0.1s ease-in;
+border: 3px outset gray;
+text-align: center;
+}
+
+.Silksong:hover {
+transform: scale(105%);
+background-color: whitesmoke;
+border-color: whitesmoke;
+}
+
+.Areas {
+transition: transform 0.1s ease-in;
+border: 3px outset gray;
+text-align: center;
+}
+
+.Areas:hover {
+transform: scale(105%);
+background-color: whitesmoke;
+border-color: whitesmoke;
+}
+
+.Abilities {
+transition: transform 0.1s ease-in;
+border: 3px outset gray;
+text-align: center;
+}
+
+.Abilities:hover {
+transform: scale(105%);
+background-color: whitesmoke;
+border-color: whitesmoke;
+}
+
+.Crests {
+transition: transform 0.1s ease-in;
+border: 3px outset gray;
+text-align: center;
+}
+
+.Crests:hover {
+transform: scale(105%);
+background-color: whitesmoke;
+border-color: whitesmoke;
+}
+
+.Tools {
+transition: transform 0.1s ease-in;
+border: 3px outset gray;
+text-align: center;
+}
+
+.Tools:hover {
+transform: scale(105%);
+background-color: whitesmoke;
+border-color: whitesmoke;
+}

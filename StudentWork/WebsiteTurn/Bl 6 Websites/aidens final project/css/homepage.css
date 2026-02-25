@@ -1,0 +1,43 @@
+body{
+
+background-color: darkolivegreen;
+
+
+}
+p{
+text-align: center;
+font-size: 30px;                  
+background-color: brown;
+border-style: groove;
+border-width: 30px;
+}
+h1{
+
+border-style: groove;
+border-width: 25px;
+background-color:chocolate ;
+text-align: center;
+text-decoration: solid;
+}
+
+.links{
+    border-style: groove;
+    border-width: 20px;
+    background-color:cornflowerblue ;
+    text-align: center;
+    font-size: 20px;
+}
+
+.images{
+
+margin: 200px;
+
+
+}
+a{
+
+color: black;
+
+
+
+}

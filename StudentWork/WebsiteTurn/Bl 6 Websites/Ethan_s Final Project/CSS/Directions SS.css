@@ -1,0 +1,68 @@
+body {background-color: rgb(255, 53, 69);
+}
+
+
+
+h1 {color: darkslategray;
+justify-self: center;
+}
+
+
+
+p {background-color: darkgreen;
+border-style: solid;
+border-color: green;
+border-width: 3px;
+color: lightgray;
+margin-right: 5%;
+margin-left: 5%;
+text-align: center;
+align-self: center;
+}
+
+
+
+.Explanation {font-size: large;
+color: darkslategray;
+font-size: large;
+font-family: sans-serif;
+background-color: darkslategray;
+align-content: center;
+border-style: solid;
+border-color: #363d44;
+border-width: 7px;
+}
+
+
+
+a {color: rgb(255, 53, 69);
+font-size: larger;}
+
+
+
+.link {display: flex;
+justify-content: space-evenly;
+border: 3px;
+border-style: outset;
+border-color: white;
+position: sticky;
+top: 0px;
+width: 100%;
+z-index: 1;
+height: 45px;
+align-items: center;
+background-color: darkslategray;
+}
+
+.Silksong {
+transition: transform 0.1s ease-in;
+border: 3px outset gray;
+text-align: center;
+}
+
+.Silksong:hover {
+transform: scale(105%);
+background-color: whitesmoke;
+border-color: whitesmoke;
+z-index: 2;
+}

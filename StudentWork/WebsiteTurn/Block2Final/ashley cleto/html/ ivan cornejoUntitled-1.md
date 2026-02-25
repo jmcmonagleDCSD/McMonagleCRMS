@@ -1,1 +1,0 @@
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToSyO9TiYuelHjY3yeAE9KbzPSFFRFqakT-g&s
