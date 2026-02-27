@@ -1,0 +1,55 @@
+h1{
+   background-color: darkgreen;
+   font-family: fantasy;
+   border-style: double;
+   border-width: 20px;
+   border-radius: 20px;
+   font-size: 70px;
+   text-align: center;
+}
+
+p{
+       background-color: darkgreen;
+   font-family: fantasy;
+   border-style: double;
+   border-width: 20px;
+   border-radius: 20px;
+   font-size: 40px;
+   
+}
+
+html{
+    background-color: grey;
+}
+
+h2{
+    background-color: green;
+}
+
+img{
+    border-style: double;
+    border-width: 20px;
+    border-radius: 20px;
+  
+}
+
+
+ol{
+     font-family: fantasy;
+    font-size: 35px;
+}
+
+
+a{
+font-size: 50px;
+height: 700px;
+width: 700px;
+margin: 20px;
+float: none;
+font-family: fantasy;
+background-color: darkgreen;
+border-style: double;
+border-width: 20px;
+border-radius: 20px;
+}
+

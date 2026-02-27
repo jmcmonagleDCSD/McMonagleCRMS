@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+.body {height: 1000px;
+align-content: center;}
+h3 {
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+a {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}

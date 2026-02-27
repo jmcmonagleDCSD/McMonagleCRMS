@@ -1,0 +1,66 @@
+body {
+    background-color: #fb7e14;
+}
+
+#Opposing-Force:hover {
+    transform: translateY(-10px);
+    color: #00A000;
+}
+
+#Half-Life:hover {
+    transform: translateY (-10px);
+    color: #F74510;
+}
+
+#Homepage:hover {
+    transform: translateY (-10px);
+    color: black;
+}
+
+#Blue-Shift:hover {
+    transform: translateY (-10px);
+    color: #0044FF;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+
+
+h4 {
+    color: whitesmoke;
+}
+
+h5 {
+    color: whitesmoke;
+}
+
+a {
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    transition: all 0.3s;
+}
+
+a:hover {
+    transform: translateY(-10px);
+    color: rgb(85, 85, 85);
+}
+
+p {
+    color: whitesmoke;
+}
+
+.container {
+    width: 99%;
+height: 20px;
+border: 3px solid #ff8d29;
+background-color: #ff9a43;
+}

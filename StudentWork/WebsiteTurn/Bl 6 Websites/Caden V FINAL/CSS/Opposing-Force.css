@@ -1,0 +1,92 @@
+body {
+    background-color: #00A000;
+}
+
+.container {
+    width: 99%;
+height: 20px;
+border: 3px solid #00C800;
+background-color: #02bd02;
+}
+
+a {
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    transition: all 0.3s;
+}
+
+#Half-Life:hover {
+    transform: translateY (-10px);
+    color: #F74510;
+}
+
+#Homepage:hover {
+    transform: translateY (-10px);
+    color: white;
+}
+
+#Blue-Shift:hover {
+    transform: translateY (-10px);
+    color: #0044FF;
+}
+
+a:hover {
+    transform: translateY(-10px);
+    color: rgb(85, 85, 85);
+}
+
+#HECU {
+    height: 50%;
+}
+
+.container2 {
+width: 99%;
+height: 370px;
+border: 5px solid rgb(96, 96, 96);
+background-color: grey;
+}
+
+#HECU:hover {
+    transform: translateY(-10px);
+    
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    transition: all 0.3s;
+}
+
+#Back:hover {
+    transform: translateY(-10px);
+    color: whitesmoke;
+}
+
+.container3 {
+    width: 99%;
+height: 150px;
+border: 5px solid rgb(96, 96, 96);
+background-color: grey;
+text-align: right;
+}
+
+.container4 {
+    width: 99%;
+height: 240px;
+border: 5px solid rgb(96, 96, 96);
+background-color: grey;
+}
+
+.container5 {
+    width: 99%;
+height: 150px;
+border: 5px solid #00C800;
+background-color: #02bd02;
+}
