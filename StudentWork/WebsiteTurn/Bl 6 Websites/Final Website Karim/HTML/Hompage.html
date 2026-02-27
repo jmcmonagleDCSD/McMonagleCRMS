@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+    img {
+        width: 300px;
+        height: 250px;
+        transition: width 3s, height 3s;}
+    img:hover{
+        width:600px;
+        height: 500px;}
+    img {
+        width: 300px;
+        height: 250px;
+        position: relative;
+        animation-name: myAnimation;
+        animation-duration: 10s;}
+    @keyframes myAnimation {
+        0%  {left:0px; top: 0px;}
+        25% {left: 1500px; top: 0px;}
+        50% {left: 1500px; top: 500px;}
+        75% {left: 0px; top: 500px;}
+        100%{left: 0px; top: 0px;}}
+</style>
+    <link rel="stylesheet" href="../CSS/Homepage.css">
+    
+    <title>Homepage</title>
+</head>
+<body>
+    <label for="file">Progress:</label>
+    <progress id="file" value="25" max="100"> 25% </progress>
+    <h1>Cookies</h1>
+
+    <p class="Q">Cookies are a tasty delicate food that has been around for longer than you, <br>
+        and it is very delicous, with rich and gooey chocolate in the core <br>
+        and a nice crunchy outside shell, and you definitly will love them.
+    </p>
+    <br>
+    <img src="../Images/cat.jpeg" alt="Cookies" width="300px">
+    <p>Photo by unknown from Flickr</p>
+    <h2>What is this about</h2>
+    <p>This website is about cookies and their history and how to make them.</p>
+    <br>
+    <br>
+ 
+    <a href="Page 2.html" target="_blank" class="b">Page 2</a>
+   
+    <a href="Page 3.html" target="_blank" class="c">Page 3</a>
+   
+    <a href="Page 4.html" target="_blank" class="d">Page 4</a>   
+  
+    
+</body>
+</html>
