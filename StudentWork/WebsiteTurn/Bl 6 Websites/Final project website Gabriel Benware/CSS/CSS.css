@@ -1,0 +1,16 @@
+body{background-color: blue;}
+a{color: aqua; border-bottom-style: solid; float: left;}
+h1{color: darkcyan; background-color: cyan; padding: 25px; float:left;}
+.abs{float: left; color: green; width: 10%; float: left;}
+.carl{ float: left;color: darkcyan; background-color: cyan; width: 89%;}
+.guy{color: darkcyan; background-color: cyan; width: 40%; border-top-right-radius: 10px; border-style: double; border-color: black; border-width: 10px; float: left; margin: 50px; height: 180px;}
+.Pics{float: left;width: 45%;}
+.yum{float: left;width: 45%; overflow: hidden; margin-left: 15px;}
+.yum img{width: 680px; }
+.jim{color: darkcyan; background-color: cyan; width: 40%; border-top-right-radius: 10px; border-style: double; border-color: black; border-width: 10px;clear: both; float: left; margin: 50px;}
+.rev{width: 100%;}
+.bub{color: black;}
+hr{clear: both;}
+.yum .chicken{ width: 97%;}
+.yum .lemon{width: 110%;}
+br{clear: both;}
