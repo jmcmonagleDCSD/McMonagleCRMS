@@ -1,0 +1,59 @@
+Body{
+    background-color: lightskyblue;
+}
+
+.links{
+    background-color:rgb(127, 193, 215);
+    border-style:inset;
+    border-width: 10px;
+    border-color: lightblue;
+    border-radius: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+h1{
+    background-color:rgb(127, 193, 215);
+    text-align: center;
+    border-style:outset;
+    border-color:lightblue;
+    border-width: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.p1{
+    background-color:rgb(129, 191, 204);
+    height:500px;
+    width:320px;    
+    padding:25px;
+    border-style: solid;
+    border-color:gray;
+    margin-left:50px;    
+    font-size:20px;
+    float:right;
+    border-radius: 15px;
+
+}
+
+.Mario{
+    float:left;
+}
+
+.consoles{
+    float:right;
+}
+
+.p2{
+    background-color:rgb(129, 191, 204);
+    height:500px;
+    width:320px;    
+    padding:25px;
+    border-style: solid;
+    border-color:gray;
+    margin-right:50px;    
+    font-size:20px;
+    float:left; 
+    border-radius: 15px;
+}

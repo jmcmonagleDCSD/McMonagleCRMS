@@ -1,0 +1,71 @@
+html{
+
+background-color: darkblue;
+
+
+
+
+}
+
+.rn{
+
+font-family: cursive;
+font-size: 50px;
+    color: gold;
+
+    background-color: brown;
+
+
+    height: 100px;
+
+    width: 1150px;
+
+    text-align: center;
+
+    margin-top: 70px;
+
+   
+
+
+}
+
+.ff{
+
+color: gold;
+width: 300px;
+
+float: left;
+
+margin-left: 70px;
+
+
+margin-top: 100px;
+
+font-family: cursive;
+
+font-size: 25px;
+}
+
+
+img{
+
+
+height: 600px;
+
+width: 600px;
+
+
+
+
+float: right;
+
+
+}
+
+
+a{
+
+color: gold;
+
+font-family: cursive;
+}

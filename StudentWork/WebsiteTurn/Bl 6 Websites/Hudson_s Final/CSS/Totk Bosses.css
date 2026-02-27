@@ -1,0 +1,222 @@
+body{
+    background-color: rgb(70, 216, 111)
+}
+@keyframes spinnydork{
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+img {
+    animation-name: spinnydork;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-self: center;
+    transform-origin: 150px 930px;
+}
+.link {rotate: 180deg;
+transform-origin: 150px -175px;
+    display: flex;
+    justify-self: center;}
+
+.item-1 {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    border-radius: 0;
+    width: 100%;
+    z-index: 1;
+    height: 80px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.item{
+    background-color: rgb(40, 134, 66);
+}
+h1{
+    text-align: Center;
+    font-family:cursive;
+    color:rgb(136, 0, 0);
+}
+p{
+    text-align: center;
+    color:rgb(136, 0, 0);
+    font-family:cursive;
+}
+h3{
+    text-align: center;
+    color:rgb(136, 0, 0);
+    font-family:cursive;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0);
+    
+    }
+}
+
+.slideInLeft {
+   animation: slideInLeft 1s ease-in;
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(1500px);
+    }
+    to{
+        transform: translateX(0);
+    
+    }
+}
+
+.slideInRight {
+   animation: slideInRight 1s ease-in;
+}
+
+a{
+    color:rgb(68, 205, 178);
+    font-family:cursive;
+    font-size:x-large;
+    width: 100px;
+    transition: transform .1s ease-in-out;
+}
+
+a:hover{
+    color: rgb(25, 47, 60);
+    transform: translateY(-5px);
+}
+
+.ganondorf {
+background-color: rgb(227, 119, 119);
+border-color: red;
+border-style: solid;
+border-width: 5px;
+}
+.demondragon{
+background-color: rgb(202, 124, 124);
+border-color: rgb(113, 0, 0);
+border-style: solid;
+border-width: 5px;
+}
+
+.colgera {
+background-color: rgb(0, 234, 255);
+border-color: rgb(0, 4, 255);
+border-style: solid;
+border-width: 5px;
+}
+
+.marbledgohma{
+background-color: rgb(255, 170, 0);
+border-color: rgb(255, 111, 0);
+border-style: solid;
+border-width: 5px;
+}
+
+.mucktorok{
+background-color: rgb(63, 40, 117);
+border-color: rgb(0, 4, 255);
+border-style: solid;
+border-width: 5px;
+}
+
+.queengibdo{
+    background-color: rgb(208, 137, 16);
+border-color: rgb(94, 92, 24);
+border-style: solid;
+border-width: 5px;
+}
+
+.seizedconstruct{
+    background-color: rgb(206, 38, 38);
+border-color: rgb(90, 168, 56);
+border-style: solid;
+border-width: 5px;
+}
+
+.molduga{
+    background-color: rgb(137, 114, 41);
+border-color: rgb(108, 83, 9);
+border-style: solid;
+border-width: 5px;
+}
+
+.masterkoga{
+    background-color: rgb(195, 61, 61);
+border-color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 5px; 
+}
+
+.hinox{
+    background-color: rgb(35, 93, 201);
+border-color: rgb(33, 33, 33);
+border-style: solid;
+border-width: 5px;
+}
+
+.gleeok{
+    background-color: rgb(255, 159, 4);
+border-color: rgb(255, 238, 0);
+border-style: solid;
+border-width: 5px;
+}
+
+.fluxconstruct{
+    background-color: rgb(130, 255, 27);
+border-color: rgb(39, 76, 36);
+border-style: solid;
+border-width: 5px;
+}
+
+.frox{
+    background-color: rgb(109, 188, 66);
+border-color: rgb(93, 15, 202);
+border-style: solid;
+border-width: 5px;
+}
+
+.talus{
+    background-color: rgb(75, 91, 78);
+border-color: rgba(0, 255, 225, 0.099);
+border-style: solid;
+border-width: 5px;
+}
+
+.gloomhands{
+    background-color: rgb(212, 51, 51);
+border-color: rgb(91, 31, 31);
+border-style: solid;
+border-width: 5px;
+}
+
+.sludgelike{
+    background-color: rgb(53, 151, 189);
+border-color: rgb(68, 51, 11);
+border-style: solid;
+border-width: 5px;
+}
+
+.yunobo{
+    background-color: rgb(234, 106, 7);
+border-color: rgb(255, 0, 0);
+border-style: solid;
+border-width: 5px;
+}
+
+.morgia{
+    background-color: rgb(143, 77, 42);
+border-color: rgb(255, 147, 97);
+border-style: solid;
+border-width: 5px;
+}

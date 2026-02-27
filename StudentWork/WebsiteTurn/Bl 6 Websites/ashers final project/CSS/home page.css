@@ -1,0 +1,184 @@
+.headingone{
+
+font-family: cursive;
+font-size: 100px;
+    color: gold;
+
+    background-color: brown;
+
+
+    height: 170px;
+
+    width: 1150px;
+    
+
+
+    text-align: center;
+
+
+    border-style: groove;
+}
+
+html{
+
+
+    background-color: darkblue;
+}
+
+hr {
+  height: 1px;          
+  background-color: white; 
+  border: 0;           }
+
+  img{
+
+
+height: 500px;
+
+width: 400px;
+
+float: right;
+
+margin-top: 150px;
+
+
+  }
+
+
+
+
+  
+
+
+
+  a{
+
+color: gold;
+
+
+
+
+font-family: cursive;
+
+  }
+
+
+  .app{
+
+color: white;
+
+
+font-family: cursive;
+
+
+margin-left: 25px;
+
+font-size: 30px;
+
+
+  }
+
+  .ap{
+
+color: gold;
+
+
+font-family: Bebas Neue;
+
+font-size: 50px;
+
+margin-left: 95px;
+
+
+
+  }
+
+
+
+  .go{
+
+
+color: white;
+
+
+font-family: cursive;
+
+
+margin-left: 260px;
+
+font-size: 30px;
+
+
+  }
+
+  .goo{
+
+color: gold;
+
+
+font-family: Bebas Neue;
+
+font-size: 50px;
+
+margin-left: 300px;
+
+
+
+  }
+
+
+
+
+
+  .ss{color: gold;
+
+
+font-family: Bebas Neue;
+
+font-size: 50px;
+
+margin-left: 500px;}
+
+
+.sss{
+
+
+color: white;
+
+
+font-family: cursive;
+
+
+margin-left: 450px;
+
+font-size: 30px;
+
+
+
+}
+
+
+
+
+
+.imgone{
+
+
+height: 500px;
+
+width: 400px;
+
+float: right;
+
+margin-top: 150px;
+
+
+
+}
+
+
+
+
+
+
+

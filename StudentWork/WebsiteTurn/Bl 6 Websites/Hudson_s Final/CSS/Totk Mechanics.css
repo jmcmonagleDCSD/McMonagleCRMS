@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(70, 216, 111)
+}
+.item-1 {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    border-radius: 0;
+    width: 100%;
+    z-index: 1;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    background-color: rgb(40, 134, 66);
+}
+h1{
+    text-align: Center;
+    font-family:cursive;
+    color:rgb(136, 0, 0);
+}
+p{
+    text-align: center;
+    color:rgb(136, 0, 0);
+    font-family:cursive;
+}
+
+h3{
+    text-align: center;
+    color:rgb(136, 0, 0);
+    font-family:cursive;
+}
+
+a{
+    color:rgb(68, 205, 178);
+    font-family:cursive;
+    font-size:x-large;
+    width: 100px;
+    transition: transform .1s ease-in-out;
+}
+
+a:hover{
+    color: rgb(25, 47, 60);
+    transform: translateY(-5px);
+}
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-900px);
+    }
+    to{
+        transform: translateX(10);
+    
+    }
+}
+
+.slideInLeft {
+   animation: slideInLeft 1s ease-in;
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(1500px);
+    }
+    to{
+        transform: translateX(10);
+    
+    }
+}
+
+.slideInRight {
+   animation: slideInRight 1s ease-in;
+}
+
+ul {
+    text-align: center;
+    color:rgb(136, 0, 0);
+    font-family:cursive; 
+}
+
+img{
+    display:flex;
+    justify-self: center;
+}

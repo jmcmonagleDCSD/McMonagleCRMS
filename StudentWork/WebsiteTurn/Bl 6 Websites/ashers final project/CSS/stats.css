@@ -1,0 +1,75 @@
+html{
+
+
+
+    background-color: darkblue;
+}
+
+
+.headingone{
+
+font-family: cursive;
+font-size: 100px;
+    color: gold;
+
+    background-color: brown;
+
+
+    height: 170px;
+
+    width: 1150px;
+    
+
+
+    text-align: center;
+}
+
+.imgone{
+ float: right;
+
+height: 500px;
+
+width: 600px;
+
+
+
+}
+
+.pp{
+
+    font-family: cursive;
+color: gold;
+
+height: 400px;
+
+width: 500px;
+
+text-align: left;
+
+float: left;
+
+
+
+
+
+
+}
+
+
+
+.gael{
+
+font-family: cursive;
+    color: white;
+
+height: 200px;
+
+width: 500px;
+
+margin-top: 630px;
+
+margin-left: 600px;
+
+
+
+}
