@@ -1,0 +1,22 @@
+body{
+    background-color:rgba(0, 95, 127, 0.546);
+}
+h1{
+    color:rgb(171, 0, 0);
+    border-style: solid;
+    border-color: rgb(255, 34, 0);
+}
+p{
+    color: rgb(208, 101, 0);
+    border-style: solid;
+    border-color: rgb(255, 140, 0);
+}
+img{
+    border-style: solid;
+    border-color: rgb(255, 123, 0);
+    border-radius: 50px;
+}
+h5{
+    color: rgb(188, 110, 0);
+
+}
