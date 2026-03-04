@@ -1,0 +1,33 @@
+p{
+background-color: black;
+color:white;
+font-family: monospace;
+border-top-style:  solid;
+border-style: double;
+
+font-size: 50px
+
+}
+body{
+background-color: black;
+
+
+}
+h1{
+background-color: black;
+color:white;
+font-family: fantasy;
+
+}
+h1{
+    border-style: dashed;
+    text-align: right;
+    border-radius: 15px;
+    border-color: crimson;
+
+}
+
+
+
+
+

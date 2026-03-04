@@ -1,0 +1,13 @@
+div{
+    background-color: aquamarine;
+    width: 1038px;
+    border-color: blueviolet;
+    border-style: dashed;
+    border-radius: 10px;
+}
+
+body{
+    background-color: lightblue;
+    border-style: dashed;
+    border-color: blueviolet;
+}
