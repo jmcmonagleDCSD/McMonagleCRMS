@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://nljonxeo3ps6"]
-
-[node name="enemy spwoner" type="Node2D"]
-
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(290, 554)

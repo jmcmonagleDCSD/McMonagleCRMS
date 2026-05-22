@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cpw2ne7ol4h1w"]
-
-[ext_resource type="Texture2D" uid="uid://djorsr3uemrt5" path="res://assets/Main Characters/Mask Dude/Jump (32x32).png" id="1_lgepf"]
-
-[node name="Player" type="Node2D"]
-
-[node name="Jump(32x32)" type="Sprite2D" parent="."]
-position = Vector2(-4, 2)
-texture = ExtResource("1_lgepf")
