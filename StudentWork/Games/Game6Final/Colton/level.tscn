@@ -1,0 +1,115 @@
+[gd_scene load_steps=14 format=3 uid="uid://bvc8unb8d4axm"]
+
+[ext_resource type="Script" uid="uid://qupkd84k1hun" path="res://level.gd" id="1_0b4ue"]
+[ext_resource type="Texture2D" uid="uid://33ogb7jg3le7" path="res://assets/Background/Gray.png" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://bh73j5rjdvtjp" path="res://banana.tscn" id="2_vonw3"]
+[ext_resource type="Script" uid="uid://bag5fmldiea47" path="res://label.gd" id="3_oi3di"]
+[ext_resource type="PackedScene" uid="uid://moxk55rmo0jj" path="res://banana_red.tscn" id="5_f2txt"]
+[ext_resource type="PackedScene" uid="uid://ce6oyk8ketkc0" path="res://banana_blue.tscn" id="6_1ainy"]
+[ext_resource type="PackedScene" uid="uid://c6d0so1sxsub7" path="res://banana_green.tscn" id="7_n6hdu"]
+[ext_resource type="PackedScene" uid="uid://3u2wyek70mb1" path="res://banana_pink.tscn" id="8_km5ld"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vonw3"]
+line_spacing = 10.0
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_f2txt"]
+font_color = Color(1, 0.26898077, 0.07563134, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1ainy"]
+font_color = Color(0, 0.9716787, 0.97190684, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_km5ld"]
+font_color = Color(0.4129232, 0.90499485, 3.85046e-07, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_i2t4f"]
+font_color = Color(1, 0.36955893, 0.6857427, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_0b4ue")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -3.0
+offset_top = 2.0
+offset_right = 1150.0
+offset_bottom = 650.0
+texture = ExtResource("1_u52ul")
+stretch_mode = 1
+
+[node name="banana" parent="." instance=ExtResource("2_vonw3")]
+position = Vector2(560, 305)
+scale = Vector2(7.56, 6.9917493)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 385.0
+offset_top = 77.0
+offset_right = 421.0
+offset_bottom = 100.0
+text = "$:00"
+label_settings = SubResource("LabelSettings_vonw3")
+script = ExtResource("3_oi3di")
+
+[node name="Banana red" parent="." instance=ExtResource("5_f2txt")]
+position = Vector2(753, 229)
+scale = Vector2(2.7746778, 2.4216795)
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 800.0
+offset_top = 210.0
+offset_right = 1099.0
+offset_bottom = 233.0
+text = "banana red: get 2x amount of bananas"
+label_settings = SubResource("LabelSettings_f2txt")
+
+[node name="banana blue" parent="." instance=ExtResource("6_1ainy")]
+position = Vector2(743, 295)
+scale = Vector2(1.7071126, 1.6926363)
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 778.0
+offset_top = 287.0
+offset_right = 1136.0
+offset_bottom = 310.0
+text = " blue banana: gives you 4x amount of bananas"
+label_settings = SubResource("LabelSettings_1ainy")
+
+[node name="banana green" parent="." instance=ExtResource("7_n6hdu")]
+position = Vector2(707.00006, 379)
+scale = Vector2(1.7071126, 1.6926363)
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 768.0
+offset_top = 373.0
+offset_right = 1131.0
+offset_bottom = 396.0
+text = "Green banana:gives you 6x amount of bananas"
+label_settings = SubResource("LabelSettings_km5ld")
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 744.0
+offset_top = 455.0
+offset_right = 1118.0
+offset_bottom = 478.0
+text = "Pink banana:gives you 8x amount of bananas"
+label_settings = SubResource("LabelSettings_i2t4f")
+
+[node name="banana pink" parent="Label5" instance=ExtResource("8_km5ld")]
+position = Vector2(-63, 7)
+scale = Vector2(0.6574559, 0.70457107)
+
+[connection signal="scored" from="banana" to="." method="_on_banana_scored"]
+[connection signal="scored" from="banana" to="banana" method="_on_scored"]
+[connection signal="scored" from="Banana red" to="." method="_on_banana_red_scored"]
+[connection signal="scored" from="banana blue" to="." method="_on_banana_blue_scored"]
+[connection signal="scored" from="banana blue" to="banana blue" method="_on_scored"]
+[connection signal="scored" from="banana green" to="." method="_on_banana_green_scored"]
+[connection signal="scored" from="Label5/banana pink" to="." method="_on_banana_pink_scored"]

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://moxk55rmo0jj"]
+
+[ext_resource type="Script" uid="uid://d3hydch1qdgol" path="res://banana_red.gd" id="1_puxvw"]
+[ext_resource type="Texture2D" uid="uid://cnxyqk724hdri" path="res://New Piskel (3).png" id="1_sf824"]
+
+[node name="Banana red" type="Node2D"]
+script = ExtResource("1_puxvw")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -10.0
+offset_top = -14.0
+offset_right = 13.266472
+offset_bottom = 8.943825
+scale = Vector2(1.0315273, 1.1332026)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-9.536743e-07, -0.49999797)
+scale = Vector2(1.125, 1.1562501)
+texture = ExtResource("1_sf824")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

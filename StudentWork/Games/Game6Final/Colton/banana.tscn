@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3 uid="uid://bh73j5rjdvtjp"]
+
+[ext_resource type="Texture2D" uid="uid://cpo0uob51comr" path="res://Banana.png" id="1_mb6cj"]
+[ext_resource type="Script" uid="uid://gj5disbm1vif" path="res://banana.gd" id="1_s1qo3"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_s1qo3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1qo3"]
+atlas = ExtResource("1_mb6cj")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgp5d"]
+atlas = ExtResource("1_mb6cj")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_divbi"]
+atlas = ExtResource("1_mb6cj")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itruy"]
+atlas = ExtResource("1_mb6cj")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4ccy7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1qo3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vgp5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_divbi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itruy")
+}],
+"loop": true,
+"name": &"clicked ",
+"speed": 12.0
+}]
+
+[node name="banana" type="Node2D"]
+script = ExtResource("1_s1qo3")
+
+[node name="Area2D" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -9.0
+offset_top = -8.0
+offset_right = 10.0
+offset_bottom = 10.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_s1qo3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 0)
+sprite_frames = SubResource("SpriteFrames_4ccy7")
+animation = &"clicked "
+autoplay = "clicked "
+frame_progress = 0.83998334
+
+[connection signal="pressed" from="Area2D" to="." method="_on_area_2d_pressed"]
