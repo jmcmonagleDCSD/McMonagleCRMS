@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://bvsce4bujk7mv"]
+
+[ext_resource type="Script" uid="uid://cwx3r8q703qlq" path="res://Final Game project/level_folder/World_Items/pocket.gd" id="1_4yfsv"]
+[ext_resource type="Texture2D" uid="uid://bvrc0j7ro1w6e" path="res://Final Game project/level_folder/World_Items/New Piskel (2).png" id="1_d6ho0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ektwp"]
+atlas = ExtResource("1_d6ho0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blb3x"]
+atlas = ExtResource("1_d6ho0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c67xy"]
+atlas = ExtResource("1_d6ho0")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2cnmt"]
+atlas = ExtResource("1_d6ho0")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5qjx8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ektwp")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blb3x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c67xy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2cnmt")
+}],
+"loop": true,
+"name": &"Winning",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4yfsv"]
+size = Vector2(20, 13)
+
+[node name="Pocket" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_4yfsv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 5)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_5qjx8")
+animation = &"Idle"
+frame_progress = 0.3031706
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -6)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_4yfsv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

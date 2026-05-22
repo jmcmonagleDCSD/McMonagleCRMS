@@ -17,7 +17,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Banana clicker (Copy)"
 run/main_scene="uid://d2j7wcf3tnhns"
 config/features=PackedStringArray("4.6", "Forward Plus")
+run/max_fps=60
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [input]
 

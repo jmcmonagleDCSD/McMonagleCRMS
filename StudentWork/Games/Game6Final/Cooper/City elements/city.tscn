@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://638u3srwail3"]
+
+[ext_resource type="Texture2D" uid="uid://dimngd3mvug84" path="res://My art/New Piskel (1) copy.png" id="1_i331p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i331p"]
+atlas = ExtResource("1_i331p")
+region = Rect2(0, 360, 3840, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cc81x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i331p")
+}],
+"loop": true,
+"name": &"city frame one",
+"speed": 5.0
+}]
+
+[node name="city" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(320.5, 175)
+sprite_frames = SubResource("SpriteFrames_cc81x")
+animation = &"city frame one"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D"]
+position = Vector2(3839.5, 0)
+sprite_frames = SubResource("SpriteFrames_cc81x")
+animation = &"city frame one"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D/AnimatedSprite2D"]
+position = Vector2(3839.5, 0)
+sprite_frames = SubResource("SpriteFrames_cc81x")
+animation = &"city frame one"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D/AnimatedSprite2D/AnimatedSprite2D"]
+position = Vector2(3839.5, 0)
+sprite_frames = SubResource("SpriteFrames_cc81x")
+animation = &"city frame one"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatedSprite2D/AnimatedSprite2D/AnimatedSprite2D/AnimatedSprite2D"]
+position = Vector2(3839.5, 0)
+sprite_frames = SubResource("SpriteFrames_cc81x")
+animation = &"city frame one"

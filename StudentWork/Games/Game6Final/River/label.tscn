@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwe700h3ypbao"]
+
+[ext_resource type="Script" uid="uid://dpjldb66ln3bf" path="res://label.gd" id="1_y38sv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y38sv"]
+font_size = 24
+font_color = Color(0.30323294, 0.3032328, 0.30323276, 1)
+
+[sub_resource type="Animation" id="Animation_i3osk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_06tve"]
+resource_name = "boot_text"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.49, 4, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_02dvo"]
+_data = {
+&"RESET": SubResource("Animation_i3osk"),
+&"boot_text": SubResource("Animation_06tve")
+}
+
+[node name="Label" type="Label"]
+modulate = Color(1, 1, 1, 0)
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Hello, I'm Teach! (こんにちは、ティーチです!)"
+label_settings = SubResource("LabelSettings_y38sv")
+script = ExtResource("1_y38sv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_02dvo")
+}
+autoplay = "boot_text"

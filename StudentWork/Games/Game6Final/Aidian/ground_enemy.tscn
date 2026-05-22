@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=3 uid="uid://dvpyoyl3wy7xi"]
+
+[ext_resource type="Script" uid="uid://c7x4mjud5flcr" path="res://ground_enemy.gd" id="1_nfnn7"]
+[ext_resource type="Texture2D" uid="uid://dtjxqyhmteyt6" path="res://assets/Enemies/New Piskel.png" id="1_v5eh7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfnn7"]
+radius = 23.0
+height = 46.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tia5a"]
+atlas = ExtResource("1_v5eh7")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2mf8"]
+atlas = ExtResource("1_v5eh7")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6htli"]
+atlas = ExtResource("1_v5eh7")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwyal"]
+atlas = ExtResource("1_v5eh7")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wj2vn"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tia5a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2mf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6htli")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwyal")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nfnn7"]
+radius = 25.019993
+
+[node name="ground enemy" type="CharacterBody2D"]
+script = ExtResource("1_nfnn7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1)
+shape = SubResource("CapsuleShape2D_nfnn7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(8.000004, 2)
+scale = Vector2(2.171875, 1.875)
+sprite_frames = SubResource("SpriteFrames_wj2vn")
+animation = &"run"
+frame_progress = 0.0035362851
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_nfnn7")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

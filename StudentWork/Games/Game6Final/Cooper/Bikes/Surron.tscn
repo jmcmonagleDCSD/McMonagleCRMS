@@ -1,0 +1,123 @@
+[gd_scene load_steps=14 format=3 uid="uid://do7v6d4c5mub8"]
+
+[ext_resource type="Texture2D" uid="uid://og073g6hk0fe" path="res://My art/New Piskel.png" id="1_c7a2a"]
+[ext_resource type="Script" uid="uid://cxcjojxnln0i7" path="res://Bikes/surron.gd" id="1_nsrb4"]
+[ext_resource type="Texture2D" uid="uid://cqs65c3qhf4sd" path="res://My art/New Piskel copy 7.png" id="3_0j67i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_42ui0"]
+atlas = ExtResource("1_c7a2a")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2phhj"]
+atlas = ExtResource("1_c7a2a")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nsrb4"]
+atlas = ExtResource("1_c7a2a")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_enx72"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_42ui0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2phhj")
+}],
+"loop": true,
+"name": &"Moving_red",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nsrb4")
+}],
+"loop": true,
+"name": &"idle_red",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_can3c"]
+atlas = ExtResource("3_0j67i")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtpf8"]
+atlas = ExtResource("3_0j67i")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mwh1"]
+atlas = ExtResource("3_0j67i")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4mwh1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_can3c")
+}],
+"loop": true,
+"name": &"Hand_drag",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtpf8")
+}],
+"loop": true,
+"name": &"Knee_nocker",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mwh1")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ntlvf"]
+radius = 17.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0j67i"]
+size = Vector2(4, 11)
+
+[node name="Surron" type="CharacterBody2D" groups=["Bikes"]]
+safe_margin = 0.001
+script = ExtResource("1_nsrb4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-30, -36)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_enx72")
+animation = &"idle_red"
+autoplay = "idle_red"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(-38, -61)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_4mwh1")
+animation = &"Hand_drag"
+autoplay = "Normal"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-78, 17)
+shape = SubResource("CircleShape2D_ntlvf")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(17, 17)
+shape = SubResource("CircleShape2D_ntlvf")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(10, -71)
+zoom = Vector2(1.15, 1.15)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-80, -43.5)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(12, 2.5)
+shape = SubResource("RectangleShape2D_0j67i")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

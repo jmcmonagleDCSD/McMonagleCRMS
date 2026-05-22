@@ -1,0 +1,75 @@
+[gd_scene load_steps=11 format=3 uid="uid://b45snernxlf20"]
+
+[ext_resource type="Script" uid="uid://c0eg05qln1i6d" path="res://Final Game project/Bad_Guys/cue_enemy.gd" id="1_44b0j"]
+[ext_resource type="Texture2D" uid="uid://blat4ppm4pjcj" path="res://Final Game project/Bad_Guys/New Piskel (2).png" id="1_kxkjp"]
+[ext_resource type="Script" uid="uid://t6rs1eyo48ao" path="res://Final Game project/Bad_Guys/hitbox.gd" id="3_th25l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxkjp"]
+atlas = ExtResource("1_kxkjp")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44b0j"]
+atlas = ExtResource("1_kxkjp")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_th25l"]
+atlas = ExtResource("1_kxkjp")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y38f1"]
+atlas = ExtResource("1_kxkjp")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dwf4d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxkjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44b0j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_th25l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y38f1")
+}],
+"loop": true,
+"name": &"creeping",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2vml"]
+size = Vector2(21, 9.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y38f1"]
+size = Vector2(46, 28)
+
+[node name="cue_enemy" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_44b0j")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_dwf4d")
+animation = &"creeping"
+autoplay = "creeping"
+frame_progress = 0.061670892
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 3.5)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_x2vml")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 4
+script = ExtResource("3_th25l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-1, 2)
+shape = SubResource("RectangleShape2D_y38f1")
+debug_color = Color(0.9792687, 0, 0.39328524, 0.41960785)
+
+[connection signal="body_entered" from="Hitbox" to="Hitbox" method="_on_body_entered"]

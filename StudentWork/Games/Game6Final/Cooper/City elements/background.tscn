@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ig0eddoa8nvn"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "1800px width
+by 360 px height"

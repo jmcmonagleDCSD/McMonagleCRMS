@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmejuxw4522bm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n40yw"]
+
+[node name="ridstar" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -2.9999986)
+scale = Vector2(0.020345049, 0.027587907)
+sprite_frames = SubResource("SpriteFrames_n40yw")

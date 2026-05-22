@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://ccic106xjai28"]
+
+[ext_resource type="Script" uid="uid://dnqjjtkltxkyx" path="res://one_spike.gd" id="1_j8bup"]
+[ext_resource type="Texture2D" uid="uid://735qk54xd8nf" path="res://assets/Traps/Spikes/Idle.png" id="1_rjm33"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8bup"]
+atlas = ExtResource("1_rjm33")
+region = Rect2(0, 0, 8, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3kryy"]
+atlas = ExtResource("1_rjm33")
+region = Rect2(8, 0, 8, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rf8py"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8bup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3kryy")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjm33"]
+size = Vector2(26, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j8bup"]
+size = Vector2(19, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3kryy"]
+size = Vector2(11, 7)
+
+[node name="Spike" type="Area2D"]
+script = ExtResource("1_j8bup")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(15, 18.000008)
+scale = Vector2(3.75, 3.25)
+sprite_frames = SubResource("SpriteFrames_rf8py")
+animation = &"Idle"
+autoplay = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(13, 41)
+shape = SubResource("RectangleShape2D_rjm33")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(13.5, 34.5)
+shape = SubResource("RectangleShape2D_j8bup")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(13, 28)
+shape = SubResource("RectangleShape2D_3kryy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://syx8f3wpwu7j"]
+
+[ext_resource type="Script" uid="uid://cnyki210gnoo1" path="res://front_page.gd" id="1_e0siv"]
+[ext_resource type="Texture2D" uid="uid://d2xd5xdwidg5y" path="res://assets/Other/New Piskel (6).png" id="1_f6smh"]
+[ext_resource type="FontFile" uid="uid://otasbufnut7u" path="res://assets/Other/PUSAB___.otf" id="1_vm7v0"]
+[ext_resource type="PackedScene" uid="uid://bs61xhd3wajxr" path="res://fireball.tscn" id="4_a6spv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f6smh"]
+font = ExtResource("1_vm7v0")
+font_size = 38
+outline_size = 4
+outline_color = Color(0.6209388, 0.50599974, 0.9857097, 1)
+shadow_size = 7
+shadow_color = Color(0.12961099, 1.0492834, 1.1757205, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_e0siv"]
+font_size = 18
+font_color = Color(0, 0.5971427, 0.99286026, 1)
+
+[node name="FrontPage" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e0siv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 640.0
+offset_bottom = 358.0
+texture = ExtResource("1_f6smh")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -198.0
+offset_top = -138.0
+offset_right = 187.0
+offset_bottom = -114.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Trigonometry Dash"
+label_settings = SubResource("LabelSettings_f6smh")
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = -36.0
+offset_right = 7.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Click To Play"
+label_settings = SubResource("LabelSettings_e0siv")
+
+[node name="Fireball" parent="." instance=ExtResource("4_a6spv")]
+position = Vector2(460, 222)

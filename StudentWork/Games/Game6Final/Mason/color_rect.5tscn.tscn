@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://clrey6ntui2m8"]
+
+[ext_resource type="Script" uid="uid://bxv3i4ojhhr7" path="res://color_rect.5_tscn.gd" id="1_my4uj"]
+
+[node name="ColorRect" type="ColorRect"]
+offset_right = 1145.0
+offset_bottom = 651.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_my4uj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 79.0
+offset_right = 1208.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 200
+text = "You Died"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 358.0
+offset_right = 827.0
+offset_bottom = 482.0
+theme_override_font_sizes/font_size = 100
+text = "Space to play"

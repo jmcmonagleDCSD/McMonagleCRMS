@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://doixvm70r4apr"]
+
+[ext_resource type="Texture2D" uid="uid://cfuu0vg4knhv0" path="res://Final Game project/Traps/Spikes/Idle.png" id="1_mwwkm"]
+[ext_resource type="Script" uid="uid://5nxlbr5epmt8" path="res://Final Game project/level_folder/World_Items/spikes.gd" id="2_1lhtu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iiywn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mwwkm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iiywn"]
+size = Vector2(47, 5.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1lhtu"]
+size = Vector2(47, 7)
+
+[node name="spikes" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-15, 2)
+sprite_frames = SubResource("SpriteFrames_iiywn")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 2)
+sprite_frames = SubResource("SpriteFrames_iiywn")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+position = Vector2(17, 2)
+sprite_frames = SubResource("SpriteFrames_iiywn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_iiywn")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 4
+script = ExtResource("2_1lhtu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_1lhtu")
+debug_color = Color(0.97495216, 0, 0.42648816, 0.41960785)
+
+[connection signal="body_entered" from="Hitbox" to="Hitbox" method="_on_body_entered"]

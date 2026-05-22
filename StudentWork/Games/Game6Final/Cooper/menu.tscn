@@ -1,0 +1,94 @@
+[gd_scene load_steps=11 format=3 uid="uid://b424pc7km80o2"]
+
+[ext_resource type="Texture2D" uid="uid://bnf0fv8axhnip" path="res://assets/Background/Gray.png" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://hw1tovrwcmus" path="res://menu.gd" id="1_ouk20"]
+[ext_resource type="Texture2D" uid="uid://og073g6hk0fe" path="res://My art/New Piskel.png" id="3_4hy44"]
+[ext_resource type="Texture2D" uid="uid://640c6e3b3fv3" path="res://My art/New Piskel copy 4.png" id="4_ytr4m"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lti8b"]
+font_size = 41
+font_color = Color(0, 1, 1, 1)
+outline_size = 6
+
+[sub_resource type="LabelSettings" id="LabelSettings_l48gv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecwwl"]
+atlas = ExtResource("3_4hy44")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kk3ma"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecwwl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrnbx"]
+atlas = ExtResource("4_ytr4m")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iqepy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrnbx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ouk20")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 646.0
+offset_bottom = 364.0
+texture = ExtResource("1_lti8b")
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 146.0
+offset_right = 437.0
+offset_bottom = 203.0
+text = "Bike Game"
+label_settings = SubResource("LabelSettings_lti8b")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 207.0
+offset_right = 374.0
+offset_bottom = 230.0
+text = "Click to play"
+label_settings = SubResource("LabelSettings_l48gv")
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 329.0
+offset_right = 137.0
+offset_bottom = 352.0
+text = "Highscore: 0000"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(115.000015, 67)
+rotation = -0.47252822
+scale = Vector2(5.25, 5.25)
+sprite_frames = SubResource("SpriteFrames_kk3ma")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(537, 250)
+rotation = 0.2624925
+scale = Vector2(5.25, 5.25)
+sprite_frames = SubResource("SpriteFrames_iqepy")

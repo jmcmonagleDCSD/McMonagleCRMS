@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7ojd8ebkxu50"]
+
+[ext_resource type="Script" uid="uid://ctr8palvfb7hb" path="res://score.gd" id="1_t1x8i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ceanc"]
+font_size = 40
+font_color = Color(0.40601522, 0, 0.085468136, 1)
+outline_size = 4
+outline_color = Color(0.9999998, 0.248449, 0.13736382, 1)
+shadow_size = 35
+shadow_color = Color(0.25158334, 0.019800501, 0.0051495815, 1)
+
+[node name="Score" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t1x8i")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -123.0
+offset_right = 574.0
+offset_bottom = 55.0
+grow_horizontal = 2
+text = "0000"
+label_settings = SubResource("LabelSettings_ceanc")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.7
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

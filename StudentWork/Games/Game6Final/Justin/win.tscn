@@ -1,0 +1,245 @@
+[gd_scene format=3 uid="uid://djfvrghvobt5x"]
+
+[node name="win" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1757.0
+offset_top = -662.0
+offset_right = -1757.0
+offset_bottom = -662.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 976.0
+offset_top = 321.0
+offset_right = 1069.0
+offset_bottom = 344.0
+text = "YOU WIN!!!!!"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 132.0
+offset_right = 246.0
+offset_bottom = 155.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 208.0
+offset_right = 638.0
+offset_bottom = 781.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label/Label2"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = -86.0
+offset_right = 155.0
+offset_bottom = -63.0
+text = "YOU WIN!!!!!"
+
+[node name="Label" type="Label" parent="Label/Label2"]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 132.0
+offset_right = 246.0
+offset_bottom = 155.0
+text = "YOU WIN!!!!!"
+
+[node name="Label3" type="Label" parent="Label/Label2"]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 208.0
+offset_right = 638.0
+offset_bottom = 231.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label/Label2/Label3"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = -86.0
+offset_right = 155.0
+offset_bottom = -63.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label/Label2/Label3/Label2"]
+layout_mode = 0
+offset_left = -329.0
+offset_top = 65.0
+offset_right = -236.0
+offset_bottom = 88.0
+text = "YOU WIN!!!!!"
+
+[node name="Label" type="Label" parent="Label/Label2/Label3/Label2"]
+layout_mode = 0
+offset_left = -238.0
+offset_top = 283.0
+offset_right = -145.0
+offset_bottom = 306.0
+text = "YOU WIN!!!!!"
+
+[node name="Label3" type="Label" parent="Label/Label2/Label3/Label2"]
+layout_mode = 0
+offset_left = -58.0
+offset_top = 258.0
+offset_right = 35.0
+offset_bottom = 281.0
+text = "YOU WIN!!!!!"
+
+[node name="Label4" type="Label" parent="Label/Label2/Label3/Label2"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 476.0
+offset_right = 126.0
+offset_bottom = 499.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label/Label2/Label3/Label2/Label4"]
+layout_mode = 0
+offset_left = 81.0
+offset_top = -113.0
+offset_right = 174.0
+offset_bottom = -90.0
+text = "YOU WIN!!!!!"
+
+[node name="Label" type="Label" parent="Label/Label2/Label3/Label2/Label4"]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 105.0
+offset_right = 265.0
+offset_bottom = 128.0
+text = "YOU WIN!!!!!"
+
+[node name="Label3" type="Label" parent="Label/Label2/Label3/Label2/Label4"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = -280.0
+offset_right = 343.0
+offset_bottom = -257.0
+text = "YOU WIN!!!!!"
+
+[node name="Label4" type="Label" parent="Label/Label2/Label3/Label2/Label4"]
+layout_mode = 0
+offset_left = 341.0
+offset_top = -62.0
+offset_right = 434.0
+offset_bottom = -39.0
+text = "YOU WIN!!!!!"
+
+[node name="Label" type="Label" parent="Label/Label2/Label3"]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 132.0
+offset_right = 246.0
+offset_bottom = 155.0
+text = "YOU WIN!!!!!"
+
+[node name="Label3" type="Label" parent="Label/Label2/Label3"]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 208.0
+offset_right = 638.0
+offset_bottom = 231.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label/Label2/Label3/Label3"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = -86.0
+offset_right = 155.0
+offset_bottom = -63.0
+text = "YOU WIN!!!!!"
+
+[node name="Label" type="Label" parent="Label/Label2/Label3/Label3"]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 132.0
+offset_right = 246.0
+offset_bottom = 155.0
+text = "YOU WIN!!!!!"
+
+[node name="Label3" type="Label" parent="Label/Label2/Label3/Label3"]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 208.0
+offset_right = 638.0
+offset_bottom = 231.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label/Label2/Label3/Label3/Label3"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = -86.0
+offset_right = 155.0
+offset_bottom = -63.0
+text = "YOU WIN!!!!!"
+
+[node name="Label" type="Label" parent="Label/Label2/Label3/Label3/Label3"]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 132.0
+offset_right = 246.0
+offset_bottom = 155.0
+text = "YOU WIN!!!!!"
+
+[node name="Label3" type="Label" parent="Label/Label2/Label3/Label3/Label3"]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 208.0
+offset_right = 638.0
+offset_bottom = 231.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label/Label2/Label3/Label3/Label3/Label3"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = -86.0
+offset_right = 155.0
+offset_bottom = -63.0
+text = "YOU WIN!!!!!"
+
+[node name="Label" type="Label" parent="Label/Label2/Label3/Label3/Label3/Label3"]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 132.0
+offset_right = 246.0
+offset_bottom = 155.0
+text = "YOU WIN!!!!!"
+
+[node name="Label3" type="Label" parent="Label/Label2/Label3/Label3/Label3/Label3"]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 208.0
+offset_right = 638.0
+offset_bottom = 231.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label/Label2/Label3/Label3/Label3/Label3/Label3"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = -86.0
+offset_right = 155.0
+offset_bottom = -63.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1368.0
+offset_top = 397.0
+offset_right = 1461.0
+offset_bottom = 420.0
+text = "YOU WIN!!!!!"
+
+[node name="Label2" type="Label" parent="Label2"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = -86.0
+offset_right = 155.0
+offset_bottom = -63.0
+text = "YOU WIN!!!!!"

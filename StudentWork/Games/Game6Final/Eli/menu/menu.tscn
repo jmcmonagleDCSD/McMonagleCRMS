@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://32g2qpv2kf3r"]
+
+[ext_resource type="Script" uid="uid://bpjs88oxq4qj6" path="res://menu/menu.gd" id="1_g18jx"]
+[ext_resource type="Texture2D" uid="uid://5aij3etlpo3f" path="res://drive-download-20260323T192014Z-1-001/Background/Brown.png" id="1_j0t7f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g18jx"]
+font_color = Color(0.050980393, 0.1254902, 0.2, 1)
+outline_color = Color(0.3529412, 0.16078432, 1, 1)
+shadow_color = Color(0.19127712, 0.18348023, 0.19200861, 0)
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g18jx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -3.0
+offset_right = 639.0
+offset_bottom = 361.0
+texture = ExtResource("1_j0t7f")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 204.0
+offset_right = 618.0
+offset_bottom = 307.0
+text = "Press space, up arrow, w, or left click to play."
+label_settings = SubResource("LabelSettings_g18jx")

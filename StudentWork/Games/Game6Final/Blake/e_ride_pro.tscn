@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://crjp3ci4b6xdo"]
+
+[ext_resource type="Script" uid="uid://dfaw5ndd3pyvt" path="res://e_ride_pro.gd" id="1_1s8gi"]
+[ext_resource type="Texture2D" uid="uid://dghg31f0hge68" path="res://assets/Main Characters/New Piskel (3) (1).png" id="1_fmtiy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fmtiy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fmtiy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fmtiy"]
+radius = 292.70016
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1s8gi"]
+radius = 277.33655
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1s8gi"]
+size = Vector2(403.84634, 140.77661)
+
+[node name="e_ride_pro" type="CharacterBody2D" groups=["eridepro"]]
+texture_filter = 1
+position = Vector2(-1.2500005, -1.4999895)
+scale = Vector2(0.065000005, 0.06599996)
+script = ExtResource("1_1s8gi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3403.846, 2462.1223)
+scale = Vector2(14.246152, 10.151522)
+sprite_frames = SubResource("SpriteFrames_fmtiy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(988.4615, 3325.7595)
+shape = SubResource("CircleShape2D_fmtiy")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(5711.5386, 3159.0928)
+shape = SubResource("CircleShape2D_1s8gi")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1034.6154, 2204.5469)
+shape = SubResource("RectangleShape2D_1s8gi")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(3.8461611, 37.87865)

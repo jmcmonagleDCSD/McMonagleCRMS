@@ -1,0 +1,101 @@
+[gd_scene load_steps=13 format=3 uid="uid://gpg2i23aykc2"]
+
+[ext_resource type="Script" uid="uid://b6bui0e5gm7x1" path="res://level.gd" id="1_n6hdu"]
+[ext_resource type="Texture2D" uid="uid://chc6m4jxbbq4q" path="res://assets/Background/Gray.png" id="1_vonw3"]
+[ext_resource type="PackedScene" uid="uid://c74xt6yx3jpal" path="res://teach.tscn" id="2_0b4ue"]
+[ext_resource type="Texture2D" uid="uid://cige26bpskr40" path="res://assets/Background/Blue.png" id="2_oi3di"]
+[ext_resource type="PackedScene" uid="uid://canbft1i6qhpu" path="res://banana.tscn" id="4_0b4ue"]
+[ext_resource type="PackedScene" uid="uid://by1mhnsu0jq5d" path="res://pet.tscn" id="5_f2txt"]
+[ext_resource type="PackedScene" uid="uid://bvor8ys5bx7vy" path="res://love note.tscn" id="6_1ainy"]
+[ext_resource type="PackedScene" uid="uid://cwe700h3ypbao" path="res://label.tscn" id="8_km5ld"]
+[ext_resource type="PackedScene" uid="uid://b0raq6e15hn67" path="res://dada_sama.tscn" id="9_i2t4f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1ainy"]
+font_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_n6hdu"]
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_km5ld"]
+font_size = 9
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_n6hdu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -89.0
+offset_top = -30.0
+offset_right = 1231.0
+offset_bottom = 716.0
+texture = ExtResource("1_vonw3")
+stretch_mode = 1
+
+[node name="teach" parent="." instance=ExtResource("2_0b4ue")]
+position = Vector2(571, 296)
+scale = Vector2(17.175, 17.175)
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -122.0
+offset_top = 506.0
+offset_right = 1261.0
+offset_bottom = 725.0
+texture = ExtResource("2_oi3di")
+stretch_mode = 1
+
+[node name="Node2D" parent="." instance=ExtResource("4_0b4ue")]
+offset_left = 147.0
+offset_top = 522.0
+offset_right = 180.0
+offset_bottom = 549.0
+scale = Vector2(3.65, 3.65)
+
+[node name="Label" type="Label" parent="Node2D"]
+layout_mode = 0
+offset_left = 3.561644
+offset_top = 23.835615
+offset_right = 62.19178
+offset_bottom = 46.835613
+text = "Feed"
+label_settings = SubResource("LabelSettings_1ainy")
+
+[node name="Area2D" parent="." instance=ExtResource("5_f2txt")]
+offset_left = 524.00006
+offset_top = 520.00006
+offset_right = 559.00006
+offset_bottom = 558.00006
+scale = Vector2(2.665, 2.665)
+
+[node name="Label" type="Label" parent="Area2D"]
+layout_mode = 0
+offset_left = -18.386517
+offset_top = 31.894915
+offset_right = 46.613483
+offset_bottom = 54.894913
+text = "Kobayashi"
+label_settings = SubResource("LabelSettings_n6hdu")
+
+[node name="Area2D2" parent="." instance=ExtResource("6_1ainy")]
+offset_left = 892.0
+offset_top = 527.0
+offset_right = 919.0
+offset_bottom = 547.0
+scale = Vector2(4.855, 4.855)
+
+[node name="Label" type="Label" parent="Area2D2"]
+layout_mode = 0
+offset_left = 3.9134912
+offset_top = 14.624097
+offset_right = 43.91349
+offset_bottom = 37.624096
+text = "Sam"
+label_settings = SubResource("LabelSettings_km5ld")
+
+[node name="Label" parent="." instance=ExtResource("8_km5ld")]
+offset_right = 441.0
+offset_bottom = 38.0
+
+[node name="TextureRect3" parent="." instance=ExtResource("9_i2t4f")]
+
+[connection signal="pressed" from="Node2D" to="." method="_on_node_2d_pressed"]
+[connection signal="pressed" from="Area2D" to="." method="_on_area_2d_pressed"]
+[connection signal="pressed" from="Area2D2" to="." method="_on_area_2d_2_pressed"]

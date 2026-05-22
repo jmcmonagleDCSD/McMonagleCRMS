@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://cytwpuhoftf5x"]
+
+[ext_resource type="Texture2D" uid="uid://dbgureccixt3g" path="res://assets/New Piskel (1).png" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://bearo6nwxvmqp" path="res://bird.tscn" id="2_vonw3"]
+[ext_resource type="PackedScene" uid="uid://crf3lgq3bljto" path="res://fireball.tscn" id="3_oi3di"]
+[ext_resource type="PackedScene" uid="uid://cdo8n5erkhbeh" path="res://fireball_spawner.tscn" id="4_0b4ue"]
+[ext_resource type="PackedScene" uid="uid://dhspgbkn13ei4" path="res://score.tscn" id="5_f2txt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vonw3"]
+size = Vector2(1151.5, 118)
+
+[node name="level" type="Node2D"]
+
+[node name="sky_ground" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 1153.0
+offset_bottom = 652.0
+texture = ExtResource("1_u52ul")
+
+[node name="StaticBody2D" type="Area2D" parent="sky_ground" groups=["player"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sky_ground/StaticBody2D"]
+position = Vector2(574, 708)
+shape = SubResource("RectangleShape2D_vonw3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="sky_ground/StaticBody2D"]
+position = Vector2(580, -69)
+shape = SubResource("RectangleShape2D_vonw3")
+
+[node name="bird" parent="." instance=ExtResource("2_vonw3")]
+position = Vector2(92, 41)
+
+[node name="fireball" parent="." instance=ExtResource("3_oi3di")]
+position = Vector2(914, 282)
+
+[node name="fireball_spawner" parent="." instance=ExtResource("4_0b4ue")]
+position = Vector2(5, 58)
+fireball_scene = ExtResource("3_oi3di")
+
+[node name="fireball_spawner2" parent="." instance=ExtResource("4_0b4ue")]
+position = Vector2(-64, -149)
+fireball_scene = ExtResource("3_oi3di")
+
+[node name="fireball_spawner3" parent="." instance=ExtResource("4_0b4ue")]
+position = Vector2(-23, 322)
+fireball_scene = ExtResource("3_oi3di")
+
+[node name="score" parent="." instance=ExtResource("5_f2txt")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 578.0
+offset_top = 16.0
+offset_right = 578.0
+offset_bottom = 16.0
+grow_horizontal = 1
+grow_vertical = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="sky_ground/StaticBody2D" to="bird" method="_on_static_body_2d_body_entered"]

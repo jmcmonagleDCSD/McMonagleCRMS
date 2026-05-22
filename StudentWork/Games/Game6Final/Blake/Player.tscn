@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dne01qs8gojie"]
+
+[ext_resource type="Texture2D" uid="uid://d63hus1ckhmv" path="res://assets/Main Characters/New Piskel (2).png" id="1_xhfnw"]
+
+[node name="player" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(156.25, 46.499992)
+scale = Vector2(15.984375, 14.281251)
+texture = ExtResource("1_xhfnw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-54, -1)
+offset = Vector2(1000, -400)
+zoom = Vector2(0.5, 0.5)

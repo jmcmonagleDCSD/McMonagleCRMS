@@ -1,0 +1,154 @@
+[gd_scene load_steps=16 format=3 uid="uid://bnx0wlyj0jpk0"]
+
+[ext_resource type="Script" uid="uid://srfesbnj26ur" path="res://Menu/chain_saw/chain_saw.gd" id="1_8uhv2"]
+[ext_resource type="Texture2D" uid="uid://dneycgcvvp5ef" path="res://assets/Traps/Saw/On (38x38).png" id="1_x2fcj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8uhv2"]
+atlas = ExtResource("1_x2fcj")
+region = Rect2(0, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t46t3"]
+atlas = ExtResource("1_x2fcj")
+region = Rect2(38, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ygi5v"]
+atlas = ExtResource("1_x2fcj")
+region = Rect2(76, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfacm"]
+atlas = ExtResource("1_x2fcj")
+region = Rect2(114, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulun8"]
+atlas = ExtResource("1_x2fcj")
+region = Rect2(152, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vkwj"]
+atlas = ExtResource("1_x2fcj")
+region = Rect2(190, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvfyh"]
+atlas = ExtResource("1_x2fcj")
+region = Rect2(228, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_788um"]
+atlas = ExtResource("1_x2fcj")
+region = Rect2(266, 0, 38, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y3uqr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8uhv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t46t3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ygi5v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfacm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulun8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vkwj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvfyh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_788um")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1w6fj"]
+radius = 13.001263
+
+[sub_resource type="Animation" id="Animation_ddx5i"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ovclv"]
+resource_name = "move"
+length = 4.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.033333335, 2.2666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 0), Vector2(1, 150)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(-0.03333333, 2.2666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 150)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mwyi4"]
+_data = {
+&"RESET": SubResource("Animation_ddx5i"),
+&"move": SubResource("Animation_ovclv")
+}
+
+[node name="chain_saw" type="Area2D"]
+script = ExtResource("1_8uhv2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 2)
+scale = Vector2(0.8, 0.742)
+sprite_frames = SubResource("SpriteFrames_y3uqr")
+autoplay = "default"
+frame_progress = 0.07165698
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1w6fj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_mwyi4")
+}
+autoplay = "move"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

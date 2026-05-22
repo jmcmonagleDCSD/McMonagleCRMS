@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuimjeyb01iwr"]
+
+[ext_resource type="Script" uid="uid://cjapkx63ijtip" path="res://color_rect_6.gd" id="1_jnkjv"]
+
+[node name="ColorRect" type="ColorRect"]
+offset_right = 1148.0
+offset_bottom = 643.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_jnkjv")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 45.0
+offset_right = 1056.0
+offset_bottom = 514.0
+theme_override_font_sizes/font_size = 200
+text = "You Win"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 336.0
+offset_right = 865.0
+offset_bottom = 491.0
+theme_override_font_sizes/font_size = 100
+text = "Space to play"

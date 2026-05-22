@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://c2al5sh2tx8ej"]
+
+[ext_resource type="Script" uid="uid://cyuethcuhhknu" path="res://flying_enemy/flying_enemy.gd" id="1_370gu"]
+[ext_resource type="Texture2D" uid="uid://7luihrrh4rly" path="res://assets/Enemies/Copilot_20260513_140618 (1) (1).png" id="2_370gu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_370gu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_370gu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2jdt4"]
+radius = 39.012817
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_octic"]
+radius = 42.426407
+
+[node name="flying_enemy" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_370gu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, 2.3841858e-07)
+scale = Vector2(0.6, 0.59)
+sprite_frames = SubResource("SpriteFrames_370gu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_2jdt4")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0, 4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2.000001, -3.9999962)
+scale = Vector2(0.35, 0.35)
+shape = SubResource("CircleShape2D_octic")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

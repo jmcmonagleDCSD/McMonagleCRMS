@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://by1mhnsu0jq5d"]
+
+[ext_resource type="Texture2D" uid="uid://b75qgqqrln0bx" path="res://New Piskel (7).png" id="1_34gfr"]
+[ext_resource type="Script" uid="uid://cmmx2nick2ydx" path="res://pet.gd" id="1_xibd0"]
+
+[node name="Area2D" type="Button"]
+offset_left = -27.0
+offset_top = -30.0
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_xibd0")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.18300001
+offset_left = -17.0
+offset_top = -14.0
+offset_right = 52.0
+offset_bottom = 45.045998
+texture = ExtResource("1_34gfr")

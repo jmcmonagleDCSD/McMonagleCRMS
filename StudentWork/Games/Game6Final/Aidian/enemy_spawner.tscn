@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dovowrpqhm5uw"]
+
+[node name="enemy spawner" type="Node2D"]
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(1335, 579)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(1587, 576)

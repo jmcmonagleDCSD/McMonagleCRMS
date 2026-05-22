@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdo8n5erkhbeh"]
+
+[ext_resource type="Script" uid="uid://bo0vpqqqxd5tn" path="res://fireball_spawner.gd" id="1_o5rk6"]
+
+[node name="fireball_spawner" type="Node2D"]
+script = ExtResource("1_o5rk6")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(1297, 199)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(1646, 200)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

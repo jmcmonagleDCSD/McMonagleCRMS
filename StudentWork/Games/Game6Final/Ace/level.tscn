@@ -1,0 +1,154 @@
+[gd_scene load_steps=16 format=3 uid="uid://ba21k61odunxt"]
+
+[ext_resource type="Script" uid="uid://bk8ekrtr1ilas" path="res://level.gd" id="1_oi3di"]
+[ext_resource type="PackedScene" uid="uid://ck3iidheus0nl" path="res://player.tscn" id="1_u52ul"]
+[ext_resource type="Script" uid="uid://bs3khi6pr4r6v" path="res://enemy.gd" id="2_vonw3"]
+
+[sub_resource type="Environment" id="Environment_u52ul"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0b4ue"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f2txt"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oi3di"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_oi3di"]
+vertices = PackedVector3Array(-4.5, 5.000002, -34.5, -4.5, 5.000002, -25.5, 4.5, 5.000002, -25.5, 4.5, 5.000002, -34.5, -19.5, -0.2499981, -19.5, -19.5, -0.2499981, 19.75, 19.5, -0.2499981, 19.75, 19.5, -0.2499981, -19.5, -34.5, 5.000002, -4.5, -34.5, 5.000002, 4.5, -25.5, 5.000002, 4.5, -25.5, 5.000002, -4.5, 25.5, 5.000002, -4.5, 25.5, 5.000002, 4.5, 34.5, 5.000002, 4.5, 34.5, 5.000002, -4.5, -4.5, 5.000002, 25.5, -4.5, 5.000002, 34.5, 4.5, 5.000002, 34.5, 4.5, 5.000002, 25.5)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1), PackedInt32Array(7, 6, 4), PackedInt32Array(4, 6, 5), PackedInt32Array(11, 10, 8), PackedInt32Array(8, 10, 9), PackedInt32Array(15, 14, 12), PackedInt32Array(12, 14, 13), PackedInt32Array(19, 18, 16), PackedInt32Array(16, 18, 17)]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vonw3"]
+size = Vector3(40, 0.5, 40)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u52ul"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oi3di"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0b4ue"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f2txt"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0b4ue"]
+bg_color = Color(0.6041438, 1.8054372e-07, 0.06906635, 1)
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oi3di"]
+bg_color = Color(0.45606172, 0.6316589, 0.3722404, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[node name="level" type="Node3D"]
+script = ExtResource("1_oi3di")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_u52ul")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.8720522, 0.036397427, 0.4880576, -0.4894129, 0.064854145, 0.86963725, 0, -0.99723077, 0.07436957, -0.715, 1.0041809, 0)
+sky_mode = 1
+
+[node name="Enities" type="Node3D" parent="."]
+
+[node name="player" parent="Enities" instance=ExtResource("1_u52ul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2543342, 0)
+
+[node name="Enemy" type="CharacterBody3D" parent="Enities" groups=["enemy"]]
+transform = Transform3D(-0.9876501, 0, -0.1566758, 0, 1, 0, 0.1566758, 0, -0.9876501, -4.5484114, 1.7777333, 0)
+script = ExtResource("2_vonw3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Enities/Enemy"]
+mesh = SubResource("CapsuleMesh_0b4ue")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enities/Enemy"]
+shape = SubResource("CapsuleShape3D_f2txt")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Enities/Enemy"]
+
+[node name="Area3D" type="Area3D" parent="Enities/Enemy" groups=["player"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enities/Enemy/Area3D"]
+shape = SubResource("CapsuleShape3D_oi3di")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." groups=["enemy"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9999981, 0)
+navigation_mesh = SubResource("NavigationMesh_oi3di")
+
+[node name="Enviorment" type="Node3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9999981, 0)
+
+[node name="main platform" type="StaticBody3D" parent="NavigationRegion3D/Enviorment"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Enviorment/main platform"]
+size = Vector3(40, 1, 40)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Enviorment/main platform"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.07744336)
+shape = SubResource("BoxShape3D_vonw3")
+
+[node name="tiny platform 1" type="StaticBody3D" parent="NavigationRegion3D/Enviorment"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Enviorment/tiny platform 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 5, 0)
+size = Vector3(10, 1, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Enviorment/tiny platform 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 5, 0)
+shape = SubResource("BoxShape3D_u52ul")
+disabled = true
+
+[node name="tiny platform 2" type="StaticBody3D" parent="NavigationRegion3D/Enviorment"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Enviorment/tiny platform 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 30)
+size = Vector3(10, 1, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Enviorment/tiny platform 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 30)
+shape = SubResource("BoxShape3D_oi3di")
+
+[node name="tiny platform 3" type="StaticBody3D" parent="NavigationRegion3D/Enviorment"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Enviorment/tiny platform 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 5, 0)
+size = Vector3(10, 1, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Enviorment/tiny platform 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 5, 0)
+shape = SubResource("BoxShape3D_0b4ue")
+
+[node name="tiny platform 4" type="StaticBody3D" parent="NavigationRegion3D/Enviorment"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Enviorment/tiny platform 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -30)
+size = Vector3(10, 1, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Enviorment/tiny platform 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -30)
+shape = SubResource("BoxShape3D_f2txt")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 437.0
+offset_bottom = 67.0
+theme_override_styles/background = SubResource("StyleBoxFlat_0b4ue")
+theme_override_styles/fill = SubResource("StyleBoxFlat_oi3di")
+value = 100.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[connection signal="body_entered" from="Enities/Enemy/Area3D" to="Enities/Enemy" method="_on_area_3d_body_entered"]
+[connection signal="timeout" from="Timer" to="Enities/Enemy" method="_on_timer_timeout"]

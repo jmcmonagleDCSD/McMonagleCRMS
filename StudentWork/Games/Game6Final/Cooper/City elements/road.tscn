@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://xsk3jyelda4n"]
+
+[ext_resource type="Texture2D" uid="uid://b56avmv1ei8ax" path="res://My art/New Piskel copy.png" id="1_i1mwo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3svds"]
+size = Vector2(640, 56)
+
+[node name="Road" type="Area2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 1.0
+offset_right = 640.0
+offset_bottom = 361.0
+texture = ExtResource("1_i1mwo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(320, 265)
+shape = SubResource("RectangleShape2D_3svds")

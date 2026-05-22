@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=3 uid="uid://bsp1c0wg7x5y8"]
+
+[ext_resource type="Script" uid="uid://n268mrevrpit" path="res://menu_screen.gd" id="1_tuusc"]
+[ext_resource type="Texture2D" uid="uid://bynaky7i40viy" path="res://assets/Background/Gray.png" id="2_iefc8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iefc8"]
+font_size = 56
+font_color = Color(0.5019608, 0.08627451, 0.12941177, 1)
+outline_size = 6
+outline_color = Color(0.8980392, 0, 0.06666667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ylmtb"]
+font_size = 50
+font_color = Color(0.16132495, 0.14135104, 0.46986556, 1)
+outline_size = 6
+outline_color = Color(0.37315106, 0.6362448, 0.91370726, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0ft63"]
+font_size = 45
+font_color = Color(2.4065375e-06, 0, 0.73431563, 1)
+outline_size = 7
+outline_color = Color(1, 0.05882353, 0.07058824, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_y8ko8"]
+font_size = 55
+font_color = Color(0.8666733, 0.3417616, 0.97656065, 1)
+outline_size = 20
+outline_color = Color(0.43457788, 0, 0.1322932, 1)
+
+[node name="Menu_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tuusc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -10.0
+offset_right = 1220.0
+offset_bottom = 642.0
+texture = ExtResource("2_iefc8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -262.5
+offset_top = -10.0
+offset_right = 518.5
+offset_bottom = 642.0
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "      Ghost Dogger"
+label_settings = SubResource("LabelSettings_iefc8")
+
+[node name="Start" type="Label" parent="MarginContainer"]
+layout_mode = 2
+text = "   Press Space to start"
+label_settings = SubResource("LabelSettings_ylmtb")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Highscore" type="Label" parent="."]
+layout_mode = 0
+offset_top = 562.0
+offset_right = 237.0
+offset_bottom = 640.0
+text = "Highscore:"
+label_settings = SubResource("LabelSettings_0ft63")
+
+[node name="Highscore_#" type="Label" parent="."]
+layout_mode = 0
+offset_left = 908.0
+offset_top = 564.0
+offset_right = 1161.0
+offset_bottom = 640.0
+text = "0"
+label_settings = SubResource("LabelSettings_y8ko8")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

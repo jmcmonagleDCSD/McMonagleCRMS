@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://b333hp6adta5x"]
+
+[ext_resource type="Script" uid="uid://cu00obed402v4" path="res://speedometer.gd" id="1_3xc74"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_syyym"]
+font_size = 33
+font_color = Color(0, 0, 0, 1)
+outline_size = 6
+shadow_size = 4
+shadow_color = Color(1, 1, 1, 0)
+
+[node name="speedometer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3xc74")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 23.0
+offset_right = 344.0
+offset_bottom = 69.0
+text = "000"
+label_settings = SubResource("LabelSettings_syyym")
+horizontal_alignment = 1

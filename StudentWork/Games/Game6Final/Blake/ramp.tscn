@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxfy243yr7ltc"]
+
+[ext_resource type="Texture2D" uid="uid://bxwlgefufhbmg" path="res://assets/Items/New Piskel (6).png" id="1_sqs1n"]
+
+[node name="ramps" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_sqs1n")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-24, 11, -24, 10, -3, -11, -2, -11, -2, -11, -2, 12, -18, 12, -24, 12)

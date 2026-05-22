@@ -1,0 +1,119 @@
+[gd_scene load_steps=17 format=3 uid="uid://dymq5hol8b40q"]
+
+[ext_resource type="Texture2D" uid="uid://ge23ao8v0h7n" path="res://Final Game project/Main Characters/8Ball/Idle 8ball.png" id="1_2ey15"]
+[ext_resource type="Script" uid="uid://qkav3qooa6mk" path="res://Final Game project/player/8_ball.gd" id="1_noc38"]
+[ext_resource type="Texture2D" uid="uid://bd1nxw5lei1uc" path="res://Final Game project/Main Characters/8Ball/falling.png" id="2_noc38"]
+[ext_resource type="Texture2D" uid="uid://imo4fajkajvw" path="res://Final Game project/Main Characters/8Ball/jumping.png" id="3_3ac0l"]
+[ext_resource type="Texture2D" uid="uid://vhmt54ctdykt" path="res://Final Game project/Main Characters/8Ball/rolling.png" id="4_nesyw"]
+[ext_resource type="PackedScene" uid="uid://cv2w3mfbfniy8" path="res://Final Game project/player/health.tscn" id="6_3ac0l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3brq"]
+atlas = ExtResource("1_2ey15")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50wat"]
+atlas = ExtResource("1_2ey15")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xh7f"]
+atlas = ExtResource("1_2ey15")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxwes"]
+atlas = ExtResource("1_2ey15")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0032p"]
+atlas = ExtResource("4_nesyw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yujpc"]
+atlas = ExtResource("4_nesyw")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rwqf6"]
+atlas = ExtResource("4_nesyw")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbeny"]
+atlas = ExtResource("4_nesyw")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p3lsw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3brq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50wat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5xh7f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxwes")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_noc38")
+}],
+"loop": true,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_3ac0l")
+}],
+"loop": true,
+"name": &"jumping",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0032p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yujpc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rwqf6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbeny")
+}],
+"loop": true,
+"name": &"rolling",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y1ts2"]
+
+[node name="8_Ball" type="CharacterBody2D" groups=["player"]]
+collision_mask = 14
+script = ExtResource("1_noc38")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_p3lsw")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.52886707
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_y1ts2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 3.0
+drag_vertical_enabled = true
+
+[node name="health" parent="." instance=ExtResource("6_3ac0l")]
+offset_left = -164.0
+offset_top = -74.0
+offset_right = -112.0
+offset_bottom = -51.0

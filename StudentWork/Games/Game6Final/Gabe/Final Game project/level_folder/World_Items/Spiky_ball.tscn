@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3a224ffijo0o"]
+
+[ext_resource type="Texture2D" uid="uid://bglv7a6sbi3fr" path="res://Final Game project/Traps/Spiked Ball/Spiked Ball.png" id="1_klt3y"]
+[ext_resource type="Script" uid="uid://de1dt5xyj0p0v" path="res://Final Game project/level_folder/World_Items/Spikey_hitbox.gd" id="2_i7b48"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_varem"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_klt3y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_klt3y"]
+radius = 33.0
+height = 66.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bhjlj"]
+radius = 43.0
+
+[node name="Spiky_ball" type="CharacterBody2D"]
+position = Vector2(0, -1)
+collision_layer = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.0000001, -3.5527137e-15)
+scale = Vector2(3.1249998, 3.125)
+sprite_frames = SubResource("SpriteFrames_varem")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 2)
+shape = SubResource("CapsuleShape2D_klt3y")
+
+[node name="Hitbox" type="Area2D" parent="."]
+position = Vector2(1, 2)
+collision_layer = 4
+script = ExtResource("2_i7b48")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_bhjlj")
+debug_color = Color(0.99366003, 0, 0.24115562, 0.41960785)
+
+[connection signal="body_entered" from="Hitbox" to="Hitbox" method="_on_body_entered"]

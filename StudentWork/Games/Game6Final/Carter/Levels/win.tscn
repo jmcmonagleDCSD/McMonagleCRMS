@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=3 uid="uid://pqk8p55cuebm"]
+
+[ext_resource type="Script" uid="uid://dk6pb4a536ytk" path="res://Menu/menu.gd" id="1_hyu7m"]
+[ext_resource type="Texture2D" uid="uid://dtbaitdfo0is0" path="res://assets/Background/Yellow.png" id="2_yhn2j"]
+[ext_resource type="Script" uid="uid://bua32s5lsvxdi" path="res://Menu/texture_rect.gd" id="3_x2s6s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_raj00"]
+font_size = 64
+font_color = Color(0.9083924, 0.18783176, 0.52258754, 1)
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 15
+shadow_color = Color(0.26657522, 0.2665752, 0.2665752, 0.827451)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hyu7m"]
+font_size = 40
+font_color = Color(0.9083924, 0.18783176, 0.52258754, 1)
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 15
+shadow_color = Color(0.26657522, 0.2665752, 0.2665752, 0.827451)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hyu7m")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.5267931, 1.7928704e-06, 2.8878452e-07, 1)
+layout_mode = 0
+offset_left = -767.0
+offset_top = -539.0
+offset_right = 1588.0
+offset_bottom = 939.0
+scale = Vector2(1, 1.8000003)
+texture = ExtResource("2_yhn2j")
+stretch_mode = 1
+script = ExtResource("3_x2s6s")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.5
+offset_top = -149.0
+offset_right = 180.5
+offset_bottom = -61.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "You Win!!!!"
+label_settings = SubResource("LabelSettings_raj00")
+
+[node name="Thank You" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -266.0
+offset_top = -159.0
+offset_right = 266.0
+offset_bottom = -92.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Your Patience Grade: A"
+label_settings = SubResource("LabelSettings_hyu7m")
+horizontal_alignment = 1

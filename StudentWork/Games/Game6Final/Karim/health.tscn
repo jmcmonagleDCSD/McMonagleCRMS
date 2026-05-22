@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu2qn55ofbim7"]
+
+[ext_resource type="Script" uid="uid://ddapgo2rc4dpl" path="res://health.gd" id="1_ledv5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wtiye"]
+font_size = 23
+
+[sub_resource type="LabelSettings" id="LabelSettings_ledv5"]
+font_size = 23
+
+[node name="Health" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ledv5")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HealthLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Health:"
+label_settings = SubResource("LabelSettings_wtiye")
+
+[node name="HealthAmountLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "0000"
+label_settings = SubResource("LabelSettings_ledv5")

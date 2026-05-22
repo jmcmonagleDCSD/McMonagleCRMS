@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://m6wl55kjmw8u"]
+
+[ext_resource type="Texture2D" uid="uid://1wga4mh2kkwv" path="res://assets/Background/Gray.png" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://75hevqijcsx0" path="res://control.gd" id="1_62e2m"]
+[ext_resource type="Script" uid="uid://cfa5gvpvalbc2" path="res://score.gd" id="3_qtu10"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qtu10"]
+font_size = 30
+shadow_size = 20
+shadow_color = Color(0, 0, 0, 0.9490196)
+
+[sub_resource type="LabelSettings" id="LabelSettings_62e2m"]
+line_spacing = 10.0
+font_size = 40
+shadow_size = 20
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_62e2m")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 1150.0
+offset_bottom = 649.0
+texture = ExtResource("1_0fbet")
+stretch_mode = 1
+
+[node name="play" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.018000001
+offset_left = 392.0
+offset_top = 273.0
+offset_right = 814.0
+offset_bottom = 322.318
+text = "press play/space to start game"
+label_settings = SubResource("LabelSettings_qtu10")
+
+[node name="Title" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 13.0
+offset_right = 698.0
+offset_bottom = 68.0
+text = "Surron life frfr"
+label_settings = SubResource("LabelSettings_62e2m")
+
+[node name="score" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 597.0
+offset_right = 417.0
+offset_bottom = 652.0
+text = "highscore                                                                               :0          "
+label_settings = SubResource("LabelSettings_62e2m")
+script = ExtResource("3_qtu10")

@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cr52ewbvq86fj"]
+
+[ext_resource type="Script" uid="uid://bmgcrivv30a0g" path="res://pixelball.gd" id="1_irlya"]
+[ext_resource type="Texture2D" uid="uid://c0vjkbbw7y58s" path="res://New Piskel (3).png" id="2_6ebu1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_irlya"]
+size = Vector2(74, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dpmol"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6ebu1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="pixelball" type="Area2D"]
+script = ExtResource("1_irlya")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(29, 10)
+shape = SubResource("RectangleShape2D_irlya")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(56, -6.999997)
+scale = Vector2(4.9453125, 4.0625)
+sprite_frames = SubResource("SpriteFrames_dpmol")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

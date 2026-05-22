@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfkp7vxg46ku6"]
+
+[ext_resource type="Script" uid="uid://bhfphgxw32l08" path="res://score.gd" id="1_t1x8i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lhp1n"]
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+outline_size = 6
+outline_color = Color(0.47788018, 0.47788012, 0.47788012, 1)
+
+[node name="Score" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t1x8i")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 621.0
+offset_bottom = 45.0
+text = "0000"
+label_settings = SubResource("LabelSettings_lhp1n")
+horizontal_alignment = 2

@@ -1,0 +1,84 @@
+[gd_scene load_steps=13 format=3 uid="uid://jcr5axm21y6p"]
+
+[ext_resource type="Script" uid="uid://mhw1qhtmorrf" path="res://jump.gd" id="1_ihkrp"]
+[ext_resource type="Texture2D" uid="uid://cmmmlo5qwkadk" path="res://Enemies/Skull/Idle 1 (52x54).png" id="1_ugqji"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihkrp"]
+atlas = ExtResource("1_ugqji")
+region = Rect2(0, 0, 52, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yv1c"]
+atlas = ExtResource("1_ugqji")
+region = Rect2(52, 0, 52, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwj67"]
+atlas = ExtResource("1_ugqji")
+region = Rect2(104, 0, 52, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27uhh"]
+atlas = ExtResource("1_ugqji")
+region = Rect2(156, 0, 52, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xf1l"]
+atlas = ExtResource("1_ugqji")
+region = Rect2(208, 0, 52, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5iur"]
+atlas = ExtResource("1_ugqji")
+region = Rect2(260, 0, 52, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70d8l"]
+atlas = ExtResource("1_ugqji")
+region = Rect2(312, 0, 52, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bmsx"]
+atlas = ExtResource("1_ugqji")
+region = Rect2(364, 0, 52, 54)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qh4hh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihkrp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5yv1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwj67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27uhh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xf1l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5iur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70d8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bmsx")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5yv1c"]
+radius = 27.45906
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_ihkrp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(419, 560)
+sprite_frames = SubResource("SpriteFrames_qh4hh")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(420, 561)
+shape = SubResource("CircleShape2D_5yv1c")

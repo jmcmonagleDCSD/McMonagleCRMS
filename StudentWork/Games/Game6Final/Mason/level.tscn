@@ -1,0 +1,470 @@
+[gd_scene load_steps=6 format=3 uid="uid://dnrklx5i7uwu0"]
+
+[ext_resource type="Script" uid="uid://bn11j57jqbei8" path="res://level.gd" id="1_0b4ue"]
+[ext_resource type="Texture2D" uid="uid://dllnugmaqwjs0" path="res://assets/Main Characters/New Piskel (4).png" id="1_oi3di"]
+[ext_resource type="Texture2D" uid="uid://dv2l268yi0r5g" path="res://assets/Main Characters/New Piskel (6).png" id="2_0b4ue"]
+[ext_resource type="Texture2D" uid="uid://dxbi12un6yxa7" path="res://assets/Main Characters/New Piskel (5).png" id="3_f2txt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0b4ue"]
+
+[node name="ColorRect" type="ColorRect"]
+offset_right = 1152.0
+offset_bottom = 652.0
+color = Color(0, 0, 0.21176471, 1)
+script = ExtResource("1_0b4ue")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.11400001
+offset_left = 1.0
+offset_top = 418.0
+offset_right = 1152.0
+offset_bottom = 577.672
+color = Color(0, 0.10271048, 1.8049032e-08, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.061000004
+offset_left = 953.0
+offset_top = -37.0
+offset_right = 1159.68
+offset_bottom = 138.228
+texture = ExtResource("1_oi3di")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 83.0
+offset_right = 181.0
+offset_bottom = 419.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2"]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 10.0
+offset_right = 312.0
+offset_bottom = 346.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 1.0
+offset_right = 299.0
+offset_bottom = 337.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 4.0
+offset_right = 305.0
+offset_bottom = 340.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 5.0
+offset_right = 318.0
+offset_bottom = 341.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = -2.0
+offset_right = 316.0
+offset_bottom = 334.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect2/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect3/TextureRect2"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 311.0
+offset_bottom = 336.0
+texture = ExtResource("2_0b4ue")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 35.0
+offset_right = 235.0
+offset_bottom = 231.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect3"]
+layout_mode = 0
+offset_left = 191.0
+offset_top = -4.0
+offset_right = 421.0
+offset_bottom = 192.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 191.0
+offset_top = -4.0
+offset_right = 421.0
+offset_bottom = 192.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 191.0
+offset_top = -4.0
+offset_right = 421.0
+offset_bottom = 192.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 191.0
+offset_top = -4.0
+offset_right = 421.0
+offset_bottom = 192.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 154.0
+offset_right = 347.0
+offset_bottom = 320.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect4"]
+layout_mode = 0
+offset_left = 177.0
+offset_top = -25.0
+offset_right = 407.0
+offset_bottom = 171.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect4/TextureRect3"]
+layout_mode = 0
+offset_left = 191.0
+offset_top = -15.0
+offset_right = 421.0
+offset_bottom = 181.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect4/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 187.0
+offset_top = -25.0
+offset_right = 417.0
+offset_bottom = 171.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect4/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 51.0
+offset_right = 399.0
+offset_bottom = 196.0
+texture = ExtResource("3_f2txt")
+
+[node name="TextureRect3" type="TextureRect" parent="TextureRect4/TextureRect3/TextureRect3/TextureRect3/TextureRect3"]
+layout_mode = 0
+offset_left = -934.0
+offset_top = -23.0
+offset_right = -704.0
+offset_bottom = 173.0
+texture = ExtResource("3_f2txt")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.755
+one_shot = true
+autostart = true
+
+[node name="Label" type="Label" parent="Timer"]
+offset_left = 94.0
+offset_top = 190.0
+offset_right = 1073.0
+offset_bottom = 426.0
+theme_override_colors/font_color = Color(0.76862746, 0, 0.1882353, 1)
+theme_override_font_sizes/font_size = 160
+text = "The Whicker"
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 12.357
+one_shot = true
+autostart = true
+
+[node name="Label" type="Label" parent="Timer2"]
+visible = false
+offset_left = 125.0
+offset_top = 236.0
+offset_right = 999.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 100
+text = "Find The Children!"
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 7.071000000000001
+one_shot = true
+autostart = true
+
+[node name="Timer4" type="Timer" parent="."]
+wait_time = 18.118000000000002
+one_shot = true
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Timer" type="Timer" parent="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_0b4ue")
+disabled = true
+
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
+offset_left = -3258.0
+offset_top = 148.0
+offset_right = -3184.0
+offset_bottom = 229.0
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Area2D"]
+position = Vector2(-3188, 85)
+rect = Rect2(-10, -10, 41, 226)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="Timer3" to="." method="_on_timer_3_timeout"]
+[connection signal="timeout" from="Timer4" to="." method="_on_timer_4_timeout"]
+[connection signal="screen_entered" from="Area2D/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]

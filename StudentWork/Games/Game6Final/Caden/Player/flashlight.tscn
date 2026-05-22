@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0jvyw4lmfqdn"]
+
+[ext_resource type="Script" uid="uid://ce4mmuvx3l3cp" path="res://Player/flashlight.gd" id="1_gdo5f"]
+[ext_resource type="Texture2D" uid="uid://by3a2yb4qxd1f" path="res://components/Flashlight3.png" id="2_gdo5f"]
+
+[node name="Flashlight" type="Node2D"]
+script = ExtResource("1_gdo5f")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0, 1)
+shadow_enabled = true
+texture = ExtResource("2_gdo5f")
+offset = Vector2(120, 0)

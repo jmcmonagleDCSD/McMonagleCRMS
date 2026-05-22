@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv2w3mfbfniy8"]
+
+[ext_resource type="Script" uid="uid://bcvxgycti3wvi" path="res://Final Game project/player/health.gd" id="1_axn4n"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kjitu"]
+font_color = Color(1.8289685e-06, 0.92528343, 0.67671806, 1)
+
+[node name="health" type="Label"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Health"
+label_settings = SubResource("LabelSettings_kjitu")
+script = ExtResource("1_axn4n")
