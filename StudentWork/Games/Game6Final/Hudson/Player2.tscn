@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1s053udvh6b4"]
+
+[ext_resource type="Texture2D" uid="uid://bd0gxheth7t63" path="res://My Sprites/My Sprites/My Sprites/Grape car.png" id="1_a06vx"]
+[ext_resource type="Script" uid="uid://bm7jrtnl64lng" path="res://player_2.gd" id="1_mjxxk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mjxxk"]
+size = Vector2(18, 30)
+
+[node name="Player2" type="CharacterBody2D"]
+script = ExtResource("1_mjxxk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, 0)
+rotation = 1.5707964
+texture = ExtResource("1_a06vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, 0)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_mjxxk")
+
+[node name="Camera2D" type="Camera2D" parent="."]

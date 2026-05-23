@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bygf2u7tq8smk"]
+
+[ext_resource type="Texture2D" uid="uid://u1vq2i3j3ggr" path="res://My Sprites/My Sprites/My Sprites/Bad tile.png" id="1_80032"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uwy07"]
+size = Vector2(32, 32)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_80032")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_uwy07")
