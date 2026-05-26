@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5133fu2g6i01"]
+
+[ext_resource type="PackedScene" uid="uid://cbfeeirs3jf8i" path="res://player/knight.tscn" id="1_7lnir"]
+[ext_resource type="PackedScene" uid="uid://l3mmupdnhrqk" path="res://player/sword/test_pos.tscn" id="3_qohg2"]
+[ext_resource type="PackedScene" uid="uid://bng8tlgjpi8pp" path="res://player/sword/ghost.tscn" id="4_vkbyq"]
+
+[node name="Level" type="Node2D"]
+
+[node name="knight" parent="." instance=ExtResource("1_7lnir")]
+
+[node name="Node2D" parent="." instance=ExtResource("3_qohg2")]
+
+[node name="ghost" parent="." instance=ExtResource("4_vkbyq")]

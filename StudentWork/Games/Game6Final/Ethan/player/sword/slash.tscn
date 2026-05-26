@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba3coqmebep3"]
+
+[ext_resource type="Script" uid="uid://fgv3hd68fqg7" path="res://player/sword/slash.gd" id="1_l2i6s"]
+[ext_resource type="Texture2D" uid="uid://b6w8j5qpibnkk" path="res://player/Slash (1).png" id="2_3nisq"]
+
+[node name="slash" type="CharacterBody2D"]
+script = ExtResource("1_l2i6s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(34, 7)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_3nisq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dydn8i7rb7wrg"]
+
+[ext_resource type="Script" uid="uid://pus8q86qc2mn" path="res://player/sword/s_l.gd" id="1_ma6m8"]
+
+[node name="s_left" type="CharacterBody2D"]
+script = ExtResource("1_ma6m8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
